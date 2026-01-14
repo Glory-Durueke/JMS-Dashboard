@@ -1,0 +1,52 @@
+table 'EXAMPLE - Map Legend'
+	lineageTag: b53908c8-8a29-4876-b1d9-75e1d4a5ba6b
+
+	column 'Number of Projects'
+		dataType: string
+		lineageTag: 2c2db2dc-b029-41b9-bf39-29e1646af3b8
+		summarizeBy: none
+		sourceColumn: Number of Projects
+		sortByColumn: Sort
+
+		changedProperty = SortByColumn
+
+		annotation SummarizationSetBy = Automatic
+
+	column Sort
+		dataType: int64
+		formatString: 0
+		lineageTag: 146c0859-1d67-4878-ad4f-f477d9d6e453
+		summarizeBy: sum
+		sourceColumn: Sort
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Hex - muted'
+		dataType: string
+		lineageTag: c61fb9db-d204-4b21-822f-31a85375c972
+		summarizeBy: none
+		sourceColumn: Hex - muted
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Hex - bright'
+		dataType: string
+		lineageTag: b9422ba6-5254-4413-b637-49f4b94d7761
+		summarizeBy: none
+		sourceColumn: Hex - bright
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'EXAMPLE - Map Legend' = m
+		mode: import
+		source =
+				let
+				    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("Vc6xDkBADIDhV7nUiKSlhxvPuZvtF5NYLBK8f2gntj/p16Y5A0EFRbSRYyOFTJGl0MznsW/rfcFSZdChYxe8LvRpHBDfIlOb9k9bAV3qejtIpRSCUn6p+1PWWz6M3uobk6NG7hOWH7g8", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Sort = _t, #"Hex - muted" = _t, #"Hex - bright" = _t, #"Number of Projects" = _t]),
+				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"Sort", Int64.Type}, {"Hex - muted", type text}, {"Hex - bright", type text}, {"Number of Projects", type text}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navigation
+

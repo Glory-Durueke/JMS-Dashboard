@@ -1,0 +1,18 @@
+relationship 2fb683a6-58b0-0b44-f663-c5c0e3199823
+	fromColumn: 'EXAMPLE - Projects'.'Baseline 2 Finish Date'
+	toColumn: DateTable.Date
+
+relationship 48975e1a-b129-c86c-18b1-12f24db1d9ad
+	crossFilteringBehavior: bothDirections
+	fromColumn: 'EXAMPLE - Projects'.'Current Gateway Stage'
+	toColumn: 'EXAMPLE - Gateways'.'Gateway Name'
+
+relationship fa99668e-d735-4eb2-d70f-c7e3404d5378
+	crossFilteringBehavior: bothDirections
+	fromColumn: 'EXAMPLE - FWP forecast'.'Project Code'
+	toColumn: 'EXAMPLE - Projects'.'Project Code'
+
+relationship d63e3b03-b0b7-7d13-d75c-490d96f8c76f
+	fromColumn: 'EXAMPLE - Projects'.'Place Code'
+	toColumn: 'EXAMPLE - Place Table'.Code
+

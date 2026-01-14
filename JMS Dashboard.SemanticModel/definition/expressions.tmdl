@@ -1,0 +1,29 @@
+expression StartDate = #date(2021, 10, 1) meta [IsParameterQuery=true, Type="Date", IsParameterQueryRequired=true]
+	lineageTag: abfabe82-cf67-45d2-8ad7-a80457653183
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Date
+
+expression EndDate = #date(2050, 12, 31) meta [IsParameterQuery=true, Type="Date", IsParameterQueryRequired=true]
+	lineageTag: 548c3bfa-c53c-4a1f-a17f-91d040dc3145
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Date
+
+expression 'EXAMPLE - msdyn_project' =
+		let
+		    Source = CommonDataService.Database("keystone.crm11.dynamics.com"),
+		    dbo_msdyn_project = Source{[Schema="dbo",Item="msdyn_project"]}[Data],
+		    #"Expanded crd9c_fwpforecast(msdyn_projectid)" = Table.ExpandTableColumn(dbo_msdyn_project, "crd9c_fwpforecast(msdyn_projectid)", {"crd9c_placecode"}, {"crd9c_placecode"}),
+		    #"Removed Other Columns" = Table.SelectColumns(#"Expanded crd9c_fwpforecast(msdyn_projectid)",{"crd9c_placecode", "crd9c_projectidcode"}),
+		    #"Filtered Rows" = Table.SelectRows(#"Removed Other Columns", each true)
+		in
+		    #"Filtered Rows"
+	lineageTag: 556a3c80-fabe-41c3-abc1-fa859bf0592b
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

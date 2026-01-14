@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "JMS Dashboard"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "77d357fb-63c8-4de1-b9d1-9a5c09defed4"
+  }
+}

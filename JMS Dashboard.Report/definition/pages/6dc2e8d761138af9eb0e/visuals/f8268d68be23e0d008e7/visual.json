@@ -1,0 +1,446 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "f8268d68be23e0d008e7",
+  "position": {
+    "x": 16,
+    "y": 496.00000000000006,
+    "z": 2000,
+    "height": 576,
+    "width": 1887.9999999999998,
+    "tabOrder": 3000
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "EXAMPLE - Projects"
+                    }
+                  },
+                  "Property": "Project Name"
+                }
+              },
+              "queryRef": "EXAMPLE - Projects.Project Name",
+              "nativeQueryRef": "Project Name"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "EXAMPLE - Projects"
+                    }
+                  },
+                  "Property": "Project Code"
+                }
+              },
+              "queryRef": "EXAMPLE - Projects.Project Code",
+              "nativeQueryRef": "Project Code"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "EXAMPLE - Projects"
+                    }
+                  },
+                  "Property": "Programme"
+                }
+              },
+              "queryRef": "EXAMPLE - Projects.Programme",
+              "nativeQueryRef": "Programme"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "EXAMPLE - Projects"
+                    }
+                  },
+                  "Property": "Project Manager"
+                }
+              },
+              "queryRef": "EXAMPLE - Projects.Project Manager",
+              "nativeQueryRef": "Project Manager"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "EXAMPLE - Projects"
+                    }
+                  },
+                  "Property": "Overall Health"
+                }
+              },
+              "queryRef": "EXAMPLE - Projects.Overall Health",
+              "nativeQueryRef": "Overall Health"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "EXAMPLE - Projects"
+                    }
+                  },
+                  "Property": "Latest Note Date"
+                }
+              },
+              "queryRef": "EXAMPLE - Projects.Latest Note Date",
+              "nativeQueryRef": "Latest Note Date"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "EXAMPLE - Projects"
+                    }
+                  },
+                  "Property": "Latest Note"
+                }
+              },
+              "queryRef": "EXAMPLE - Projects.Latest Note",
+              "nativeQueryRef": "Latest Note"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "EXAMPLE - Projects"
+                    }
+                  },
+                  "Property": "Status"
+                }
+              },
+              "queryRef": "EXAMPLE - Projects.Status",
+              "nativeQueryRef": "Status"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "EXAMPLE - Projects"
+                        }
+                      },
+                      "Property": "% Remaining Budget"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(EXAMPLE - Projects.% Remaining Budget)",
+              "nativeQueryRef": "Remaining Budget",
+              "displayName": "Remaining Budget"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "EXAMPLE - Projects"
+                    }
+                  },
+                  "Property": "Baseline 2 Finish Date"
+                }
+              },
+              "queryRef": "EXAMPLE - Projects.Baseline 2 Finish Date",
+              "nativeQueryRef": "Baseline 2 Finish Date"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "EXAMPLE - Projects"
+                    }
+                  },
+                  "Property": "Baseline 3 Finish Date"
+                }
+              },
+              "queryRef": "EXAMPLE - Projects.Baseline 3 Finish Date",
+              "nativeQueryRef": "Baseline 3 Finish Date"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "EXAMPLE - Projects"
+                  }
+                },
+                "Property": "Latest Note Date"
+              }
+            },
+            "direction": "Descending"
+          }
+        ]
+      }
+    },
+    "objects": {
+      "columnWidth": [
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "385.297171622045D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "EXAMPLE - Projects.Latest Note"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "224.52273881138237D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "EXAMPLE - Projects.Project Name"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "152.11144768322615D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Sum(EXAMPLE - Projects.% Remaining Budget)"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "176.11144849642164D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "EXAMPLE - Projects.Baseline 2 Finish Date"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "176.11144849642164D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "EXAMPLE - Projects.Baseline 3 Finish Date"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "144.39007478142796D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "EXAMPLE - Projects.Latest Note Date"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "121.11144838636163D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "EXAMPLE - Projects.Overall Health"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "138.1114487436461D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "EXAMPLE - Projects.Project Manager"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "125.89159284940185D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "EXAMPLE - Projects.Programme"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "114.3900700955509D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "EXAMPLE - Projects.Project Code"
+          }
+        }
+      ],
+      "values": [
+        {
+          "properties": {
+            "webURL": {
+              "expr": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "EXAMPLE - Projects"
+                        }
+                      },
+                      "Property": "Keystone Link"
+                    }
+                  },
+                  "Function": 3
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "dataViewWildcard": {
+                  "matchingOption": 1
+                }
+              }
+            ],
+            "metadata": "EXAMPLE - Projects.Project Name"
+          }
+        }
+      ],
+      "total": [
+        {
+          "properties": {
+            "totals": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Project Position'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "subTitle": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Click the Project Name to open the project in Keystone'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "general": [
+        {
+          "properties": {
+            "altText": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Shows project detail for each project, with links that takes you to the respective Keystone records.'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

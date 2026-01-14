@@ -1,0 +1,144 @@
+table 1_Measures
+	lineageTag: fca0b643-062c-4cfe-911a-63a9e040b594
+
+	measure Greeting = ```
+			var daytime = Hour(NOW())
+			RETURN 
+			Switch(True(),daytime > 0 && daytime <11,"Good Morning", daytime > 11 && daytime <17,"Good Afternoon", "Good Evening")
+			```
+		displayFolder: Greeting
+		lineageTag: 55708abb-07c4-4a49-8ecc-08d24676e1e5
+
+	measure user =
+			var UsernameLength = SEARCH(".",USERPRINCIPALNAME())
+			var FirstName = Left(USERPRINCIPALNAME(),UsernameLength-1)
+			var formattedfirstname=UPPER(LEFT(FirstName,1))&Mid(FirstName,2,UsernameLength-1)
+			RETURN formattedfirstname
+		displayFolder: Greeting
+		lineageTag: 3b394850-ceab-40d2-941b-4166c8eba7fa
+
+	measure 'User Greeting' = ```
+			[Greeting]&" "&[User] 
+			```
+		displayFolder: Greeting
+		lineageTag: 11d08df9-b4da-4f5f-8088-2ad85cdcefe4
+
+	measure 'Refresh Message' = FORMAT(MAX('1_Measures'[Refresh Time]),"hh:nn, dd mmmm yyyy","en-GB")
+		displayFolder: Refresh
+		lineageTag: 2c4ae4c3-8c8c-4884-9972-ad1c82365ad5
+
+	measure x_axis = AVERAGE('EXAMPLE - Projects'[BS2 Duration]) + (AVERAGE('EXAMPLE - Projects'[BS2 Duration])*0.2)
+		displayFolder: EXAMPLES
+		lineageTag: c72ccb44-4e8f-447c-ba64-09eb4b16d399
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure y_axis = AVERAGE('EXAMPLE - Projects'[Actual Duration]) + (AVERAGE('EXAMPLE - Projects'[Actual Duration]) * 0.4)
+		displayFolder: EXAMPLES
+		lineageTag: 0e0e87d9-bf4f-4c9a-bd15-87f7db8c62e1
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure gauge_target = ROUNDUP(COUNT('EXAMPLE - Projects'[_CodeAndProject])/3,0)
+		formatString: 0
+		displayFolder: EXAMPLES
+		lineageTag: 42b1cd47-c036-4d8c-af38-c786e4fe1ac6
+
+	measure kpi_target = 400
+		formatString: 0
+		displayFolder: EXAMPLES
+		lineageTag: a08acc62-4036-4d09-963b-8864c9cc187e
+
+	measure average_duration = IF(ISBLANK(AVERAGE('EXAMPLE - Projects'[Actual Duration])), 0, AVERAGE('EXAMPLE - Projects'[Actual Duration]))
+		displayFolder: EXAMPLES
+		lineageTag: 897a3a60-310f-4547-82d3-cc61eaa245a1
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure bs2_actual_average_delta = AVERAGE('EXAMPLE - Projects'[Actual Duration]) - AVERAGE('EXAMPLE - Projects'[BS2 Duration])
+		displayFolder: EXAMPLES
+		lineageTag: 44120f27-f79c-4698-a143-13d7ebf0c5c6
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure run_within_schedule = SUM('EXAMPLE - Projects'[_TimeRemainingFlag])
+		formatString: 0
+		displayFolder: EXAMPLES
+		lineageTag: 42fecb12-3e39-422d-9193-0f6a0ad273b3
+
+	measure average_risk_score = IFERROR(AVERAGE('EXAMPLE - Projects'[_SanitisedRisk]), 0)
+		formatString: 0
+		displayFolder: EXAMPLES
+		lineageTag: 12836836-1e5e-461c-afc9-30c17e2cf514
+
+		annotation PBI_FormatHint = {"isDecimal":true}
+
+	measure max_project_date = MAX('EXAMPLE - Projects'[Baseline 2 Finish Date])
+		formatString: Long Date
+		displayFolder: EXAMPLES
+		lineageTag: f46a4ce3-f57e-482e-a291-f682ee7ffff9
+
+	measure number_of_projects = COUNT('EXAMPLE - Projects'[_CodeAndProject])
+		formatString: 0
+		displayFolder: EXAMPLES
+		lineageTag: 46dcb487-0303-4908-9190-1dc6019e20f9
+
+	measure max_risk_score = MAX('EXAMPLE - Projects'[Risk Score])
+		formatString: 0
+		displayFolder: EXAMPLES
+		lineageTag: 1bfff5c7-af02-4918-ad38-2bd138d2439d
+
+	measure map_colours_muted =
+			
+			SWITCH(
+			    TRUE(),
+			    [number_of_projects] = 0, "#E5E4E2",
+			    [number_of_projects] >= 1 && [number_of_projects] < 4, "#949CA1",
+			    [number_of_projects] >= 4 && [number_of_projects] < 10, "#6F6758",
+			    "#7ACBA5"
+			)
+		displayFolder: EXAMPLES
+		lineageTag: 1883c9d9-2e68-4135-af9a-a7cde45bda6c
+
+	measure map_colours_bright =
+			SWITCH(
+			    TRUE(),
+			    [number_of_projects] = 0, "#041E42",
+			    [number_of_projects] >= 1 && [number_of_projects] < 4, "#7FB800",
+			    [number_of_projects] >= 4 && [number_of_projects] < 10, "#FFCC00",
+			    "#ED9121"
+			)
+		displayFolder: EXAMPLES
+		lineageTag: 03b9fd9e-023c-4ae6-8521-dcb9ebe5c12e
+
+	measure 'Clear Filters' = "  Clear Filters"
+		displayFolder: Utility
+		lineageTag: 23bcc3e0-e985-40e5-9256-4eb3aa19de8b
+
+	column 'Refresh Time'
+		dataType: dateTime
+		formatString: Long Date
+		displayFolder: Refresh
+		lineageTag: 2207def7-225f-415b-b6a1-218bc95789e5
+		summarizeBy: none
+		sourceColumn: Refresh Time
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 1_Measures = m
+		mode: import
+		source =
+				let
+				    Source = DateTime.LocalNow(),
+				    #"Converted to table" = #table(1, {{Source}}),
+				    Renamed = Table.RenameColumns(#"Converted to table",{{"Column1", "Refresh Time"}}),
+				    #"Changed Type" = Table.TransformColumnTypes(Renamed,{{"Refresh Time", type datetime}})
+				in
+				    #"Changed Type"
+
+	changedProperty = Name
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

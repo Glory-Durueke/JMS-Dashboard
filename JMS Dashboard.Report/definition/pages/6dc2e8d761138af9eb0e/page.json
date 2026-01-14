@@ -1,0 +1,514 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.0.0/schema.json",
+  "name": "6dc2e8d761138af9eb0e",
+  "displayName": "Example Drillthrough - Project Detail",
+  "displayOption": "FitToPage",
+  "height": 1080,
+  "width": 1920,
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "f9113eeb1bc4c8a42b66",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "EXAMPLE - Projects"
+              }
+            },
+            "Property": "Project Name"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "Drillthrough"
+      },
+      {
+        "name": "211766f79d877acf7d72",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "EXAMPLE - Projects"
+              }
+            },
+            "Property": "Overall Health"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "Drillthrough"
+      },
+      {
+        "name": "9f4d5c9e6d4b8f009cca",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "EXAMPLE - Projects"
+              }
+            },
+            "Property": "Status"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "Drillthrough"
+      },
+      {
+        "name": "54399dc0387fe640968d",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "EXAMPLE - Projects"
+              }
+            },
+            "Property": "Effort Health"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "Drillthrough"
+      },
+      {
+        "name": "96489a86e734ed3e547e",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "EXAMPLE - Projects"
+              }
+            },
+            "Property": "Financial Health"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "Drillthrough"
+      },
+      {
+        "name": "32206eff84edd0d72f29",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "EXAMPLE - Projects"
+              }
+            },
+            "Property": "Issue Health"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "Drillthrough"
+      },
+      {
+        "name": "157bb18b12adee448ddb",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "EXAMPLE - Projects"
+              }
+            },
+            "Property": "Schedule Health"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "Drillthrough"
+      },
+      {
+        "name": "f2db32e1e24e1ccbdb7e",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "EXAMPLE - Projects"
+              }
+            },
+            "Property": "Programme"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "Drillthrough"
+      },
+      {
+        "name": "b33d9c40ab51dd8eb631",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "EXAMPLE - Projects"
+              }
+            },
+            "Property": "Place Code"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "Drillthrough"
+      },
+      {
+        "name": "013e85516690608aec92",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "EXAMPLE - Place Table"
+              }
+            },
+            "Property": "Code"
+          }
+        },
+        "type": "Categorical",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "e",
+              "Entity": "EXAMPLE - Place Table",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "In": {
+                  "Expressions": [
+                    {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Source": "e"
+                          }
+                        },
+                        "Property": "Code"
+                      }
+                    }
+                  ],
+                  "Values": [
+                    [
+                      {
+                        "Literal": {
+                          "Value": "'BLD-2197'"
+                        }
+                      }
+                    ]
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "howCreated": "Drillthrough"
+      },
+      {
+        "name": "b55b3307170073834614",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "DateTable"
+              }
+            },
+            "Property": "Date"
+          }
+        },
+        "type": "Categorical",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "d",
+              "Entity": "DateTable",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "Not": {
+                  "Expression": {
+                    "In": {
+                      "Expressions": [
+                        {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Source": "d"
+                              }
+                            },
+                            "Property": "Date"
+                          }
+                        }
+                      ],
+                      "Values": [
+                        [
+                          {
+                            "Literal": {
+                              "Value": "null"
+                            }
+                          }
+                        ]
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "howCreated": "User",
+        "objects": {
+          "general": [
+            {
+              "properties": {
+                "isInvertedSelectionMode": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "true"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "pageBinding": {
+    "name": "fb720794798a02204993",
+    "type": "Drillthrough",
+    "parameters": [
+      {
+        "name": "e94f10cf68d49784dbb4",
+        "boundFilter": "f9113eeb1bc4c8a42b66",
+        "fieldExpr": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "EXAMPLE - Projects"
+              }
+            },
+            "Property": "Project Name"
+          }
+        }
+      },
+      {
+        "name": "f4088aa48cf1d0234a4b",
+        "boundFilter": "211766f79d877acf7d72",
+        "fieldExpr": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "EXAMPLE - Projects"
+              }
+            },
+            "Property": "Overall Health"
+          }
+        }
+      },
+      {
+        "name": "10935de4660dffb69003",
+        "boundFilter": "9f4d5c9e6d4b8f009cca",
+        "fieldExpr": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "EXAMPLE - Projects"
+              }
+            },
+            "Property": "Status"
+          }
+        }
+      },
+      {
+        "name": "9c451c6fb32751a1c162",
+        "boundFilter": "54399dc0387fe640968d",
+        "fieldExpr": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "EXAMPLE - Projects"
+              }
+            },
+            "Property": "Effort Health"
+          }
+        }
+      },
+      {
+        "name": "7b384e5d9b3b4fec4928",
+        "boundFilter": "96489a86e734ed3e547e",
+        "fieldExpr": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "EXAMPLE - Projects"
+              }
+            },
+            "Property": "Financial Health"
+          }
+        }
+      },
+      {
+        "name": "78dc9be2fef3803db025",
+        "boundFilter": "32206eff84edd0d72f29",
+        "fieldExpr": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "EXAMPLE - Projects"
+              }
+            },
+            "Property": "Issue Health"
+          }
+        }
+      },
+      {
+        "name": "75d933b0c074c808a156",
+        "boundFilter": "157bb18b12adee448ddb",
+        "fieldExpr": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "EXAMPLE - Projects"
+              }
+            },
+            "Property": "Schedule Health"
+          }
+        }
+      },
+      {
+        "name": "11770cd7bf52b6a4615a",
+        "boundFilter": "f2db32e1e24e1ccbdb7e",
+        "fieldExpr": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "EXAMPLE - Projects"
+              }
+            },
+            "Property": "Programme"
+          }
+        }
+      },
+      {
+        "name": "e86adb9a000a502ee42d",
+        "boundFilter": "b33d9c40ab51dd8eb631",
+        "fieldExpr": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "EXAMPLE - Projects"
+              }
+            },
+            "Property": "Place Code"
+          }
+        }
+      },
+      {
+        "name": "6c3baae12946330b804d",
+        "boundFilter": "013e85516690608aec92",
+        "fieldExpr": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "EXAMPLE - Place Table"
+              }
+            },
+            "Property": "Code"
+          }
+        }
+      }
+    ]
+  },
+  "objects": {
+    "outspace": [
+      {
+        "properties": {
+          "image": {
+            "image": {
+              "name": {
+                "expr": {
+                  "Literal": {
+                    "Value": "''"
+                  }
+                }
+              },
+              "url": {
+                "expr": {
+                  "Literal": {
+                    "Value": "''"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    ],
+    "background": [
+      {
+        "properties": {
+          "image": {
+            "image": {
+              "name": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'Top Banner Drillthrough 3.png'"
+                  }
+                }
+              },
+              "url": {
+                "expr": {
+                  "ResourcePackageItem": {
+                    "PackageName": "RegisteredResources",
+                    "PackageType": 1,
+                    "ItemName": "Top_Banner_Drillthrough_339459270649346023.png"
+                  }
+                }
+              },
+              "scaling": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'Fit'"
+                  }
+                }
+              }
+            }
+          },
+          "transparency": {
+            "expr": {
+              "Literal": {
+                "Value": "0D"
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "visibility": "HiddenInViewMode",
+  "visualInteractions": [
+    {
+      "source": "b99b6aad9862db2af464",
+      "target": "00b210750b831e7994c0",
+      "type": "DataFilter"
+    },
+    {
+      "source": "b99b6aad9862db2af464",
+      "target": "0e02a5ebd0f04263b62c",
+      "type": "HighlightFilter"
+    },
+    {
+      "source": "b99b6aad9862db2af464",
+      "target": "f8268d68be23e0d008e7",
+      "type": "DataFilter"
+    },
+    {
+      "source": "0e02a5ebd0f04263b62c",
+      "target": "00b210750b831e7994c0",
+      "type": "DataFilter"
+    },
+    {
+      "source": "f8268d68be23e0d008e7",
+      "target": "00b210750b831e7994c0",
+      "type": "DataFilter"
+    }
+  ]
+}

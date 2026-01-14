@@ -1,0 +1,25 @@
+model Model
+	culture: en-GB
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-GB
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation PBI_QueryOrder = ["0_Meta","1_Measures","StartDate","EndDate","DateTable","EXAMPLE - Projects","EXAMPLE - Gateways","EXAMPLE - FWP forecast","EXAMPLE - msdyn_project","EXAMPLE - Map Legend","EXAMPLE - Place Table"]
+
+annotation __PBI_TimeIntelligenceEnabled = 0
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table 0_Meta
+ref table 1_Measures
+ref table DateTable
+ref table 'EXAMPLE - Projects'
+ref table 'EXAMPLE - Gateways'
+ref table 'EXAMPLE - FWP forecast'
+ref table 'EXAMPLE - Map Legend'
+ref table 'EXAMPLE - Place Table'
+
+ref cultureInfo en-GB
+

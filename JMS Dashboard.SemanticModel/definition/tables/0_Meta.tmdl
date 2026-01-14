@@ -1,0 +1,264 @@
+table 0_Meta
+	lineageTag: 2721ca7b-271a-4408-ac35-dc1f071378eb
+
+	column 'Owning Business Unit'
+		dataType: string
+		lineageTag: 00d2a0d4-f789-4c80-b2ad-14fff44f9b22
+		summarizeBy: none
+		sourceColumn: owningbusinessunitname
+
+		annotation SummarizationSetBy = Automatic
+
+	column statecodename
+		dataType: string
+		lineageTag: f94ced0b-ffac-4666-b2a1-d3ebed510d97
+		summarizeBy: none
+		sourceColumn: statecodename
+
+		annotation SummarizationSetBy = Automatic
+
+	column statuscodename
+		dataType: string
+		lineageTag: c9b637c9-ebff-4681-b7a3-1daaddbaf195
+		summarizeBy: none
+		sourceColumn: statuscodename
+
+		annotation SummarizationSetBy = Automatic
+
+	column Title
+		dataType: string
+		lineageTag: 781dc4d6-c14e-4b76-acf4-bd22201c88c1
+		summarizeBy: none
+		sourceColumn: kbsint_title
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'DIPA required'
+		dataType: string
+		lineageTag: 3e455b70-bb7c-433c-b42c-bd722cc6e24a
+		summarizeBy: none
+		sourceColumn: kbsint_diparequiredname
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Initial release date'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: cbc81850-557f-4225-aeee-27aa61d382b1
+		summarizeBy: none
+		sourceColumn: kbsint_initialreleasedate
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Latest Release Date'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: f3838deb-c4de-4b19-8bb8-774c015529be
+		summarizeBy: none
+		sourceColumn: kbsint_latestreleasedate
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Methodology and considerations'
+		dataType: string
+		lineageTag: 03bdb0f7-109c-49a3-b7fb-ec77166fe171
+		summarizeBy: none
+		sourceColumn: kbsint_methodologyandconsiderations
+
+		annotation SummarizationSetBy = Automatic
+
+	column ID
+		dataType: string
+		lineageTag: c3430bdc-8895-4aa6-a5f5-140ef8e4bc69
+		summarizeBy: none
+		sourceColumn: kbsint_productid
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Product Type'
+		dataType: string
+		lineageTag: eeaf29d3-2c24-4692-95df-8dcfdb5c7b25
+		summarizeBy: none
+		sourceColumn: kbsint_producttypename
+
+		annotation SummarizationSetBy = Automatic
+
+	column Purpose
+		dataType: string
+		lineageTag: f8667a20-0f04-42d5-93e0-4b2e026a37f9
+		summarizeBy: none
+		sourceColumn: kbsint_purposename
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Release Status'
+		dataType: string
+		lineageTag: a98c8733-9739-410d-89f2-2b8eedd17bdb
+		summarizeBy: none
+		sourceColumn: kbsint_releasestatusname
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Review Date'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 3c23db9d-b64a-4d50-9286-c17678a44b48
+		summarizeBy: none
+		sourceColumn: kbsint_reviewdate
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Sensitivity
+		dataType: string
+		lineageTag: da2ca91c-ce98-4477-81d8-a8a91cc9b5d0
+		summarizeBy: none
+		sourceColumn: kbsint_sensitivityname
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Version No.'
+		dataType: string
+		lineageTag: d604c17c-d268-41d4-8a81-3345535292d5
+		summarizeBy: none
+		sourceColumn: kbsint_versionno
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'IM&T Accountable'
+		dataType: string
+		lineageTag: e50a7b75-ecfc-4d80-a77a-a2fd093f78b0
+		summarizeBy: none
+		sourceColumn: kbsint_accountablename
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Business Owner'
+		dataType: string
+		lineageTag: c4317a98-3078-429e-b96e-14ab2440ec82
+		summarizeBy: none
+		sourceColumn: kbsint_businessownername
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Delegated Authority'
+		dataType: string
+		lineageTag: 759223ff-c4f7-4f30-a854-44aae2e244aa
+		summarizeBy: none
+		sourceColumn: kbsint_delegatedauthorityname
+
+		annotation SummarizationSetBy = Automatic
+
+	column Directorate
+		dataType: string
+		lineageTag: 1367fb38-5ce5-44a5-950f-193807bd8221
+		summarizeBy: none
+		sourceColumn: kbsint_directoratename
+
+		annotation SummarizationSetBy = Automatic
+
+	column Located
+		dataType: string
+		lineageTag: dfc0b806-81e5-4b1c-a60f-698c92e539b5
+		summarizeBy: none
+		sourceColumn: kbsint_locatedname
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'IM&T Responsible'
+		dataType: string
+		lineageTag: 1595c793-bfb8-473a-8a29-514d86cabbc1
+		summarizeBy: none
+		sourceColumn: kbsint_responsiblename
+
+		annotation SummarizationSetBy = Automatic
+
+	column Product
+		dataType: string
+		lineageTag: 97812cec-9d6a-4694-b297-a5ffd383289b
+		summarizeBy: none
+		sourceColumn: kbsint_productname
+
+		annotation SummarizationSetBy = Automatic
+
+	column Description
+		dataType: string
+		lineageTag: 6d1c5013-a850-4cd4-b9a0-decc64d647e6
+		summarizeBy: none
+		sourceColumn: crd9c_descriptionnew
+
+		annotation SummarizationSetBy = Automatic
+
+	column crd9c_icon_url
+		dataType: string
+		lineageTag: 9ade8bf3-9d92-4373-9372-cb12d036fbdc
+		summarizeBy: none
+		sourceColumn: crd9c_icon_url
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Value Stream'
+		dataType: string
+		lineageTag: ad9c5ff7-c896-4e78-8af6-70de10d23f50
+		summarizeBy: none
+		sourceColumn: crd9c_valuestreamname
+
+		annotation SummarizationSetBy = Automatic
+
+	column Owner
+		dataType: string
+		lineageTag: 750d330e-1d76-4a33-a257-529fdc607f6a
+		summarizeBy: none
+		sourceColumn: owneridname
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Title 2'
+		dataType: string
+		lineageTag: 1fce0847-c879-47c4-9759-9699c8ea9040
+		summarizeBy: none
+		sourceColumn: dataset_title
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Data set type'
+		dataType: string
+		lineageTag: 6ebabc4a-51c0-4056-84c6-c92447c2480d
+		summarizeBy: none
+		sourceColumn: dataset_typename
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Description 2'
+		dataType: string
+		lineageTag: d619f287-366f-4584-ae54-147f39afbc37
+		summarizeBy: none
+		sourceColumn: dataset_description
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 0_Meta = m
+		mode: import
+		source =
+				let
+				    Source = CommonDataService.Database("keystone.crm11.dynamics.com"),
+				    dbo_kbsint_informationproducts = Source{[Schema="dbo",Item="kbsint_informationproducts"]}[Data],
+				    #"Expanded kbsint_informationproducts_kbsint_datas" = Table.ExpandTableColumn(dbo_kbsint_informationproducts, "kbsint_informationproducts_kbsint_datas", {"kbsint_datasets"}, {"kbsint_datasets"}),
+				    #"Expanded kbsint_datasets" = Table.ExpandRecordColumn(#"Expanded kbsint_informationproducts_kbsint_datas", "kbsint_datasets", {"kbsint_title", "kbsint_datasettypename", "kbsint_description"}, {"kbsint_title.1", "kbsint_datasettypename", "kbsint_description.1"}),
+				    #"Removed Other Columns" = Table.SelectColumns(#"Expanded kbsint_datasets",{"owneridname", "owningbusinessunitname", "statecodename", "statuscodename", "kbsint_title", "kbsint_diparequiredname", "kbsint_initialreleasedate", "kbsint_latestreleasedate", "kbsint_methodologyandconsiderations", "kbsint_productid", "kbsint_producttypename", "kbsint_purposename", "kbsint_releasestatusname", "kbsint_reviewdate", "kbsint_sensitivityname", "kbsint_versionno", "kbsint_accountablename", "kbsint_businessownername", "kbsint_delegatedauthorityname", "kbsint_directoratename", "kbsint_locatedname", "kbsint_responsiblename", "kbsint_productname", "crd9c_descriptionnew", "crd9c_icon_url", "crd9c_valuestreamname", "kbsint_title.1", "kbsint_datasettypename", "kbsint_description.1"}),
+				    #"Reordered Columns" = Table.ReorderColumns(#"Removed Other Columns",{"owneridname", "owningbusinessunitname", "statecodename", "statuscodename", "kbsint_title", "crd9c_descriptionnew", "kbsint_diparequiredname", "kbsint_initialreleasedate", "kbsint_latestreleasedate", "kbsint_methodologyandconsiderations", "kbsint_productid", "kbsint_producttypename", "kbsint_purposename", "kbsint_releasestatusname", "kbsint_reviewdate", "kbsint_sensitivityname", "kbsint_versionno", "kbsint_accountablename", "kbsint_businessownername", "kbsint_delegatedauthorityname", "kbsint_directoratename", "kbsint_locatedname", "kbsint_responsiblename", "kbsint_productname", "crd9c_icon_url", "crd9c_valuestreamname", "kbsint_title.1", "kbsint_datasettypename", "kbsint_description.1"}),
+				    #"Renamed Columns" = Table.RenameColumns(#"Reordered Columns",{{"kbsint_description.1", "dataset_description"}, {"kbsint_title.1", "dataset_title"}, {"kbsint_datasettypename", "dataset_typename"}}),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Renamed Columns",{{"kbsint_initialreleasedate", type date}, {"kbsint_latestreleasedate", type date}, {"kbsint_reviewdate", type date}}),
+				    #"Filtered Rows" = Table.SelectRows(#"Changed Type", each ([statuscodename] = "Active"))
+				in
+				    #"Filtered Rows"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

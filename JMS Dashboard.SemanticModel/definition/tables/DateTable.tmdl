@@ -1,0 +1,184 @@
+table DateTable
+	lineageTag: 6c60b3fd-b156-4c4c-b750-be665d10f7b9
+
+	column Date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 64f07b56-c942-49fc-848b-04d5e8657669
+		summarizeBy: none
+		sourceColumn: Date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Month
+		dataType: string
+		lineageTag: 6554d043-edb1-4ba5-a991-998de496c2bf
+		summarizeBy: none
+		sourceColumn: Month
+		sortByColumn: MonthNumber
+
+		changedProperty = SortByColumn
+
+		annotation SummarizationSetBy = Automatic
+
+	column MonthNumber
+		dataType: int64
+		formatString: 0
+		lineageTag: 5e8b2321-083c-4b23-9c65-ccfbafa4126a
+		summarizeBy: sum
+		sourceColumn: MonthNumber
+
+		annotation SummarizationSetBy = Automatic
+
+	column FiscalMonthNumber
+		dataType: int64
+		formatString: 0
+		lineageTag: ad6ed3a3-ffd3-4a58-b8aa-39ac8890ad60
+		summarizeBy: sum
+		sourceColumn: FiscalMonthNumber
+
+		annotation SummarizationSetBy = Automatic
+
+	column MonthStart
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: c9ab1f7a-e9ad-44d2-aee6-bda0b42eec30
+		summarizeBy: none
+		sourceColumn: MonthStart
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column MonthEnd
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 8afac614-e2d5-47fe-a4c4-61109fed7b2d
+		summarizeBy: none
+		sourceColumn: MonthEnd
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column DaysInMonth
+		dataType: int64
+		formatString: 0
+		lineageTag: 5faf34bf-6098-46b4-b0e3-a0e7ee32ec15
+		summarizeBy: sum
+		sourceColumn: DaysInMonth
+
+		annotation SummarizationSetBy = Automatic
+
+	column DayOfWeek
+		dataType: string
+		lineageTag: d6b6d929-31de-4294-bf8a-2f935260f2bf
+		summarizeBy: none
+		sourceColumn: DayOfWeek
+
+		annotation SummarizationSetBy = Automatic
+
+	column DayOfWeekNumber
+		dataType: int64
+		formatString: 0
+		lineageTag: c8503b4e-0c26-4386-a401-78fbe1cf3c07
+		summarizeBy: sum
+		sourceColumn: DayOfWeekNumber
+
+		annotation SummarizationSetBy = Automatic
+
+	column CalendarQuarter
+		dataType: int64
+		formatString: 0
+		lineageTag: 4a094c29-b80a-45b1-805b-5aa82094af75
+		summarizeBy: sum
+		sourceColumn: CalendarQuarter
+
+		annotation SummarizationSetBy = Automatic
+
+	column FiscalQuarter
+		dataType: int64
+		formatString: 0
+		lineageTag: b8e5a59f-e782-47a0-ade8-347380255699
+		summarizeBy: sum
+		sourceColumn: FiscalQuarter
+
+		annotation SummarizationSetBy = Automatic
+
+	column Year
+		dataType: int64
+		formatString: 0
+		lineageTag: c008beaf-49b8-492f-bd50-8743ffacf146
+		summarizeBy: sum
+		sourceColumn: Year
+
+		annotation SummarizationSetBy = Automatic
+
+	column FiscalYear
+		dataType: string
+		lineageTag: 8a50b9cb-8933-42e4-ba04-499f5d8b193e
+		summarizeBy: none
+		sourceColumn: FiscalYear
+
+		annotation SummarizationSetBy = Automatic
+
+	column DayOfYear
+		dataType: int64
+		formatString: 0
+		lineageTag: c58cfab4-ff3a-4f2b-b489-8d2b1d2f8a59
+		summarizeBy: sum
+		sourceColumn: DayOfYear
+
+		annotation SummarizationSetBy = Automatic
+
+	hierarchy 'Date Hierarchy'
+		lineageTag: 3dad71ed-d72b-44c6-a580-3c91e91199a2
+
+		level Year
+			lineageTag: f0f731e1-5a82-4eea-85dc-f06907817dcf
+			column: Year
+
+		level Month
+			lineageTag: 13efea9a-8891-4cdc-a34f-ac7088ec13e8
+			column: Month
+
+		level Date
+			lineageTag: ce6acefa-b30d-44f4-a01e-60220cc4a50a
+			column: Date
+
+	partition DateTable = m
+		mode: import
+		source = ```
+				let
+				    Source = List.Dates(
+				     StartDate, 
+				     Duration.Days( EndDate - StartDate ) + 1, // Number of steps
+				     #duration( 1, 0, 0, 0 )
+				  ),
+				    #"Converted to Table" = Table.FromList(Source, Splitter.SplitByNothing(), type table[Date = Date.Type]),
+				    #"Added Month" = Table.AddColumn(#"Converted to Table", "Month", each Date.MonthName([Date])),
+				    #"Added MonthNumber" = Table.AddColumn(#"Added Month", "MonthNumber", each Date.Month([Date])),
+				    #"Added FiscalMonthNumber" = Table.AddColumn(#"Added MonthNumber", "FiscalMonthNumber", each if Date.Month([Date]) <= 3 then Date.Month([Date]) + 9
+				else Date.Month([Date]) - 3),
+				    #"Added MonthStart" = Table.AddColumn(#"Added FiscalMonthNumber", "MonthStart", each Date.StartOfMonth([Date])),
+				    #"Added MonthEnd" = Table.AddColumn(#"Added MonthStart", "MonthEnd", each Date.EndOfMonth([Date])),
+				    #"Added DaysInMonth" = Table.AddColumn(#"Added MonthEnd", "DaysInMonth", each Date.DaysInMonth([Date])),
+				    #"Added DayOfWeek" = Table.AddColumn(#"Added DaysInMonth", "DayOfWeek", each Date.DayOfWeekName([Date])),
+				    #"Added DayOfWeekNumber" = Table.AddColumn(#"Added DayOfWeek", "DayOfWeekNumber", each Date.DayOfWeek([Date])),
+				    #"Added CalendarQuarter" = Table.AddColumn(#"Added DayOfWeekNumber", "CalendarQuarter", each Date.QuarterOfYear([Date])),
+				    #"Added Custom" = Table.AddColumn(#"Added CalendarQuarter", "FiscalQuarter", each Number.RoundUp([FiscalMonthNumber]/3)),
+				    #"Added Year" = Table.AddColumn(#"Added Custom", "Year", each Date.Year([Date])),
+				    #"Added FiscalYear" = Table.AddColumn(#"Added Year", "FiscalYear", each if Date.Month([Date]) <= 3 then Text.Combine({Number.ToText(Date.Year([Date]) - 1),"/",Text.End(Number.ToText(Date.Year([Date])),2)})
+				else Text.Combine({Number.ToText(Date.Year([Date])),"/",Text.End(Number.ToText(Date.Year([Date]) + 1),2)})),
+				    #"Added DayOfYear" = Table.AddColumn(#"Added FiscalYear", "DayOfYear", each Date.DayOfYear([Date])),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Added DayOfYear",{{"DayOfWeek", type text}, {"MonthNumber", Int64.Type}, {"Month", type text}, {"DayOfWeekNumber", Int64.Type}, {"DayOfYear", Int64.Type}, {"DaysInMonth", Int64.Type}, {"MonthStart", type date}, {"MonthEnd", type date}, {"Year", Int64.Type}, {"CalendarQuarter", Int64.Type}, {"FiscalMonthNumber", Int64.Type}, {"FiscalYear", type text}, {"FiscalQuarter", Int64.Type}})
+				in
+				    #"Changed Type"
+				```
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,315 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "04c52021b27e2e1245ba",
+  "position": {
+    "x": 848,
+    "y": 32,
+    "z": 4000,
+    "height": 288,
+    "width": 416,
+    "tabOrder": 3000
+  },
+  "visual": {
+    "visualType": "pivotTable",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "0_Meta"
+                        }
+                      },
+                      "Property": "Purpose"
+                    }
+                  },
+                  "Function": 3
+                }
+              },
+              "queryRef": "Min(0_Meta.Purpose)",
+              "nativeQueryRef": "Purpose",
+              "displayName": "Purpose"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "0_Meta"
+                        }
+                      },
+                      "Property": "Initial release date"
+                    }
+                  },
+                  "Function": 3
+                }
+              },
+              "queryRef": "Min(0_Meta.Initial release date)",
+              "nativeQueryRef": "Initial Release Date",
+              "displayName": "Initial Release Date"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "0_Meta"
+                        }
+                      },
+                      "Property": "Latest Release Date"
+                    }
+                  },
+                  "Function": 3
+                }
+              },
+              "queryRef": "Min(0_Meta.Latest Release Date)",
+              "nativeQueryRef": "Release Date",
+              "displayName": "Release Date"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "0_Meta"
+                        }
+                      },
+                      "Property": "Review Date"
+                    }
+                  },
+                  "Function": 3
+                }
+              },
+              "queryRef": "Min(0_Meta.Review Date)",
+              "nativeQueryRef": "Review Date",
+              "displayName": "Review Date"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "0_Meta"
+                        }
+                      },
+                      "Property": "Release Status"
+                    }
+                  },
+                  "Function": 3
+                }
+              },
+              "queryRef": "Min(0_Meta.Release Status)",
+              "nativeQueryRef": "Release Status",
+              "displayName": "Release Status"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "0_Meta"
+                        }
+                      },
+                      "Property": "Version No."
+                    }
+                  },
+                  "Function": 3
+                }
+              },
+              "queryRef": "Min(0_Meta.Version No.)",
+              "nativeQueryRef": "Version No.",
+              "displayName": "Version No."
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "layout": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Compact'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "values": [
+        {
+          "properties": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "15D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "rowHeaders": [
+        {
+          "properties": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "15D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "columnWidth": [
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "184.85014192239925D"
+                }
+              }
+            }
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "180D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Min(0_Meta.Initial release date)"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "179D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Min(0_Meta.Purpose)"
+          }
+        }
+      ],
+      "columnHeaders": [
+        {
+          "properties": {
+            "autoSizeColumnWidth": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Release Information'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "14D"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "heading": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Heading3'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "dropShadow": [
+        {
+          "properties": {
+            "shadowBlur": {
+              "expr": {
+                "Literal": {
+                  "Value": "6D"
+                }
+              }
+            },
+            "shadowDistance": {
+              "expr": {
+                "Literal": {
+                  "Value": "2D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "general": [
+        {
+          "properties": {
+            "altText": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Contains Release information from InTrack.'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

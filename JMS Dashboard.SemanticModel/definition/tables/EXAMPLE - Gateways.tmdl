@@ -1,0 +1,30 @@
+table 'EXAMPLE - Gateways'
+	lineageTag: 5f4b81e4-6fbd-4478-bb5b-17786f5271fc
+
+	column 'Gateway Name'
+		dataType: string
+		lineageTag: a65456b0-de20-42c1-b071-3600164a54b0
+		summarizeBy: none
+		sourceColumn: kbsint_projectgateway
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'EXAMPLE - Gateways' = m
+		mode: import
+		source =
+				let
+				    Source = CommonDataService.Database("keystone.crm11.dynamics.com"),
+				    dbo_kbsint_gateway = Source{[Schema="dbo",Item="kbsint_gateway"]}[Data],
+				    #"Removed Other Columns" = Table.SelectColumns(dbo_kbsint_gateway,{"kbsint_projectgateway"}),
+				    #"Replaced Value" = Table.ReplaceValue(#"Removed Other Columns","02. Programming - Cancelled - Cancelled","02. Programming - Cancelled",Replacer.ReplaceText,{"kbsint_projectgateway"}),
+				    #"Replaced Value1" = Table.ReplaceValue(#"Replaced Value","03. Requirements Definition - Cancelled - Cancelled","03. Requirements Definition - Cancelled",Replacer.ReplaceText,{"kbsint_projectgateway"}),
+				    #"Replaced Value2" = Table.ReplaceValue(#"Replaced Value1","01. PRF and Definition","01. Definition and PRF",Replacer.ReplaceText,{"kbsint_projectgateway"}),
+				    #"Removed Duplicates" = Table.Distinct(#"Replaced Value2"),
+				    #"Sorted Rows" = Table.Sort(#"Removed Duplicates",{{"kbsint_projectgateway", Order.Ascending}})
+				in
+				    #"Sorted Rows"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

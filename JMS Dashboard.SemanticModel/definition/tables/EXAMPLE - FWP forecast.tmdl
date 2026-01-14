@@ -1,0 +1,711 @@
+table 'EXAMPLE - FWP forecast'
+	lineageTag: 86c50688-771e-4652-b09e-152ecb707c2c
+
+	column 'IP Forecast'
+		dataType: string
+		lineageTag: 6245f5f0-b12e-4eb9-9955-abd949e52935
+		summarizeBy: none
+		sourceColumn: crd9c_fwpforecastid
+
+		annotation SummarizationSetBy = Automatic
+
+	column statecodename
+		dataType: string
+		lineageTag: 7bf0a343-af00-4982-a299-300516138cdf
+		summarizeBy: none
+		sourceColumn: statecodename
+
+		annotation SummarizationSetBy = Automatic
+
+	column statuscodename
+		dataType: string
+		lineageTag: a45a2293-108b-48c1-9900-481ecf2134d2
+		summarizeBy: none
+		sourceColumn: statuscodename
+
+		annotation SummarizationSetBy = Automatic
+
+	column Title
+		dataType: string
+		lineageTag: 538b8ea8-d4f5-4bb0-9740-2b2df9df554a
+		summarizeBy: none
+		sourceColumn: crd9c_pid
+
+		annotation SummarizationSetBy = Automatic
+
+	column '2024 Current Status'
+		dataType: string
+		lineageTag: 454d2da5-7a7e-40c5-b2d1-9d19de184ec3
+		summarizeBy: none
+		sourceColumn: crd9c_2024currentstatus
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Committed/Uncommitted (IP)'
+		dataType: string
+		lineageTag: 2f146c3b-95f5-4720-869d-0f5f21564a7e
+		summarizeBy: none
+		sourceColumn: crd9c_committeduncommitted
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Delivery Finish (PMO)'
+		dataType: dateTime
+		formatString: Short Date
+		lineageTag: aaa3b344-4fe8-4318-ab2f-8629a26b9f92
+		summarizeBy: none
+		sourceColumn: crd9c_deliveryfinish
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Delivery Start (PMO)'
+		dataType: dateTime
+		formatString: Short Date
+		lineageTag: c9abee2b-bcfa-4e9b-9243-d1298f85809d
+		summarizeBy: none
+		sourceColumn: crd9c_deliverystart
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'FAC override value'
+		dataType: decimal
+		formatString: "£"#,0.###############;-"£"#,0.###############;"£"#,0.###############
+		lineageTag: 7d0fe2d2-9112-45b2-8ba5-a356f8953746
+		summarizeBy: sum
+		sourceColumn: crd9c_fac
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-GB"}
+
+	column Currency
+		dataType: string
+		lineageTag: d6bd1fd7-bb5d-426e-9851-c1dfd0570d81
+		summarizeBy: none
+		sourceColumn: transactioncurrencyidname
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Exchange Rate'
+		dataType: double
+		lineageTag: 017ba4b2-35fb-4edf-aaf9-7adb0f0be4c2
+		summarizeBy: sum
+		sourceColumn: exchangerate
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'FAC (Base)'
+		dataType: decimal
+		formatString: "£"#,0.###############;-"£"#,0.###############;"£"#,0.###############
+		lineageTag: 59cdbc99-0d90-4b17-bab1-3f648c7da2ac
+		summarizeBy: sum
+		sourceColumn: crd9c_fac_base
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-GB"}
+
+	column MAJ/MIN
+		dataType: string
+		lineageTag: 95db271d-c097-4e6d-90e3-8fde8cacefde
+		summarizeBy: none
+		sourceColumn: crd9c_majmin
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Place Code'
+		dataType: string
+		lineageTag: a6d6adec-1351-4b5e-939b-f59a846cb403
+		summarizeBy: none
+		sourceColumn: crd9c_placecode
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Project Name'
+		dataType: string
+		lineageTag: 3da09a2b-3a42-4ae0-a46d-0497385601d0
+		summarizeBy: none
+		sourceColumn: crd9c_projectname
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Strategic Priority'
+		dataType: string
+		lineageTag: 97402cd5-9e56-4271-8dd9-c8554548ba6e
+		summarizeBy: none
+		sourceColumn: crd9c_projectpriority
+
+		annotation SummarizationSetBy = Automatic
+
+	column Sustain/Change
+		dataType: string
+		lineageTag: 7d5b1fc2-c350-4986-9d3d-8b34ff094967
+		summarizeBy: none
+		sourceColumn: crd9c_sustainchange
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'VAT Code'
+		dataType: string
+		lineageTag: 4de4d77f-5d28-4de5-b391-53d5249268f4
+		summarizeBy: none
+		sourceColumn: crd9c_vatcode
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'VAT Notes'
+		dataType: string
+		lineageTag: 0537a1db-0d6a-4342-b7d9-3abb97cec1cc
+		summarizeBy: none
+		sourceColumn: crd9c_vatnotes
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'RAC (CP&F)'
+		dataType: string
+		lineageTag: 7eb50318-cd58-4697-be17-2873469e2271
+		summarizeBy: none
+		sourceColumn: crd9c_raccpf
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'UIN (Exostar)'
+		dataType: string
+		lineageTag: 7d876f06-cdfc-4a77-b669-bcf044aefa24
+		summarizeBy: none
+		sourceColumn: crd9c_uinexostar
+
+		annotation SummarizationSetBy = Automatic
+
+	column crd9c_businesscaselookup
+		dataType: string
+		lineageTag: 10d488f1-7dea-4c6e-95e4-5e9eab8534de
+		summarizeBy: none
+		sourceColumn: crd9c_businesscaselookup
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Business Case LookUp'
+		dataType: string
+		lineageTag: 3255263e-9a16-4470-afb3-4a0f0473c745
+		summarizeBy: none
+		sourceColumn: crd9c_businesscaselookupname
+
+		annotation SummarizationSetBy = Automatic
+
+	column crd9c_forecasttype
+		dataType: int64
+		formatString: 0
+		lineageTag: e45913c8-b3c7-4f0e-98da-2f0f909f32aa
+		summarizeBy: sum
+		sourceColumn: crd9c_forecasttype
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Forecast Type'
+		dataType: string
+		lineageTag: 6f0c31b3-45a1-4e93-9520-525eecb88181
+		summarizeBy: none
+		sourceColumn: crd9c_forecasttypename
+
+		annotation SummarizationSetBy = Automatic
+
+	column crd9c_fwpproject
+		dataType: string
+		lineageTag: df0e2781-cd19-4e0d-968a-b51e83ec4d8a
+		summarizeBy: none
+		sourceColumn: crd9c_fwpproject
+
+		annotation SummarizationSetBy = Automatic
+
+	column InputKey
+		dataType: string
+		lineageTag: c1dd715f-0eb5-4765-b619-6b00a094935d
+		summarizeBy: none
+		sourceColumn: crd9c_inputkey
+
+		annotation SummarizationSetBy = Automatic
+
+	column crd9c_program
+		dataType: string
+		lineageTag: 030aef07-2b47-4d33-80dd-2d892b14f48e
+		summarizeBy: none
+		sourceColumn: crd9c_program
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Project Code'
+		dataType: string
+		lineageTag: 1b56797e-41e4-44f8-88fe-339d635594f4
+		summarizeBy: none
+		sourceColumn: crd9c_projectcode
+
+		annotation SummarizationSetBy = Automatic
+
+	column crd9c_subbreakdownlookup
+		dataType: string
+		lineageTag: c61157e6-f4ea-4d6f-a590-e284c5d413bb
+		summarizeBy: none
+		sourceColumn: crd9c_subbreakdownlookup
+
+		annotation SummarizationSetBy = Automatic
+
+	column crd9c_taflookup
+		dataType: string
+		lineageTag: d24b6f8f-d331-41ca-9120-52dee1f89acc
+		summarizeBy: none
+		sourceColumn: crd9c_taflookup
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Months Difference'
+		dataType: int64
+		formatString: 0
+		lineageTag: f4d996c9-c2e3-4b48-aff4-6495b8e698dd
+		summarizeBy: sum
+		sourceColumn: crd9c_monthsdifference
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Title Concat'
+		dataType: string
+		lineageTag: 52b78dcc-de51-4b3c-86b3-a1feec8db3c7
+		summarizeBy: none
+		sourceColumn: crd9c_titleconcat
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'FWP Project'
+		dataType: string
+		lineageTag: e6b88e5c-7d52-43b9-9f4e-02030cb9e5ba
+		summarizeBy: none
+		sourceColumn: crd9c_fwpprojectname
+
+		annotation SummarizationSetBy = Automatic
+
+	column Program
+		dataType: string
+		lineageTag: f4cc7ba7-0c08-41d9-8675-e9571f1f431e
+		summarizeBy: none
+		sourceColumn: crd9c_programname
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Sub Breakdown LookUp'
+		dataType: string
+		lineageTag: c83479f5-101f-4efb-981a-4236d76a99b5
+		summarizeBy: none
+		sourceColumn: crd9c_subbreakdownlookupname
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'TAF LookUp'
+		dataType: string
+		lineageTag: b9e8c6b1-a84c-40e2-a425-c5fc73a778b7
+		summarizeBy: none
+		sourceColumn: crd9c_taflookupname
+
+		annotation SummarizationSetBy = Automatic
+
+	column kbsint_estimatenolookup
+		dataType: string
+		lineageTag: 8d1ff0d1-8fd0-447e-a02d-bd15a93d0ce9
+		summarizeBy: none
+		sourceColumn: kbsint_estimatenolookup
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Consolidated FAC'
+		dataType: decimal
+		formatString: "£"#,0.###############;-"£"#,0.###############;"£"#,0.###############
+		lineageTag: b715eec8-a7e2-4215-a881-7598b4e207eb
+		summarizeBy: sum
+		sourceColumn: kbsint_consolidatedfac
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-GB"}
+
+	column 'Consolidated FAC (Base)'
+		dataType: decimal
+		formatString: "£"#,0.###############;-"£"#,0.###############;"£"#,0.###############
+		lineageTag: 6e1fc0a3-ccc8-4a7f-bd69-d4f9f0cad947
+		summarizeBy: sum
+		sourceColumn: kbsint_consolidatedfac_base
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-GB"}
+
+	column 'Current Estimate'
+		dataType: decimal
+		formatString: "£"#,0.###############;-"£"#,0.###############;"£"#,0.###############
+		lineageTag: b58ad739-6821-4af1-8f3a-cc0060e5203f
+		summarizeBy: sum
+		sourceColumn: kbsint_currentestimate
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-GB"}
+
+	column 'Current Estimate (Base)'
+		dataType: decimal
+		formatString: "£"#,0.###############;-"£"#,0.###############;"£"#,0.###############
+		lineageTag: 7847ed10-11bd-4f9d-b776-6f1784da372d
+		summarizeBy: sum
+		sourceColumn: kbsint_currentestimate_base
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-GB"}
+
+	column 'Project Milestone Current Total'
+		dataType: decimal
+		formatString: "£"#,0.###############;-"£"#,0.###############;"£"#,0.###############
+		lineageTag: ffed9c99-6ffe-4530-b3e0-48433b1e1c01
+		summarizeBy: sum
+		sourceColumn: kbsint_projectmilestonecurrenttotal
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-GB"}
+
+	column 'Project Milestone Current Total (Base)'
+		dataType: decimal
+		formatString: "£"#,0.###############;-"£"#,0.###############;"£"#,0.###############
+		lineageTag: 2583315b-cd8f-4496-8107-75b18b5d4f37
+		summarizeBy: sum
+		sourceColumn: kbsint_projectmilestonecurrenttotal_base
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-GB"}
+
+	column 'Estimate No. (Lookup)'
+		dataType: string
+		lineageTag: cbf4544e-4e20-491d-8db2-dc1f961ec169
+		summarizeBy: none
+		sourceColumn: kbsint_estimatenolookupname
+
+		annotation SummarizationSetBy = Automatic
+
+	column crd9c_facoverride
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: dcad09b0-baf7-4832-93b5-d3ba01356351
+		summarizeBy: none
+		sourceColumn: crd9c_facoverride
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'FAC override'
+		dataType: string
+		lineageTag: d34906bd-ee11-4acf-9168-6614dd556447
+		summarizeBy: none
+		sourceColumn: crd9c_facoverridename
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'VAT Multiplier value'
+		dataType: double
+		lineageTag: 0a41e01f-c72e-4794-a451-d63a68895bc6
+		summarizeBy: sum
+		sourceColumn: kbsint_vatmultipliervalue
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Consolidated FAC inc VAT'
+		dataType: decimal
+		formatString: "£"#,0.###############;-"£"#,0.###############;"£"#,0.###############
+		lineageTag: b4433a07-ce03-433a-a3a4-c5526885f5c9
+		summarizeBy: sum
+		sourceColumn: kbsint_consolidatedfacincvat
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-GB"}
+
+	column 'Consolidated FAC inc VAT (Base)'
+		dataType: decimal
+		formatString: "£"#,0.###############;-"£"#,0.###############;"£"#,0.###############
+		lineageTag: f3fe5fda-2c0d-49f0-b9a2-65aeea1975b2
+		summarizeBy: sum
+		sourceColumn: kbsint_consolidatedfacincvat_base
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-GB"}
+
+	column crd9c_definitionandprfstatus
+		dataType: int64
+		formatString: 0
+		lineageTag: e83d1926-a488-4e89-af99-2c1085866aa0
+		summarizeBy: sum
+		sourceColumn: crd9c_definitionandprfstatus
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Definition and PRF Status'
+		dataType: string
+		lineageTag: 2426db79-809c-47ca-9ccb-39c04079c4f0
+		summarizeBy: none
+		sourceColumn: crd9c_definitionandprfstatusname
+
+		annotation SummarizationSetBy = Automatic
+
+	column crd9c_consolidatedprojectstatus
+		dataType: int64
+		formatString: 0
+		lineageTag: dac58fdb-ab69-4af1-b3c0-1a7f00389482
+		summarizeBy: sum
+		sourceColumn: crd9c_consolidatedprojectstatus
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Consolidated Project Status'
+		dataType: string
+		lineageTag: 77cf1895-a623-4a6f-90a1-aa02cfd92c0a
+		summarizeBy: none
+		sourceColumn: crd9c_consolidatedprojectstatusname
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Delivery Finish (Projects Tracker)'
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 9f275389-5c46-4499-a368-d5ab27d898e1
+		summarizeBy: none
+		sourceColumn: crd9c_deliveryfinishfwp
+
+		annotation SummarizationSetBy = Automatic
+
+	column crd9c_investmentprojectmod
+		dataType: string
+		lineageTag: 0a6c77b6-058d-4427-be0c-71217203153c
+		summarizeBy: none
+		sourceColumn: crd9c_investmentprojectmod
+
+		annotation SummarizationSetBy = Automatic
+
+	column crd9c_prf
+		dataType: string
+		lineageTag: eb86a8ef-f3e9-45d5-b399-61350a9db202
+		summarizeBy: none
+		sourceColumn: crd9c_prf
+
+		annotation SummarizationSetBy = Automatic
+
+	column crd9c_rdelcdelchoice
+		dataType: int64
+		formatString: 0
+		lineageTag: 7793985e-706c-46d8-9013-8b5eeca33b15
+		summarizeBy: sum
+		sourceColumn: crd9c_rdelcdelchoice
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'RDEL./CDEL'
+		dataType: string
+		lineageTag: 9967f2ea-4d29-4a6b-ad80-774d2d7a3ade
+		summarizeBy: none
+		sourceColumn: crd9c_rdelcdelchoicename
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Delivery Finish (PRF)'
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: e78cc9a0-15fb-418f-8b20-fff92024709c
+		summarizeBy: none
+		sourceColumn: kbsint_deliveryfinishprf
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Delivery Start (Projects Tracker)'
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 30961105-da84-4b15-9504-1fbb72eecf59
+		summarizeBy: none
+		sourceColumn: kbsint_deliverystartfwp
+
+		annotation SummarizationSetBy = Automatic
+
+	column kbsint_pmodeliverydatesoverride
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: af7a50f1-15f7-4ba6-9c55-35102503a9a8
+		summarizeBy: none
+		sourceColumn: kbsint_pmodeliverydatesoverride
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'PMO Delivery Dates override'
+		dataType: string
+		lineageTag: d4606862-87b2-4b52-89c1-aab1d5c4d32b
+		summarizeBy: none
+		sourceColumn: kbsint_pmodeliverydatesoverridename
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Delivery Start (PRF)'
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 74fbfe63-1bf9-497f-b303-117d51f668da
+		summarizeBy: none
+		sourceColumn: kbsint_prfstartdate
+
+		annotation SummarizationSetBy = Automatic
+
+	column crd9c_consolidatedfacsource
+		dataType: int64
+		formatString: 0
+		lineageTag: acc15c93-e151-4900-9291-1699d859506f
+		summarizeBy: sum
+		sourceColumn: crd9c_consolidatedfacsource
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Consolidated FAC Source'
+		dataType: string
+		lineageTag: ad16f8c8-3e5e-4ddf-b2f2-2eb11bc2e2d3
+		summarizeBy: none
+		sourceColumn: crd9c_consolidatedfacsourcename
+
+		annotation SummarizationSetBy = Automatic
+
+	column kbsint_consolidateddeliverydatessource
+		dataType: int64
+		formatString: 0
+		lineageTag: b9431f16-1cbf-4718-b577-31515c32ae34
+		summarizeBy: sum
+		sourceColumn: kbsint_consolidateddeliverydatessource
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Consolidated Delivery Dates Source'
+		dataType: string
+		lineageTag: 99af8614-f348-4821-9d7f-c25649139c80
+		summarizeBy: none
+		sourceColumn: kbsint_consolidateddeliverydatessourcename
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Consolidated Delivery Finish'
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 8444611e-a2a6-4a70-93b2-6cf9feec4099
+		summarizeBy: none
+		sourceColumn: kbsint_consolidateddeliveryfinish
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Consolidated Delivery Start'
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: b5bfda4c-4645-473d-b197-b06a3cc3c3e0
+		summarizeBy: none
+		sourceColumn: kbsint_consolidateddeliverystart
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Investment Project (MOD)'
+		dataType: string
+		lineageTag: 57e02ef1-3101-443c-945e-ea4f7d2f063e
+		summarizeBy: none
+		sourceColumn: crd9c_investmentprojectmodname
+
+		annotation SummarizationSetBy = Automatic
+
+	column PRF
+		dataType: string
+		lineageTag: bcc4c2c9-9a80-494e-bec4-1d7f6d25f848
+		summarizeBy: none
+		sourceColumn: crd9c_prfname
+
+		annotation SummarizationSetBy = Automatic
+
+	column kbsint_monthendadjustmentperiod
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: bacc469d-e31d-4052-abdd-8256df03e25a
+		summarizeBy: none
+		sourceColumn: kbsint_monthendadjustmentperiod
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Month End Adjustment Period'
+		dataType: string
+		lineageTag: 2d7cfc5d-cc6a-443b-9087-7951346fb167
+		summarizeBy: none
+		sourceColumn: kbsint_monthendadjustmentperiodname
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Month End Static Delivery Finish Date'
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 3e726496-3b70-4f6d-a1aa-84aa9bb456bb
+		summarizeBy: none
+		sourceColumn: kbsint_monthendstaticdeliveryfinishdate
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Month End Static Delivery Start Date'
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: eb3dafdd-ba50-4ebf-a9df-e8450815ff31
+		summarizeBy: none
+		sourceColumn: kbsint_monthendstaticdeliverystartdate
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Month End Static FAC'
+		dataType: decimal
+		formatString: "£"#,0.###############;-"£"#,0.###############;"£"#,0.###############
+		lineageTag: e6d5bac8-8b0c-4cd6-be2f-bbae874aa475
+		summarizeBy: sum
+		sourceColumn: kbsint_monthendstaticfac
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-GB"}
+
+	column 'Month End Static FAC (Base)'
+		dataType: decimal
+		formatString: "£"#,0.###############;-"£"#,0.###############;"£"#,0.###############
+		lineageTag: cf42107b-3c1c-4918-bb69-8de48536597e
+		summarizeBy: sum
+		sourceColumn: kbsint_monthendstaticfac_base
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-GB"}
+
+	column 'Committed/Uncommitted (calc)'
+		dataType: string
+		lineageTag: d6a7bdca-5cc9-4cb4-a8fa-bf350a6c270f
+		summarizeBy: none
+		sourceColumn: kbsint_committeduncommittedcalcname
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'EXAMPLE - FWP forecast' = m
+		mode: import
+		source =
+				let
+				    Source = CommonDataService.Database("keystone.crm11.dynamics.com"),
+				    dbo_crd9c_fwpforecast = Source{[Schema="dbo",Item="crd9c_fwpforecast"]}[Data],
+				    #"Removed Other Columns" = Table.SelectColumns(dbo_crd9c_fwpforecast,{"crd9c_fwpforecastid", "statecodename", "statuscodename", "crd9c_pid", "crd9c_2024currentstatus", "crd9c_committeduncommitted", "crd9c_deliveryfinish", "crd9c_deliverystart", "crd9c_fac", "transactioncurrencyidname", "exchangerate", "crd9c_fac_base", "crd9c_majmin", "crd9c_placecode", "crd9c_projectname", "crd9c_projectpriority", "crd9c_sustainchange", "crd9c_vatcode", "crd9c_vatnotes", "crd9c_raccpf", "crd9c_uinexostar", "crd9c_businesscaselookup", "crd9c_businesscaselookupname", "crd9c_forecasttype", "crd9c_forecasttypename", "crd9c_fwpproject", "crd9c_inputkey", "crd9c_program", "crd9c_projectcode", "crd9c_subbreakdownlookup", "crd9c_taflookup", "crd9c_monthsdifference", "crd9c_titleconcat", "crd9c_fwpprojectname", "crd9c_programname", "crd9c_subbreakdownlookupname", "crd9c_taflookupname", "kbsint_estimatenolookup", "kbsint_consolidatedfac", "kbsint_consolidatedfac_base", "kbsint_currentestimate", "kbsint_currentestimate_base", "kbsint_projectmilestonecurrenttotal", "kbsint_projectmilestonecurrenttotal_base", "kbsint_estimatenolookupname", "crd9c_facoverride", "crd9c_facoverridename", "kbsint_vatmultipliervalue", "kbsint_consolidatedfacincvat", "kbsint_consolidatedfacincvat_base", "crd9c_definitionandprfstatus", "crd9c_definitionandprfstatusname", "crd9c_consolidatedprojectstatus", "crd9c_consolidatedprojectstatusname", "crd9c_deliveryfinishfwp", "crd9c_investmentprojectmod", "crd9c_prf", "crd9c_rdelcdelchoice", "crd9c_rdelcdelchoicename", "kbsint_deliveryfinishprf", "kbsint_deliverystartfwp", "kbsint_pmodeliverydatesoverride", "kbsint_pmodeliverydatesoverridename", "kbsint_prfstartdate", "crd9c_consolidatedfacsource", "crd9c_consolidatedfacsourcename", "kbsint_consolidateddeliverydatessource", "kbsint_consolidateddeliverydatessourcename", "kbsint_consolidateddeliveryfinish", "kbsint_consolidateddeliverystart", "crd9c_investmentprojectmodname", "crd9c_prfname", "kbsint_monthendadjustmentperiod", "kbsint_monthendadjustmentperiodname", "kbsint_monthendstaticdeliveryfinishdate", "kbsint_monthendstaticdeliverystartdate", "kbsint_monthendstaticfac", "kbsint_monthendstaticfac_base", "kbsint_committeduncommittedcalcname"})
+				in
+				    #"Removed Other Columns"
+
+	changedProperty = Name
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+
