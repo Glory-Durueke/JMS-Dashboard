@@ -1,0 +1,20 @@
+table Table
+	lineageTag: 28f6859f-1855-49b4-ad31-b7c143de7274
+
+	column Value
+		formatString: Long Date
+		lineageTag: d4f456ab-6e4e-4638-9737-2d4d6a149b50
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Value]
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	partition Table = calculated
+		mode: import
+		source = {{today()}}
+
+	annotation PBI_Id = bc7e06ebc0144e8084305d200d708998
+

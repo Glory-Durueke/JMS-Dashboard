@@ -7,7 +7,7 @@
     "z": 3000,
     "height": 352.00000000000006,
     "width": 624,
-    "tabOrder": 6250
+    "tabOrder": 4000
   },
   "visual": {
     "visualType": "donutChart",
@@ -20,14 +20,14 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "EXAMPLE - Projects"
+                      "Entity": "JMS Table"
                     }
                   },
-                  "Property": "Risk Rating"
+                  "Property": "Compliant and Expired"
                 }
               },
-              "queryRef": "EXAMPLE - Projects.Risk Rating",
-              "nativeQueryRef": "Risk Rating",
+              "queryRef": "JMS Table.Compliant and Expired",
+              "nativeQueryRef": "Compliant and Expired",
               "active": true
             }
           ]
@@ -41,18 +41,17 @@
                     "Column": {
                       "Expression": {
                         "SourceRef": {
-                          "Entity": "EXAMPLE - Projects"
+                          "Entity": "JMS Table"
                         }
                       },
-                      "Property": "Project ID"
+                      "Property": "JMS ID"
                     }
                   },
                   "Function": 5
                 }
               },
-              "queryRef": "CountNonNull(EXAMPLE - Projects.Project ID)",
-              "nativeQueryRef": "Count",
-              "displayName": "Count"
+              "queryRef": "CountNonNull(JMS Table.JMS ID)",
+              "nativeQueryRef": "Count of JMS ID"
             }
           ]
         }
@@ -61,18 +60,24 @@
         "sort": [
           {
             "field": {
-              "Column": {
+              "Aggregation": {
                 "Expression": {
-                  "SourceRef": {
-                    "Entity": "EXAMPLE - Projects"
+                  "Column": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Entity": "JMS Table"
+                      }
+                    },
+                    "Property": "JMS ID"
                   }
                 },
-                "Property": "Risk Rating"
+                "Function": 5
               }
             },
-            "direction": "Ascending"
+            "direction": "Descending"
           }
-        ]
+        ],
+        "isDefaultSort": true
       }
     },
     "objects": {
@@ -88,6 +93,63 @@
             }
           }
         }
+      ],
+      "legend": [
+        {
+          "properties": {
+            "showTitle": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "dataPoint": [
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 4,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "JMS Table"
+                          }
+                        },
+                        "Property": "Compliant and Expired"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'Expired'"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
       ]
     },
     "visualContainerObjects": {
@@ -97,7 +159,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Risk Ratings'"
+                  "Value": "'Complaint Rate'"
                 }
               }
             }

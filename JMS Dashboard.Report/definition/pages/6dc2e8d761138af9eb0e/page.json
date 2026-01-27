@@ -1,201 +1,12 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.0.0/schema.json",
   "name": "6dc2e8d761138af9eb0e",
-  "displayName": "Example Drillthrough - Project Detail",
+  "displayName": "Document Details",
   "displayOption": "FitToPage",
   "height": 1080,
   "width": 1920,
   "filterConfig": {
     "filters": [
-      {
-        "name": "f9113eeb1bc4c8a42b66",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "EXAMPLE - Projects"
-              }
-            },
-            "Property": "Project Name"
-          }
-        },
-        "type": "Categorical",
-        "howCreated": "Drillthrough"
-      },
-      {
-        "name": "211766f79d877acf7d72",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "EXAMPLE - Projects"
-              }
-            },
-            "Property": "Overall Health"
-          }
-        },
-        "type": "Categorical",
-        "howCreated": "Drillthrough"
-      },
-      {
-        "name": "9f4d5c9e6d4b8f009cca",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "EXAMPLE - Projects"
-              }
-            },
-            "Property": "Status"
-          }
-        },
-        "type": "Categorical",
-        "howCreated": "Drillthrough"
-      },
-      {
-        "name": "54399dc0387fe640968d",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "EXAMPLE - Projects"
-              }
-            },
-            "Property": "Effort Health"
-          }
-        },
-        "type": "Categorical",
-        "howCreated": "Drillthrough"
-      },
-      {
-        "name": "96489a86e734ed3e547e",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "EXAMPLE - Projects"
-              }
-            },
-            "Property": "Financial Health"
-          }
-        },
-        "type": "Categorical",
-        "howCreated": "Drillthrough"
-      },
-      {
-        "name": "32206eff84edd0d72f29",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "EXAMPLE - Projects"
-              }
-            },
-            "Property": "Issue Health"
-          }
-        },
-        "type": "Categorical",
-        "howCreated": "Drillthrough"
-      },
-      {
-        "name": "157bb18b12adee448ddb",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "EXAMPLE - Projects"
-              }
-            },
-            "Property": "Schedule Health"
-          }
-        },
-        "type": "Categorical",
-        "howCreated": "Drillthrough"
-      },
-      {
-        "name": "f2db32e1e24e1ccbdb7e",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "EXAMPLE - Projects"
-              }
-            },
-            "Property": "Programme"
-          }
-        },
-        "type": "Categorical",
-        "filter": {
-          "Version": 2,
-          "From": [
-            {
-              "Name": "e",
-              "Entity": "EXAMPLE - Projects",
-              "Type": 0
-            }
-          ],
-          "Where": [
-            {
-              "Condition": {
-                "In": {
-                  "Expressions": [
-                    {
-                      "Column": {
-                        "Expression": {
-                          "SourceRef": {
-                            "Source": "e"
-                          }
-                        },
-                        "Property": "Programme"
-                      }
-                    }
-                  ],
-                  "Values": [
-                    [
-                      {
-                        "Literal": {
-                          "Value": "'01 Strategy'"
-                        }
-                      }
-                    ]
-                  ]
-                }
-              }
-            }
-          ]
-        },
-        "howCreated": "Drillthrough"
-      },
-      {
-        "name": "b33d9c40ab51dd8eb631",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "EXAMPLE - Projects"
-              }
-            },
-            "Property": "Place Code"
-          }
-        },
-        "type": "Categorical",
-        "howCreated": "Drillthrough"
-      },
-      {
-        "name": "013e85516690608aec92",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "EXAMPLE - Place Table"
-              }
-            },
-            "Property": "Code"
-          }
-        },
-        "type": "Categorical",
-        "howCreated": "Drillthrough"
-      },
       {
         "name": "b55b3307170073834614",
         "field": {
@@ -268,150 +79,340 @@
             }
           ]
         }
+      },
+      {
+        "name": "3b52c4a7edb1e916b3e7",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "JMS Table"
+              }
+            },
+            "Property": "JMS ID"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "Drillthrough"
+      },
+      {
+        "name": "4cd494b67a5472be1690",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "JMS Table"
+              }
+            },
+            "Property": "Title"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "Drillthrough"
+      },
+      {
+        "name": "6467395bcb8719014355",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "JMS Table"
+              }
+            },
+            "Property": "Content Type"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "Drillthrough"
+      },
+      {
+        "name": "47ea4d000acce37c2106",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "JMS Table"
+              }
+            },
+            "Property": "Document Owner"
+          }
+        },
+        "type": "Categorical",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "j",
+              "Entity": "JMS Table",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "In": {
+                  "Expressions": [
+                    {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Source": "j"
+                          }
+                        },
+                        "Property": "Document Owner"
+                      }
+                    }
+                  ],
+                  "Values": [
+                    [
+                      {
+                        "Literal": {
+                          "Value": "'Alex Dodd'"
+                        }
+                      }
+                    ]
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "howCreated": "Drillthrough"
+      },
+      {
+        "name": "b0cdb182911db2e130cc",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "JMS Table"
+              }
+            },
+            "Property": "Days Till Review."
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "Drillthrough"
+      },
+      {
+        "name": "2014b331697b64607d03",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "JMS Table"
+              }
+            },
+            "Property": "ReviewDate"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "Drillthrough"
+      },
+      {
+        "name": "9e8d432bab1cba2b3b2b",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "JMS Table"
+              }
+            },
+            "Property": "Quality Team Comments"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "Drillthrough"
+      },
+      {
+        "name": "3c5b528f969966dd3cac",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "JMS Table"
+              }
+            },
+            "Property": "Email Link"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "Drillthrough"
+      },
+      {
+        "name": "4513fc5396516d8c123e",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "JMS Table"
+              }
+            },
+            "Property": "Review Status"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "Drillthrough"
+      },
+      {
+        "name": "6cfe85ec499798a31391",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "JMS Table"
+              }
+            },
+            "Property": "Review Status Signs"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "Drillthrough"
       }
     ]
   },
   "pageBinding": {
-    "name": "fb720794798a02204993",
+    "name": "251e6841020a10625ee2",
     "type": "Drillthrough",
     "parameters": [
       {
-        "name": "e94f10cf68d49784dbb4",
-        "boundFilter": "f9113eeb1bc4c8a42b66",
+        "name": "a230477b40b0c7b0865a",
+        "boundFilter": "3b52c4a7edb1e916b3e7",
+        "asAggregation": true,
         "fieldExpr": {
           "Column": {
             "Expression": {
               "SourceRef": {
-                "Entity": "EXAMPLE - Projects"
+                "Entity": "JMS Table"
               }
             },
-            "Property": "Project Name"
+            "Property": "JMS ID"
           }
         }
       },
       {
-        "name": "f4088aa48cf1d0234a4b",
-        "boundFilter": "211766f79d877acf7d72",
+        "name": "8c0f9d8c1b930eb81d5b",
+        "boundFilter": "4cd494b67a5472be1690",
         "fieldExpr": {
           "Column": {
             "Expression": {
               "SourceRef": {
-                "Entity": "EXAMPLE - Projects"
+                "Entity": "JMS Table"
               }
             },
-            "Property": "Overall Health"
+            "Property": "Title"
           }
         }
       },
       {
-        "name": "10935de4660dffb69003",
-        "boundFilter": "9f4d5c9e6d4b8f009cca",
+        "name": "1b85ded4eb06c6ad97a8",
+        "boundFilter": "6467395bcb8719014355",
         "fieldExpr": {
           "Column": {
             "Expression": {
               "SourceRef": {
-                "Entity": "EXAMPLE - Projects"
+                "Entity": "JMS Table"
               }
             },
-            "Property": "Status"
+            "Property": "Content Type"
           }
         }
       },
       {
-        "name": "9c451c6fb32751a1c162",
-        "boundFilter": "54399dc0387fe640968d",
+        "name": "0a1295b7b0095027b579",
+        "boundFilter": "47ea4d000acce37c2106",
         "fieldExpr": {
           "Column": {
             "Expression": {
               "SourceRef": {
-                "Entity": "EXAMPLE - Projects"
+                "Entity": "JMS Table"
               }
             },
-            "Property": "Effort Health"
+            "Property": "Document Owner"
           }
         }
       },
       {
-        "name": "7b384e5d9b3b4fec4928",
-        "boundFilter": "96489a86e734ed3e547e",
+        "name": "a1eb3ec64e20cc362b08",
+        "boundFilter": "b0cdb182911db2e130cc",
         "fieldExpr": {
-          "Column": {
+          "Measure": {
             "Expression": {
               "SourceRef": {
-                "Entity": "EXAMPLE - Projects"
+                "Entity": "JMS Table"
               }
             },
-            "Property": "Financial Health"
+            "Property": "Days Till Review."
           }
         }
       },
       {
-        "name": "78dc9be2fef3803db025",
-        "boundFilter": "32206eff84edd0d72f29",
+        "name": "0054bf913108cc4bca73",
+        "boundFilter": "2014b331697b64607d03",
         "fieldExpr": {
           "Column": {
             "Expression": {
               "SourceRef": {
-                "Entity": "EXAMPLE - Projects"
+                "Entity": "JMS Table"
               }
             },
-            "Property": "Issue Health"
+            "Property": "ReviewDate"
           }
         }
       },
       {
-        "name": "75d933b0c074c808a156",
-        "boundFilter": "157bb18b12adee448ddb",
+        "name": "18438c2f78c5d5920cb7",
+        "boundFilter": "9e8d432bab1cba2b3b2b",
         "fieldExpr": {
           "Column": {
             "Expression": {
               "SourceRef": {
-                "Entity": "EXAMPLE - Projects"
+                "Entity": "JMS Table"
               }
             },
-            "Property": "Schedule Health"
+            "Property": "Quality Team Comments"
           }
         }
       },
       {
-        "name": "11770cd7bf52b6a4615a",
-        "boundFilter": "f2db32e1e24e1ccbdb7e",
+        "name": "dada0adc88b9237be29b",
+        "boundFilter": "3c5b528f969966dd3cac",
         "fieldExpr": {
-          "Column": {
+          "Measure": {
             "Expression": {
               "SourceRef": {
-                "Entity": "EXAMPLE - Projects"
+                "Entity": "JMS Table"
               }
             },
-            "Property": "Programme"
+            "Property": "Email Link"
           }
         }
       },
       {
-        "name": "e86adb9a000a502ee42d",
-        "boundFilter": "b33d9c40ab51dd8eb631",
+        "name": "244897a41625c828d9c4",
+        "boundFilter": "4513fc5396516d8c123e",
         "fieldExpr": {
           "Column": {
             "Expression": {
               "SourceRef": {
-                "Entity": "EXAMPLE - Projects"
+                "Entity": "JMS Table"
               }
             },
-            "Property": "Place Code"
+            "Property": "Review Status"
           }
         }
       },
       {
-        "name": "6c3baae12946330b804d",
-        "boundFilter": "013e85516690608aec92",
+        "name": "6726f8a0235ca9cedaae",
+        "boundFilter": "6cfe85ec499798a31391",
         "fieldExpr": {
           "Column": {
             "Expression": {
               "SourceRef": {
-                "Entity": "EXAMPLE - Place Table"
+                "Entity": "JMS Table"
               }
             },
-            "Property": "Code"
+            "Property": "Review Status Signs"
           }
         }
       }
@@ -484,6 +485,7 @@
     ]
   },
   "visibility": "HiddenInViewMode",
+  "type": "Drillthrough",
   "visualInteractions": [
     {
       "source": "b99b6aad9862db2af464",

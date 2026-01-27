@@ -6,20 +6,19 @@ model Model
 		legacyRedirects
 		returnErrorValuesAsNull
 
-annotation PBI_QueryOrder = ["0_Meta","1_Measures","StartDate","EndDate","DateTable","EXAMPLE - Projects","EXAMPLE - Gateways","EXAMPLE - FWP forecast","EXAMPLE - msdyn_project","EXAMPLE - Map Legend","EXAMPLE - Place Table"]
+annotation PBI_QueryOrder = ["1_Measures","StartDate","EndDate","DateTable","Product Information","JMS Table","Sorted Priority","Sorted Rows"]
 
 annotation __PBI_TimeIntelligenceEnabled = 0
 
-annotation PBI_ProTooling = ["DevMode"]
+annotation PBI_ProTooling = ["DevMode","CopilotTooling","DaxQueryView_Desktop","DaxCopilot_Change_Accepted_In_Desktop"]
 
-ref table 0_Meta
 ref table 1_Measures
 ref table DateTable
-ref table 'EXAMPLE - Projects'
-ref table 'EXAMPLE - Gateways'
-ref table 'EXAMPLE - FWP forecast'
-ref table 'EXAMPLE - Map Legend'
-ref table 'EXAMPLE - Place Table'
+ref table 'Product Information'
+ref table 'JMS Table'
+ref table 'Sorted Priority'
+ref table 'Sorted Rows'
+ref table Table
 
 ref cultureInfo en-GB
 

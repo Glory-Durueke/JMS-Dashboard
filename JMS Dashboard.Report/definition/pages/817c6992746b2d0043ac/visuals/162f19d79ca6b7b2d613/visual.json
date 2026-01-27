@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
   "name": "162f19d79ca6b7b2d613",
   "position": {
-    "x": 48,
-    "y": 32,
+    "x": 0,
+    "y": 0,
     "z": 0,
     "height": 96,
-    "width": 752,
-    "tabOrder": 16250
+    "width": 512,
+    "tabOrder": 10000
   },
   "visual": {
     "visualType": "textbox",
@@ -19,7 +19,7 @@
               {
                 "textRuns": [
                   {
-                    "value": "Something Project Related",
+                    "value": "JMS DASHBOARD",
                     "textStyle": {
                       "fontWeight": "bold",
                       "fontSize": "44pt",
@@ -62,5 +62,6 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  }
+  },
+  "parentGroupName": "5b5308e96d3bd825b3e9"
 }

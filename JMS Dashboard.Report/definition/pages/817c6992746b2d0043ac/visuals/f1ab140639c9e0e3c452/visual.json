@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
   "name": "f1ab140639c9e0e3c452",
   "position": {
-    "x": 48,
-    "y": 288,
-    "z": 14000,
-    "height": 208,
-    "width": 408,
-    "tabOrder": 16062
+    "x": 0,
+    "y": 160,
+    "z": 2000,
+    "height": 288,
+    "width": 447.99999999999994,
+    "tabOrder": 8000
   },
   "visual": {
     "visualType": "textbox",
@@ -19,61 +19,9 @@
               {
                 "textRuns": [
                   {
-                    "value": "This page shows projects that are have a status of ",
+                    "value": "This JMS dashboard gives insight on the status of documents and procedures, offering users a comprehensive visual of documents that need reviewing to enhance compliance of assets documents documentation to support the infrastructure and operational management of one Portsmouth. With integrated asset management principles.",
                     "textStyle": {
-                      "fontStyle": "italic",
-                      "fontSize": "18pt",
-                      "color": "#ffffff"
-                    }
-                  },
-                  {
-                    "value": "New",
-                    "textStyle": {
-                      "fontWeight": "bold",
-                      "fontStyle": "italic",
-                      "fontSize": "18pt",
-                      "color": "#ffffff"
-                    }
-                  },
-                  {
-                    "value": ", ",
-                    "textStyle": {
-                      "fontStyle": "italic",
-                      "fontSize": "18pt",
-                      "color": "#ffffff"
-                    }
-                  },
-                  {
-                    "value": "In Progress",
-                    "textStyle": {
-                      "fontWeight": "bold",
-                      "fontStyle": "italic",
-                      "fontSize": "18pt",
-                      "color": "#ffffff"
-                    }
-                  },
-                  {
-                    "value": " or ",
-                    "textStyle": {
-                      "fontStyle": "italic",
-                      "fontSize": "18pt",
-                      "color": "#ffffff"
-                    }
-                  },
-                  {
-                    "value": "On Hold",
-                    "textStyle": {
-                      "fontWeight": "bold",
-                      "fontStyle": "italic",
-                      "fontSize": "18pt",
-                      "color": "#ffffff"
-                    }
-                  },
-                  {
-                    "value": ". It gives an overview of the current position of these projects at a macro level.",
-                    "textStyle": {
-                      "fontStyle": "italic",
-                      "fontSize": "18pt",
+                      "fontSize": "16pt",
                       "color": "#ffffff"
                     }
                   }
@@ -141,8 +89,43 @@
             }
           }
         }
+      ],
+      "padding": [
+        {
+          "properties": {
+            "left": {
+              "expr": {
+                "Literal": {
+                  "Value": "11D"
+                }
+              }
+            },
+            "bottom": {
+              "expr": {
+                "Literal": {
+                  "Value": "7D"
+                }
+              }
+            },
+            "top": {
+              "expr": {
+                "Literal": {
+                  "Value": "7D"
+                }
+              }
+            },
+            "right": {
+              "expr": {
+                "Literal": {
+                  "Value": "7D"
+                }
+              }
+            }
+          }
+        }
       ]
     },
     "drillFilterOtherVisuals": true
-  }
+  },
+  "parentGroupName": "5b5308e96d3bd825b3e9"
 }

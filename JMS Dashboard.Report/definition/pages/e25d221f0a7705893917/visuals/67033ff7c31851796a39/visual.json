@@ -62,16 +62,21 @@
         "sort": [
           {
             "field": {
-              "Column": {
+              "Aggregation": {
                 "Expression": {
-                  "SourceRef": {
-                    "Entity": "0_Meta"
+                  "Column": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Entity": "0_Meta"
+                      }
+                    },
+                    "Property": "Data set type"
                   }
                 },
-                "Property": "Title 2"
+                "Function": 3
               }
             },
-            "direction": "Descending"
+            "direction": "Ascending"
           }
         ]
       }

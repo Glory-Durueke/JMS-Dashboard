@@ -22,7 +22,7 @@
                     "Column": {
                       "Expression": {
                         "SourceRef": {
-                          "Entity": "0_Meta"
+                          "Entity": "Product Information"
                         }
                       },
                       "Property": "Purpose"
@@ -31,7 +31,7 @@
                   "Function": 3
                 }
               },
-              "queryRef": "Min(0_Meta.Purpose)",
+              "queryRef": "Min(Product Information.Purpose)",
               "nativeQueryRef": "Purpose",
               "displayName": "Purpose"
             },
@@ -42,7 +42,7 @@
                     "Column": {
                       "Expression": {
                         "SourceRef": {
-                          "Entity": "0_Meta"
+                          "Entity": "Product Information"
                         }
                       },
                       "Property": "Initial release date"
@@ -51,7 +51,7 @@
                   "Function": 3
                 }
               },
-              "queryRef": "Min(0_Meta.Initial release date)",
+              "queryRef": "Min(Product Information.Initial release date)",
               "nativeQueryRef": "Initial Release Date",
               "displayName": "Initial Release Date"
             },
@@ -62,27 +62,7 @@
                     "Column": {
                       "Expression": {
                         "SourceRef": {
-                          "Entity": "0_Meta"
-                        }
-                      },
-                      "Property": "Latest Release Date"
-                    }
-                  },
-                  "Function": 3
-                }
-              },
-              "queryRef": "Min(0_Meta.Latest Release Date)",
-              "nativeQueryRef": "Release Date",
-              "displayName": "Release Date"
-            },
-            {
-              "field": {
-                "Aggregation": {
-                  "Expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "0_Meta"
+                          "Entity": "Product Information"
                         }
                       },
                       "Property": "Review Date"
@@ -91,7 +71,7 @@
                   "Function": 3
                 }
               },
-              "queryRef": "Min(0_Meta.Review Date)",
+              "queryRef": "Min(Product Information.Review Date)",
               "nativeQueryRef": "Review Date",
               "displayName": "Review Date"
             },
@@ -102,7 +82,7 @@
                     "Column": {
                       "Expression": {
                         "SourceRef": {
-                          "Entity": "0_Meta"
+                          "Entity": "Product Information"
                         }
                       },
                       "Property": "Release Status"
@@ -111,7 +91,7 @@
                   "Function": 3
                 }
               },
-              "queryRef": "Min(0_Meta.Release Status)",
+              "queryRef": "Min(Product Information.Release Status)",
               "nativeQueryRef": "Release Status",
               "displayName": "Release Status"
             },
@@ -122,7 +102,7 @@
                     "Column": {
                       "Expression": {
                         "SourceRef": {
-                          "Entity": "0_Meta"
+                          "Entity": "Product Information"
                         }
                       },
                       "Property": "Version No."
@@ -131,9 +111,29 @@
                   "Function": 3
                 }
               },
-              "queryRef": "Min(0_Meta.Version No.)",
+              "queryRef": "Min(Product Information.Version No.)",
               "nativeQueryRef": "Version No.",
               "displayName": "Version No."
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Product Information"
+                        }
+                      },
+                      "Property": "Latest Release Date"
+                    }
+                  },
+                  "Function": 3
+                }
+              },
+              "queryRef": "Min(Product Information.Latest Release Date)",
+              "nativeQueryRef": " Release Date",
+              "displayName": " Release Date"
             }
           ]
         }
@@ -196,27 +196,13 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "180D"
+                  "Value": "207.55326965466568D"
                 }
               }
             }
           },
           "selector": {
-            "metadata": "Min(0_Meta.Initial release date)"
-          }
-        },
-        {
-          "properties": {
-            "value": {
-              "expr": {
-                "Literal": {
-                  "Value": "179D"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "Min(0_Meta.Purpose)"
+            "metadata": "Min(Product Information.Purpose)"
           }
         }
       ],

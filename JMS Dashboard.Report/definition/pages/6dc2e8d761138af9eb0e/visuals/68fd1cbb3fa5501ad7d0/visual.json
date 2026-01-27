@@ -7,7 +7,7 @@
     "z": 1000,
     "height": 64.638403990024941,
     "width": 230.27431421446386,
-    "tabOrder": 6500
+    "tabOrder": 5000
   },
   "visual": {
     "visualType": "textbox",
@@ -19,7 +19,7 @@
               {
                 "textRuns": [
                   {
-                    "value": "Project Detail",
+                    "value": "Document Details",
                     "textStyle": {
                       "fontStyle": "italic",
                       "fontSize": "20pt",

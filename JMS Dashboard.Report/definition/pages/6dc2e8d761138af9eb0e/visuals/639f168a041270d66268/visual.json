@@ -7,7 +7,7 @@
     "z": 0,
     "height": 75.714285714285722,
     "width": 544.28571428571433,
-    "tabOrder": 6750
+    "tabOrder": 6000
   },
   "visual": {
     "visualType": "textbox",
@@ -19,7 +19,7 @@
               {
                 "textRuns": [
                   {
-                    "value": "Something Project Related",
+                    "value": "JMS Dashboard",
                     "textStyle": {
                       "fontWeight": "bold",
                       "fontSize": "28pt",

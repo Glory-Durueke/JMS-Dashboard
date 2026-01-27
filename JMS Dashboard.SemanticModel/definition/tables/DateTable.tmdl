@@ -1,3 +1,4 @@
+/// This Date Table provides calendar and fiscal date details, including days, months, quarters, and years, to support time-based analysis and reporting.
 table DateTable
 	lineageTag: 6c60b3fd-b156-4c4c-b750-be665d10f7b9
 
@@ -27,7 +28,7 @@ table DateTable
 		dataType: int64
 		formatString: 0
 		lineageTag: 5e8b2321-083c-4b23-9c65-ccfbafa4126a
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: MonthNumber
 
 		annotation SummarizationSetBy = Automatic
@@ -36,7 +37,7 @@ table DateTable
 		dataType: int64
 		formatString: 0
 		lineageTag: ad6ed3a3-ffd3-4a58-b8aa-39ac8890ad60
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: FiscalMonthNumber
 
 		annotation SummarizationSetBy = Automatic
@@ -67,7 +68,7 @@ table DateTable
 		dataType: int64
 		formatString: 0
 		lineageTag: 5faf34bf-6098-46b4-b0e3-a0e7ee32ec15
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: DaysInMonth
 
 		annotation SummarizationSetBy = Automatic
@@ -84,7 +85,7 @@ table DateTable
 		dataType: int64
 		formatString: 0
 		lineageTag: c8503b4e-0c26-4386-a401-78fbe1cf3c07
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: DayOfWeekNumber
 
 		annotation SummarizationSetBy = Automatic
@@ -93,7 +94,7 @@ table DateTable
 		dataType: int64
 		formatString: 0
 		lineageTag: 4a094c29-b80a-45b1-805b-5aa82094af75
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: CalendarQuarter
 
 		annotation SummarizationSetBy = Automatic
@@ -102,7 +103,7 @@ table DateTable
 		dataType: int64
 		formatString: 0
 		lineageTag: b8e5a59f-e782-47a0-ade8-347380255699
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: FiscalQuarter
 
 		annotation SummarizationSetBy = Automatic
@@ -111,7 +112,7 @@ table DateTable
 		dataType: int64
 		formatString: 0
 		lineageTag: c008beaf-49b8-492f-bd50-8743ffacf146
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: Year
 
 		annotation SummarizationSetBy = Automatic
@@ -128,7 +129,7 @@ table DateTable
 		dataType: int64
 		formatString: 0
 		lineageTag: c58cfab4-ff3a-4f2b-b489-8d2b1d2f8a59
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: DayOfYear
 
 		annotation SummarizationSetBy = Automatic
@@ -173,9 +174,10 @@ table DateTable
 				    #"Added FiscalYear" = Table.AddColumn(#"Added Year", "FiscalYear", each if Date.Month([Date]) <= 3 then Text.Combine({Number.ToText(Date.Year([Date]) - 1),"/",Text.End(Number.ToText(Date.Year([Date])),2)})
 				else Text.Combine({Number.ToText(Date.Year([Date])),"/",Text.End(Number.ToText(Date.Year([Date]) + 1),2)})),
 				    #"Added DayOfYear" = Table.AddColumn(#"Added FiscalYear", "DayOfYear", each Date.DayOfYear([Date])),
-				    #"Changed Type" = Table.TransformColumnTypes(#"Added DayOfYear",{{"DayOfWeek", type text}, {"MonthNumber", Int64.Type}, {"Month", type text}, {"DayOfWeekNumber", Int64.Type}, {"DayOfYear", Int64.Type}, {"DaysInMonth", Int64.Type}, {"MonthStart", type date}, {"MonthEnd", type date}, {"Year", Int64.Type}, {"CalendarQuarter", Int64.Type}, {"FiscalMonthNumber", Int64.Type}, {"FiscalYear", type text}, {"FiscalQuarter", Int64.Type}})
+				    #"Changed Type" = Table.TransformColumnTypes(#"Added DayOfYear",{{"DayOfWeek", type text}, {"MonthNumber", Int64.Type}, {"Month", type text}, {"DayOfWeekNumber", Int64.Type}, {"DayOfYear", Int64.Type}, {"DaysInMonth", Int64.Type}, {"MonthStart", type date}, {"MonthEnd", type date}, {"Year", Int64.Type}, {"CalendarQuarter", Int64.Type}, {"FiscalMonthNumber", Int64.Type}, {"FiscalYear", type text}, {"FiscalQuarter", Int64.Type}}),
+				    #"Filtered Rows" = Table.SelectRows(#"Changed Type", each true)
 				in
-				    #"Changed Type"
+				    #"Filtered Rows"
 				```
 
 	annotation PBI_NavigationStepName = Navigation

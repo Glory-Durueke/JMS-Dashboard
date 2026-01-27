@@ -75,16 +75,6 @@
           "type": "Image"
         },
         {
-          "name": "Side_Banner_Deep7280482272798457.png",
-          "path": "Side_Banner_Deep7280482272798457.png",
-          "type": "Image"
-        },
-        {
-          "name": "Short_Banner8538509413477349.png",
-          "path": "Short_Banner8538509413477349.png",
-          "type": "Image"
-        },
-        {
           "name": "Notes48555046875152275.png",
           "path": "Notes48555046875152275.png",
           "type": "Image"
@@ -93,11 +83,6 @@
           "name": "KBS_Maritime_2024_-_Default4791700146518717.json",
           "path": "KBS_Maritime_2024_-_Default4791700146518717.json",
           "type": "CustomTheme"
-        },
-        {
-          "name": "Side_Banner_Deep977276836003894.png",
-          "path": "Side_Banner_Deep977276836003894.png",
-          "type": "Image"
         }
       ]
     }

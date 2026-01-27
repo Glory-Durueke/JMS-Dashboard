@@ -3,11 +3,11 @@
   "name": "f8268d68be23e0d008e7",
   "position": {
     "x": 16,
-    "y": 496.00000000000006,
+    "y": 495.99999999999994,
     "z": 2000,
     "height": 576,
     "width": 1887.9999999999998,
-    "tabOrder": 3000
+    "tabOrder": 1000
   },
   "visual": {
     "visualType": "tableEx",
@@ -20,160 +20,140 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "EXAMPLE - Projects"
+                      "Entity": "JMS Table"
                     }
                   },
-                  "Property": "Project Name"
+                  "Property": "JMS ID"
                 }
               },
-              "queryRef": "EXAMPLE - Projects.Project Name",
-              "nativeQueryRef": "Project Name"
+              "queryRef": "CountNonNull(JMS Table.JMS ID)",
+              "nativeQueryRef": "JMS ID"
             },
             {
               "field": {
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "EXAMPLE - Projects"
+                      "Entity": "JMS Table"
                     }
                   },
-                  "Property": "Project Code"
+                  "Property": "Title"
                 }
               },
-              "queryRef": "EXAMPLE - Projects.Project Code",
-              "nativeQueryRef": "Project Code"
+              "queryRef": "JMS Table.Title",
+              "nativeQueryRef": "Title"
             },
             {
               "field": {
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "EXAMPLE - Projects"
+                      "Entity": "JMS Table"
                     }
                   },
-                  "Property": "Programme"
+                  "Property": "Content Type"
                 }
               },
-              "queryRef": "EXAMPLE - Projects.Programme",
-              "nativeQueryRef": "Programme"
+              "queryRef": "JMS Table.Content Type",
+              "nativeQueryRef": "Content Type"
             },
             {
               "field": {
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "EXAMPLE - Projects"
+                      "Entity": "JMS Table"
                     }
                   },
-                  "Property": "Project Manager"
+                  "Property": "Document Owner"
                 }
               },
-              "queryRef": "EXAMPLE - Projects.Project Manager",
-              "nativeQueryRef": "Project Manager"
+              "queryRef": "JMS Table.Document Owner",
+              "nativeQueryRef": "Document Owner"
             },
             {
               "field": {
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "EXAMPLE - Projects"
+                      "Entity": "JMS Table"
                     }
                   },
-                  "Property": "Overall Health"
+                  "Property": "Days till Review"
                 }
               },
-              "queryRef": "EXAMPLE - Projects.Overall Health",
-              "nativeQueryRef": "Overall Health"
+              "queryRef": "Sum(JMS Table.Days till Review)",
+              "nativeQueryRef": "Days till Review"
             },
             {
               "field": {
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "EXAMPLE - Projects"
+                      "Entity": "JMS Table"
                     }
                   },
-                  "Property": "Latest Note Date"
+                  "Property": "Review Date"
                 }
               },
-              "queryRef": "EXAMPLE - Projects.Latest Note Date",
-              "nativeQueryRef": "Latest Note Date"
+              "queryRef": "JMS Table.Review Date",
+              "nativeQueryRef": "Review Date"
             },
             {
               "field": {
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "EXAMPLE - Projects"
+                      "Entity": "JMS Table"
                     }
                   },
-                  "Property": "Latest Note"
+                  "Property": "Quality Team Comments"
                 }
               },
-              "queryRef": "EXAMPLE - Projects.Latest Note",
-              "nativeQueryRef": "Latest Note"
+              "queryRef": "JMS Table.Quality Team Comments",
+              "nativeQueryRef": "Quality Team Comments"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "JMS Table"
+                    }
+                  },
+                  "Property": "Email Link"
+                }
+              },
+              "queryRef": "JMS Table.Email Link",
+              "nativeQueryRef": "Email Link"
             },
             {
               "field": {
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "EXAMPLE - Projects"
+                      "Entity": "JMS Table"
                     }
                   },
-                  "Property": "Status"
+                  "Property": "Review Status"
                 }
               },
-              "queryRef": "EXAMPLE - Projects.Status",
-              "nativeQueryRef": "Status"
-            },
-            {
-              "field": {
-                "Aggregation": {
-                  "Expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "EXAMPLE - Projects"
-                        }
-                      },
-                      "Property": "% Remaining Budget"
-                    }
-                  },
-                  "Function": 0
-                }
-              },
-              "queryRef": "Sum(EXAMPLE - Projects.% Remaining Budget)",
-              "nativeQueryRef": "Remaining Budget",
-              "displayName": "Remaining Budget"
+              "queryRef": "JMS Table.Review Status",
+              "nativeQueryRef": "Review Status"
             },
             {
               "field": {
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "EXAMPLE - Projects"
+                      "Entity": "JMS Table"
                     }
                   },
-                  "Property": "Baseline 2 Finish Date"
+                  "Property": "Review Priority Signs"
                 }
               },
-              "queryRef": "EXAMPLE - Projects.Baseline 2 Finish Date",
-              "nativeQueryRef": "Baseline 2 Finish Date"
-            },
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "EXAMPLE - Projects"
-                    }
-                  },
-                  "Property": "Baseline 3 Finish Date"
-                }
-              },
-              "queryRef": "EXAMPLE - Projects.Baseline 3 Finish Date",
-              "nativeQueryRef": "Baseline 3 Finish Date"
+              "queryRef": "JMS Table.Review Priority Signs",
+              "nativeQueryRef": "Review Priority Signs"
             }
           ]
         }
@@ -185,31 +165,56 @@
               "Column": {
                 "Expression": {
                   "SourceRef": {
-                    "Entity": "EXAMPLE - Projects"
+                    "Entity": "JMS Table"
                   }
                 },
-                "Property": "Latest Note Date"
+                "Property": "Review Priority Signs"
               }
             },
-            "direction": "Descending"
+            "direction": "Ascending"
           }
         ]
       }
     },
     "objects": {
+      "total": [
+        {
+          "properties": {
+            "totals": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "backColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
       "columnWidth": [
         {
           "properties": {
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "385.297171622045D"
+                  "Value": "237.0837223757833D"
                 }
               }
             }
           },
           "selector": {
-            "metadata": "EXAMPLE - Projects.Latest Note"
+            "metadata": "JMS Table.Quality Team Comments"
           }
         },
         {
@@ -217,13 +222,13 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "224.52273881138237D"
+                  "Value": "461.2643031404325D"
                 }
               }
             }
           },
           "selector": {
-            "metadata": "EXAMPLE - Projects.Project Name"
+            "metadata": "JMS Table.Title"
           }
         },
         {
@@ -231,13 +236,13 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "152.11144768322615D"
+                  "Value": "192.96898991185805D"
                 }
               }
             }
           },
           "selector": {
-            "metadata": "Sum(EXAMPLE - Projects.% Remaining Budget)"
+            "metadata": "JMS Table.Review Date"
           }
         },
         {
@@ -245,13 +250,13 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "176.11144849642164D"
+                  "Value": "209.29405067672462D"
                 }
               }
             }
           },
           "selector": {
-            "metadata": "EXAMPLE - Projects.Baseline 2 Finish Date"
+            "metadata": "Sum(JMS Table.Days till Review)"
           }
         },
         {
@@ -259,13 +264,13 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "176.11144849642164D"
+                  "Value": "161.30939167663132D"
                 }
               }
             }
           },
           "selector": {
-            "metadata": "EXAMPLE - Projects.Baseline 3 Finish Date"
+            "metadata": "JMS Table.Document Owner"
           }
         },
         {
@@ -273,73 +278,300 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "144.39007478142796D"
+                  "Value": "149.21070564954528D"
                 }
               }
             }
           },
           "selector": {
-            "metadata": "EXAMPLE - Projects.Latest Note Date"
-          }
-        },
-        {
-          "properties": {
-            "value": {
-              "expr": {
-                "Literal": {
-                  "Value": "121.11144838636163D"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "EXAMPLE - Projects.Overall Health"
-          }
-        },
-        {
-          "properties": {
-            "value": {
-              "expr": {
-                "Literal": {
-                  "Value": "138.1114487436461D"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "EXAMPLE - Projects.Project Manager"
-          }
-        },
-        {
-          "properties": {
-            "value": {
-              "expr": {
-                "Literal": {
-                  "Value": "125.89159284940185D"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "EXAMPLE - Projects.Programme"
-          }
-        },
-        {
-          "properties": {
-            "value": {
-              "expr": {
-                "Literal": {
-                  "Value": "114.3900700955509D"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "EXAMPLE - Projects.Project Code"
+            "metadata": "JMS Table.Review Priority Signs"
           }
         }
       ],
       "values": [
+        {
+          "properties": {
+            "icon": {
+              "kind": "Icon",
+              "layout": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'Before'"
+                  }
+                }
+              },
+              "verticalAlignment": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'Middle'"
+                  }
+                }
+              },
+              "value": {
+                "expr": {
+                  "Conditional": {
+                    "Cases": [
+                      {
+                        "Condition": {
+                          "And": {
+                            "Left": {
+                              "Comparison": {
+                                "ComparisonKind": 2,
+                                "Left": {
+                                  "Aggregation": {
+                                    "Expression": {
+                                      "Column": {
+                                        "Expression": {
+                                          "SourceRef": {
+                                            "Entity": "JMS Table"
+                                          }
+                                        },
+                                        "Property": "Days till Review"
+                                      }
+                                    },
+                                    "Function": 0
+                                  }
+                                },
+                                "Right": {
+                                  "Literal": {
+                                    "Value": "-10000D"
+                                  }
+                                }
+                              }
+                            },
+                            "Right": {
+                              "Comparison": {
+                                "ComparisonKind": 3,
+                                "Left": {
+                                  "Aggregation": {
+                                    "Expression": {
+                                      "Column": {
+                                        "Expression": {
+                                          "SourceRef": {
+                                            "Entity": "JMS Table"
+                                          }
+                                        },
+                                        "Property": "Days till Review"
+                                      }
+                                    },
+                                    "Function": 0
+                                  }
+                                },
+                                "Right": {
+                                  "Literal": {
+                                    "Value": "0D"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "Value": {
+                          "Literal": {
+                            "Value": "'CircleLow'"
+                          }
+                        }
+                      },
+                      {
+                        "Condition": {
+                          "And": {
+                            "Left": {
+                              "Comparison": {
+                                "ComparisonKind": 2,
+                                "Left": {
+                                  "Aggregation": {
+                                    "Expression": {
+                                      "Column": {
+                                        "Expression": {
+                                          "SourceRef": {
+                                            "Entity": "JMS Table"
+                                          }
+                                        },
+                                        "Property": "Days till Review"
+                                      }
+                                    },
+                                    "Function": 0
+                                  }
+                                },
+                                "Right": {
+                                  "Literal": {
+                                    "Value": "181D"
+                                  }
+                                }
+                              }
+                            },
+                            "Right": {
+                              "Comparison": {
+                                "ComparisonKind": 4,
+                                "Left": {
+                                  "Aggregation": {
+                                    "Expression": {
+                                      "Column": {
+                                        "Expression": {
+                                          "SourceRef": {
+                                            "Entity": "JMS Table"
+                                          }
+                                        },
+                                        "Property": "Days till Review"
+                                      }
+                                    },
+                                    "Function": 0
+                                  }
+                                },
+                                "Right": {
+                                  "Literal": {
+                                    "Value": "1e+40D"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "Value": {
+                          "Literal": {
+                            "Value": "'TriangleHigh'"
+                          }
+                        }
+                      },
+                      {
+                        "Condition": {
+                          "And": {
+                            "Left": {
+                              "Comparison": {
+                                "ComparisonKind": 2,
+                                "Left": {
+                                  "Aggregation": {
+                                    "Expression": {
+                                      "Column": {
+                                        "Expression": {
+                                          "SourceRef": {
+                                            "Entity": "JMS Table"
+                                          }
+                                        },
+                                        "Property": "Days till Review"
+                                      }
+                                    },
+                                    "Function": 0
+                                  }
+                                },
+                                "Right": {
+                                  "Literal": {
+                                    "Value": "31D"
+                                  }
+                                }
+                              }
+                            },
+                            "Right": {
+                              "Comparison": {
+                                "ComparisonKind": 4,
+                                "Left": {
+                                  "Aggregation": {
+                                    "Expression": {
+                                      "Column": {
+                                        "Expression": {
+                                          "SourceRef": {
+                                            "Entity": "JMS Table"
+                                          }
+                                        },
+                                        "Property": "Days till Review"
+                                      }
+                                    },
+                                    "Function": 0
+                                  }
+                                },
+                                "Right": {
+                                  "Literal": {
+                                    "Value": "180D"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "Value": {
+                          "Literal": {
+                            "Value": "'CircleHigh'"
+                          }
+                        }
+                      },
+                      {
+                        "Condition": {
+                          "And": {
+                            "Left": {
+                              "Comparison": {
+                                "ComparisonKind": 2,
+                                "Left": {
+                                  "Aggregation": {
+                                    "Expression": {
+                                      "Column": {
+                                        "Expression": {
+                                          "SourceRef": {
+                                            "Entity": "JMS Table"
+                                          }
+                                        },
+                                        "Property": "Days till Review"
+                                      }
+                                    },
+                                    "Function": 0
+                                  }
+                                },
+                                "Right": {
+                                  "Literal": {
+                                    "Value": "1D"
+                                  }
+                                }
+                              }
+                            },
+                            "Right": {
+                              "Comparison": {
+                                "ComparisonKind": 4,
+                                "Left": {
+                                  "Aggregation": {
+                                    "Expression": {
+                                      "Column": {
+                                        "Expression": {
+                                          "SourceRef": {
+                                            "Entity": "JMS Table"
+                                          }
+                                        },
+                                        "Property": "Days till Review"
+                                      }
+                                    },
+                                    "Function": 0
+                                  }
+                                },
+                                "Right": {
+                                  "Literal": {
+                                    "Value": "30D"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "Value": {
+                          "Literal": {
+                            "Value": "'CircleMedium'"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "dataViewWildcard": {
+                  "matchingOption": 1
+                }
+              }
+            ],
+            "metadata": "Sum(JMS Table.Days till Review)"
+          }
+        },
         {
           "properties": {
             "webURL": {
@@ -349,10 +581,10 @@
                     "Column": {
                       "Expression": {
                         "SourceRef": {
-                          "Entity": "EXAMPLE - Projects"
+                          "Entity": "JMS Table"
                         }
                       },
-                      "Property": "Keystone Link"
+                      "Property": "Document Link"
                     }
                   },
                   "Function": 3
@@ -368,17 +600,125 @@
                 }
               }
             ],
-            "metadata": "EXAMPLE - Projects.Project Name"
+            "metadata": "JMS Table.Title"
+          }
+        },
+        {
+          "properties": {
+            "urlIcon": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
           }
         }
       ],
-      "total": [
+      "columnFormatting": [
         {
           "properties": {
-            "totals": {
+            "styleValues": {
               "expr": {
                 "Literal": {
                   "Value": "false"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Left'"
+                }
+              }
+            },
+            "styleTotal": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "CountNonNull(JMS Table.JMS ID)"
+          }
+        },
+        {
+          "properties": {
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Center'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "JMS Table.Review Date"
+          }
+        },
+        {
+          "properties": {
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Auto'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Sum(JMS Table.Days till Review)"
+          }
+        },
+        {
+          "properties": {
+            "styleTotal": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 1,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "JMS Table.Content Type"
+          }
+        }
+      ],
+      "columnHeaders": [
+        {
+          "properties": {
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Left'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "accessibility": [
+        {
+          "properties": {
+            "rowWithReferenceText": {
+              "expr": {
+                "Literal": {
+                  "Value": "'JMS Table.Title'"
                 }
               }
             }
@@ -400,7 +740,14 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Project Position'"
+                  "Value": "'Review Priority Backlog'"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'left'"
                 }
               }
             }
@@ -420,7 +767,21 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Click the Project Name to open the project in Keystone'"
+                  "Value": "'Click the Document Name to open the document in SharePoint site'"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'left'"
+                }
+              }
+            },
+            "italic": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
                 }
               }
             }

@@ -3,10 +3,10 @@
   "name": "95b33fcd156452f64f1f",
   "position": {
     "x": 32,
-    "y": 128,
+    "y": 80,
     "z": 2000,
     "height": 64,
-    "width": 160,
+    "width": 272,
     "tabOrder": 7250
   },
   "visual": {
@@ -19,7 +19,7 @@
               {
                 "textRuns": [
                   {
-                    "value": "Notes Page",
+                    "value": " Product Information",
                     "textStyle": {
                       "fontStyle": "italic",
                       "fontSize": "20pt",

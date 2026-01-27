@@ -22,7 +22,7 @@
                     "Column": {
                       "Expression": {
                         "SourceRef": {
-                          "Entity": "0_Meta"
+                          "Entity": "Product Information"
                         }
                       },
                       "Property": "Title"
@@ -31,7 +31,7 @@
                   "Function": 3
                 }
               },
-              "queryRef": "Min(0_Meta.Title)",
+              "queryRef": "Min(Product Information.Title)",
               "nativeQueryRef": "Title",
               "displayName": "Title"
             },
@@ -42,7 +42,7 @@
                     "Column": {
                       "Expression": {
                         "SourceRef": {
-                          "Entity": "0_Meta"
+                          "Entity": "Product Information"
                         }
                       },
                       "Property": "Sensitivity"
@@ -51,7 +51,7 @@
                   "Function": 3
                 }
               },
-              "queryRef": "Min(0_Meta.Sensitivity)",
+              "queryRef": "Min(Product Information.Sensitivity)",
               "nativeQueryRef": "Sensitivity",
               "displayName": "Sensitivity"
             },
@@ -62,7 +62,7 @@
                     "Column": {
                       "Expression": {
                         "SourceRef": {
-                          "Entity": "0_Meta"
+                          "Entity": "Product Information"
                         }
                       },
                       "Property": "DIPA required"
@@ -71,9 +71,9 @@
                   "Function": 3
                 }
               },
-              "queryRef": "Min(0_Meta.DIPA required)",
-              "nativeQueryRef": "DIPA required",
-              "displayName": "DIPA required"
+              "queryRef": "Min(Product Information.DIPA required)",
+              "nativeQueryRef": "DIPA Required",
+              "displayName": "DIPA Required"
             },
             {
               "field": {
@@ -82,7 +82,7 @@
                     "Column": {
                       "Expression": {
                         "SourceRef": {
-                          "Entity": "0_Meta"
+                          "Entity": "Product Information"
                         }
                       },
                       "Property": "Located"
@@ -91,8 +91,8 @@
                   "Function": 3
                 }
               },
-              "queryRef": "Min(0_Meta.Located)",
-              "nativeQueryRef": "Location1",
+              "queryRef": "Min(Product Information.Located)",
+              "nativeQueryRef": "Location",
               "displayName": "Location"
             },
             {
@@ -102,7 +102,7 @@
                     "Column": {
                       "Expression": {
                         "SourceRef": {
-                          "Entity": "0_Meta"
+                          "Entity": "Product Information"
                         }
                       },
                       "Property": "ID"
@@ -111,7 +111,7 @@
                   "Function": 3
                 }
               },
-              "queryRef": "Min(0_Meta.ID)",
+              "queryRef": "Min(Product Information.ID)",
               "nativeQueryRef": "Product ID",
               "displayName": "Product ID"
             },
@@ -122,7 +122,7 @@
                     "Column": {
                       "Expression": {
                         "SourceRef": {
-                          "Entity": "0_Meta"
+                          "Entity": "Product Information"
                         }
                       },
                       "Property": "Product Type"
@@ -131,7 +131,7 @@
                   "Function": 3
                 }
               },
-              "queryRef": "Min(0_Meta.Product Type)",
+              "queryRef": "Min(Product Information.Product Type)",
               "nativeQueryRef": "Product Type",
               "displayName": "Product Type"
             }
@@ -185,7 +185,7 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "292.8809415946476D"
+                  "Value": "158.16013191913297D"
                 }
               }
             }
@@ -196,13 +196,130 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "134D"
+                  "Value": "149D"
                 }
               }
             }
           },
           "selector": {
-            "metadata": "Min(0_Meta.Title)"
+            "metadata": "Product Information.Title"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "104D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "Product Information"
+                          }
+                        },
+                        "Property": "Sensitivity"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'KBS Internal'"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "128D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "Product Information"
+                          }
+                        },
+                        "Property": "Title"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'JMS Dashboard'"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "127D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "total": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Product Information"
+                        }
+                      },
+                      "Property": "Title"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "236.81514629338074D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Min(Product Information.Title)"
           }
         }
       ],
@@ -216,6 +333,36 @@
                 }
               }
             }
+          }
+        }
+      ],
+      "subTotals": [
+        {
+          "properties": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "12D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "id": "Column"
+          }
+        },
+        {
+          "properties": {
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          },
+          "selector": {
+            "id": "Row"
           }
         }
       ]
@@ -241,7 +388,7 @@
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "14D"
+                  "Value": "15D"
                 }
               }
             },

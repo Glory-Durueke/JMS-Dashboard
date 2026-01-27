@@ -22,7 +22,7 @@
                     "Column": {
                       "Expression": {
                         "SourceRef": {
-                          "Entity": "0_Meta"
+                          "Entity": "Product Information"
                         }
                       },
                       "Property": "Value Stream"
@@ -31,7 +31,7 @@
                   "Function": 3
                 }
               },
-              "queryRef": "Min(0_Meta.Value Stream)",
+              "queryRef": "Min(Product Information.Value Stream)",
               "nativeQueryRef": "Value Stream",
               "displayName": "Value Stream"
             },
@@ -42,7 +42,7 @@
                     "Column": {
                       "Expression": {
                         "SourceRef": {
-                          "Entity": "0_Meta"
+                          "Entity": "Product Information"
                         }
                       },
                       "Property": "Directorate"
@@ -51,7 +51,7 @@
                   "Function": 3
                 }
               },
-              "queryRef": "Min(0_Meta.Directorate)",
+              "queryRef": "Min(Product Information.Directorate)",
               "nativeQueryRef": "Directorate",
               "displayName": "Directorate"
             },
@@ -62,7 +62,7 @@
                     "Column": {
                       "Expression": {
                         "SourceRef": {
-                          "Entity": "0_Meta"
+                          "Entity": "Product Information"
                         }
                       },
                       "Property": "Business Owner"
@@ -71,9 +71,9 @@
                   "Function": 3
                 }
               },
-              "queryRef": "Min(0_Meta.Business Owner)",
-              "nativeQueryRef": "Business Owner",
-              "displayName": "Business Owner"
+              "queryRef": "Min(Product Information.Business Owner)",
+              "nativeQueryRef": " Business Owner",
+              "displayName": " Business Owner"
             },
             {
               "field": {
@@ -82,7 +82,7 @@
                     "Column": {
                       "Expression": {
                         "SourceRef": {
-                          "Entity": "0_Meta"
+                          "Entity": "Product Information"
                         }
                       },
                       "Property": "Delegated Authority"
@@ -91,7 +91,7 @@
                   "Function": 3
                 }
               },
-              "queryRef": "Min(0_Meta.Delegated Authority)",
+              "queryRef": "Min(Product Information.Delegated Authority)",
               "nativeQueryRef": "Delegated Authority",
               "displayName": "Delegated Authority"
             },
@@ -102,27 +102,7 @@
                     "Column": {
                       "Expression": {
                         "SourceRef": {
-                          "Entity": "0_Meta"
-                        }
-                      },
-                      "Property": "IM&T Responsible"
-                    }
-                  },
-                  "Function": 3
-                }
-              },
-              "queryRef": "Min(0_Meta.IM&T Responsible)",
-              "nativeQueryRef": "IM&T Responsible",
-              "displayName": "IM&T Responsible"
-            },
-            {
-              "field": {
-                "Aggregation": {
-                  "Expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "0_Meta"
+                          "Entity": "Product Information"
                         }
                       },
                       "Property": "IM&T Accountable"
@@ -131,9 +111,29 @@
                   "Function": 3
                 }
               },
-              "queryRef": "Min(0_Meta.IM&T Accountable)",
+              "queryRef": "Min(Product Information.IM&T Accountable)",
               "nativeQueryRef": "IM&T Accountable",
               "displayName": "IM&T Accountable"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Product Information"
+                        }
+                      },
+                      "Property": "IM&T Responsible"
+                    }
+                  },
+                  "Function": 3
+                }
+              },
+              "queryRef": "Min(Product Information.IM&T Responsible)",
+              "nativeQueryRef": "IM&T Responsible",
+              "displayName": "IM&T Responsible"
             }
           ]
         }
@@ -185,24 +185,10 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "400.9305203901736D"
+                  "Value": "336.2720983503439D"
                 }
               }
             }
-          }
-        },
-        {
-          "properties": {
-            "value": {
-              "expr": {
-                "Literal": {
-                  "Value": "186D"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "Min(0_Meta.IM&T Responsible)"
           }
         },
         {
@@ -808,7 +794,139 @@
             }
           },
           "selector": {
-            "metadata": "Min(0_Meta.Delegated Authority)"
+            "metadata": "Product Information.Value Stream"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "318D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "Product Information"
+                          }
+                        },
+                        "Property": "Directorate"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'SHEQ Directorate'"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "318D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "total": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Product Information"
+                        }
+                      },
+                      "Property": "Directorate"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "318D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "Product Information"
+                          }
+                        },
+                        "Property": "Business Owner"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'Richard Gotheridge'"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "318D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "total": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Product Information"
+                        }
+                      },
+                      "Property": "Business Owner"
+                    }
+                  }
+                ]
+              }
+            ]
           }
         },
         {
@@ -822,7 +940,7 @@
             }
           },
           "selector": {
-            "metadata": "Min(0_Meta.Business Owner)"
+            "metadata": "Product Information.Directorate"
           }
         },
         {
@@ -830,13 +948,69 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "191D"
+                  "Value": "233D"
                 }
               }
             }
           },
           "selector": {
-            "metadata": "Min(0_Meta.Value Stream)"
+            "metadata": "Product Information.Business Owner"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "235D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Product Information.Delegated Authority"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "275D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Product Information.IM&T Accountable"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "275D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Product Information.IM&T Responsible"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "226.22636978132417D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Min(Product Information.Value Stream)"
           }
         }
       ],

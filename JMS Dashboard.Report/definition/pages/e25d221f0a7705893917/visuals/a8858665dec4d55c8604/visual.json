@@ -22,7 +22,7 @@
                     "Column": {
                       "Expression": {
                         "SourceRef": {
-                          "Entity": "0_Meta"
+                          "Entity": "Product Information"
                         }
                       },
                       "Property": "Methodology and considerations"
@@ -31,8 +31,9 @@
                   "Function": 3
                 }
               },
-              "queryRef": "Min(0_Meta.Methodology and considerations)",
-              "nativeQueryRef": "First Methodology and considerations"
+              "queryRef": "Min(Product Information.Methodology and considerations)",
+              "nativeQueryRef": " Methodology",
+              "displayName": " Methodology"
             }
           ]
         }
@@ -123,13 +124,27 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "801.1884945055876D"
+                  "Value": "249D"
                 }
               }
             }
           },
           "selector": {
-            "metadata": "Min(0_Meta.Methodology and considerations)"
+            "metadata": "Min(Product Information.Methodology and considerations)"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "127D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Product Information.kbsint_responsible"
           }
         }
       ],

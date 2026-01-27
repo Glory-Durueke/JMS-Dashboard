@@ -22,7 +22,7 @@
                     "Column": {
                       "Expression": {
                         "SourceRef": {
-                          "Entity": "0_Meta"
+                          "Entity": "Product Information"
                         }
                       },
                       "Property": "Description"
@@ -31,8 +31,9 @@
                   "Function": 3
                 }
               },
-              "queryRef": "Min(0_Meta.Description)",
-              "nativeQueryRef": "Description"
+              "queryRef": "Min(Product Information.Description)",
+              "nativeQueryRef": "Description",
+              "displayName": "Description"
             }
           ]
         }
@@ -133,13 +134,13 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "1468.2425747023851D"
+                  "Value": "1445.1139694414296D"
                 }
               }
             }
           },
           "selector": {
-            "metadata": "Min(0_Meta.Description)"
+            "metadata": "Min(Product Information.Description)"
           }
         }
       ],

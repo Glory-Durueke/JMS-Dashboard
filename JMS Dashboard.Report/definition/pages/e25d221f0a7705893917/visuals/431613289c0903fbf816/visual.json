@@ -5,7 +5,7 @@
     "x": 32,
     "y": 16,
     "z": 1000,
-    "height": 128,
+    "height": 80,
     "width": 304,
     "tabOrder": 7500
   },
@@ -19,7 +19,7 @@
               {
                 "textRuns": [
                   {
-                    "value": "Have a break, not a KitKat",
+                    "value": "JMS Dashboard",
                     "textStyle": {
                       "fontWeight": "bold",
                       "fontSize": "28pt",
