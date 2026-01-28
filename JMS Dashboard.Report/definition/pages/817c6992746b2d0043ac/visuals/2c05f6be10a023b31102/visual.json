@@ -1,12 +1,12 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
-  "name": "1a496fe0e72c46079218",
+  "name": "2c05f6be10a023b31102",
   "position": {
-    "x": 16,
-    "y": 53,
-    "z": 3500,
-    "height": 336,
-    "width": 1328
+    "x": 0,
+    "y": 40.629629629629626,
+    "z": 1000,
+    "height": 364.0888888888889,
+    "width": 1360
   },
   "visual": {
     "visualType": "columnChart",
@@ -851,45 +851,6 @@
             }
           }
         }
-      ],
-      "background": [
-        {
-          "properties": {
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
-            }
-          }
-        }
-      ],
-      "border": [
-        {
-          "properties": {
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
-            }
-          }
-        }
-      ],
-      "dropShadow": [
-        {
-          "properties": {
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
-            }
-          }
-        }
       ]
     },
     "drillFilterOtherVisuals": true
@@ -1026,7 +987,7 @@
                     [
                       {
                         "Literal": {
-                          "Value": "'Document Owners A to D'"
+                          "Value": "'Document Owner K - N'"
                         }
                       }
                     ]
@@ -1112,5 +1073,6 @@
       }
     ],
     "filterSortOrder": "Custom"
-  }
+  },
+  "isHidden": true
 }

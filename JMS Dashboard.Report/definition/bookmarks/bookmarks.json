@@ -2,13 +2,13 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/bookmarksMetadata/1.0.0/schema.json",
   "items": [
     {
-      "name": "3be05fda8608d1e169c8"
-    },
-    {
-      "name": "62cba52f41627d056b70",
-      "displayName": "Group 1",
+      "name": "e8a887abfc0931c5ab5c",
+      "displayName": "Tab Visuals",
       "children": [
-        "74dd940345aab09001a0"
+        "3546346f79150de08a5e",
+        "fa3954d0a3c529f6ba6f",
+        "b368968f66eee3b25d58",
+        "83da8dd9fcf4cfc6f3dd"
       ]
     }
   ]

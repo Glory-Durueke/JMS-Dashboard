@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
   "name": "67033ff7c31851796a39",
   "position": {
     "x": 1280,
@@ -11,76 +11,6 @@
   },
   "visual": {
     "visualType": "pivotTable",
-    "query": {
-      "queryState": {
-        "Rows": {
-          "projections": [
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "0_Meta"
-                    }
-                  },
-                  "Property": "Title 2"
-                }
-              },
-              "queryRef": "0_Meta.Title 2",
-              "nativeQueryRef": "Title",
-              "active": true,
-              "displayName": "Title"
-            }
-          ]
-        },
-        "Values": {
-          "projections": [
-            {
-              "field": {
-                "Aggregation": {
-                  "Expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "0_Meta"
-                        }
-                      },
-                      "Property": "Data set type"
-                    }
-                  },
-                  "Function": 3
-                }
-              },
-              "queryRef": "Min(0_Meta.Data set type)",
-              "nativeQueryRef": "Data set type",
-              "displayName": "Data set type"
-            }
-          ]
-        }
-      },
-      "sortDefinition": {
-        "sort": [
-          {
-            "field": {
-              "Aggregation": {
-                "Expression": {
-                  "Column": {
-                    "Expression": {
-                      "SourceRef": {
-                        "Entity": "0_Meta"
-                      }
-                    },
-                    "Property": "Data set type"
-                  }
-                },
-                "Function": 3
-              }
-            },
-            "direction": "Ascending"
-          }
-        ]
-      }
-    },
     "objects": {
       "general": [
         {
@@ -1169,20 +1099,6 @@
           },
           "selector": {
             "metadata": "Min(0_Meta.Title 2)"
-          }
-        },
-        {
-          "properties": {
-            "value": {
-              "expr": {
-                "Literal": {
-                  "Value": "351.80158556181937D"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "0_Meta.Title 2"
           }
         },
         {

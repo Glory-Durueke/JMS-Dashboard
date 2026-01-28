@@ -11854,19 +11854,7 @@ cultureInfo en-GB
 			          "ConceptualProperty": "Title 2"
 			        }
 			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "Title": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
-			        }
-			      ]
+			      "State": "Generated"
 			    }
 			  },
 			  "Relationships": {

@@ -4,9 +4,10 @@
   "position": {
     "x": 970.67430949932418,
     "y": 0,
-    "z": 3000,
+    "z": 4000,
     "height": 142.4518733442664,
-    "width": 309.32569050067588
+    "width": 309.32569050067588,
+    "tabOrder": 0
   },
   "visual": {
     "visualType": "cardVisual",
@@ -487,7 +488,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Action Required'"
+                  "Value": "'Urgent Action Required'"
                 }
               }
             },

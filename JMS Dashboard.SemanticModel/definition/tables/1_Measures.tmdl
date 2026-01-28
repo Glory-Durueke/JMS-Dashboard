@@ -18,7 +18,7 @@ table 1_Measures
 		lineageTag: 3b394850-ceab-40d2-941b-4166c8eba7fa
 
 	measure 'User Greeting' = ```
-			[Greeting]&" "&[User] 
+			[Greeting]&", "&[User] 
 			```
 		displayFolder: Main Measure
 		lineageTag: 11d08df9-b4da-4f5f-8088-2ad85cdcefe4

@@ -1,13 +1,12 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
-  "name": "cfc6a52720d46c37374e",
+  "name": "3c90c47e4fd6104a5eff",
   "position": {
-    "x": 0.92335053418273,
-    "y": 150.28737227198184,
-    "z": 1000,
-    "height": 9.7126277280181661,
-    "width": 1277.0874167294785,
-    "tabOrder": 3000
+    "x": 0,
+    "y": 0,
+    "z": 6000,
+    "height": 416,
+    "width": 1360
   },
   "visual": {
     "visualType": "shape",
@@ -18,7 +17,7 @@
             "tileShape": {
               "expr": {
                 "Literal": {
-                  "Value": "'line'"
+                  "Value": "'rectangle'"
                 }
               }
             }
@@ -44,19 +43,6 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
-                }
-              }
-            }
-          }
-        }
-      ],
-      "outline": [
-        {
-          "properties": {
-            "show": {
-              "expr": {
-                "Literal": {
                   "Value": "true"
                 }
               }
@@ -65,12 +51,12 @@
         },
         {
           "properties": {
-            "lineColor": {
+            "fillColor": {
               "solid": {
                 "color": {
                   "expr": {
                     "ThemeDataColor": {
-                      "ColorId": 3,
+                      "ColorId": 0,
                       "Percent": 0
                     }
                   }
@@ -82,29 +68,42 @@
             "id": "default"
           }
         }
+      ],
+      "shadow": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
       ]
     },
     "visualContainerObjects": {
-      "title": [
+      "background": [
         {
           "properties": {
-            "text": {
+            "show": {
               "expr": {
                 "Literal": {
-                  "Value": "'Separator'"
+                  "Value": "false"
                 }
               }
             }
           }
         }
       ],
-      "general": [
+      "dropShadow": [
         {
           "properties": {
-            "altText": {
+            "show": {
               "expr": {
                 "Literal": {
-                  "Value": "'Divides the screen into higher-level analysis and lower-level analysis.'"
+                  "Value": "true"
                 }
               }
             }
@@ -114,6 +113,6 @@
     },
     "drillFilterOtherVisuals": true
   },
-  "parentGroupName": "d026931b7018c79844db",
+  "parentGroupName": "a6a7a931a020740288d3",
   "howCreated": "InsertVisualButton"
 }

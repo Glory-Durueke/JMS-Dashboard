@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/report/3.0.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/report/3.1.0/schema.json",
   "themeCollection": {
     "baseTheme": {
       "name": "CY24SU10",
@@ -11,10 +11,10 @@
       "type": "SharedResources"
     },
     "customTheme": {
-      "name": "KBS_Maritime_2024_-_Default4791700146518717.json",
+      "name": "KBS_Maritime_2024.5_-_Default3695692782938348.json",
       "reportVersionAtImport": {
-        "visual": "2.4.0",
-        "report": "3.0.0",
+        "visual": "2.5.0",
+        "report": "3.1.0",
         "page": "2.3.0"
       },
       "type": "RegisteredResources"
@@ -65,11 +65,6 @@
       "type": "RegisteredResources",
       "items": [
         {
-          "name": "Top_Banner_Drillthrough_339459270649346023.png",
-          "path": "Top_Banner_Drillthrough_339459270649346023.png",
-          "type": "Image"
-        },
-        {
           "name": "Side_Banner_Title_Overlay0988062782067648.png",
           "path": "Side_Banner_Title_Overlay0988062782067648.png",
           "type": "Image"
@@ -80,8 +75,8 @@
           "type": "Image"
         },
         {
-          "name": "KBS_Maritime_2024_-_Default4791700146518717.json",
-          "path": "KBS_Maritime_2024_-_Default4791700146518717.json",
+          "name": "KBS_Maritime_2024.5_-_Default3695692782938348.json",
+          "path": "KBS_Maritime_2024.5_-_Default3695692782938348.json",
           "type": "CustomTheme"
         }
       ]
