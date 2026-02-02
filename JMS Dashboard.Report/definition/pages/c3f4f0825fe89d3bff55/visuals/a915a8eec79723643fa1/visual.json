@@ -5,9 +5,9 @@
     "x": 48,
     "y": 32,
     "z": 1000,
-    "height": 384,
-    "width": 512.00000000000011,
-    "tabOrder": 2000
+    "height": 352,
+    "width": 512,
+    "tabOrder": 8000
   },
   "visualGroup": {
     "displayName": "Title/Greeting",

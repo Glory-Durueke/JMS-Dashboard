@@ -5,7 +5,7 @@
     "x": 0,
     "y": 0,
     "z": 0,
-    "height": 111.99999999999996,
+    "height": 110,
     "width": 414.46676970633695,
     "tabOrder": 1000
   },
@@ -83,7 +83,7 @@
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "30D"
+                  "Value": "28D"
                 }
               }
             },
@@ -382,7 +382,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Percentage of Docs in Date'"
+                  "Value": "'Percentage of Document in Date'"
                 }
               }
             },

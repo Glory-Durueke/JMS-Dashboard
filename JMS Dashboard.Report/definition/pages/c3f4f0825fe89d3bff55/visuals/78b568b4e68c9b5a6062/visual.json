@@ -3,11 +3,11 @@
   "name": "78b568b4e68c9b5a6062",
   "position": {
     "x": 604,
-    "y": 462,
+    "y": 511,
     "z": 2000,
-    "height": 287,
+    "height": 256,
     "width": 1280,
-    "tabOrder": 7000
+    "tabOrder": 5000
   },
   "visual": {
     "visualType": "columnChart",
@@ -132,7 +132,7 @@
             "concatenateLabels": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "false"
                 }
               }
             },
@@ -146,7 +146,14 @@
             "maxMarginFactor": {
               "expr": {
                 "Literal": {
-                  "Value": "37L"
+                  "Value": "26L"
+                }
+              }
+            },
+            "preferredCategoryWidth": {
+              "expr": {
+                "Literal": {
+                  "Value": "77D"
                 }
               }
             }

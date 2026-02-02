@@ -1,21 +1,28 @@
 /// Sorted Priority
 /// table has two columns: "Review Priority" and "Review Name," which are used to categorize and label priority levels for reviews.
 table 'Sorted Priority'
+	isHidden
 	lineageTag: ab8423df-8ee8-41a2-afb7-d0138ee986c1
 
 	column 'Review Name'
 		dataType: string
+		isHidden
 		lineageTag: dce7ef85-bc98-4e6e-88ba-bc54e8d5cdf0
 		summarizeBy: none
 		sourceColumn: Review Name
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
 	column 'Review Priority'
 		dataType: string
+		isHidden
 		lineageTag: 3c23456e-f48e-4647-b8c2-4661e67af46e
 		summarizeBy: none
 		sourceColumn: Review Priority
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -122,6 +129,8 @@ table 'Sorted Priority'
 				    #"Renamed Columns4" = Table.RenameColumns(#"Replaced Value11",{{"Review Priorty - Copy", "Review Priority"}, {"Review Priorty", "Review Name"}})
 				in
 				    #"Renamed Columns4"
+
+	changedProperty = IsHidden
 
 	annotation PBI_ResultType = Exception
 

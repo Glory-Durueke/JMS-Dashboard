@@ -5,7 +5,7 @@
     "x": 864,
     "y": 0,
     "z": 1000,
-    "height": 112,
+    "height": 110,
     "width": 414,
     "tabOrder": 2000
   },
@@ -78,6 +78,13 @@
               "expr": {
                 "Literal": {
                   "Value": "1L"
+                }
+              }
+            },
+            "calloutSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "55D"
                 }
               }
             }
@@ -315,6 +322,32 @@
           "selector": {
             "id": "default"
           }
+        },
+        {
+          "properties": {
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 7,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "28D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "JMS Table.Overdue Docs"
+          }
         }
       ],
       "label": [
@@ -354,6 +387,22 @@
               "expr": {
                 "Literal": {
                   "Value": "0L"
+                }
+              }
+            }
+          },
+          "selector": {
+            "id": "default"
+          }
+        }
+      ],
+      "referenceLabelLayout": [
+        {
+          "properties": {
+            "position": {
+              "expr": {
+                "Literal": {
+                  "Value": "'below'"
                 }
               }
             }
@@ -457,7 +506,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Overdue Docs.'"
+                  "Value": "'Overdue Document'"
                 }
               }
             },
@@ -511,7 +560,7 @@
                 "color": {
                   "expr": {
                     "ThemeDataColor": {
-                      "ColorId": 2,
+                      "ColorId": 1,
                       "Percent": 0
                     }
                   }

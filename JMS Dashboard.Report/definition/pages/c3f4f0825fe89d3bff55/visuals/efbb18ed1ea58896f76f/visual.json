@@ -5,9 +5,9 @@
     "x": 604,
     "y": 160,
     "z": 0,
-    "height": 287,
+    "height": 336,
     "width": 1280,
-    "tabOrder": 5000
+    "tabOrder": 3000
   },
   "visualGroup": {
     "displayName": "Tab Button",

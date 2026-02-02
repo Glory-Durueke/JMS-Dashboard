@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
   "name": "d50860af49a2068547e7",
   "position": {
-    "x": 608,
-    "y": 764,
+    "x": 604,
+    "y": 784,
     "z": 4000,
-    "height": 287,
+    "height": 266,
     "width": 1280,
-    "tabOrder": 10000
+    "tabOrder": 7000
   },
   "visual": {
     "visualType": "tableEx",
@@ -115,34 +115,6 @@
             },
             {
               "field": {
-                "Measure": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "JMS Table"
-                    }
-                  },
-                  "Property": "Email Link"
-                }
-              },
-              "queryRef": "JMS Table.Email Link",
-              "nativeQueryRef": "Email Link"
-            },
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "JMS Table"
-                    }
-                  },
-                  "Property": "Review Priority Signs"
-                }
-              },
-              "queryRef": "JMS Table.Review Priority Signs",
-              "nativeQueryRef": "Review Priority Signs"
-            },
-            {
-              "field": {
                 "Column": {
                   "Expression": {
                     "SourceRef": {
@@ -153,7 +125,8 @@
                 }
               },
               "queryRef": "JMS Table.Review Status Signs",
-              "nativeQueryRef": "Review Status Signs"
+              "nativeQueryRef": "Review Status",
+              "displayName": "Review Status"
             },
             {
               "field": {
@@ -182,7 +155,7 @@
                     "Entity": "JMS Table"
                   }
                 },
-                "Property": "Title"
+                "Property": "Days till Review"
               }
             },
             "direction": "Ascending"
@@ -222,7 +195,7 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "237.0837223757833D"
+                  "Value": "178.87550986766362D"
                 }
               }
             }
@@ -236,7 +209,7 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "461.2643031404325D"
+                  "Value": "229.71849569469134D"
                 }
               }
             }
@@ -250,7 +223,7 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "192.96898991185805D"
+                  "Value": "97.68132186669192D"
                 }
               }
             }
@@ -264,7 +237,7 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "209.29405067672462D"
+                  "Value": "115.47128736020143D"
                 }
               }
             }
@@ -278,7 +251,7 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "161.30939167663132D"
+                  "Value": "111.02944039070782D"
                 }
               }
             }
@@ -292,13 +265,55 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "149.21070564954528D"
+                  "Value": "110.41080320823737D"
                 }
               }
             }
           },
           "selector": {
-            "metadata": "JMS Table.Review Priority Signs"
+            "metadata": "JMS Table.Content Type"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "103.09096616790059D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "JMS Table.Review Status Signs"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "227.60379964336173D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "JMS Table.Owners Email"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "69.29290122463608D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "CountNonNull(JMS Table.JMS ID)"
           }
         }
       ],
@@ -625,6 +640,30 @@
                   "Value": "true"
                 }
               }
+            },
+            "fontColorPrimary": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 1,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "fontColorSecondary": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 1,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
             }
           }
         }
@@ -665,7 +704,7 @@
                 "color": {
                   "expr": {
                     "ThemeDataColor": {
-                      "ColorId": 2,
+                      "ColorId": 1,
                       "Percent": 0
                     }
                   }
@@ -755,6 +794,25 @@
                   "Value": "'Left'"
                 }
               }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 1,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "columnAdjustment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'growToFit'"
+                }
+              }
             }
           }
         }
@@ -829,6 +887,18 @@
               "expr": {
                 "Literal": {
                   "Value": "true"
+                }
+              }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 1,
+                      "Percent": 0
+                    }
+                  }
                 }
               }
             }

@@ -12220,9 +12220,118 @@ cultureInfo en-GB
 			          }
 			        }
 			      ]
+			    },
+			    "entity_1_measure.HTML_bullated_list": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "1_Measures",
+			          "ConceptualProperty": "HTML Bullated List"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "HTML bullated list": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "html bullated chronology": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "html bullated directory": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "html bullated catalog": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "html bullated catalogue": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "html bullated inventory": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "html bullated record": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        }
+			      ]
 			    }
 			  },
 			  "Relationships": {
+			    "date_table_has_JMS_table_date_range": {
+			      "Binding": {
+			        "ConceptualEntity": "DateTable"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "date_table": {
+			          "Target": {
+			            "Entity": "date_table"
+			          }
+			        },
+			        "JMS_table.date_range": {
+			          "Target": {
+			            "Entity": "JMS_table.date_range"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "date_table"
+			            },
+			            "Object": {
+			              "Role": "JMS_table.date_range"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_tables_have_date_range"
+			        }
+			      ]
+			    },
 			    "JMS_table_has_overdue_": {
 			      "Binding": {
 			        "ConceptualEntity": "JMS Table"
@@ -17786,39 +17895,6 @@ cultureInfo en-GB
 			        }
 			      ]
 			    },
-			    "date_table_has_JMS_table_date_range": {
-			      "Binding": {
-			        "ConceptualEntity": "DateTable"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "date_table": {
-			          "Target": {
-			            "Entity": "date_table"
-			          }
-			        },
-			        "JMS_table.date_range": {
-			          "Target": {
-			            "Entity": "JMS_table.date_range"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "date_table"
-			            },
-			            "Object": {
-			              "Role": "JMS_table.date_range"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "date_tables_have_date_range"
-			        }
-			      ]
-			    },
 			    "JMS_table_has_date_range": {
 			      "Binding": {
 			        "ConceptualEntity": "JMS Table"
@@ -17981,6 +18057,39 @@ cultureInfo en-GB
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "JMS_tables_have_status_sorts"
+			        }
+			      ]
+			    },
+			    "entity_1_measure_has_HTML_bullated_list": {
+			      "Binding": {
+			        "ConceptualEntity": "1_Measures"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity_1_measure": {
+			          "Target": {
+			            "Entity": "entity_1_measure"
+			          }
+			        },
+			        "entity_1_measure.HTML_bullated_list": {
+			          "Target": {
+			            "Entity": "entity_1_measure.HTML_bullated_list"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity_1_measure"
+			            },
+			            "Object": {
+			              "Role": "entity_1_measure.HTML_bullated_list"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing1_measures_have_HTML_bullated_list"
 			        }
 			      ]
 			    },

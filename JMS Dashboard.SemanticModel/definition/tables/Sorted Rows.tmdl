@@ -1,20 +1,27 @@
 /// Sorted Rows table contains columns for Review Status and Priority, which help organize and classify review items by their status and priority level.
 table 'Sorted Rows'
+	isHidden
 	lineageTag: 6852a746-ccb3-4537-bdf4-9e6e482f1c21
 
 	column 'Review Status'
 		dataType: string
+		isHidden
 		lineageTag: d183f75e-3a07-47b5-84f2-d38aa7c67bdd
 		summarizeBy: none
 		sourceColumn: Review Status
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
 	column Priority
 		dataType: string
+		isHidden
 		lineageTag: 8639d212-d034-48ca-a0ef-fe3759d149ea
 		summarizeBy: none
 		sourceColumn: Priority
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -104,6 +111,8 @@ table 'Sorted Rows'
 				    #"Removed Duplicates" = Table.Distinct(#"Renamed Columns1", {"Review Status"})
 				in
 				    #"Removed Duplicates"
+
+	changedProperty = IsHidden
 
 	annotation PBI_NavigationStepName = Navigation
 

@@ -3,11 +3,11 @@
   "name": "f13badfccd97aae50863",
   "position": {
     "x": 0,
-    "y": 6,
+    "y": 2,
     "z": 0,
-    "height": 236,
-    "width": 1270,
-    "tabOrder": 11000
+    "height": 295,
+    "width": 1264,
+    "tabOrder": 1000
   },
   "visual": {
     "visualType": "columnChart",
@@ -160,6 +160,13 @@
               "expr": {
                 "Literal": {
                   "Value": "4L"
+                }
+              }
+            },
+            "preferredCategoryWidth": {
+              "expr": {
+                "Literal": {
+                  "Value": "70D"
                 }
               }
             }
