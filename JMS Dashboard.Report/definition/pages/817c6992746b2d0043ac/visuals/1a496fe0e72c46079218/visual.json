@@ -2,11 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
   "name": "1a496fe0e72c46079218",
   "position": {
-    "x": 16,
-    "y": 53,
-    "z": 3500,
-    "height": 336,
-    "width": 1328
+    "x": 7,
+    "y": 26.718750000000007,
+    "z": 1000,
+    "height": 253.33333333333334,
+    "width": 1344,
+    "tabOrder": 0
   },
   "visual": {
     "visualType": "columnChart",
@@ -41,11 +42,11 @@
                       "Entity": "JMS Table"
                     }
                   },
-                  "Property": "Review Priority Signs"
+                  "Property": "Review Status Signs"
                 }
               },
-              "queryRef": "JMS Table.Review Priority Signs",
-              "nativeQueryRef": "Review Priority Signs"
+              "queryRef": "JMS Table.Review Status Signs",
+              "nativeQueryRef": "Review Status Signs"
             }
           ]
         },
@@ -55,20 +56,32 @@
               "field": {
                 "Aggregation": {
                   "Expression": {
-                    "Column": {
+                    "GroupRef": {
                       "Expression": {
                         "SourceRef": {
                           "Entity": "JMS Table"
                         }
                       },
-                      "Property": "JMS ID"
+                      "Property": "Document Owner (groups)",
+                      "GroupedColumns": [
+                        {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Entity": "JMS Table"
+                              }
+                            },
+                            "Property": "Document Owner"
+                          }
+                        }
+                      ]
                     }
                   },
                   "Function": 5
                 }
               },
-              "queryRef": "CountNonNull(JMS Table.JMS ID)",
-              "nativeQueryRef": "Count of JMS ID"
+              "queryRef": "CountNonNull(JMS Table.Document Owner (groups))",
+              "nativeQueryRef": "Count of Document Owner (groups)"
             }
           ]
         }
@@ -77,16 +90,33 @@
         "sort": [
           {
             "field": {
-              "Column": {
+              "Aggregation": {
                 "Expression": {
-                  "SourceRef": {
-                    "Entity": "JMS Table"
+                  "GroupRef": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Entity": "JMS Table"
+                      }
+                    },
+                    "Property": "Document Owner (groups)",
+                    "GroupedColumns": [
+                      {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "JMS Table"
+                            }
+                          },
+                          "Property": "Document Owner"
+                        }
+                      }
+                    ]
                   }
                 },
-                "Property": "Document Owner"
+                "Function": 5
               }
             },
-            "direction": "Ascending"
+            "direction": "Descending"
           },
           {
             "field": {
@@ -96,10 +126,10 @@
                     "Entity": "JMS Table"
                   }
                 },
-                "Property": "Review Priority Signs"
+                "Property": "Review Status Signs"
               }
             },
-            "direction": "Descending"
+            "direction": "Ascending"
           }
         ]
       }
@@ -294,7 +324,7 @@
             "innerPadding": {
               "expr": {
                 "Literal": {
-                  "Value": "6L"
+                  "Value": "4L"
                 }
               }
             },
@@ -359,7 +389,33 @@
             "showTitle": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "true"
+                }
+              }
+            },
+            "titleText": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Status:'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "12D"
+                }
+              }
+            },
+            "labelColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 1,
+                      "Percent": 0
+                    }
+                  }
                 }
               }
             }
@@ -416,7 +472,7 @@
                 "color": {
                   "expr": {
                     "ThemeDataColor": {
-                      "ColorId": 3,
+                      "ColorId": 6,
                       "Percent": 0
                     }
                   }
@@ -458,8 +514,8 @@
                 "color": {
                   "expr": {
                     "ThemeDataColor": {
-                      "ColorId": 4,
-                      "Percent": 0
+                      "ColorId": 5,
+                      "Percent": 0.6
                     }
                   }
                 }
@@ -744,6 +800,90 @@
               }
             ]
           }
+        },
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 5,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "JMS Table"
+                          }
+                        },
+                        "Property": "Review Status Signs"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'<= 90'"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 7,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "JMS Table"
+                          }
+                        },
+                        "Property": "Review Status Signs"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'Overdue'"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
         }
       ],
       "layout": [
@@ -779,6 +919,32 @@
             }
           }
         }
+      ],
+      "ribbonBands": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "general": [
+        {
+          "properties": {
+            "responsive": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
       ]
     },
     "visualContainerObjects": {
@@ -801,6 +967,13 @@
                       "Percent": 0
                     }
                   }
+                }
+              }
+            },
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
                 }
               }
             }
@@ -826,14 +999,24 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "false"
                 }
               }
             },
             "text": {
               "expr": {
-                "Literal": {
-                  "Value": "'Assessment of Current and Overdue Document'"
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "JMS Table"
+                        }
+                      },
+                      "Property": "Review Priority Signs"
+                    }
+                  },
+                  "Function": 3
                 }
               }
             },
@@ -842,7 +1025,7 @@
                 "color": {
                   "expr": {
                     "ThemeDataColor": {
-                      "ColorId": 1,
+                      "ColorId": 2,
                       "Percent": 0
                     }
                   }
@@ -890,11 +1073,24 @@
             }
           }
         }
+      ],
+      "padding": [
+        {
+          "properties": {
+            "left": {
+              "expr": {
+                "Literal": {
+                  "Value": "3D"
+                }
+              }
+            }
+          }
+        }
       ]
     },
     "drillFilterOtherVisuals": true
   },
-  "parentGroupName": "6603b46914ab2988fe37",
+  "parentGroupName": "6028a8007ac03d02fca8",
   "filterConfig": {
     "filters": [
       {
@@ -954,7 +1150,6 @@
             }
           ]
         },
-        "howCreated": "User",
         "objects": {
           "general": [
             {
@@ -972,8 +1167,8 @@
         }
       },
       {
-        "name": "37779679e76009e040c3",
-        "ordinal": 2,
+        "name": "624e0a28eadd8b8fa6e7",
+        "ordinal": 1,
         "field": {
           "GroupRef": {
             "Expression": {
@@ -1026,7 +1221,7 @@
                     [
                       {
                         "Literal": {
-                          "Value": "'Document Owners A to D'"
+                          "Value": "'Doc. Owner A - E'"
                         }
                       }
                     ]
@@ -1039,7 +1234,40 @@
         "howCreated": "User"
       },
       {
-        "name": "cdab7c835db42dc2194e",
+        "name": "6246e130f3f00f4464da",
+        "ordinal": 2,
+        "field": {
+          "Aggregation": {
+            "Expression": {
+              "GroupRef": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "JMS Table"
+                  }
+                },
+                "Property": "Document Owner (groups)",
+                "GroupedColumns": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "JMS Table"
+                        }
+                      },
+                      "Property": "Document Owner"
+                    }
+                  }
+                ]
+              }
+            },
+            "Function": 5
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "2e8b02f36a058e904d62",
+        "ordinal": 3,
         "field": {
           "Column": {
             "Expression": {
@@ -1047,68 +1275,10 @@
                 "Entity": "JMS Table"
               }
             },
-            "Property": "Review Priority Signs"
+            "Property": "Document Owner"
           }
         },
-        "type": "Categorical",
-        "filter": {
-          "Version": 2,
-          "From": [
-            {
-              "Name": "j",
-              "Entity": "JMS Table",
-              "Type": 0
-            }
-          ],
-          "Where": [
-            {
-              "Condition": {
-                "Not": {
-                  "Expression": {
-                    "In": {
-                      "Expressions": [
-                        {
-                          "Column": {
-                            "Expression": {
-                              "SourceRef": {
-                                "Source": "j"
-                              }
-                            },
-                            "Property": "Review Priority Signs"
-                          }
-                        }
-                      ],
-                      "Values": [
-                        [
-                          {
-                            "Literal": {
-                              "Value": "'> 180 Days'"
-                            }
-                          }
-                        ]
-                      ]
-                    }
-                  }
-                }
-              }
-            }
-          ]
-        },
-        "objects": {
-          "general": [
-            {
-              "properties": {
-                "isInvertedSelectionMode": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "true"
-                    }
-                  }
-                }
-              }
-            }
-          ]
-        }
+        "type": "Categorical"
       }
     ],
     "filterSortOrder": "Custom"

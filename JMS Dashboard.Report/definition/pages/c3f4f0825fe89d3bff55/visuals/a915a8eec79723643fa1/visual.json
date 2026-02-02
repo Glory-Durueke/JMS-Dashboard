@@ -1,0 +1,16 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
+  "name": "a915a8eec79723643fa1",
+  "position": {
+    "x": 48,
+    "y": 32,
+    "z": 1000,
+    "height": 384,
+    "width": 512.00000000000011,
+    "tabOrder": 2000
+  },
+  "visualGroup": {
+    "displayName": "Title/Greeting",
+    "groupMode": "ScaleMode"
+  }
+}

@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
   "name": "f6b3c9f5ccad50d3822a",
   "position": {
-    "x": 323.55810316644141,
+    "x": 434,
     "y": 0,
-    "z": 3000,
-    "height": 142.45187334426643,
-    "width": 309.32569050067588,
-    "tabOrder": 4000
+    "z": 2000,
+    "height": 112,
+    "width": 415,
+    "tabOrder": 3000
   },
   "visual": {
     "visualType": "cardVisual",
@@ -145,7 +145,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Docs. in context'"
+                  "Value": "'Total Published Documents'"
                 }
               }
             },
@@ -177,7 +177,19 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Portfolio‑wide (all JMS docs)'"
+                  "Value": "'.'"
+                }
+              }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": 0
+                    }
+                  }
                 }
               }
             }
@@ -221,9 +233,36 @@
             }
           }
         }
+      ],
+      "padding": [
+        {
+          "properties": {
+            "bottom": {
+              "expr": {
+                "Literal": {
+                  "Value": "10D"
+                }
+              }
+            },
+            "right": {
+              "expr": {
+                "Literal": {
+                  "Value": "10D"
+                }
+              }
+            },
+            "top": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            }
+          }
+        }
       ]
     },
     "drillFilterOtherVisuals": true
   },
-  "parentGroupName": "d026931b7018c79844db"
+  "parentGroupName": "861fe9e84083139aceaa"
 }

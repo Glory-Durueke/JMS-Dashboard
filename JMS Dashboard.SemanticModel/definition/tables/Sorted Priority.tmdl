@@ -1,3 +1,5 @@
+/// Sorted Priority
+/// table has two columns: "Review Priority" and "Review Name," which are used to categorize and label priority levels for reviews.
 table 'Sorted Priority'
 	lineageTag: ab8423df-8ee8-41a2-afb7-d0138ee986c1
 
@@ -121,5 +123,5 @@ table 'Sorted Priority'
 				in
 				    #"Renamed Columns4"
 
-	annotation PBI_ResultType = Table
+	annotation PBI_ResultType = Exception
 

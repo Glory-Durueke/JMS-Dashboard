@@ -1,0 +1,1742 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/bookmark/2.0.0/schema.json",
+  "displayName": "Owners Group F - M",
+  "name": "8dd3edf1d32dd1821772",
+  "options": {
+    "applyOnlyToTargetVisuals": true,
+    "targetVisualNames": [
+      "272a25975f19707df2c5",
+      "cdefb1bb3b1492fe7bd3",
+      "96a7da83ccba842d7adc",
+      "a1f03337a1f43af29748",
+      "04a1ae175c712d48c43c",
+      "f17db213172a96eab18c",
+      "963e71cb69861e243b34",
+      "db3352e3b1322d479b4b",
+      "6028a8007ac03d02fca8",
+      "1a496fe0e72c46079218",
+      "3c90c47e4fd6104a5eff"
+    ],
+    "suppressData": true
+  },
+  "explorationState": {
+    "version": "1.3",
+    "activeSection": "817c6992746b2d0043ac",
+    "sections": {
+      "817c6992746b2d0043ac": {
+        "filters": {
+          "byExpr": [
+            {
+              "name": "85762b51500861ea86b6",
+              "type": "Categorical",
+              "filter": {
+                "Version": 2,
+                "From": [
+                  {
+                    "Name": "d",
+                    "Entity": "DateTable",
+                    "Type": 0
+                  }
+                ],
+                "Where": [
+                  {
+                    "Condition": {
+                      "Not": {
+                        "Expression": {
+                          "In": {
+                            "Expressions": [
+                              {
+                                "Column": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Source": "d"
+                                    }
+                                  },
+                                  "Property": "Date"
+                                }
+                              }
+                            ],
+                            "Values": [
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "null"
+                                  }
+                                }
+                              ]
+                            ]
+                          }
+                        }
+                      }
+                    }
+                  }
+                ]
+              },
+              "expression": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DateTable"
+                    }
+                  },
+                  "Property": "Date"
+                }
+              },
+              "howCreated": 1
+            }
+          ]
+        },
+        "visualContainers": {
+          "0ac6b3415eb8d62e00e2": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "836b0336b968763fc349",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "JMS Table"
+                        }
+                      },
+                      "Property": "Overdue Docs"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "cardVisual",
+              "objects": {}
+            }
+          },
+          "267f558b9604a9e91503": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "8c8b39d155da609d0d9f",
+                  "type": "Advanced",
+                  "filter": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "j",
+                        "Entity": "JMS Table",
+                        "Type": 0
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "Not": {
+                            "Expression": {
+                              "Comparison": {
+                                "ComparisonKind": 0,
+                                "Left": {
+                                  "Column": {
+                                    "Expression": {
+                                      "SourceRef": {
+                                        "Source": "j"
+                                      }
+                                    },
+                                    "Property": "Document Owner"
+                                  }
+                                },
+                                "Right": {
+                                  "Literal": {
+                                    "Value": "null"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "JMS Table"
+                        }
+                      },
+                      "Property": "Document Owner"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "10ade6f64bf54b15cfec",
+                  "type": "Advanced",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "JMS Table"
+                        }
+                      },
+                      "Property": "JMS ID"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "3f292a880fa94fd7930c",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "JMS Table"
+                        }
+                      },
+                      "Property": "Title"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "8671832c295347243a43",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "JMS Table"
+                        }
+                      },
+                      "Property": "Content Type"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "64bff90fc3e2602e5dc9",
+                  "type": "Advanced",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "JMS Table"
+                        }
+                      },
+                      "Property": "Days till Review"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "68b9f24142f64fb57dba",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "JMS Table"
+                        }
+                      },
+                      "Property": "Review Date"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "2c1238acfdfa37493d80",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "JMS Table"
+                        }
+                      },
+                      "Property": "Quality Team Comments"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "f5df038b6d317d178e4b",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "JMS Table"
+                        }
+                      },
+                      "Property": "Email Link"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "7d174eca2a126a651506",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "JMS Table"
+                        }
+                      },
+                      "Property": "Review Priority Signs"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "f9d5829ff868e62b86c7",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "JMS Table"
+                        }
+                      },
+                      "Property": "Review Status Signs"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "11ffc9e31acc76aab255",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "JMS Table"
+                        }
+                      },
+                      "Property": "Owners Email"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "tableEx",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 1,
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "JMS Table"
+                        }
+                      },
+                      "Property": "Title"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "5a5c023b21d3949252ad": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "7804fc898f270cc708b8",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "JMS Table"
+                        }
+                      },
+                      "Property": "Target %"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "2f347f8a7663e45a7578",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "JMS Table"
+                        }
+                      },
+                      "Property": "Docs within Date"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "b9da8f2b776f159cb847",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Table Value"
+                        }
+                      },
+                      "Property": "Value"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "kpi",
+              "objects": {}
+            }
+          },
+          "162f19d79ca6b7b2d613": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
+            }
+          },
+          "f1ab140639c9e0e3c452": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
+            }
+          },
+          "6d9c621a144c63eb322e": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "16145f4d579d33ff24ac",
+                  "type": "Categorical",
+                  "filter": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "j",
+                        "Entity": "JMS Table",
+                        "Type": 0
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "Not": {
+                            "Expression": {
+                              "In": {
+                                "Expressions": [
+                                  {
+                                    "Column": {
+                                      "Expression": {
+                                        "SourceRef": {
+                                          "Source": "j"
+                                        }
+                                      },
+                                      "Property": "Review Status Signs"
+                                    }
+                                  }
+                                ],
+                                "Values": [
+                                  [
+                                    {
+                                      "Literal": {
+                                        "Value": "'> 180 Days'"
+                                      }
+                                    }
+                                  ]
+                                ]
+                              }
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "JMS Table"
+                        }
+                      },
+                      "Property": "Review Status Signs"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "f8ace8e8018bdb3c7e6d",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "JMS Table"
+                        }
+                      },
+                      "Property": "Process Authority"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "a458a719aa1b78b635e8",
+                  "type": "Advanced",
+                  "expression": {
+                    "Aggregation": {
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "JMS Table"
+                            }
+                          },
+                          "Property": "Process Authority"
+                        }
+                      },
+                      "Function": 5
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "columnChart",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Aggregation": {
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "JMS Table"
+                            }
+                          },
+                          "Property": "Process Authority"
+                        }
+                      },
+                      "Function": 5
+                    }
+                  }
+                },
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "JMS Table"
+                        }
+                      },
+                      "Property": "Review Status Signs"
+                    }
+                  }
+                }
+              ],
+              "activeProjections": {
+                "Category": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "JMS Table"
+                        }
+                      },
+                      "Property": "Process Authority"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "96bacc8ea0732c27374f": {
+            "singleVisual": {
+              "visualType": "actionButton",
+              "objects": {}
+            }
+          },
+          "9898c36ba86fccd67cc5": {
+            "singleVisual": {
+              "visualType": "actionButton",
+              "objects": {}
+            }
+          },
+          "96a7da83ccba842d7adc": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "a1a708099952c1b0ea33",
+                  "type": "Categorical",
+                  "filter": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "j",
+                        "Entity": "JMS Table",
+                        "Type": 0
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "Not": {
+                            "Expression": {
+                              "In": {
+                                "Expressions": [
+                                  {
+                                    "Column": {
+                                      "Expression": {
+                                        "SourceRef": {
+                                          "Source": "j"
+                                        }
+                                      },
+                                      "Property": "Review Status Signs"
+                                    }
+                                  }
+                                ],
+                                "Values": [
+                                  [
+                                    {
+                                      "Literal": {
+                                        "Value": "'> 180 Days'"
+                                      }
+                                    }
+                                  ]
+                                ]
+                              }
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "JMS Table"
+                        }
+                      },
+                      "Property": "Review Status Signs"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "624e0a28eadd8b8fa6e7",
+                  "type": "Categorical",
+                  "filter": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "j",
+                        "Entity": "JMS Table",
+                        "Type": 0
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "In": {
+                            "Expressions": [
+                              {
+                                "Column": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Source": "j"
+                                    }
+                                  },
+                                  "Property": "Document Owner (groups)"
+                                }
+                              }
+                            ],
+                            "Values": [
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "'Doc. Owner N - T'"
+                                  }
+                                }
+                              ]
+                            ]
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "expression": {
+                    "GroupRef": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "JMS Table"
+                        }
+                      },
+                      "Property": "Document Owner (groups)",
+                      "GroupedColumns": [
+                        {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Entity": "JMS Table"
+                              }
+                            },
+                            "Property": "Document Owner"
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "howCreated": 1
+                },
+                {
+                  "name": "6246e130f3f00f4464da",
+                  "type": "Advanced",
+                  "expression": {
+                    "Aggregation": {
+                      "Expression": {
+                        "GroupRef": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "JMS Table"
+                            }
+                          },
+                          "Property": "Document Owner (groups)",
+                          "GroupedColumns": [
+                            {
+                              "Column": {
+                                "Expression": {
+                                  "SourceRef": {
+                                    "Entity": "JMS Table"
+                                  }
+                                },
+                                "Property": "Document Owner"
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      "Function": 5
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "2e8b02f36a058e904d62",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "JMS Table"
+                        }
+                      },
+                      "Property": "Document Owner"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "columnChart",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 1,
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "JMS Table"
+                        }
+                      },
+                      "Property": "Document Owner"
+                    }
+                  }
+                },
+                {
+                  "Direction": 1,
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "JMS Table"
+                        }
+                      },
+                      "Property": "Review Status Signs"
+                    }
+                  }
+                }
+              ],
+              "activeProjections": {
+                "Category": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "JMS Table"
+                        }
+                      },
+                      "Property": "Document Owner"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "a1f03337a1f43af29748": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "963e71cb69861e243b34": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "a1a708099952c1b0ea33",
+                  "type": "Categorical",
+                  "filter": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "j",
+                        "Entity": "JMS Table",
+                        "Type": 0
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "Not": {
+                            "Expression": {
+                              "In": {
+                                "Expressions": [
+                                  {
+                                    "Column": {
+                                      "Expression": {
+                                        "SourceRef": {
+                                          "Source": "j"
+                                        }
+                                      },
+                                      "Property": "Review Status Signs"
+                                    }
+                                  }
+                                ],
+                                "Values": [
+                                  [
+                                    {
+                                      "Literal": {
+                                        "Value": "'> 180 Days'"
+                                      }
+                                    }
+                                  ]
+                                ]
+                              }
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "JMS Table"
+                        }
+                      },
+                      "Property": "Review Status Signs"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "624e0a28eadd8b8fa6e7",
+                  "type": "Categorical",
+                  "filter": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "j",
+                        "Entity": "JMS Table",
+                        "Type": 0
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "In": {
+                            "Expressions": [
+                              {
+                                "Column": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Source": "j"
+                                    }
+                                  },
+                                  "Property": "Document Owner (groups)"
+                                }
+                              }
+                            ],
+                            "Values": [
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "'Doc. Owner F - M'"
+                                  }
+                                }
+                              ]
+                            ]
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "expression": {
+                    "GroupRef": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "JMS Table"
+                        }
+                      },
+                      "Property": "Document Owner (groups)",
+                      "GroupedColumns": [
+                        {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Entity": "JMS Table"
+                              }
+                            },
+                            "Property": "Document Owner"
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "howCreated": 1
+                },
+                {
+                  "name": "6246e130f3f00f4464da",
+                  "type": "Advanced",
+                  "expression": {
+                    "Aggregation": {
+                      "Expression": {
+                        "GroupRef": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "JMS Table"
+                            }
+                          },
+                          "Property": "Document Owner (groups)",
+                          "GroupedColumns": [
+                            {
+                              "Column": {
+                                "Expression": {
+                                  "SourceRef": {
+                                    "Entity": "JMS Table"
+                                  }
+                                },
+                                "Property": "Document Owner"
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      "Function": 5
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "2e8b02f36a058e904d62",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "JMS Table"
+                        }
+                      },
+                      "Property": "Document Owner"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "columnChart",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 1,
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "JMS Table"
+                        }
+                      },
+                      "Property": "Document Owner"
+                    }
+                  }
+                },
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "JMS Table"
+                        }
+                      },
+                      "Property": "Review Status Signs"
+                    }
+                  }
+                }
+              ],
+              "activeProjections": {
+                "Category": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "JMS Table"
+                        }
+                      },
+                      "Property": "Document Owner"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "db3352e3b1322d479b4b": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "1a496fe0e72c46079218": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "a1a708099952c1b0ea33",
+                  "type": "Categorical",
+                  "filter": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "j",
+                        "Entity": "JMS Table",
+                        "Type": 0
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "Not": {
+                            "Expression": {
+                              "In": {
+                                "Expressions": [
+                                  {
+                                    "Column": {
+                                      "Expression": {
+                                        "SourceRef": {
+                                          "Source": "j"
+                                        }
+                                      },
+                                      "Property": "Review Status Signs"
+                                    }
+                                  }
+                                ],
+                                "Values": [
+                                  [
+                                    {
+                                      "Literal": {
+                                        "Value": "'> 180 Days'"
+                                      }
+                                    }
+                                  ]
+                                ]
+                              }
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "JMS Table"
+                        }
+                      },
+                      "Property": "Review Status Signs"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "624e0a28eadd8b8fa6e7",
+                  "type": "Categorical",
+                  "filter": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "j",
+                        "Entity": "JMS Table",
+                        "Type": 0
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "In": {
+                            "Expressions": [
+                              {
+                                "Column": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Source": "j"
+                                    }
+                                  },
+                                  "Property": "Document Owner (groups)"
+                                }
+                              }
+                            ],
+                            "Values": [
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "'Doc. Owner A - E'"
+                                  }
+                                }
+                              ]
+                            ]
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "expression": {
+                    "GroupRef": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "JMS Table"
+                        }
+                      },
+                      "Property": "Document Owner (groups)",
+                      "GroupedColumns": [
+                        {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Entity": "JMS Table"
+                              }
+                            },
+                            "Property": "Document Owner"
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "howCreated": 1
+                },
+                {
+                  "name": "6246e130f3f00f4464da",
+                  "type": "Advanced",
+                  "expression": {
+                    "Aggregation": {
+                      "Expression": {
+                        "GroupRef": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "JMS Table"
+                            }
+                          },
+                          "Property": "Document Owner (groups)",
+                          "GroupedColumns": [
+                            {
+                              "Column": {
+                                "Expression": {
+                                  "SourceRef": {
+                                    "Entity": "JMS Table"
+                                  }
+                                },
+                                "Property": "Document Owner"
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      "Function": 5
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "2e8b02f36a058e904d62",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "JMS Table"
+                        }
+                      },
+                      "Property": "Document Owner"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "columnChart",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 1,
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "JMS Table"
+                        }
+                      },
+                      "Property": "Document Owner"
+                    }
+                  }
+                },
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "JMS Table"
+                        }
+                      },
+                      "Property": "Review Status Signs"
+                    }
+                  }
+                }
+              ],
+              "activeProjections": {
+                "Category": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "JMS Table"
+                        }
+                      },
+                      "Property": "Document Owner"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "3c90c47e4fd6104a5eff": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "b8f44f5cb234aa43e266": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "3ee908d18b8ae669402d",
+                  "type": "Categorical",
+                  "filter": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "j",
+                        "Entity": "JMS Table",
+                        "Type": 0
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "Not": {
+                            "Expression": {
+                              "In": {
+                                "Expressions": [
+                                  {
+                                    "Column": {
+                                      "Expression": {
+                                        "SourceRef": {
+                                          "Source": "j"
+                                        }
+                                      },
+                                      "Property": "Review Status Signs"
+                                    }
+                                  }
+                                ],
+                                "Values": [
+                                  [
+                                    {
+                                      "Literal": {
+                                        "Value": "'> 180 Days'"
+                                      }
+                                    }
+                                  ]
+                                ]
+                              }
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "JMS Table"
+                        }
+                      },
+                      "Property": "Review Status Signs"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "e153b1133b34028091b9",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "JMS Table"
+                        }
+                      },
+                      "Property": "Content Type"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "43b08fd5d7ac7a0b8811",
+                  "type": "Advanced",
+                  "expression": {
+                    "Aggregation": {
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "JMS Table"
+                            }
+                          },
+                          "Property": "JMS ID"
+                        }
+                      },
+                      "Function": 5
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "columnChart",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Aggregation": {
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "JMS Table"
+                            }
+                          },
+                          "Property": "JMS ID"
+                        }
+                      },
+                      "Function": 5
+                    }
+                  }
+                },
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "JMS Table"
+                        }
+                      },
+                      "Property": "Review Status Signs"
+                    }
+                  }
+                }
+              ],
+              "activeProjections": {
+                "Category": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "JMS Table"
+                        }
+                      },
+                      "Property": "Content Type"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "cfc6a52720d46c37374e": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "34d7b6db241794733e51": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "91f38a48d61cbeaa7f93",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "JMS Table"
+                        }
+                      },
+                      "Property": "Content Type"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "JMS Table"
+                        }
+                      },
+                      "Property": "Content Type"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "6bb8f4b3710168051e96": {
+            "singleVisual": {
+              "visualType": "actionButton",
+              "objects": {}
+            }
+          },
+          "6e9bbf543d4bb0d07518": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
+            }
+          },
+          "87fa89c4a04d8d2b9d9e": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
+            }
+          },
+          "d2e495632ddd96e10e42": {
+            "filters": {
+              "byName": {
+                "8de418739bd79c0c1e02": {
+                  "name": "8de418739bd79c0c1e02",
+                  "type": "Categorical",
+                  "filter": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "j",
+                        "Entity": "JMS Table",
+                        "Type": 0
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "Not": {
+                            "Expression": {
+                              "In": {
+                                "Expressions": [
+                                  {
+                                    "Column": {
+                                      "Expression": {
+                                        "SourceRef": {
+                                          "Source": "j"
+                                        }
+                                      },
+                                      "Property": "Review Priority Signs"
+                                    }
+                                  }
+                                ],
+                                "Values": [
+                                  [
+                                    {
+                                      "Literal": {
+                                        "Value": "'> 1 Year'"
+                                      }
+                                    }
+                                  ],
+                                  [
+                                    {
+                                      "Literal": {
+                                        "Value": "'> 180 Days'"
+                                      }
+                                    }
+                                  ]
+                                ]
+                              }
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "JMS Table"
+                        }
+                      },
+                      "Property": "Review Priority Signs"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              }
+            },
+            "singleVisual": {
+              "visualType": "advancedSlicerVisual",
+              "objects": {
+                "merge": {
+                  "selection": [
+                    {
+                      "properties": {
+                        "strictSingleSelect": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "false"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "JMS Table"
+                        }
+                      },
+                      "Property": "Review Priority Signs"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "f8fa1d420d11a94ac85d": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "8de418739bd79c0c1e02",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "JMS Table"
+                        }
+                      },
+                      "Property": "Review Priority Signs"
+                    }
+                  },
+                  "howCreated": 1
+                },
+                {
+                  "name": "252e67ec6ac54fe52eec",
+                  "type": "Categorical",
+                  "filter": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "j",
+                        "Entity": "JMS Table",
+                        "Type": 0
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "Not": {
+                            "Expression": {
+                              "In": {
+                                "Expressions": [
+                                  {
+                                    "Column": {
+                                      "Expression": {
+                                        "SourceRef": {
+                                          "Source": "j"
+                                        }
+                                      },
+                                      "Property": "Continual Improvement Required"
+                                    }
+                                  }
+                                ],
+                                "Values": [
+                                  [
+                                    {
+                                      "Literal": {
+                                        "Value": "'No'"
+                                      }
+                                    }
+                                  ]
+                                ]
+                              }
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "JMS Table"
+                        }
+                      },
+                      "Property": "Continual Improvement Required"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "advancedSlicerVisual",
+              "objects": {}
+            }
+          },
+          "f6b3c9f5ccad50d3822a": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "ce5006039cdca3b93e57",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "JMS Table"
+                        }
+                      },
+                      "Property": "Docs"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "cardVisual",
+              "objects": {}
+            }
+          }
+        },
+        "visualContainerGroups": {
+          "db5a7f29fb652e364b8c": {
+            "children": {
+              "272a25975f19707df2c5": {
+                "children": {
+                  "cdefb1bb3b1492fe7bd3": {
+                    "isHidden": true
+                  },
+                  "04a1ae175c712d48c43c": {
+                    "isHidden": false
+                  },
+                  "6028a8007ac03d02fca8": {
+                    "isHidden": true
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "objects": {
+      "merge": {
+        "outspacePane": [
+          {
+            "properties": {
+              "expanded": {
+                "expr": {
+                  "Literal": {
+                    "Value": "false"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

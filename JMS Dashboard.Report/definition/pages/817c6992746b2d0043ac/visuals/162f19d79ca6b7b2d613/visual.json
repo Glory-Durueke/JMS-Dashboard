@@ -1,13 +1,13 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
   "name": "162f19d79ca6b7b2d613",
   "position": {
     "x": 0,
     "y": 0,
     "z": 0,
-    "height": 96,
+    "height": 85.7142857142857,
     "width": 512,
-    "tabOrder": 10000
+    "tabOrder": 0
   },
   "visual": {
     "visualType": "textbox",
@@ -22,7 +22,7 @@
                     "value": "JMS DASHBOARD",
                     "textStyle": {
                       "fontWeight": "bold",
-                      "fontSize": "44pt",
+                      "fontSize": "42pt",
                       "color": "#c54b8c"
                     }
                   }

@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
   "name": "0ac6b3415eb8d62e00e2",
   "position": {
-    "x": 970.67430949932418,
+    "x": 866,
     "y": 0,
-    "z": 4000,
-    "height": 142.4518733442664,
-    "width": 309.32569050067588,
-    "tabOrder": 0
+    "z": 1000,
+    "height": 111.99999999999999,
+    "width": 415,
+    "tabOrder": 1000
   },
   "visual": {
     "visualType": "cardVisual",
@@ -297,10 +297,17 @@
                 "color": {
                   "expr": {
                     "ThemeDataColor": {
-                      "ColorId": 2,
+                      "ColorId": 7,
                       "Percent": 0
                     }
                   }
+                }
+              }
+            },
+            "horizontalAlignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'center'"
                 }
               }
             }
@@ -423,7 +430,7 @@
             "right": {
               "expr": {
                 "Literal": {
-                  "Value": "5D"
+                  "Value": "10D"
                 }
               }
             },
@@ -431,6 +438,13 @@
               "expr": {
                 "Literal": {
                   "Value": "0D"
+                }
+              }
+            },
+            "bottom": {
+              "expr": {
+                "Literal": {
+                  "Value": "10D"
                 }
               }
             }
@@ -510,5 +524,5 @@
     },
     "drillFilterOtherVisuals": true
   },
-  "parentGroupName": "d026931b7018c79844db"
+  "parentGroupName": "861fe9e84083139aceaa"
 }

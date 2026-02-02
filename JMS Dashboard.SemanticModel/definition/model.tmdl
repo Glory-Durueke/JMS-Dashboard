@@ -10,7 +10,7 @@ annotation PBI_QueryOrder = ["1_Measures","StartDate","EndDate","DateTable","Pro
 
 annotation __PBI_TimeIntelligenceEnabled = 0
 
-annotation PBI_ProTooling = ["DevMode","CopilotTooling","DaxQueryView_Desktop","DaxCopilot_Change_Accepted_In_Desktop"]
+annotation PBI_ProTooling = ["DevMode","CopilotTooling","DaxQueryView_Desktop","DaxCopilot_Change_Accepted_In_Desktop","Copilot","CopilotMeasureDescriptions"]
 
 ref table 1_Measures
 ref table DateTable
@@ -18,7 +18,7 @@ ref table 'Product Information'
 ref table 'JMS Table'
 ref table 'Sorted Priority'
 ref table 'Sorted Rows'
-ref table Table
+ref table 'Table Value'
 
 ref cultureInfo en-GB
 

@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
   "name": "5b5308e96d3bd825b3e9",
   "position": {
-    "x": 47.132169576059859,
+    "x": 48,
     "y": 32,
-    "z": 4000,
-    "height": 448,
-    "width": 511.99999999999994,
-    "tabOrder": 1000
+    "z": 1000,
+    "height": 399.99999999999994,
+    "width": 512,
+    "tabOrder": 10000
   },
   "visualGroup": {
     "displayName": "Title/Greeting",

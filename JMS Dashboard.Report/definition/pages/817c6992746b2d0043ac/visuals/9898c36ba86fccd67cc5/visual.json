@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
   "name": "9898c36ba86fccd67cc5",
   "position": {
-    "x": 1312.0000000000002,
-    "y": 9,
-    "z": 6750,
+    "x": 1750,
+    "y": 166,
+    "z": 9000,
     "height": 32,
-    "width": 32,
-    "tabOrder": 16001
+    "width": 33,
+    "tabOrder": 4000
   },
   "visual": {
     "visualType": "actionButton",
@@ -18,7 +18,7 @@
             "shapeType": {
               "expr": {
                 "Literal": {
-                  "Value": "'help'"
+                  "Value": "'information'"
                 }
               }
             },
@@ -112,6 +112,13 @@
                   }
                 }
               }
+            },
+            "lineWeight": {
+              "expr": {
+                "Literal": {
+                  "Value": "2L"
+                }
+              }
             }
           },
           "selector": {
@@ -146,7 +153,7 @@
                 "color": {
                   "expr": {
                     "ThemeDataColor": {
-                      "ColorId": 5,
+                      "ColorId": 0,
                       "Percent": 0
                     }
                   }
@@ -156,6 +163,25 @@
           },
           "selector": {
             "id": "selected"
+          }
+        },
+        {
+          "properties": {
+            "fillColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "id": "hover"
           }
         }
       ],
@@ -220,6 +246,5 @@
     },
     "drillFilterOtherVisuals": true
   },
-  "parentGroupName": "a6a7a931a020740288d3",
   "howCreated": "InsertVisualButton"
 }

@@ -2,21 +2,25 @@
 table 'JMS Table'
 	lineageTag: 7cefd9e1-f42c-46e0-a381-b77e1c499c67
 
+	/// Calculates the proportion of documents in the JMS Table that are not marked as 'Compliant and Expired', representing the share of documents within the valid date range.
 	measure 'Docs within Date' = 1-((COUNTROWS(FILTER('JMS Table','JMS Table'[Compliant and Expired - Copy]==1)))/COUNTROWS('JMS Table'))
 		formatString: 0.0%;-0.0%;0.0%
 		displayFolder: Main Measure
 		lineageTag: ef7c60a8-f618-4302-838c-86995e185fb2
 
+	/// A static value of 0.95 for Target %.
 	measure 'Target %' = 0.95
 		formatString: 0%;-0%;0%
 		displayFolder: Main Measure
 		lineageTag: e509e8e3-bf5d-4a3e-89b9-c5b13ffff4d3
 
+	/// Creates a dynamic email link by concatenating a static string with the selected owner's email address from the JMS Table.
 	measure 'Email Link' = "mailto:" & SELECTEDVALUE('JMS Table'[Owners Email])
 		displayFolder: Main Measure
 		lineageTag: 2c1109aa-c6b8-4485-961a-23d4192f4758
 		dataCategory: WebUrl
 
+	/// Counts the number of rows in the 'JMS Table' where the 'Compliant and Expired - Copy' field equals 1, representing the total number of expired documents.
 	measure 'Expired Documents' = ```
 			
 			
@@ -48,16 +52,19 @@ table 'JMS Table'
 		displayFolder: Utility
 		lineageTag: b00b7a2f-c2d2-4934-8184-d12035e55011
 
+	/// Counts the total number of rows in the 'JMS Table', representing the total number of documents.
 	measure Docs = COUNTROWS('JMS Table')
 		formatString: 0
 		displayFolder: Main Measure
 		lineageTag: d95abd33-b78e-4211-9caf-34bbe8c7d41f
 
+	/// Calculates the number of days from today until the earliest review date in the JMS Table.
 	measure 'Days Till Review.' = DATEDIFF ( TODAY(), MIN('JMS Table'[Review Date]), DAY )
 		formatString: 0
 		displayFolder: Main Measure
 		lineageTag: 7cd27123-a18a-4b72-82d5-6df200bfe10c
 
+	/// Calculates the total number of documents that are overdue by counting those with a review date in the past.
 	measure 'Overdue Docs' =
 			
 			CALCULATE ( [Docs], FILTER( ALL('JMS Table'[ReviewDate]), [Days Till Review.] < 0 ) )
@@ -65,6 +72,7 @@ table 'JMS Table'
 		displayFolder: Main Measure
 		lineageTag: 1ace4e45-a0cb-4564-855a-3a2b2692de4f
 
+	/// Calculates the number of documents that are due for review within the next 30 days, including today, based on the 'Days Till Review.' measure.
 	measure 'Due <=30 Days' =
 			
 			CALCULATE ( [Docs], FILTER( ALL('JMS Table'[ReviewDate]), [Days Till Review.] >= 0 && [Days Till Review.] <= 30 ) )
@@ -72,6 +80,7 @@ table 'JMS Table'
 		displayFolder: Main Measure
 		lineageTag: feafb6a0-c631-4b3d-90d2-cb1298098f8f
 
+	/// Calculates the total Docs measure over the last 12 months ending on the latest date in the DateTable.
 	measure 'Docs Trend' = ```
 			
 			CALCULATE ( [Docs], DATESINPERIOD ( 'DateTable'[Date], MAX('DateTable'[Date]), -12, MONTH ) )
@@ -93,6 +102,7 @@ table 'JMS Table'
 		displayFolder: Utility
 		lineageTag: 6a7a36a4-beff-4c44-861f-0edda807e82f
 
+	/// Calculates the percentage of documents that are both compliant and expired out of the total number of documents. This measure helps track the proportion of overdue compliant documents.
 	measure 'Overdue %' = ```
 			
 			VAR TotalDocs = [Docs]
@@ -105,10 +115,11 @@ table 'JMS Table'
 		displayFolder: Main Measure
 		lineageTag: d36da719-070b-422a-aa1b-3662ab1e45d0
 
+	/// Concatenates the earliest 'Created' date from the JMS Table with the latest year from the DateTable as a formatted string to represent the overall date range.
 	measure 'Date Range' = ```
 			
 			VAR StartDate = MIN ( 'JMS Table'[Created] )
-			VAR EndDate   = MAX ( 'JMS Table'[Review Date] )
+			VAR EndDate   = MAX ( 'DateTable'[Date] )
 			RETURN
 			 
 			FORMAT ( StartDate, "dd/MM/yyyy" ) &
@@ -117,6 +128,14 @@ table 'JMS Table'
 			```
 		displayFolder: Main Measure
 		lineageTag: 5c8e1470-4c6a-4730-9e08-65db276f2176
+
+	/// Calculates the number of documents that are due for review within the next 10 days, including today, based on the 'Days Till Review.' value.
+	measure 'Due <= 10 Days' =
+			
+			CALCULATE ( [Docs], FILTER( ALL('JMS Table'[ReviewDate]), [Days Till Review.] >= 0 && [Days Till Review.] <= 10 ) )
+		formatString: 0
+		displayFolder: Main Measure
+		lineageTag: 68e07583-2a48-44fe-8c97-0917a7465cd8
 
 	column Id
 		dataType: int64
@@ -368,6 +387,9 @@ table 'JMS Table'
 		lineageTag: a80ab04a-cc12-46c0-8419-66f12e4b96c1
 		summarizeBy: none
 		sourceColumn: Review Status Signs
+		sortByColumn: 'Review Status'
+
+		changedProperty = SortByColumn
 
 		annotation SummarizationSetBy = Automatic
 
@@ -405,67 +427,6 @@ table 'JMS Table'
 				TRUE,
 				ISBLANK('JMS Table'[Document Owner]),
 				"(Blank)",
-				'JMS Table'[Document Owner] IN {"Dean Cleal",
-					"Dean Dryhurst",
-					"Duncan Hobbs",
-					"Emma Bailey",
-					"Fred Annan-Jackson",
-					"Gareth Thomas",
-					"Gary Morrison",
-					"Gary Todd",
-					"Glyn Noice",
-					"Greg Pearce",
-					"Heather Higgins",
-					"Ian Francis",
-					"Jane Moore",
-					"Jason Lamb",
-					"Jason Robinson",
-					"Jella Hyde",
-					"Joe House",
-					"Jon Bartholomew",
-					"Kasia Olender"},
-				"Document Owner D - K",
-				'JMS Table'[Document Owner] IN {"Kev Morrell",
-					"Kristine Fitzjohn",
-					"Laurence Poole",
-					"Lee Cook",
-					"Lee Duffy",
-					"Lee Fitzpatrick",
-					"Lisa Bouckley",
-					"Liz Short",
-					"Lloyd Warren",
-					"Marc Jones",
-					"Marty Paine",
-					"Matt Spearing",
-					"Molly Brooks",
-					"Molly Knight",
-					"Neil King",
-					"Nick Miller",
-					"Nick Tate",
-					"Nigel Hargreaves",
-					"Nikki Cherry"},
-				"Document Owner K - N",
-				'JMS Table'[Document Owner] IN {"Paul Hickey",
-					"Paul Murphy",
-					"Paul Robbins",
-					"Paul Tate",
-					"Phillipa Blake",
-					"Ray Gibbs",
-					"Richard Gotheridge",
-					"Richard Sullivan",
-					"Ricki Scott",
-					"Rob Hicks",
-					"Rosie Robbins",
-					"Rupert Mastin",
-					"Russell Howard",
-					"Sarah Hedges",
-					"Stacey Knights",
-					"Stephen Braddick",
-					"Sue Neal",
-					"Tom Neary2",
-					"Tony Cheer",
-					"Tori Cameron"},
-				"Document Owner P - T",
 				'JMS Table'[Document Owner] IN {"Alex Dodd",
 					"Alex Spurgeon",
 					"Andrew Pounder",
@@ -485,8 +446,68 @@ table 'JMS Table'
 					"Darren Spencer",
 					"David Hatton",
 					"David Shepherd",
-					"Dawn Lewis"},
-				"Document Owners A to D",
+					"Dawn Lewis",
+					"Dean Cleal",
+					"Dean Dryhurst",
+					"Duncan Hobbs",
+					"Emma Bailey"},
+				"Doc. Owner A - E",
+				'JMS Table'[Document Owner] IN {"Fred Annan-Jackson",
+					"Gareth Thomas",
+					"Gary Morrison",
+					"Gary Todd",
+					"Glyn Noice",
+					"Greg Pearce",
+					"Heather Higgins",
+					"Ian Francis",
+					"Jane Moore",
+					"Jason Lamb",
+					"Jason Robinson",
+					"Jella Hyde",
+					"Joe House",
+					"Jon Bartholomew",
+					"Kev Morrell",
+					"Kristine Fitzjohn",
+					"Laurence Poole",
+					"Lee Cook",
+					"Lee Duffy",
+					"Lee Fitzpatrick",
+					"Lisa Bouckley",
+					"Liz Short",
+					"Lloyd Warren",
+					"Marc Jones",
+					"Marty Paine",
+					"Matt Spearing",
+					"Michelle Mitchell",
+					"Molly Brooks",
+					"Molly Knight"},
+				"Doc. Owner F - M",
+				'JMS Table'[Document Owner] IN {"Neil King",
+					"Nick Miller",
+					"Nick Tate",
+					"Nigel Hargreaves",
+					"Nikki Cherry",
+					"Paul Hickey",
+					"Paul Murphy",
+					"Paul Robbins",
+					"Paul Tate",
+					"Phillipa Blake",
+					"Ray Gibbs",
+					"Richard Gotheridge",
+					"Richard Sullivan",
+					"Ricki Scott",
+					"Rob Hicks",
+					"Rosie Robbins",
+					"Russell Howard",
+					"Sam Noorduijn",
+					"Sarah Hedges",
+					"Stacey Knights",
+					"Stephen Braddick",
+					"Sue Neal",
+					"Tom Neary2",
+					"Tony Cheer",
+					"Tori Cameron"},
+				"Doc. Owner N - T",
 				'JMS Table'[Document Owner]
 			)
 		lineageTag: 7b5d2206-a201-4926-968b-6c61a9a09625
@@ -509,7 +530,36 @@ table 'JMS Table'
 				  ]
 				}
 
-		annotation GroupingDesignState = {"Version":0,"Sources":[{"Name":"j","Entity":"JMS Table"}],"GroupedColumns":[{"Column":{"Expression":{"SourceRef":{"Source":"j"}},"Property":"Document Owner"}}],"GroupItems":[{"DisplayName":"(Blank)","BlankDefaultPlaceholder":true},{"DisplayName":"Document Owner D - K","Expression":{"In":{"Expressions":[{"Column":{"Expression":{"SourceRef":{"Source":"j"}},"Property":"Document Owner"}}],"Values":[[{"Literal":{"Value":"'Dean Cleal'"}}],[{"Literal":{"Value":"'Dean Dryhurst'"}}],[{"Literal":{"Value":"'Duncan Hobbs'"}}],[{"Literal":{"Value":"'Emma Bailey'"}}],[{"Literal":{"Value":"'Fred Annan-Jackson'"}}],[{"Literal":{"Value":"'Gareth Thomas'"}}],[{"Literal":{"Value":"'Gary Morrison'"}}],[{"Literal":{"Value":"'Gary Todd'"}}],[{"Literal":{"Value":"'Glyn Noice'"}}],[{"Literal":{"Value":"'Greg Pearce'"}}],[{"Literal":{"Value":"'Heather Higgins'"}}],[{"Literal":{"Value":"'Ian Francis'"}}],[{"Literal":{"Value":"'Jane Moore'"}}],[{"Literal":{"Value":"'Jason Lamb'"}}],[{"Literal":{"Value":"'Jason Robinson'"}}],[{"Literal":{"Value":"'Jella Hyde'"}}],[{"Literal":{"Value":"'Joe House'"}}],[{"Literal":{"Value":"'Jon Bartholomew'"}}],[{"Literal":{"Value":"'Kasia Olender'"}}]]}}},{"DisplayName":"Document Owner K - N","Expression":{"In":{"Expressions":[{"Column":{"Expression":{"SourceRef":{"Source":"j"}},"Property":"Document Owner"}}],"Values":[[{"Literal":{"Value":"'Kev Morrell'"}}],[{"Literal":{"Value":"'Kristine Fitzjohn'"}}],[{"Literal":{"Value":"'Laurence Poole'"}}],[{"Literal":{"Value":"'Lee Cook'"}}],[{"Literal":{"Value":"'Lee Duffy'"}}],[{"Literal":{"Value":"'Lee Fitzpatrick'"}}],[{"Literal":{"Value":"'Lisa Bouckley'"}}],[{"Literal":{"Value":"'Liz Short'"}}],[{"Literal":{"Value":"'Lloyd Warren'"}}],[{"Literal":{"Value":"'Marc Jones'"}}],[{"Literal":{"Value":"'Marty Paine'"}}],[{"Literal":{"Value":"'Matt Spearing'"}}],[{"Literal":{"Value":"'Molly Brooks'"}}],[{"Literal":{"Value":"'Molly Knight'"}}],[{"Literal":{"Value":"'Neil King'"}}],[{"Literal":{"Value":"'Nick Miller'"}}],[{"Literal":{"Value":"'Nick Tate'"}}],[{"Literal":{"Value":"'Nigel Hargreaves'"}}],[{"Literal":{"Value":"'Nikki Cherry'"}}]]}}},{"DisplayName":"Document Owner P - T","Expression":{"In":{"Expressions":[{"Column":{"Expression":{"SourceRef":{"Source":"j"}},"Property":"Document Owner"}}],"Values":[[{"Literal":{"Value":"'Paul Hickey'"}}],[{"Literal":{"Value":"'Paul Murphy'"}}],[{"Literal":{"Value":"'Paul Robbins'"}}],[{"Literal":{"Value":"'Paul Tate'"}}],[{"Literal":{"Value":"'Phillipa Blake'"}}],[{"Literal":{"Value":"'Ray Gibbs'"}}],[{"Literal":{"Value":"'Richard Gotheridge'"}}],[{"Literal":{"Value":"'Richard Sullivan'"}}],[{"Literal":{"Value":"'Ricki Scott'"}}],[{"Literal":{"Value":"'Rob Hicks'"}}],[{"Literal":{"Value":"'Rosie Robbins'"}}],[{"Literal":{"Value":"'Rupert Mastin'"}}],[{"Literal":{"Value":"'Russell Howard'"}}],[{"Literal":{"Value":"'Sarah Hedges'"}}],[{"Literal":{"Value":"'Stacey Knights'"}}],[{"Literal":{"Value":"'Stephen Braddick'"}}],[{"Literal":{"Value":"'Sue Neal'"}}],[{"Literal":{"Value":"'Tom Neary2'"}}],[{"Literal":{"Value":"'Tony Cheer'"}}],[{"Literal":{"Value":"'Tori Cameron'"}}]]}}},{"DisplayName":"Document Owners A to D","Expression":{"In":{"Expressions":[{"Column":{"Expression":{"SourceRef":{"Source":"j"}},"Property":"Document Owner"}}],"Values":[[{"Literal":{"Value":"'Alex Dodd'"}}],[{"Literal":{"Value":"'Alex Spurgeon'"}}],[{"Literal":{"Value":"'Andrew Pounder'"}}],[{"Literal":{"Value":"'Annabelle Froome'"}}],[{"Literal":{"Value":"'Ben Williams'"}}],[{"Literal":{"Value":"'Brian Don'"}}],[{"Literal":{"Value":"'Callum Slater'"}}],[{"Literal":{"Value":"'Cherie Dewhurst'"}}],[{"Literal":{"Value":"'Chris Callaway'"}}],[{"Literal":{"Value":"'Chris Lester'"}}],[{"Literal":{"Value":"'Christiaan Wilde'"}}],[{"Literal":{"Value":"'Claire Kennedy'"}}],[{"Literal":{"Value":"'Claire Phillips'"}}],[{"Literal":{"Value":"'Clare Booth'"}}],[{"Literal":{"Value":"'Dan Henshaw'"}}],[{"Literal":{"Value":"'Dan Parham'"}}],[{"Literal":{"Value":"'Darren Spencer'"}}],[{"Literal":{"Value":"'David Hatton'"}}],[{"Literal":{"Value":"'David Shepherd'"}}],[{"Literal":{"Value":"'Dawn Lewis'"}}]]}}}]}
+		annotation GroupingDesignState = {"Version":0,"Sources":[{"Name":"j","Entity":"JMS Table"}],"GroupedColumns":[{"Column":{"Expression":{"SourceRef":{"Source":"j"}},"Property":"Document Owner"}}],"GroupItems":[{"DisplayName":"(Blank)","BlankDefaultPlaceholder":true},{"DisplayName":"Doc. Owner A - E","Expression":{"In":{"Expressions":[{"Column":{"Expression":{"SourceRef":{"Source":"j"}},"Property":"Document Owner"}}],"Values":[[{"Literal":{"Value":"'Alex Dodd'"}}],[{"Literal":{"Value":"'Alex Spurgeon'"}}],[{"Literal":{"Value":"'Andrew Pounder'"}}],[{"Literal":{"Value":"'Annabelle Froome'"}}],[{"Literal":{"Value":"'Ben Williams'"}}],[{"Literal":{"Value":"'Brian Don'"}}],[{"Literal":{"Value":"'Callum Slater'"}}],[{"Literal":{"Value":"'Cherie Dewhurst'"}}],[{"Literal":{"Value":"'Chris Callaway'"}}],[{"Literal":{"Value":"'Chris Lester'"}}],[{"Literal":{"Value":"'Christiaan Wilde'"}}],[{"Literal":{"Value":"'Claire Kennedy'"}}],[{"Literal":{"Value":"'Claire Phillips'"}}],[{"Literal":{"Value":"'Clare Booth'"}}],[{"Literal":{"Value":"'Dan Henshaw'"}}],[{"Literal":{"Value":"'Dan Parham'"}}],[{"Literal":{"Value":"'Darren Spencer'"}}],[{"Literal":{"Value":"'David Hatton'"}}],[{"Literal":{"Value":"'David Shepherd'"}}],[{"Literal":{"Value":"'Dawn Lewis'"}}],[{"Literal":{"Value":"'Dean Cleal'"}}],[{"Literal":{"Value":"'Dean Dryhurst'"}}],[{"Literal":{"Value":"'Duncan Hobbs'"}}],[{"Literal":{"Value":"'Emma Bailey'"}}]]}}},{"DisplayName":"Doc. Owner F - M","Expression":{"In":{"Expressions":[{"Column":{"Expression":{"SourceRef":{"Source":"j"}},"Property":"Document Owner"}}],"Values":[[{"Literal":{"Value":"'Fred Annan-Jackson'"}}],[{"Literal":{"Value":"'Gareth Thomas'"}}],[{"Literal":{"Value":"'Gary Morrison'"}}],[{"Literal":{"Value":"'Gary Todd'"}}],[{"Literal":{"Value":"'Glyn Noice'"}}],[{"Literal":{"Value":"'Greg Pearce'"}}],[{"Literal":{"Value":"'Heather Higgins'"}}],[{"Literal":{"Value":"'Ian Francis'"}}],[{"Literal":{"Value":"'Jane Moore'"}}],[{"Literal":{"Value":"'Jason Lamb'"}}],[{"Literal":{"Value":"'Jason Robinson'"}}],[{"Literal":{"Value":"'Jella Hyde'"}}],[{"Literal":{"Value":"'Joe House'"}}],[{"Literal":{"Value":"'Jon Bartholomew'"}}],[{"Literal":{"Value":"'Kev Morrell'"}}],[{"Literal":{"Value":"'Kristine Fitzjohn'"}}],[{"Literal":{"Value":"'Laurence Poole'"}}],[{"Literal":{"Value":"'Lee Cook'"}}],[{"Literal":{"Value":"'Lee Duffy'"}}],[{"Literal":{"Value":"'Lee Fitzpatrick'"}}],[{"Literal":{"Value":"'Lisa Bouckley'"}}],[{"Literal":{"Value":"'Liz Short'"}}],[{"Literal":{"Value":"'Lloyd Warren'"}}],[{"Literal":{"Value":"'Marc Jones'"}}],[{"Literal":{"Value":"'Marty Paine'"}}],[{"Literal":{"Value":"'Matt Spearing'"}}],[{"Literal":{"Value":"'Michelle Mitchell'"}}],[{"Literal":{"Value":"'Molly Brooks'"}}],[{"Literal":{"Value":"'Molly Knight'"}}]]}}},{"DisplayName":"Doc. Owner N - T","Expression":{"In":{"Expressions":[{"Column":{"Expression":{"SourceRef":{"Source":"j"}},"Property":"Document Owner"}}],"Values":[[{"Literal":{"Value":"'Neil King'"}}],[{"Literal":{"Value":"'Nick Miller'"}}],[{"Literal":{"Value":"'Nick Tate'"}}],[{"Literal":{"Value":"'Nigel Hargreaves'"}}],[{"Literal":{"Value":"'Nikki Cherry'"}}],[{"Literal":{"Value":"'Paul Hickey'"}}],[{"Literal":{"Value":"'Paul Murphy'"}}],[{"Literal":{"Value":"'Paul Robbins'"}}],[{"Literal":{"Value":"'Paul Tate'"}}],[{"Literal":{"Value":"'Phillipa Blake'"}}],[{"Literal":{"Value":"'Ray Gibbs'"}}],[{"Literal":{"Value":"'Richard Gotheridge'"}}],[{"Literal":{"Value":"'Richard Sullivan'"}}],[{"Literal":{"Value":"'Ricki Scott'"}}],[{"Literal":{"Value":"'Rob Hicks'"}}],[{"Literal":{"Value":"'Rosie Robbins'"}}],[{"Literal":{"Value":"'Russell Howard'"}}],[{"Literal":{"Value":"'Sam Noorduijn'"}}],[{"Literal":{"Value":"'Sarah Hedges'"}}],[{"Literal":{"Value":"'Stacey Knights'"}}],[{"Literal":{"Value":"'Stephen Braddick'"}}],[{"Literal":{"Value":"'Sue Neal'"}}],[{"Literal":{"Value":"'Tom Neary2'"}}],[{"Literal":{"Value":"'Tony Cheer'"}}],[{"Literal":{"Value":"'Tori Cameron'"}}]]}}}]}
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Due <=15 Days' =
+			
+			CALCULATE ( [Docs], FILTER( ALL('JMS Table'[ReviewDate]), [Days Till Review.] >= 0 && [Days Till Review.] <= 15 ) )
+		formatString: 0
+		lineageTag: 756b3262-cd96-4ce6-9105-8b6926ad688b
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+	column StatusSort = ```
+			
+			SWITCH(
+			    TRUE(),
+			    [Review Status Signs] = "Overdue",1,
+			    [Review Status Signs] = "<= 90 Days", 2,
+			    [Review Status Signs] = "= 60 Days", 3,
+			    [Review Status Signs] = "<= 30 Days", 4,
+			    5
+			)
+			
+			```
+		dataType: string
+		lineageTag: 474f5b30-5461-45a0-8616-5f200ea18638
+		summarizeBy: none
+
+		changedProperty = DataType
 
 		annotation SummarizationSetBy = Automatic
 
