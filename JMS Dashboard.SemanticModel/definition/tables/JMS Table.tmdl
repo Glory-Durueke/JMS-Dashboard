@@ -73,9 +73,9 @@ table 'JMS Table'
 		lineageTag: 1ace4e45-a0cb-4564-855a-3a2b2692de4f
 
 	/// Calculates the number of documents that are due for review within the next 30 days, including today, based on the 'Days Till Review.' measure.
-	measure 'Due <=30 Days' =
+	measure 'Due 01 - 30 Days' =
 			
-			CALCULATE ( [Docs], FILTER( ALL('JMS Table'[ReviewDate]), [Days Till Review.] >= 0 && [Days Till Review.] <= 30 ) )
+			CALCULATE ( [Docs], FILTER( ALL('JMS Table'[ReviewDate]), [Days Till Review.] >= 0 && [Days Till Review.] = 30 ) )
 		formatString: 0
 		displayFolder: Main Measure
 		lineageTag: feafb6a0-c631-4b3d-90d2-cb1298098f8f
@@ -114,20 +114,6 @@ table 'JMS Table'
 		formatString: 0.00%;-0.00%;0.00%
 		displayFolder: Main Measure
 		lineageTag: d36da719-070b-422a-aa1b-3662ab1e45d0
-
-	/// Concatenates the earliest 'Created' date from the JMS Table with the latest year from the DateTable as a formatted string to represent the overall date range.
-	measure 'Date Range' = ```
-			
-			VAR StartDate = MIN ( 'JMS Table'[Created] )
-			VAR EndDate   = MAX ( 'DateTable'[Date] )
-			RETURN
-			 
-			FORMAT ( StartDate, "dd/MM/yyyy" ) &
-			" → " &
-			FORMAT ( EndDate, "dd/MM/yyyy" )
-			```
-		displayFolder: Main Measure
-		lineageTag: 5c8e1470-4c6a-4730-9e08-65db276f2176
 
 	/// Calculates the number of documents that are due for review within the next 10 days, including today, based on the 'Days Till Review.' value.
 	measure 'Due <= 10 Days' =
@@ -275,8 +261,6 @@ table 'JMS Table'
 
 		annotation SummarizationSetBy = Automatic
 
-		annotation __PBI_SemanticLinks = [{"LinkTarget":{"TableName":"JMS Table","TableItemName":"Document Owner (groups)","ObjectType":4},"LinkType":"UsedInGroup"}]
-
 	column 'Process Authority'
 		dataType: string
 		lineageTag: 2473e9b2-a09c-4897-8e95-73e28c3ceded
@@ -422,147 +406,6 @@ table 'JMS Table'
 
 		annotation UnderlyingDateTimeDataType = Date
 
-	column 'Document Owner (groups)' =
-			SWITCH(
-				TRUE,
-				ISBLANK('JMS Table'[Document Owner]),
-				"(Blank)",
-				'JMS Table'[Document Owner] IN {"Alex Dodd",
-					"Alex Spurgeon",
-					"Andrew Pounder",
-					"Annabelle Froome",
-					"Ben Williams",
-					"Brian Don",
-					"Callum Slater",
-					"Cherie Dewhurst",
-					"Chris Callaway",
-					"Chris Lester",
-					"Christiaan Wilde",
-					"Claire Kennedy",
-					"Claire Phillips",
-					"Clare Booth",
-					"Dan Henshaw",
-					"Dan Parham",
-					"Darren Spencer",
-					"David Hatton",
-					"David Shepherd",
-					"Dawn Lewis",
-					"Dean Cleal",
-					"Dean Dryhurst",
-					"Duncan Hobbs",
-					"Emma Bailey"},
-				"Doc. Owner A - E",
-				'JMS Table'[Document Owner] IN {"Fred Annan-Jackson",
-					"Gareth Thomas",
-					"Gary Morrison",
-					"Gary Todd",
-					"Glyn Noice",
-					"Greg Pearce",
-					"Heather Higgins",
-					"Ian Francis",
-					"Jane Moore",
-					"Jason Lamb",
-					"Jason Robinson",
-					"Jella Hyde",
-					"Joe House",
-					"Jon Bartholomew",
-					"Kev Morrell",
-					"Kristine Fitzjohn",
-					"Laurence Poole",
-					"Lee Cook",
-					"Lee Duffy",
-					"Lee Fitzpatrick",
-					"Lisa Bouckley",
-					"Liz Short",
-					"Lloyd Warren",
-					"Marc Jones",
-					"Marty Paine",
-					"Matt Spearing",
-					"Michelle Mitchell",
-					"Molly Brooks",
-					"Molly Knight"},
-				"Doc. Owner F - M",
-				'JMS Table'[Document Owner] IN {"Neil King",
-					"Nick Miller",
-					"Nick Tate",
-					"Nigel Hargreaves",
-					"Nikki Cherry",
-					"Paul Hickey",
-					"Paul Murphy",
-					"Paul Robbins",
-					"Paul Tate",
-					"Phillipa Blake",
-					"Ray Gibbs",
-					"Richard Gotheridge",
-					"Richard Sullivan",
-					"Ricki Scott",
-					"Rob Hicks",
-					"Rosie Robbins",
-					"Russell Howard",
-					"Sam Noorduijn",
-					"Sarah Hedges",
-					"Stacey Knights",
-					"Stephen Braddick",
-					"Sue Neal",
-					"Tom Neary2",
-					"Tony Cheer",
-					"Tori Cameron"},
-				"Doc. Owner N - T",
-				'JMS Table'[Document Owner]
-			)
-		lineageTag: 7b5d2206-a201-4926-968b-6c61a9a09625
-		summarizeBy: none
-
-		extendedProperty GroupingMetadata =
-				{
-				  "version": 0,
-				  "groupedColumns": [
-				    {
-				      "Column": {
-				        "Expression": {
-				          "SourceRef": {
-				            "Entity": "JMS Table"
-				          }
-				        },
-				        "Property": "Document Owner"
-				      }
-				    }
-				  ]
-				}
-
-		annotation GroupingDesignState = {"Version":0,"Sources":[{"Name":"j","Entity":"JMS Table"}],"GroupedColumns":[{"Column":{"Expression":{"SourceRef":{"Source":"j"}},"Property":"Document Owner"}}],"GroupItems":[{"DisplayName":"(Blank)","BlankDefaultPlaceholder":true},{"DisplayName":"Doc. Owner A - E","Expression":{"In":{"Expressions":[{"Column":{"Expression":{"SourceRef":{"Source":"j"}},"Property":"Document Owner"}}],"Values":[[{"Literal":{"Value":"'Alex Dodd'"}}],[{"Literal":{"Value":"'Alex Spurgeon'"}}],[{"Literal":{"Value":"'Andrew Pounder'"}}],[{"Literal":{"Value":"'Annabelle Froome'"}}],[{"Literal":{"Value":"'Ben Williams'"}}],[{"Literal":{"Value":"'Brian Don'"}}],[{"Literal":{"Value":"'Callum Slater'"}}],[{"Literal":{"Value":"'Cherie Dewhurst'"}}],[{"Literal":{"Value":"'Chris Callaway'"}}],[{"Literal":{"Value":"'Chris Lester'"}}],[{"Literal":{"Value":"'Christiaan Wilde'"}}],[{"Literal":{"Value":"'Claire Kennedy'"}}],[{"Literal":{"Value":"'Claire Phillips'"}}],[{"Literal":{"Value":"'Clare Booth'"}}],[{"Literal":{"Value":"'Dan Henshaw'"}}],[{"Literal":{"Value":"'Dan Parham'"}}],[{"Literal":{"Value":"'Darren Spencer'"}}],[{"Literal":{"Value":"'David Hatton'"}}],[{"Literal":{"Value":"'David Shepherd'"}}],[{"Literal":{"Value":"'Dawn Lewis'"}}],[{"Literal":{"Value":"'Dean Cleal'"}}],[{"Literal":{"Value":"'Dean Dryhurst'"}}],[{"Literal":{"Value":"'Duncan Hobbs'"}}],[{"Literal":{"Value":"'Emma Bailey'"}}]]}}},{"DisplayName":"Doc. Owner F - M","Expression":{"In":{"Expressions":[{"Column":{"Expression":{"SourceRef":{"Source":"j"}},"Property":"Document Owner"}}],"Values":[[{"Literal":{"Value":"'Fred Annan-Jackson'"}}],[{"Literal":{"Value":"'Gareth Thomas'"}}],[{"Literal":{"Value":"'Gary Morrison'"}}],[{"Literal":{"Value":"'Gary Todd'"}}],[{"Literal":{"Value":"'Glyn Noice'"}}],[{"Literal":{"Value":"'Greg Pearce'"}}],[{"Literal":{"Value":"'Heather Higgins'"}}],[{"Literal":{"Value":"'Ian Francis'"}}],[{"Literal":{"Value":"'Jane Moore'"}}],[{"Literal":{"Value":"'Jason Lamb'"}}],[{"Literal":{"Value":"'Jason Robinson'"}}],[{"Literal":{"Value":"'Jella Hyde'"}}],[{"Literal":{"Value":"'Joe House'"}}],[{"Literal":{"Value":"'Jon Bartholomew'"}}],[{"Literal":{"Value":"'Kev Morrell'"}}],[{"Literal":{"Value":"'Kristine Fitzjohn'"}}],[{"Literal":{"Value":"'Laurence Poole'"}}],[{"Literal":{"Value":"'Lee Cook'"}}],[{"Literal":{"Value":"'Lee Duffy'"}}],[{"Literal":{"Value":"'Lee Fitzpatrick'"}}],[{"Literal":{"Value":"'Lisa Bouckley'"}}],[{"Literal":{"Value":"'Liz Short'"}}],[{"Literal":{"Value":"'Lloyd Warren'"}}],[{"Literal":{"Value":"'Marc Jones'"}}],[{"Literal":{"Value":"'Marty Paine'"}}],[{"Literal":{"Value":"'Matt Spearing'"}}],[{"Literal":{"Value":"'Michelle Mitchell'"}}],[{"Literal":{"Value":"'Molly Brooks'"}}],[{"Literal":{"Value":"'Molly Knight'"}}]]}}},{"DisplayName":"Doc. Owner N - T","Expression":{"In":{"Expressions":[{"Column":{"Expression":{"SourceRef":{"Source":"j"}},"Property":"Document Owner"}}],"Values":[[{"Literal":{"Value":"'Neil King'"}}],[{"Literal":{"Value":"'Nick Miller'"}}],[{"Literal":{"Value":"'Nick Tate'"}}],[{"Literal":{"Value":"'Nigel Hargreaves'"}}],[{"Literal":{"Value":"'Nikki Cherry'"}}],[{"Literal":{"Value":"'Paul Hickey'"}}],[{"Literal":{"Value":"'Paul Murphy'"}}],[{"Literal":{"Value":"'Paul Robbins'"}}],[{"Literal":{"Value":"'Paul Tate'"}}],[{"Literal":{"Value":"'Phillipa Blake'"}}],[{"Literal":{"Value":"'Ray Gibbs'"}}],[{"Literal":{"Value":"'Richard Gotheridge'"}}],[{"Literal":{"Value":"'Richard Sullivan'"}}],[{"Literal":{"Value":"'Ricki Scott'"}}],[{"Literal":{"Value":"'Rob Hicks'"}}],[{"Literal":{"Value":"'Rosie Robbins'"}}],[{"Literal":{"Value":"'Russell Howard'"}}],[{"Literal":{"Value":"'Sam Noorduijn'"}}],[{"Literal":{"Value":"'Sarah Hedges'"}}],[{"Literal":{"Value":"'Stacey Knights'"}}],[{"Literal":{"Value":"'Stephen Braddick'"}}],[{"Literal":{"Value":"'Sue Neal'"}}],[{"Literal":{"Value":"'Tom Neary2'"}}],[{"Literal":{"Value":"'Tony Cheer'"}}],[{"Literal":{"Value":"'Tori Cameron'"}}]]}}}]}
-
-		annotation SummarizationSetBy = Automatic
-
-	column 'Due <=15 Days' =
-			
-			CALCULATE ( [Docs], FILTER( ALL('JMS Table'[ReviewDate]), [Days Till Review.] >= 0 && [Days Till Review.] <= 15 ) )
-		formatString: 0
-		lineageTag: 756b3262-cd96-4ce6-9105-8b6926ad688b
-		summarizeBy: sum
-
-		annotation SummarizationSetBy = Automatic
-
-	column StatusSort = ```
-			
-			SWITCH(
-			    TRUE(),
-			    [Review Status Signs] = "Overdue",1,
-			    [Review Status Signs] = "<= 90 Days", 2,
-			    [Review Status Signs] = "= 60 Days", 3,
-			    [Review Status Signs] = "<= 30 Days", 4,
-			    5
-			)
-			
-			```
-		dataType: string
-		lineageTag: 474f5b30-5461-45a0-8616-5f200ea18638
-		summarizeBy: none
-
-		changedProperty = DataType
-
-		annotation SummarizationSetBy = Automatic
-
 	partition 'JMS Table' = m
 		mode: import
 		source = ```
@@ -639,7 +482,7 @@ table 'JMS Table'
 				    #"Renamed Columns12" = Table.RenameColumns(#"Added Conditional Column2",{{"Expired and Compliant - Copy", "Compliant and Expired - Copy"}}),
 				    #"Removed Columns2" = Table.RemoveColumns(#"Renamed Columns12",{"Additional Authorisers", "TaxCatchAll", "SharedWithUsers", "Document MS ID", "Author", "Editor", "CheckoutUser", "FieldValuesForEdit", "File", "Folder", "LikedByInformation", "ParentList", "Properties", "Versions", "Document MS IDId", "OData__ip_UnifiedCompliancePolicyProperties", "Mgt. System", "OData__ColorTag", "SharedWithDetails", "External Ref. Type", "Standard Type", "Strategy Type", "Mgt. Plan Type", "Additional AuthorisersStringId", "Additional AuthorisersId", "OData__CopySource", "CheckoutUserId", "OData__UIVersionString", "FirstUniqueAncestorSecurableObject", "RoleAssignments", "FieldValuesAsHtml.FileLeafRef.2.2", "GetDlpPolicyTip", "AttachmentFiles", "GUID", "Eng. Auth. Req'd?", "SHE Auth. Req'd?", "SharedWithUsersId", "IM Auth. Req'd?", "VControlTableAdded", "ParentIDLookup"}),
 				    #"Changed Type8" = Table.TransformColumnTypes(#"Removed Columns2",{{"Id", Int64.Type}, {"Document Link", type text}, {"DocumentOwnerId", Int64.Type}, {"Title", type text}, {"JMSIDLookupId", Int64.Type}, {"ParentIDLookupId", Int64.Type}, {"JMSReadyTBCComments", type text}, {"Process AuthorityId", Int64.Type}, {"Process AuthorityStringId", Int64.Type}, {"ReviewDate", type date}, {"ID.1", Int64.Type}, {"AuthorId", Int64.Type}, {"Modified", type datetime}, {"EditorId", Int64.Type}, {"BusinessAreaL1", type text}, {"Content Type", type text}, {"JMS ID", Int64.Type}, {".ReviewDate", type date}, {"Document Owner", type text}, {"JMSIDLookup", type any}, {"Process Authority", type text}, {"10K or 30K", type text}, {"Review Priorty", type text}, {"Review Status", type text}, {"Days till Review", Int64.Type}, {"Priority Score", Int64.Type}, {"Priority", Int64.Type}, {"Compliant and Expired", type text}, {"Sort DO", type text}, {"Sort PA", type text}, {"Compliant and Expired - Copy", Int64.Type}}),
-				    #"Replaced Value1" = Table.ReplaceValue(#"Changed Type8",null,"No Comment",Replacer.ReplaceValue,{"JMSReadyTBCComments"}),
+				    #"Replaced Value1" = Table.ReplaceValue(#"Changed Type8",null,"",Replacer.ReplaceValue,{"JMSReadyTBCComments"}),
 				    #"Replaced Value2" = Table.ReplaceValue(#"Replaced Value1",null,"New Document",Replacer.ReplaceValue,{"Title"}),
 				    #"Filtered Rows1" = Table.SelectRows(#"Replaced Value2", each true),
 				    #"Removed Columns7" = Table.RemoveColumns(#"Filtered Rows1",{"JMSIDLookup"}),
@@ -655,29 +498,29 @@ table 'JMS Table'
 				    #"Renamed Columns15" = Table.RenameColumns(#"Changed Type9",{{"Review Priorty", "Review Priority"}}),
 				    #"Duplicated Column2" = Table.DuplicateColumn(#"Renamed Columns15", "Review Status", "Review Status - Copy"),
 				    #"Renamed Columns16" = Table.RenameColumns(#"Duplicated Column2",{{"Review Status - Copy", "Review Status Signs"}}),
-				    #"Replaced Value3" = Table.ReplaceValue(#"Renamed Columns16","Expires within 30 Days","<= 30 Days",Replacer.ReplaceText,{"Review Status Signs"}),
-				    #"Replaced Value4" = Table.ReplaceValue(#"Replaced Value3","Expires within 60 Days","= 60 Days",Replacer.ReplaceText,{"Review Status Signs"}),
-				    #"Replaced Value5" = Table.ReplaceValue(#"Replaced Value4","Expires within 180 Days","<= 180 Days",Replacer.ReplaceText,{"Review Status Signs"}),
+				    #"Replaced Value3" = Table.ReplaceValue(#"Renamed Columns16","Expires within 30 Days","1 - 30 Days",Replacer.ReplaceText,{"Review Status Signs"}),
+				    #"Replaced Value4" = Table.ReplaceValue(#"Replaced Value3","Expires within 60 Days","31 - 60 Days",Replacer.ReplaceText,{"Review Status Signs"}),
+				    #"Replaced Value5" = Table.ReplaceValue(#"Replaced Value4","Expires within 180 Days","61 Day - 90 Days",Replacer.ReplaceText,{"Review Status Signs"}),
 				    #"Replaced Value6" = Table.ReplaceValue(#"Replaced Value5","Expires within 180+ Days","> 180 Days",Replacer.ReplaceText,{"Review Status Signs"}),
-				    #"Replaced Value7" = Table.ReplaceValue(#"Replaced Value6","JMS"," ",Replacer.ReplaceText,{"Content Type"}),
+				    #"Replaced Value19" = Table.ReplaceValue(#"Replaced Value6","Expired","Overdue",Replacer.ReplaceText,{"Review Status Signs"}),
+				    #"Replaced Value7" = Table.ReplaceValue(#"Replaced Value19","JMS"," ",Replacer.ReplaceText,{"Content Type"}),
 				    #"Filtered Rows2" = Table.SelectRows(#"Replaced Value7", each true),
 				    #"Duplicated Column3" = Table.DuplicateColumn(#"Filtered Rows2", "Review Priority", "Review Priority - Copy"),
 				    #"Renamed Columns17" = Table.RenameColumns(#"Duplicated Column3",{{"Review Priority - Copy", "Review Priority Signs"}}),
-				    #"Replaced Value8" = Table.ReplaceValue(#"Renamed Columns17","Review within 30 Days","<= 30 Days",Replacer.ReplaceText,{"Review Priority Signs"}),
-				    #"Replaced Value9" = Table.ReplaceValue(#"Replaced Value8","Review within 60 Days","= 60 Days",Replacer.ReplaceText,{"Review Priority Signs"}),
-				    #"Replaced Value10" = Table.ReplaceValue(#"Replaced Value9","Review within 90 Days","<= 90 Days",Replacer.ReplaceText,{"Review Priority Signs"}),
+				    #"Replaced Value8" = Table.ReplaceValue(#"Renamed Columns17","Review within 30 Days","01 - 30 Days",Replacer.ReplaceText,{"Review Priority Signs"}),
+				    #"Replaced Value9" = Table.ReplaceValue(#"Replaced Value8","Review within 60 Days","31 - 60 Days",Replacer.ReplaceText,{"Review Priority Signs"}),
+				    #"Replaced Value10" = Table.ReplaceValue(#"Replaced Value9","Review within 90 Days","61 - 90 Days",Replacer.ReplaceText,{"Review Priority Signs"}),
 				    #"Replaced Value11" = Table.ReplaceValue(#"Replaced Value10","Review within 1 year","> 180 Days",Replacer.ReplaceText,{"Review Priority Signs"}),
 				    #"Replaced Value12" = Table.ReplaceValue(#"Replaced Value11","Greater than 1 year","> 1 Year",Replacer.ReplaceText,{"Review Priority Signs"}),
 				    #"Renamed Columns18" = Table.RenameColumns(#"Replaced Value12",{{"ContinualImprovementRequired", "Continual Improvement Required"}}),
 				    #"Changed Type10" = Table.TransformColumnTypes(#"Renamed Columns18",{{"Continual Improvement Required", type text}}),
-				    #"Replaced Value13" = Table.ReplaceValue(#"Changed Type10","false","No",Replacer.ReplaceText,{"Continual Improvement Required"}),
-				    #"Replaced Value14" = Table.ReplaceValue(#"Replaced Value13",null,"No",Replacer.ReplaceValue,{"Continual Improvement Required"}),
-				    #"Replaced Value15" = Table.ReplaceValue(#"Replaced Value14","true","Yes",Replacer.ReplaceText,{"Continual Improvement Required"}),
+				    #"Replaced Value15" = Table.ReplaceValue(#"Changed Type10","true","Yes",Replacer.ReplaceText,{"Continual Improvement Required"}),
 				    #"Replaced Value16" = Table.ReplaceValue(#"Replaced Value15","Review Overdue","Overdue",Replacer.ReplaceText,{"Review Priority Signs"}),
 				    #"Replaced Value17" = Table.ReplaceValue(#"Replaced Value16","Expired","Overdue",Replacer.ReplaceText,{"Review Status Signs"}),
-				    #"Replaced Value18" = Table.ReplaceValue(#"Replaced Value17","<= 180 Days","<= 90",Replacer.ReplaceText,{"Review Status Signs"})
+				    #"Replaced Value18" = Table.ReplaceValue(#"Replaced Value17","<= 180 Days","61 - 90 Days",Replacer.ReplaceText,{"Review Status Signs"}),
+				    #"Filtered Rows3" = Table.SelectRows(#"Replaced Value18", each true)
 				in
-				    #"Replaced Value18"
+				    #"Filtered Rows3"
 				```
 
 	annotation PBI_NavigationStepName = Navigation

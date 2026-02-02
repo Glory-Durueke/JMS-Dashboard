@@ -3,10 +3,10 @@
   "name": "1f0d329e03614e4681fe",
   "position": {
     "x": 0,
-    "y": 320.43890274314305,
+    "y": 400,
     "z": 5000,
-    "height": 80,
-    "width": 429.62962962962973,
+    "height": 96,
+    "width": 432,
     "tabOrder": 0
   },
   "visual": {
@@ -347,11 +347,69 @@
           }
         },
         "type": "Categorical",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "j",
+              "Entity": "JMS Table",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "Not": {
+                  "Expression": {
+                    "In": {
+                      "Expressions": [
+                        {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Source": "j"
+                              }
+                            },
+                            "Property": "Review Priority Signs"
+                          }
+                        }
+                      ],
+                      "Values": [
+                        [
+                          {
+                            "Literal": {
+                              "Value": "'> 1 Year'"
+                            }
+                          }
+                        ],
+                        [
+                          {
+                            "Literal": {
+                              "Value": "'> 180 Days'"
+                            }
+                          }
+                        ]
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
         "howCreated": "User",
         "objects": {
           "general": [
             {
-              "properties": {}
+              "properties": {
+                "isInvertedSelectionMode": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "true"
+                    }
+                  }
+                }
+              }
             }
           ]
         }
@@ -400,7 +458,21 @@
                         [
                           {
                             "Literal": {
+                              "Value": "'false'"
+                            }
+                          }
+                        ],
+                        [
+                          {
+                            "Literal": {
                               "Value": "'No'"
+                            }
+                          }
+                        ],
+                        [
+                          {
+                            "Literal": {
+                              "Value": "null"
                             }
                           }
                         ]

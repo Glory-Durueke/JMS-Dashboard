@@ -10,17 +10,16 @@
       "nodes": [
         {
           "location": {
-            "x": 364.99257833261953,
-            "y": 302.35668607539293
+            "x": 368.82117181163295,
+            "y": 390.41433609270314
           },
           "nodeIndex": "1_Measures",
           "nodeLineageTag": "fca0b643-062c-4cfe-911a-63a9e040b594",
           "size": {
-            "height": 72,
+            "height": 257.63458223787319,
             "width": 348.70709437572805
           },
-          "zIndex": 6,
-          "expandedHeight": 159.36734960986018
+          "zIndex": 2
         },
         {
           "location": {
@@ -33,7 +32,7 @@
             "height": 219.59953694071658,
             "width": 348.70709437572805
           },
-          "zIndex": 4
+          "zIndex": 1
         },
         {
           "location": {
@@ -46,49 +45,20 @@
             "height": 250.22828477282462,
             "width": 348.70709437572805
           },
-          "zIndex": 7
+          "zIndex": 3
         },
         {
           "location": {
-            "x": 377.41318741324613,
-            "y": 193.55652407345275
-          },
-          "nodeIndex": "Sorted Priority",
-          "nodeLineageTag": "ab8423df-8ee8-41a2-afb7-d0138ee986c1",
-          "size": {
-            "height": 72,
-            "width": 348.70709437572805
-          },
-          "zIndex": 3,
-          "expandedHeight": 145
-        },
-        {
-          "location": {
-            "x": 376.55270986879481,
-            "y": 105.88816529482466
-          },
-          "nodeIndex": "Sorted Rows",
-          "nodeLineageTag": "6852a746-ccb3-4537-bdf4-9e6e482f1c21",
-          "size": {
-            "height": 72,
-            "width": 348.70709437572805
-          },
-          "zIndex": 2,
-          "expandedHeight": 145
-        },
-        {
-          "location": {
-            "x": 366.2493592845301,
-            "y": 403.27851312275448
+            "x": 375.18274406889492,
+            "y": 107.20061741237777
           },
           "nodeIndex": "Product Information",
           "nodeLineageTag": "32e73e29-1971-46b3-96e7-badcf6d76f83",
           "size": {
-            "height": 72,
+            "height": 248.37202393336429,
             "width": 348.70709437572805
           },
-          "zIndex": 1,
-          "expandedHeight": 145
+          "zIndex": 5
         },
         {
           "location": {
@@ -100,7 +70,7 @@
             "height": 72,
             "width": 348.70709437572805
           },
-          "zIndex": 0,
+          "zIndex": 4,
           "expandedHeight": 145
         }
       ],

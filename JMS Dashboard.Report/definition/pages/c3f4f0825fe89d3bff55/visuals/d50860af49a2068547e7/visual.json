@@ -7,7 +7,7 @@
     "z": 4000,
     "height": 266,
     "width": 1280,
-    "tabOrder": 7000
+    "tabOrder": 8000
   },
   "visual": {
     "visualType": "tableEx",
@@ -974,6 +974,118 @@
             }
           ]
         }
+      },
+      {
+        "name": "5122df698e3711cc5e75",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "JMS Table"
+              }
+            },
+            "Property": "JMS ID"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "8f0136ac3135bd12b2b5",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "JMS Table"
+              }
+            },
+            "Property": "Title"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "be35fe6a7142921e591e",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "JMS Table"
+              }
+            },
+            "Property": "Content Type"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "7d8ae9b9767fcbd850d9",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "JMS Table"
+              }
+            },
+            "Property": "Days till Review"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "cde31700cdba587ac729",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "JMS Table"
+              }
+            },
+            "Property": "Review Date"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "d640f4e4eb6b37f7ddfb",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "JMS Table"
+              }
+            },
+            "Property": "Quality Team Comments"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "fc438f57f45c33e3ca35",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "JMS Table"
+              }
+            },
+            "Property": "Review Status Signs"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "c81882b38fa9d3dac5c1",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "JMS Table"
+              }
+            },
+            "Property": "Owners Email"
+          }
+        },
+        "type": "Categorical"
       }
     ]
   }

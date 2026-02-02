@@ -3,10 +3,11 @@
   "name": "f41706bd8c520066f200",
   "position": {
     "x": 48,
-    "y": 416,
+    "y": 160,
     "z": 5000,
-    "height": 528,
-    "width": 464
+    "height": 784.00000000000011,
+    "width": 464,
+    "tabOrder": 6000
   },
   "visualGroup": {
     "displayName": "Filter Pane",

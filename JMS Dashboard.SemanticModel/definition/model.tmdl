@@ -6,7 +6,17 @@ model Model
 		legacyRedirects
 		returnErrorValuesAsNull
 
-annotation PBI_QueryOrder = ["1_Measures","StartDate","EndDate","DateTable","Product Information","JMS Table","Sorted Priority","Sorted Rows"]
+/// Errors in queries that were loaded on 02/02/2026 18:34:09.
+queryGroup 'Query Errors - 02/02/2026 18:34:09'
+
+	annotation PBI_QueryGroupOrder = 0
+
+/// Errors in queries that were loaded on 02/02/2026 19:05:05.
+queryGroup 'Query Errors - 02/02/2026 19:05:05'
+
+	annotation PBI_QueryGroupOrder = 1
+
+annotation PBI_QueryOrder = ["1_Measures","StartDate","EndDate","DateTable","Product Information","JMS Table","Sorted Priority","Sorted Rows","Errors in JMS Table"]
 
 annotation __PBI_TimeIntelligenceEnabled = 0
 
@@ -16,8 +26,6 @@ ref table 1_Measures
 ref table DateTable
 ref table 'Product Information'
 ref table 'JMS Table'
-ref table 'Sorted Priority'
-ref table 'Sorted Rows'
 ref table 'Table Value'
 
 ref cultureInfo en-GB

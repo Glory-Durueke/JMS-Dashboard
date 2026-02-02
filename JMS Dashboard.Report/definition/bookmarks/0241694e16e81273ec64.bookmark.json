@@ -584,12 +584,6 @@
               "objects": {}
             }
           },
-          "ccb6575e97d6f69027f2": {
-            "singleVisual": {
-              "visualType": "textbox",
-              "objects": {}
-            }
-          },
           "0c34cadd563a165e5cde": {
             "filters": {
               "byExpr": [
