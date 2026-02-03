@@ -11,7 +11,7 @@
       "type": "SharedResources"
     },
     "customTheme": {
-      "name": "KBS_Maritime_2024.5_-_Default3695692782938348.json",
+      "name": "KBS_Maritime_2024.5_-_Default8403605213803184.json",
       "reportVersionAtImport": {
         "visual": "2.5.0",
         "report": "3.1.0",
@@ -75,8 +75,8 @@
           "type": "Image"
         },
         {
-          "name": "KBS_Maritime_2024.5_-_Default3695692782938348.json",
-          "path": "KBS_Maritime_2024.5_-_Default3695692782938348.json",
+          "name": "KBS_Maritime_2024.5_-_Default8403605213803184.json",
+          "path": "KBS_Maritime_2024.5_-_Default8403605213803184.json",
           "type": "CustomTheme"
         }
       ]

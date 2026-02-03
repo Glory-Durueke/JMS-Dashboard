@@ -37,13 +37,6 @@ table 1_Measures
 		displayFolder: Utility
 		lineageTag: 23bcc3e0-e985-40e5-9256-4eb3aa19de8b
 
-	measure 'HTML Bullated List' = ```
-			
-			
-			"<ul>" & 
-			```
-		lineageTag: 225f1b38-8d11-4e16-b717-0bc75a64c745
-
 	column 'Refresh Time'
 		dataType: dateTime
 		formatString: Long Date

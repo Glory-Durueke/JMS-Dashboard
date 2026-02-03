@@ -110,121 +110,7 @@
             "direction": {
               "expr": {
                 "Literal": {
-                  "Value": "'Negative'"
-                }
-              }
-            },
-            "goodColor": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Conditional": {
-                      "Cases": [
-                        {
-                          "Condition": {
-                            "And": {
-                              "Left": {
-                                "Comparison": {
-                                  "ComparisonKind": 2,
-                                  "Left": {
-                                    "Measure": {
-                                      "Expression": {
-                                        "SourceRef": {
-                                          "Entity": "JMS Table"
-                                        }
-                                      },
-                                      "Property": "Target %"
-                                    }
-                                  },
-                                  "Right": {
-                                    "Literal": {
-                                      "Value": "0D"
-                                    }
-                                  }
-                                }
-                              },
-                              "Right": {
-                                "Comparison": {
-                                  "ComparisonKind": 3,
-                                  "Left": {
-                                    "Measure": {
-                                      "Expression": {
-                                        "SourceRef": {
-                                          "Entity": "JMS Table"
-                                        }
-                                      },
-                                      "Property": "Target %"
-                                    }
-                                  },
-                                  "Right": {
-                                    "Literal": {
-                                      "Value": "94.99D"
-                                    }
-                                  }
-                                }
-                              }
-                            }
-                          },
-                          "Value": {
-                            "Literal": {
-                              "Value": "'#F6511D'"
-                            }
-                          }
-                        },
-                        {
-                          "Condition": {
-                            "And": {
-                              "Left": {
-                                "Comparison": {
-                                  "ComparisonKind": 2,
-                                  "Left": {
-                                    "Measure": {
-                                      "Expression": {
-                                        "SourceRef": {
-                                          "Entity": "JMS Table"
-                                        }
-                                      },
-                                      "Property": "Target %"
-                                    }
-                                  },
-                                  "Right": {
-                                    "Literal": {
-                                      "Value": "95D"
-                                    }
-                                  }
-                                }
-                              },
-                              "Right": {
-                                "Comparison": {
-                                  "ComparisonKind": 3,
-                                  "Left": {
-                                    "Measure": {
-                                      "Expression": {
-                                        "SourceRef": {
-                                          "Entity": "JMS Table"
-                                        }
-                                      },
-                                      "Property": "Target %"
-                                    }
-                                  },
-                                  "Right": {
-                                    "Literal": {
-                                      "Value": "99.99D"
-                                    }
-                                  }
-                                }
-                              }
-                            }
-                          },
-                          "Value": {
-                            "Literal": {
-                              "Value": "'#7FB800'"
-                            }
-                          }
-                        }
-                      ]
-                    }
-                  }
+                  "Value": "'Positive'"
                 }
               }
             },
@@ -296,7 +182,7 @@
                 "color": {
                   "expr": {
                     "ThemeDataColor": {
-                      "ColorId": 0,
+                      "ColorId": 7,
                       "Percent": 0
                     }
                   }

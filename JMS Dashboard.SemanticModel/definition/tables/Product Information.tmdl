@@ -666,7 +666,8 @@ table 'Product Information'
 				let
 				    Source = CommonDataService.Database("keystone.crm11.dynamics.com"),
 				    dbo_kbsint_informationproducts = Source{[Schema="dbo",Item="kbsint_informationproducts"]}[Data],
-				    #"Filtered Rows" = Table.SelectRows(dbo_kbsint_informationproducts, each ([kbsint_title] = "JMS Dashboard"))
+				    #"Filtered Rows1" = Table.SelectRows(dbo_kbsint_informationproducts, each ([kbsint_directoratename] = "SHEQ Directorate") and ([kbsint_responsibleyominame] = "Glory Durueke")),
+				    #"Filtered Rows" = Table.SelectRows(#"Filtered Rows1", each ([kbsint_title] = "JMS Dashboard"))
 				in
 				    #"Filtered Rows"
 

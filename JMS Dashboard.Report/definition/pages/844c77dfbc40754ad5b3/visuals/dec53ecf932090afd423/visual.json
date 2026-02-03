@@ -111,7 +111,8 @@
                 }
               },
               "queryRef": "JMS Table.Review Status Signs",
-              "nativeQueryRef": "Review Status Signs"
+              "nativeQueryRef": "Review Status",
+              "displayName": "Review Status"
             },
             {
               "field": {
@@ -129,23 +130,6 @@
             }
           ]
         }
-      },
-      "sortDefinition": {
-        "sort": [
-          {
-            "field": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "JMS Table"
-                  }
-                },
-                "Property": "Days till Review"
-              }
-            },
-            "direction": "Ascending"
-          }
-        ]
       }
     },
     "objects": {
@@ -579,7 +563,7 @@
             "styleTotal": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "false"
                 }
               }
             },
@@ -834,6 +818,104 @@
             }
           ]
         }
+      },
+      {
+        "name": "4e1f090fbe68654da8c0",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "JMS Table"
+              }
+            },
+            "Property": "JMS ID"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "883df4a07e258e0de878",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "JMS Table"
+              }
+            },
+            "Property": "Title"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "8df1a071a2c3559bbf01",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "JMS Table"
+              }
+            },
+            "Property": "Content Type"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "2622bd460f2ba4c12da6",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "JMS Table"
+              }
+            },
+            "Property": "Days till Review"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "27592ec88214252351c5",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "JMS Table"
+              }
+            },
+            "Property": "Review Date"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "9df5727beaa58a678e4b",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "JMS Table"
+              }
+            },
+            "Property": "Review Status Signs"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "9f5b157b623a226681e2",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "JMS Table"
+              }
+            },
+            "Property": "Owners Email"
+          }
+        },
+        "type": "Categorical"
       }
     ]
   }

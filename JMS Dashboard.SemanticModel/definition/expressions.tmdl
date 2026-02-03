@@ -224,10 +224,9 @@ expression 'Errors in JMS Table' =
 		in
 		    Table.TransformColumns(Source, pairs),
 		  #"Added Index" = Table.AddIndexColumn(#"Detected Type Mismatches", "Row Number" ,1),
-		  #"Kept Errors" = Table.SelectRowsWithErrors(#"Added Index", {"Business Area L1", "Document Owner", "Process Authority", "Title", "Id", "Document Owner Id", "Parent ID Lookup Id", "Quality Team Comments", "Continual Improvement Required", "Created", "ReviewDate", "AuthorId", "Modified", "Editor Id", "Content Type", "JMS ID", "Review Date", "10K or 30K", "Review Priority", "Review Status", "Days till Review", "Priority Score", "Priority", "Compliant and Expired", "Sort DO", "Sort PA", "Compliant and Expired - Copy", "Document Link", "Owners Email", "Review Status Signs", "Review Priority Signs"}),
-		  #"Reordered Columns" = Table.ReorderColumns(#"Kept Errors", {"Row Number", "Business Area L1", "Document Owner", "Process Authority", "Title", "Id", "Document Owner Id", "Parent ID Lookup Id", "Quality Team Comments", "Continual Improvement Required", "Created", "ReviewDate", "AuthorId", "Modified", "Editor Id", "Content Type", "JMS ID", "Review Date", "10K or 30K", "Review Priority", "Review Status", "Days till Review", "Priority Score", "Priority", "Compliant and Expired", "Sort DO", "Sort PA", "Compliant and Expired - Copy", "Document Link", "Owners Email", "Review Status Signs", "Review Priority Signs"})
+		  #"Kept Errors" = Table.SelectRowsWithErrors(#"Added Index", {"Business Area L1", "Document Owner", "Process Authority", "Title", "Id", "Document Owner Id", "Parent ID Lookup Id", "Quality Team Comments", "Continual Improvement Required", "Created", "ReviewDate", "AuthorId", "Modified", "Editor Id", "Content Type", "JMS ID", "Review Date", "10K or 30K", "Review Priority", "Review Status", "Days till Review", "Priority Score", "Priority", "Compliant and Expired", "Sort DO", "Sort PA", "Compliant and Expired - Copy", "Document Link", "Owners Email", "Review Status Signs", "Review Priority Signs"})
 		in
-		  #"Reordered Columns"
+		    #"Kept Errors"
 	lineageTag: e55cea2c-c0c4-4ce1-a01a-f2f5a26b84bb
 	queryGroup: 'Query Errors - 02/02/2026 19:05:05'
 
