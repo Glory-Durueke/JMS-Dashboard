@@ -264,5 +264,23 @@
     },
     "drillFilterOtherVisuals": true
   },
-  "parentGroupName": "5b375c197d3a57bc4506"
+  "parentGroupName": "5b375c197d3a57bc4506",
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "a452ff9e3392cc5b3e15",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "JMS Table"
+              }
+            },
+            "Property": "Docs"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
+  }
 }

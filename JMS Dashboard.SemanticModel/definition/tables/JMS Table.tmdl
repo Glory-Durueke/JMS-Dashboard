@@ -8,36 +8,15 @@ table 'JMS Table'
 		displayFolder: Main Measure
 		lineageTag: ef7c60a8-f618-4302-838c-86995e185fb2
 
+		changedProperty = IsHidden
+
 	/// A static value of 0.95 for Target %.
 	measure 'Target %' = 0.95
 		formatString: 0%;-0%;0%
 		displayFolder: Main Measure
 		lineageTag: e509e8e3-bf5d-4a3e-89b9-c5b13ffff4d3
 
-	/// Creates a dynamic email link by concatenating a static string with the selected owner's email address from the JMS Table.
-	measure 'Email Link' = "mailto:" & SELECTEDVALUE('JMS Table'[Owners Email])
-		displayFolder: Main Measure
-		lineageTag: 2c1109aa-c6b8-4485-961a-23d4192f4758
-		dataCategory: WebUrl
-
-	/// Counts the number of rows in the 'JMS Table' where the 'Compliant and Expired - Copy' field equals 1, representing the total number of expired documents.
-	measure 'Expired Documents' = ```
-			
-			
-			ROW (
-			    "Expired Documents",
-			    COUNTROWS (
-			        FILTER (
-			            'JMS Table',
-			            'JMS Table'[Compliant and Expired - Copy] = 1
-			        )
-			    )
-			)
-			
-			```
-		formatString: 0
-		displayFolder: Main Measure
-		lineageTag: 539c0260-396f-4624-87cd-2a1cf1e8ca48
+		changedProperty = IsHidden
 
 	measure 'Complaint Documents' = ```
 			
@@ -52,17 +31,23 @@ table 'JMS Table'
 		displayFolder: Utility
 		lineageTag: b00b7a2f-c2d2-4934-8184-d12035e55011
 
+		changedProperty = IsHidden
+
 	/// Counts the total number of rows in the 'JMS Table', representing the total number of documents.
 	measure Docs = COUNTROWS('JMS Table')
 		formatString: 0
 		displayFolder: Main Measure
 		lineageTag: d95abd33-b78e-4211-9caf-34bbe8c7d41f
 
+		changedProperty = IsHidden
+
 	/// Calculates the number of days from today until the earliest review date in the JMS Table.
 	measure 'Days Till Review.' = DATEDIFF ( TODAY(), MIN('JMS Table'[Review Date]), DAY )
 		formatString: 0
 		displayFolder: Main Measure
 		lineageTag: 7cd27123-a18a-4b72-82d5-6df200bfe10c
+
+		changedProperty = IsHidden
 
 	/// Calculates the total number of documents that are overdue by counting those with a review date in the past.
 	measure 'Overdue Docs' =
@@ -72,6 +57,8 @@ table 'JMS Table'
 		displayFolder: Main Measure
 		lineageTag: 1ace4e45-a0cb-4564-855a-3a2b2692de4f
 
+		changedProperty = IsHidden
+
 	/// Calculates the number of documents that are due for review within the next 30 days, including today, based on the 'Days Till Review.' measure.
 	measure 'Due 01 - 30 Days' =
 			
@@ -80,15 +67,7 @@ table 'JMS Table'
 		displayFolder: Main Measure
 		lineageTag: feafb6a0-c631-4b3d-90d2-cb1298098f8f
 
-	/// Calculates the total Docs measure over the last 12 months ending on the latest date in the DateTable.
-	measure 'Docs Trend' = ```
-			
-			CALCULATE ( [Docs], DATESINPERIOD ( 'DateTable'[Date], MAX('DateTable'[Date]), -12, MONTH ) )
-			
-			```
-		formatString: 0
-		displayFolder: Main Measure
-		lineageTag: f2ff2f57-5dc5-44a6-ace8-7761a06f55d1
+		changedProperty = IsHidden
 
 	measure 'Compliant %' = ```
 			
@@ -101,6 +80,8 @@ table 'JMS Table'
 		formatString: 0%;-0%;0%
 		displayFolder: Utility
 		lineageTag: 6a7a36a4-beff-4c44-861f-0edda807e82f
+
+		changedProperty = IsHidden
 
 	/// Calculates the percentage of documents that are both compliant and expired out of the total number of documents. This measure helps track the proportion of overdue compliant documents.
 	measure 'Overdue %' = ```
@@ -115,13 +96,7 @@ table 'JMS Table'
 		displayFolder: Main Measure
 		lineageTag: d36da719-070b-422a-aa1b-3662ab1e45d0
 
-	/// Calculates the number of documents that are due for review within the next 10 days, including today, based on the 'Days Till Review.' value.
-	measure 'Due <= 10 Days' =
-			
-			CALCULATE ( [Docs], FILTER( ALL('JMS Table'[ReviewDate]), [Days Till Review.] >= 0 && [Days Till Review.] <= 10 ) )
-		formatString: 0
-		displayFolder: Main Measure
-		lineageTag: 68e07583-2a48-44fe-8c97-0917a7465cd8
+		changedProperty = IsHidden
 
 	column Id
 		dataType: int64
@@ -129,6 +104,8 @@ table 'JMS Table'
 		lineageTag: 671c81a1-24d1-4105-9d55-fa77e2aa543f
 		summarizeBy: count
 		sourceColumn: Id
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -139,6 +116,8 @@ table 'JMS Table'
 		summarizeBy: none
 		sourceColumn: Document Link
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column 'Document Owner Id'
@@ -148,6 +127,8 @@ table 'JMS Table'
 		summarizeBy: count
 		sourceColumn: Document Owner Id
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column Title
@@ -155,6 +136,8 @@ table 'JMS Table'
 		lineageTag: 795d2583-6af3-4339-9ac1-93ed050c4e3b
 		summarizeBy: none
 		sourceColumn: Title
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -165,6 +148,8 @@ table 'JMS Table'
 		summarizeBy: count
 		sourceColumn: Parent ID Lookup Id
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column 'Quality Team Comments'
@@ -172,6 +157,8 @@ table 'JMS Table'
 		lineageTag: 40f71e25-2265-4558-9360-34c9933a1f8a
 		summarizeBy: none
 		sourceColumn: Quality Team Comments
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -181,6 +168,8 @@ table 'JMS Table'
 		lineageTag: deb7ce77-0bda-4e78-9615-8207490fb87d
 		summarizeBy: none
 		sourceColumn: ReviewDate
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -193,6 +182,8 @@ table 'JMS Table'
 		summarizeBy: count
 		sourceColumn: AuthorId
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column Modified
@@ -203,6 +194,8 @@ table 'JMS Table'
 		sourceColumn: Modified
 
 		changedProperty = DataType
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -215,6 +208,8 @@ table 'JMS Table'
 		summarizeBy: count
 		sourceColumn: Editor Id
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column 'Business Area L1'
@@ -223,6 +218,8 @@ table 'JMS Table'
 		summarizeBy: none
 		sourceColumn: Business Area L1
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column 'Content Type'
@@ -230,6 +227,8 @@ table 'JMS Table'
 		lineageTag: ff854acd-f7f1-4679-985b-07754d224937
 		summarizeBy: none
 		sourceColumn: Content Type
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -240,6 +239,8 @@ table 'JMS Table'
 		summarizeBy: count
 		sourceColumn: JMS ID
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column 'Review Date'
@@ -248,6 +249,8 @@ table 'JMS Table'
 		lineageTag: 08cb706b-0176-4efc-b9a9-f7abd5dbd99f
 		summarizeBy: none
 		sourceColumn: Review Date
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -259,6 +262,8 @@ table 'JMS Table'
 		summarizeBy: none
 		sourceColumn: Document Owner
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column 'Process Authority'
@@ -266,6 +271,8 @@ table 'JMS Table'
 		lineageTag: 2473e9b2-a09c-4897-8e95-73e28c3ceded
 		summarizeBy: none
 		sourceColumn: Process Authority
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -275,6 +282,8 @@ table 'JMS Table'
 		summarizeBy: none
 		sourceColumn: 10K or 30K
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column 'Review Priority'
@@ -283,6 +292,8 @@ table 'JMS Table'
 		summarizeBy: none
 		sourceColumn: Review Priority
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column 'Review Status'
@@ -290,6 +301,8 @@ table 'JMS Table'
 		lineageTag: 7f136577-5de9-440f-9123-b8a8e4243955
 		summarizeBy: none
 		sourceColumn: Review Status
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -302,6 +315,8 @@ table 'JMS Table'
 
 		changedProperty = DataType
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = User
 
 		annotation PBI_FormatHint = {"isDecimal":true}
@@ -313,6 +328,8 @@ table 'JMS Table'
 		summarizeBy: sum
 		sourceColumn: Priority Score
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column Priority
@@ -322,6 +339,8 @@ table 'JMS Table'
 		summarizeBy: sum
 		sourceColumn: Priority
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column 'Compliant and Expired'
@@ -329,6 +348,8 @@ table 'JMS Table'
 		lineageTag: 636dd049-c47f-4876-b2e6-35d732550fd6
 		summarizeBy: none
 		sourceColumn: Compliant and Expired
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -338,6 +359,8 @@ table 'JMS Table'
 		summarizeBy: none
 		sourceColumn: Sort DO
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column 'Sort PA'
@@ -345,6 +368,8 @@ table 'JMS Table'
 		lineageTag: 29e452f8-ba46-4b01-8d8c-49c136156270
 		summarizeBy: none
 		sourceColumn: Sort PA
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -355,6 +380,8 @@ table 'JMS Table'
 		summarizeBy: sum
 		sourceColumn: Compliant and Expired - Copy
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column 'Owners Email'
@@ -363,6 +390,8 @@ table 'JMS Table'
 		dataCategory: WebUrl
 		summarizeBy: none
 		sourceColumn: Owners Email
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -375,6 +404,8 @@ table 'JMS Table'
 
 		changedProperty = SortByColumn
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column 'Review Priority Signs'
@@ -383,6 +414,8 @@ table 'JMS Table'
 		summarizeBy: none
 		sourceColumn: Review Priority Signs
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column 'Continual Improvement Required'
@@ -390,6 +423,8 @@ table 'JMS Table'
 		lineageTag: f5475029-e629-4752-b65a-2c810d4eb2f3
 		summarizeBy: none
 		sourceColumn: Continual Improvement Required
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -401,6 +436,8 @@ table 'JMS Table'
 		sourceColumn: Created
 
 		changedProperty = DataType
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 

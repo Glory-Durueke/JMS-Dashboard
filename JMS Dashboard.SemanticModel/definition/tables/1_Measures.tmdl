@@ -2,40 +2,19 @@
 table 1_Measures
 	lineageTag: fca0b643-062c-4cfe-911a-63a9e040b594
 
-	/// Returns a greeting string based on the current hour of the day, providing different messages for morning, afternoon, and other times.
-	measure Greeting = ```
-			var daytime = Hour(NOW())
-			RETURN 
-			Switch(True(),daytime > 0 && daytime <11,"Good Morning", daytime > 11 && daytime <17,"Good Afternoon", "Good Evening")
-			```
-		displayFolder: Greetings.
-		lineageTag: 55708abb-07c4-4a49-8ecc-08d24676e1e5
-
-	/// Extracts and formats the first name from the current user's principal name, capitalizing the first letter and making the rest lowercase.
-	measure user =
-			var UsernameLength = SEARCH(".",USERPRINCIPALNAME())
-			var FirstName = Left(USERPRINCIPALNAME(),UsernameLength-1)
-			var formattedfirstname=UPPER(LEFT(FirstName,1))&Mid(FirstName,2,UsernameLength-1)
-			RETURN formattedfirstname
-		displayFolder: Greetings.
-		lineageTag: 3b394850-ceab-40d2-941b-4166c8eba7fa
-
-	/// Concatenates the values of the Greeting measure, a static string literal, and the User measure to create a personalized greeting message.
-	measure 'User Greeting' = ```
-			[Greeting]&", "&[User] 
-			```
-		displayFolder: Greetings.
-		lineageTag: 11d08df9-b4da-4f5f-8088-2ad85cdcefe4
-
 	/// Displays the most recent refresh time of the data model as a formatted string message.
 	measure 'Refresh Message' = FORMAT(MAX('1_Measures'[Refresh Time]),"hh:nn, dd mmmm yyyy","en-GB")
 		displayFolder: Refresh
 		lineageTag: 2c4ae4c3-8c8c-4884-9972-ad1c82365ad5
 
+		changedProperty = IsHidden
+
 	/// A static string value for Clear Filters.
 	measure 'Clear Filters' = "  Clear Filters"
 		displayFolder: Utility
 		lineageTag: 23bcc3e0-e985-40e5-9256-4eb3aa19de8b
+
+		changedProperty = IsHidden
 
 	column 'Refresh Time'
 		dataType: dateTime
@@ -44,6 +23,8 @@ table 1_Measures
 		lineageTag: 2207def7-225f-415b-b6a1-218bc95789e5
 		summarizeBy: none
 		sourceColumn: Refresh Time
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 

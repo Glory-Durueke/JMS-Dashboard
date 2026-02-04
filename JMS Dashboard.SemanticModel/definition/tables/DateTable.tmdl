@@ -9,6 +9,8 @@ table DateTable
 		summarizeBy: none
 		sourceColumn: Date
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 		annotation UnderlyingDateTimeDataType = Date
@@ -22,6 +24,8 @@ table DateTable
 
 		changedProperty = SortByColumn
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column MonthNumber
@@ -30,6 +34,8 @@ table DateTable
 		lineageTag: 5e8b2321-083c-4b23-9c65-ccfbafa4126a
 		summarizeBy: none
 		sourceColumn: MonthNumber
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -40,6 +46,8 @@ table DateTable
 		summarizeBy: none
 		sourceColumn: FiscalMonthNumber
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column MonthStart
@@ -48,6 +56,8 @@ table DateTable
 		lineageTag: c9ab1f7a-e9ad-44d2-aee6-bda0b42eec30
 		summarizeBy: none
 		sourceColumn: MonthStart
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -60,6 +70,8 @@ table DateTable
 		summarizeBy: none
 		sourceColumn: MonthEnd
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 		annotation UnderlyingDateTimeDataType = Date
@@ -71,6 +83,8 @@ table DateTable
 		summarizeBy: none
 		sourceColumn: DaysInMonth
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column DayOfWeek
@@ -78,6 +92,8 @@ table DateTable
 		lineageTag: d6b6d929-31de-4294-bf8a-2f935260f2bf
 		summarizeBy: none
 		sourceColumn: DayOfWeek
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -88,6 +104,8 @@ table DateTable
 		summarizeBy: none
 		sourceColumn: DayOfWeekNumber
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column CalendarQuarter
@@ -96,6 +114,8 @@ table DateTable
 		lineageTag: 4a094c29-b80a-45b1-805b-5aa82094af75
 		summarizeBy: none
 		sourceColumn: CalendarQuarter
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -106,6 +126,8 @@ table DateTable
 		summarizeBy: none
 		sourceColumn: FiscalQuarter
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column Year
@@ -115,6 +137,8 @@ table DateTable
 		summarizeBy: none
 		sourceColumn: Year
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column FiscalYear
@@ -122,6 +146,8 @@ table DateTable
 		lineageTag: 8a50b9cb-8933-42e4-ba04-499f5d8b193e
 		summarizeBy: none
 		sourceColumn: FiscalYear
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -131,6 +157,8 @@ table DateTable
 		lineageTag: c58cfab4-ff3a-4f2b-b489-8d2b1d2f8a59
 		summarizeBy: none
 		sourceColumn: DayOfYear
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -148,6 +176,8 @@ table DateTable
 		level Date
 			lineageTag: ce6acefa-b30d-44f4-a01e-60220cc4a50a
 			column: Date
+
+		changedProperty = IsHidden
 
 	partition DateTable = m
 		mode: import

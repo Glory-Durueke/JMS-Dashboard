@@ -12,6 +12,8 @@ table 'Product Information'
 
 		changedProperty = DataType
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 		annotation UnderlyingDateTimeDataType = Date
@@ -25,6 +27,8 @@ table 'Product Information'
 
 		changedProperty = DataType
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 		annotation UnderlyingDateTimeDataType = Date
@@ -35,6 +39,8 @@ table 'Product Information'
 		summarizeBy: none
 		sourceColumn: modifiedbyname
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column modifiedbyyominame
@@ -42,6 +48,8 @@ table 'Product Information'
 		lineageTag: 67e43620-065b-4e62-8df0-f7973b6fcb7a
 		summarizeBy: none
 		sourceColumn: modifiedbyyominame
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -51,6 +59,8 @@ table 'Product Information'
 		summarizeBy: none
 		sourceColumn: ownerid
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column owningbusinessunit
@@ -58,6 +68,8 @@ table 'Product Information'
 		lineageTag: cfbf94f9-6c16-4f8b-9246-a67d2e7ef8fa
 		summarizeBy: none
 		sourceColumn: owningbusinessunit
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -67,6 +79,8 @@ table 'Product Information'
 		summarizeBy: none
 		sourceColumn: owningteam
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column 'Owning Business Unit'
@@ -74,6 +88,8 @@ table 'Product Information'
 		lineageTag: f6f7fea8-7319-4c13-848c-ed93658fe7f1
 		summarizeBy: none
 		sourceColumn: owningbusinessunitname
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -84,6 +100,8 @@ table 'Product Information'
 		summarizeBy: sum
 		sourceColumn: statecode
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column statecodename
@@ -91,6 +109,8 @@ table 'Product Information'
 		lineageTag: 965a6ea0-8244-416f-a52d-3ed70802129d
 		summarizeBy: none
 		sourceColumn: statecodename
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -101,6 +121,8 @@ table 'Product Information'
 		summarizeBy: sum
 		sourceColumn: statuscode
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column kbsint_accountable
@@ -108,6 +130,8 @@ table 'Product Information'
 		lineageTag: 6b5aba56-b7a6-4abf-ad8a-bb87f5095b00
 		summarizeBy: none
 		sourceColumn: kbsint_accountable
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -117,6 +141,8 @@ table 'Product Information'
 		summarizeBy: none
 		sourceColumn: kbsint_description
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column 'DIPA required'
@@ -124,6 +150,8 @@ table 'Product Information'
 		lineageTag: 585a6011-8116-46ae-b9d6-437da6343363
 		summarizeBy: none
 		sourceColumn: kbsint_diparequiredname
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -135,6 +163,8 @@ table 'Product Information'
 		sourceColumn: kbsint_initialreleasedate
 
 		changedProperty = DataType
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -149,6 +179,8 @@ table 'Product Information'
 
 		changedProperty = DataType
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 		annotation UnderlyingDateTimeDataType = Date
@@ -159,6 +191,8 @@ table 'Product Information'
 		summarizeBy: none
 		sourceColumn: kbsint_located
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column ID
@@ -166,6 +200,8 @@ table 'Product Information'
 		lineageTag: c4269f23-eb67-4a4a-89f5-3f2d31001008
 		summarizeBy: none
 		sourceColumn: kbsint_productid
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -175,6 +211,8 @@ table 'Product Information'
 		summarizeBy: none
 		sourceColumn: kbsint_producttypename
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column URL
@@ -182,6 +220,8 @@ table 'Product Information'
 		lineageTag: 0958ccf8-852b-48b0-8a58-26ddbbba5820
 		summarizeBy: none
 		sourceColumn: kbsint_producturl
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -191,6 +231,8 @@ table 'Product Information'
 		summarizeBy: none
 		sourceColumn: kbsint_releasestatusname
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column Sensitivity
@@ -198,6 +240,8 @@ table 'Product Information'
 		lineageTag: 35d42fcf-a8f1-46bb-a19b-5b72d4f32969
 		summarizeBy: none
 		sourceColumn: kbsint_sensitivityname
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -207,6 +251,8 @@ table 'Product Information'
 		summarizeBy: none
 		sourceColumn: kbsint_versionno
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column 'IM&T Accountable'
@@ -214,6 +260,8 @@ table 'Product Information'
 		lineageTag: d39a7123-29dd-4c22-b4d4-e5715ac78077
 		summarizeBy: none
 		sourceColumn: kbsint_accountablename
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -223,6 +271,8 @@ table 'Product Information'
 		summarizeBy: none
 		sourceColumn: kbsint_businessownername
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column 'Delegated Authority'
@@ -230,6 +280,8 @@ table 'Product Information'
 		lineageTag: 749ddefe-67b4-4e10-b917-b49ebfeb4e03
 		summarizeBy: none
 		sourceColumn: kbsint_delegatedauthorityname
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -239,6 +291,8 @@ table 'Product Information'
 		summarizeBy: none
 		sourceColumn: kbsint_directoratename
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column Located
@@ -246,6 +300,8 @@ table 'Product Information'
 		lineageTag: 5f9bba91-3384-4ede-9eec-be5ed2fab02d
 		summarizeBy: none
 		sourceColumn: kbsint_locatedname
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -255,6 +311,8 @@ table 'Product Information'
 		summarizeBy: none
 		sourceColumn: kbsint_responsiblename
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column kbsint_product
@@ -262,6 +320,8 @@ table 'Product Information'
 		lineageTag: 15e1a3d9-a072-426f-bda1-80f8168e29cb
 		summarizeBy: none
 		sourceColumn: kbsint_product
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -271,6 +331,8 @@ table 'Product Information'
 		summarizeBy: none
 		sourceColumn: kbsint_productname
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column Description
@@ -278,6 +340,8 @@ table 'Product Information'
 		lineageTag: df791c46-aa04-41f6-8cbf-e9e07b5fcb02
 		summarizeBy: none
 		sourceColumn: crd9c_descriptionnew
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -287,6 +351,8 @@ table 'Product Information'
 		summarizeBy: none
 		sourceColumn: crd9c_valuestreamname
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column Title
@@ -294,6 +360,8 @@ table 'Product Information'
 		lineageTag: 08d622e0-7bc1-4226-a2a4-add888b071a3
 		summarizeBy: none
 		sourceColumn: kbsint_title
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -303,6 +371,8 @@ table 'Product Information'
 		summarizeBy: none
 		sourceColumn: kbsint_informationproductsid
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column createdby
@@ -310,6 +380,8 @@ table 'Product Information'
 		lineageTag: 4fff1e0c-119c-4903-b8c4-627d8d7271d5
 		summarizeBy: none
 		sourceColumn: createdby
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -319,6 +391,8 @@ table 'Product Information'
 		summarizeBy: none
 		sourceColumn: modifiedby
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column createdonbehalfby
@@ -326,6 +400,8 @@ table 'Product Information'
 		lineageTag: eb0ce90e-6c6e-4b49-911b-127cac9e90e6
 		summarizeBy: none
 		sourceColumn: createdonbehalfby
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -335,6 +411,8 @@ table 'Product Information'
 		summarizeBy: none
 		sourceColumn: modifiedonbehalfby
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column 'Created By'
@@ -342,6 +420,8 @@ table 'Product Information'
 		lineageTag: c189f6c4-f404-4fb7-8652-3cc1f97004b0
 		summarizeBy: none
 		sourceColumn: createdbyname
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -351,6 +431,8 @@ table 'Product Information'
 		summarizeBy: none
 		sourceColumn: createdbyyominame
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column 'Created By (Delegate)'
@@ -358,6 +440,8 @@ table 'Product Information'
 		lineageTag: a5a284a1-cb9e-46d8-8681-ef1eaceb74d8
 		summarizeBy: none
 		sourceColumn: createdonbehalfbyname
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -367,6 +451,8 @@ table 'Product Information'
 		summarizeBy: none
 		sourceColumn: createdonbehalfbyyominame
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column 'Modified By (Delegate)'
@@ -374,6 +460,8 @@ table 'Product Information'
 		lineageTag: f16b4f15-7dce-42c0-91c7-c0c9e9639f9f
 		summarizeBy: none
 		sourceColumn: modifiedonbehalfbyname
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -383,6 +471,8 @@ table 'Product Information'
 		summarizeBy: none
 		sourceColumn: modifiedonbehalfbyyominame
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column Owner
@@ -390,6 +480,8 @@ table 'Product Information'
 		lineageTag: 0dc1b318-3f8f-4696-8779-d2c6ff985bb0
 		summarizeBy: none
 		sourceColumn: owneridname
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -399,6 +491,8 @@ table 'Product Information'
 		summarizeBy: none
 		sourceColumn: owneridyominame
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column owninguser
@@ -407,6 +501,8 @@ table 'Product Information'
 		summarizeBy: none
 		sourceColumn: owninguser
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column statuscodename
@@ -414,6 +510,8 @@ table 'Product Information'
 		lineageTag: 04635e9e-c13b-4e38-ba70-e327a8ea8d01
 		summarizeBy: none
 		sourceColumn: statuscodename
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -424,6 +522,8 @@ table 'Product Information'
 		summarizeBy: sum
 		sourceColumn: importsequencenumber
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column 'Record Created On'
@@ -432,6 +532,8 @@ table 'Product Information'
 		lineageTag: 712baa21-6994-4f5d-86ac-37739bd383ca
 		summarizeBy: none
 		sourceColumn: overriddencreatedon
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -442,6 +544,8 @@ table 'Product Information'
 		summarizeBy: sum
 		sourceColumn: timezoneruleversionnumber
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column 'UTC Conversion Time Zone Code'
@@ -451,6 +555,8 @@ table 'Product Information'
 		summarizeBy: count
 		sourceColumn: utcconversiontimezonecode
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column kbsint_businessowner
@@ -459,6 +565,8 @@ table 'Product Information'
 		summarizeBy: none
 		sourceColumn: kbsint_businessowner
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column kbsint_delegatedauthority
@@ -466,6 +574,8 @@ table 'Product Information'
 		lineageTag: 27862223-2f91-4a8b-86c9-fdcac480bcac
 		summarizeBy: none
 		sourceColumn: kbsint_delegatedauthority
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -476,6 +586,8 @@ table 'Product Information'
 		summarizeBy: none
 		sourceColumn: kbsint_diparequired
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column kbsint_directorate
@@ -483,6 +595,8 @@ table 'Product Information'
 		lineageTag: e18dd4e3-a3c6-48b5-818e-406aead44152
 		summarizeBy: none
 		sourceColumn: kbsint_directorate
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -492,6 +606,8 @@ table 'Product Information'
 		summarizeBy: none
 		sourceColumn: kbsint_methodologyandconsiderations
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column kbsint_productowner
@@ -499,6 +615,8 @@ table 'Product Information'
 		lineageTag: 58d1b797-9dce-4d31-aafe-52e9dd32b0f0
 		summarizeBy: none
 		sourceColumn: kbsint_productowner
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -509,6 +627,8 @@ table 'Product Information'
 		summarizeBy: sum
 		sourceColumn: kbsint_producttype
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column kbsint_purpose
@@ -518,6 +638,8 @@ table 'Product Information'
 		summarizeBy: sum
 		sourceColumn: kbsint_purpose
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column Purpose
@@ -525,6 +647,8 @@ table 'Product Information'
 		lineageTag: a1e04df8-521a-4a3f-a565-8d37dec96d2b
 		summarizeBy: none
 		sourceColumn: kbsint_purposename
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -535,6 +659,8 @@ table 'Product Information'
 		summarizeBy: sum
 		sourceColumn: kbsint_releasestatus
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column kbsint_responsible
@@ -542,6 +668,8 @@ table 'Product Information'
 		lineageTag: 97555ce8-cb5b-45cf-ae79-aabd4c893e31
 		summarizeBy: none
 		sourceColumn: kbsint_responsible
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -552,6 +680,8 @@ table 'Product Information'
 		summarizeBy: none
 		sourceColumn: kbsint_reviewdate
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column kbsint_sensitivity
@@ -561,6 +691,8 @@ table 'Product Information'
 		summarizeBy: sum
 		sourceColumn: kbsint_sensitivity
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column Version
@@ -568,6 +700,8 @@ table 'Product Information'
 		lineageTag: ab6b4425-38d6-4fbc-821c-eb100c8f2de1
 		summarizeBy: none
 		sourceColumn: kbsint_version
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -577,6 +711,8 @@ table 'Product Information'
 		summarizeBy: none
 		sourceColumn: kbsint_accountableyominame
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column kbsint_businessowneryominame
@@ -584,6 +720,8 @@ table 'Product Information'
 		lineageTag: 0869ffbd-8781-4abe-92ca-39424e6fb4fd
 		summarizeBy: none
 		sourceColumn: kbsint_businessowneryominame
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -593,6 +731,8 @@ table 'Product Information'
 		summarizeBy: none
 		sourceColumn: kbsint_delegatedauthorityyominame
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column 'Product Owner'
@@ -600,6 +740,8 @@ table 'Product Information'
 		lineageTag: 89358783-0a76-4ce6-815a-e9b87814faeb
 		summarizeBy: none
 		sourceColumn: kbsint_productownername
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -609,6 +751,8 @@ table 'Product Information'
 		summarizeBy: none
 		sourceColumn: kbsint_productowneryominame
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column kbsint_responsibleyominame
@@ -616,6 +760,8 @@ table 'Product Information'
 		lineageTag: d6882457-007f-443d-8c73-29891e666a90
 		summarizeBy: none
 		sourceColumn: kbsint_responsibleyominame
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -625,6 +771,8 @@ table 'Product Information'
 		summarizeBy: none
 		sourceColumn: kbsint_imtportfolio
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column 'IM&T Portfolio'
@@ -632,6 +780,8 @@ table 'Product Information'
 		lineageTag: b0af43c1-1f3c-4f20-b385-e5a471c7ac85
 		summarizeBy: none
 		sourceColumn: kbsint_imtportfolioname
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -641,6 +791,8 @@ table 'Product Information'
 		summarizeBy: none
 		sourceColumn: crd9c_iconid
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column crd9c_icon_url
@@ -648,6 +800,8 @@ table 'Product Information'
 		lineageTag: b887a039-d269-4478-a9fb-07f8057ca425
 		summarizeBy: none
 		sourceColumn: crd9c_icon_url
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -657,6 +811,8 @@ table 'Product Information'
 		lineageTag: 58b76a6a-a02d-49a0-b88b-1e80e9c0bcd8
 		summarizeBy: sum
 		sourceColumn: crd9c_valuestream
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 

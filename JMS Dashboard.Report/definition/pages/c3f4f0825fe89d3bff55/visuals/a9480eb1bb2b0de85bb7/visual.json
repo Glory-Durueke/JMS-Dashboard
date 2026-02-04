@@ -573,5 +573,23 @@
     },
     "drillFilterOtherVisuals": true
   },
-  "parentGroupName": "5b375c197d3a57bc4506"
+  "parentGroupName": "5b375c197d3a57bc4506",
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "68d8fe8da80a07cb4011",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "JMS Table"
+              }
+            },
+            "Property": "Overdue Docs"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
+  }
 }

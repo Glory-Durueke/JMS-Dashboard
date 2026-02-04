@@ -212,25 +212,3 @@ expression EndDate = #date(2036, 12, 31) meta [IsParameterQuery=true, Type="Date
 
 	annotation PBI_ResultType = Date
 
-expression 'Errors in JMS Table' =
-		let
-		Source = #"JMS Table",
-		  #"Detected Type Mismatches" = let
-		    tableWithOnlyPrimitiveTypes = Table.SelectColumns(Source, Table.ColumnsOfType(Source, {type nullable number, type nullable text, type nullable logical, type nullable date, type nullable datetime, type nullable datetimezone, type nullable time, type nullable duration})),
-		    recordTypeFields = Type.RecordFields(Type.TableRow(Value.Type(tableWithOnlyPrimitiveTypes))),
-		    fieldNames = Record.FieldNames(recordTypeFields),
-		    fieldTypes = List.Transform(Record.ToList(recordTypeFields), each [Type]),
-		    pairs = List.Transform(List.Positions(fieldNames), (i) => {fieldNames{i}, (v) => if v = null or Value.Is(v, fieldTypes{i}) then v else error [Message = "The type of the value does not match the type of the column.", Detail = v], fieldTypes{i}})
-		in
-		    Table.TransformColumns(Source, pairs),
-		  #"Added Index" = Table.AddIndexColumn(#"Detected Type Mismatches", "Row Number" ,1),
-		  #"Kept Errors" = Table.SelectRowsWithErrors(#"Added Index", {"Business Area L1", "Document Owner", "Process Authority", "Title", "Id", "Document Owner Id", "Parent ID Lookup Id", "Quality Team Comments", "Continual Improvement Required", "Created", "ReviewDate", "AuthorId", "Modified", "Editor Id", "Content Type", "JMS ID", "Review Date", "10K or 30K", "Review Priority", "Review Status", "Days till Review", "Priority Score", "Priority", "Compliant and Expired", "Sort DO", "Sort PA", "Compliant and Expired - Copy", "Document Link", "Owners Email", "Review Status Signs", "Review Priority Signs"})
-		in
-		    #"Kept Errors"
-	lineageTag: e55cea2c-c0c4-4ce1-a01a-f2f5a26b84bb
-	queryGroup: 'Query Errors - 02/02/2026 19:05:05'
-
-	annotation PBI_NavigationStepName = Navigation
-
-	annotation PBI_ResultType = Table
-
