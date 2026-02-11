@@ -5,7 +5,7 @@
     "x": 432,
     "y": 0,
     "z": 2000,
-    "height": 110,
+    "height": 117.99999999999999,
     "width": 414,
     "tabOrder": 0
   },
@@ -20,19 +20,34 @@
                 "Measure": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "JMS Table"
+                      "Entity": "1_Measures"
                     }
                   },
                   "Property": "Docs"
                 }
               },
-              "queryRef": "JMS Table.Docs",
-              "nativeQueryRef": "Docs"
+              "queryRef": "1_Measures.Docs",
+              "nativeQueryRef": "Docs1"
             }
           ]
         }
       },
       "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "1_Measures"
+                  }
+                },
+                "Property": "Docs"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
         "isDefaultSort": true
       }
     },
@@ -130,6 +145,18 @@
                   "Value": "28D"
                 }
               }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 1,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
             }
           },
           "selector": {
@@ -154,7 +181,7 @@
                 "color": {
                   "expr": {
                     "ThemeDataColor": {
-                      "ColorId": 2,
+                      "ColorId": 1,
                       "Percent": 0
                     }
                   }
@@ -264,23 +291,5 @@
     },
     "drillFilterOtherVisuals": true
   },
-  "parentGroupName": "5b375c197d3a57bc4506",
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "a452ff9e3392cc5b3e15",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "JMS Table"
-              }
-            },
-            "Property": "Docs"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
-  }
+  "parentGroupName": "5b375c197d3a57bc4506"
 }

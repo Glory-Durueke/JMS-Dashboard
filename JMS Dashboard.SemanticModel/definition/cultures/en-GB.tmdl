@@ -214,961 +214,6 @@ cultureInfo en-GB
 			      ],
 			      "SemanticType": "Time"
 			    },
-			    "date_table": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "DateTable"
-			        }
-			      },
-			      "State": "Generated",
-			      "Visibility": {
-			        "Value": "Visible",
-			        "State": "Authored"
-			      },
-			      "Terms": [
-			        {
-			          "date table": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "DateTable": {
-			            "Type": "Noun",
-			            "State": "Generated",
-			            "Weight": 0.99
-			          }
-			        },
-			        {
-			          "moment table": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.6
-			          }
-			        },
-			        {
-			          "period table": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.582
-			          }
-			        },
-			        {
-			          "date tabletop": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.5
-			          }
-			        },
-			        {
-			          "date bench": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.485
-			          }
-			        },
-			        {
-			          "date board": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.485
-			          }
-			        },
-			        {
-			          "date counter": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.485
-			          }
-			        },
-			        {
-			          "date stand": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.485
-			          }
-			        },
-			        {
-			          "date slab": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.485
-			          }
-			        },
-			        {
-			          "date desk": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.485
-			          }
-			        },
-			        {
-			          "date stall": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.485
-			          }
-			        }
-			      ]
-			    },
-			    "date_table.date": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "DateTable",
-			          "ConceptualProperty": "Date"
-			        }
-			      },
-			      "State": "Generated",
-			      "Visibility": {
-			        "Value": "Visible",
-			        "State": "Authored"
-			      },
-			      "Terms": [
-			        {
-			          "date": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "moment": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.736
-			          }
-			        },
-			        {
-			          "period": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.714
-			          }
-			        }
-			      ],
-			      "SemanticType": "Time"
-			    },
-			    "date_table.month": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "DateTable",
-			          "ConceptualProperty": "Month"
-			        }
-			      },
-			      "State": "Generated",
-			      "Visibility": {
-			        "Value": "Visible",
-			        "State": "Authored"
-			      },
-			      "Terms": [
-			        {
-			          "month": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "mth": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.736
-			          }
-			        }
-			      ]
-			    },
-			    "date_table.month_number": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "DateTable",
-			          "ConceptualProperty": "MonthNumber"
-			        }
-			      },
-			      "State": "Generated",
-			      "Visibility": {
-			        "Value": "Visible",
-			        "State": "Authored"
-			      },
-			      "Terms": [
-			        {
-			          "month number": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "MonthNumber": {
-			            "Type": "Noun",
-			            "State": "Generated",
-			            "Weight": 0.99
-			          }
-			        },
-			        {
-			          "month no": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.727
-			          }
-			        },
-			        {
-			          "mth number": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.6
-			          }
-			        }
-			      ]
-			    },
-			    "date_table.fiscal_month_number": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "DateTable",
-			          "ConceptualProperty": "FiscalMonthNumber"
-			        }
-			      },
-			      "State": "Generated",
-			      "Visibility": {
-			        "Value": "Visible",
-			        "State": "Authored"
-			      },
-			      "Terms": [
-			        {
-			          "fiscal month number": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "FiscalMonthNumber": {
-			            "Type": "Noun",
-			            "State": "Generated",
-			            "Weight": 0.99
-			          }
-			        },
-			        {
-			          "fiscal month no": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.739
-			          }
-			        },
-			        {
-			          "fisc month number": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.615
-			          }
-			        },
-			        {
-			          "fiscal mth number": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.609
-			          }
-			        }
-			      ]
-			    },
-			    "date_table.month_start": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "DateTable",
-			          "ConceptualProperty": "MonthStart"
-			        }
-			      },
-			      "State": "Generated",
-			      "Visibility": {
-			        "Value": "Visible",
-			        "State": "Authored"
-			      },
-			      "Terms": [
-			        {
-			          "month start": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "MonthStart": {
-			            "Type": "Noun",
-			            "State": "Generated",
-			            "Weight": 0.99
-			          }
-			        },
-			        {
-			          "start": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "mth start": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.6
-			          }
-			        },
-			        {
-			          "month twitch": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.485
-			          }
-			        },
-			        {
-			          "month jump": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.485
-			          }
-			        },
-			        {
-			          "month jerk": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.485
-			          }
-			        },
-			        {
-			          "month flinch": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.485
-			          }
-			        },
-			        {
-			          "month jolt": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.485
-			          }
-			        },
-			        {
-			          "twitch": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        },
-			        {
-			          "jump": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        },
-			        {
-			          "jerk": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        },
-			        {
-			          "flinch": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        }
-			      ],
-			      "SemanticType": "Time"
-			    },
-			    "date_table.month_end": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "DateTable",
-			          "ConceptualProperty": "MonthEnd"
-			        }
-			      },
-			      "State": "Generated",
-			      "Visibility": {
-			        "Value": "Visible",
-			        "State": "Authored"
-			      },
-			      "Terms": [
-			        {
-			          "month end": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "MonthEnd": {
-			            "Type": "Noun",
-			            "State": "Generated",
-			            "Weight": 0.99
-			          }
-			        },
-			        {
-			          "end": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "month completion": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.75
-			          }
-			        },
-			        {
-			          "month conclusion": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.75
-			          }
-			        },
-			        {
-			          "month expiration": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.75
-			          }
-			        },
-			        {
-			          "completion": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.736
-			          }
-			        },
-			        {
-			          "conclusion": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.736
-			          }
-			        },
-			        {
-			          "expiration": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.736
-			          }
-			        },
-			        {
-			          "month close": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.727
-			          }
-			        },
-			        {
-			          "month finish": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.727
-			          }
-			        },
-			        {
-			          "month last": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.727
-			          }
-			        },
-			        {
-			          "month stop": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.727
-			          }
-			        }
-			      ],
-			      "SemanticType": "Time"
-			    },
-			    "date_table.day_in_month": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "DateTable",
-			          "ConceptualProperty": "DaysInMonth"
-			        }
-			      },
-			      "State": "Generated",
-			      "Visibility": {
-			        "Value": "Visible",
-			        "State": "Authored"
-			      },
-			      "Terms": [
-			        {
-			          "day in month": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "DaysInMonth": {
-			            "Type": "Noun",
-			            "State": "Generated",
-			            "Weight": 0.99
-			          }
-			        },
-			        {
-			          "in month": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "in mth": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.75
-			          }
-			        },
-			        {
-			          "day in mth": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.609
-			          }
-			        }
-			      ]
-			    },
-			    "date_table.day_of_week": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "DateTable",
-			          "ConceptualProperty": "DayOfWeek"
-			        }
-			      },
-			      "State": "Generated",
-			      "Visibility": {
-			        "Value": "Visible",
-			        "State": "Authored"
-			      },
-			      "Terms": [
-			        {
-			          "day of week": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "DayOfWeek": {
-			            "Type": "Noun",
-			            "State": "Generated",
-			            "Weight": 0.99
-			          }
-			        }
-			      ]
-			    },
-			    "date_table.day_of_week_number": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "DateTable",
-			          "ConceptualProperty": "DayOfWeekNumber"
-			        }
-			      },
-			      "State": "Generated",
-			      "Visibility": {
-			        "Value": "Visible",
-			        "State": "Authored"
-			      },
-			      "Terms": [
-			        {
-			          "day of week number": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "DayOfWeekNumber": {
-			            "Type": "Noun",
-			            "State": "Generated",
-			            "Weight": 0.99
-			          }
-			        },
-			        {
-			          "day of week no": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.599
-			          }
-			        }
-			      ]
-			    },
-			    "date_table.calendar_quarter": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "DateTable",
-			          "ConceptualProperty": "CalendarQuarter"
-			        }
-			      },
-			      "State": "Generated",
-			      "Visibility": {
-			        "Value": "Visible",
-			        "State": "Authored"
-			      },
-			      "Terms": [
-			        {
-			          "calendar quarter": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "CalendarQuarter": {
-			            "Type": "Noun",
-			            "State": "Generated",
-			            "Weight": 0.99
-			          }
-			        },
-			        {
-			          "calendar qtr": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.833
-			          }
-			        }
-			      ]
-			    },
-			    "date_table.fiscal_quarter": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "DateTable",
-			          "ConceptualProperty": "FiscalQuarter"
-			        }
-			      },
-			      "State": "Generated",
-			      "Visibility": {
-			        "Value": "Visible",
-			        "State": "Authored"
-			      },
-			      "Terms": [
-			        {
-			          "fiscal quarter": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "FiscalQuarter": {
-			            "Type": "Noun",
-			            "State": "Generated",
-			            "Weight": 0.99
-			          }
-			        },
-			        {
-			          "fiscal qtr": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.833
-			          }
-			        },
-			        {
-			          "fisc quarter": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.582
-			          }
-			        },
-			        {
-			          "fiscal qrt": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.582
-			          }
-			        },
-			        {
-			          "fiscal qrtr": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.582
-			          }
-			        }
-			      ]
-			    },
-			    "date_table.year": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "DateTable",
-			          "ConceptualProperty": "Year"
-			        }
-			      },
-			      "State": "Generated",
-			      "Visibility": {
-			        "Value": "Visible",
-			        "State": "Authored"
-			      },
-			      "Terms": [
-			        {
-			          "year": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "yr": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.736
-			          }
-			        }
-			      ],
-			      "SemanticType": "Time"
-			    },
-			    "date_table.fiscal_year": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "DateTable",
-			          "ConceptualProperty": "FiscalYear"
-			        }
-			      },
-			      "State": "Generated",
-			      "Visibility": {
-			        "Value": "Visible",
-			        "State": "Authored"
-			      },
-			      "Terms": [
-			        {
-			          "fiscal year": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "FiscalYear": {
-			            "Type": "Noun",
-			            "State": "Generated",
-			            "Weight": 0.99
-			          }
-			        },
-			        {
-			          "fiscal yr": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.75
-			          }
-			        },
-			        {
-			          "fisc year": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.6
-			          }
-			        },
-			        {
-			          "accounting year": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.582
-			          }
-			        },
-			        {
-			          "budget year": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.582
-			          }
-			        },
-			        {
-			          "fiscal date": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.582
-			          }
-			        },
-			        {
-			          "fiscal day": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.582
-			          }
-			        },
-			        {
-			          "tax year": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.582
-			          }
-			        }
-			      ]
-			    },
-			    "date_table.day_of_year": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "DateTable",
-			          "ConceptualProperty": "DayOfYear"
-			        }
-			      },
-			      "State": "Generated",
-			      "Visibility": {
-			        "Value": "Visible",
-			        "State": "Authored"
-			      },
-			      "Terms": [
-			        {
-			          "day of year": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "DayOfYear": {
-			            "Type": "Noun",
-			            "State": "Generated",
-			            "Weight": 0.99
-			          }
-			        },
-			        {
-			          "day of yr": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.609
-			          }
-			        }
-			      ]
-			    },
 			    "entity_1_measure.refresh_message": {
 			      "Definition": {
 			        "Binding": {
@@ -1294,239 +339,6 @@ cultureInfo en-GB
 			          }
 			        }
 			      ]
-			    },
-			    "date_table.date_hierarchy": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "DateTable",
-			          "Hierarchy": "Date Hierarchy"
-			        }
-			      },
-			      "State": "Generated",
-			      "Visibility": {
-			        "Value": "Visible",
-			        "State": "Authored"
-			      },
-			      "Terms": [
-			        {
-			          "date hierarchy": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "hierarchy": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "moment hierarchy": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.6
-			          }
-			        },
-			        {
-			          "period hierarchy": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.582
-			          }
-			        },
-			        {
-			          "date ladder": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.485
-			          }
-			        },
-			        {
-			          "date grading": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.485
-			          }
-			        },
-			        {
-			          "date order": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.485
-			          }
-			        },
-			        {
-			          "date pyramid": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.485
-			          }
-			        },
-			        {
-			          "ladder": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        },
-			        {
-			          "grading": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        },
-			        {
-			          "order": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        },
-			        {
-			          "pyramid": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        }
-			      ],
-			      "SemanticType": "Time"
-			    },
-			    "date_table.date_hierarchy.year": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "DateTable",
-			          "Hierarchy": "Date Hierarchy",
-			          "HierarchyLevel": "Year"
-			        }
-			      },
-			      "State": "Generated",
-			      "Visibility": {
-			        "Value": "Visible",
-			        "State": "Authored"
-			      },
-			      "Terms": [
-			        {
-			          "year": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "yr": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.736
-			          }
-			        }
-			      ],
-			      "SemanticType": "Time"
-			    },
-			    "date_table.date_hierarchy.month": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "DateTable",
-			          "Hierarchy": "Date Hierarchy",
-			          "HierarchyLevel": "Month"
-			        }
-			      },
-			      "State": "Generated",
-			      "Visibility": {
-			        "Value": "Visible",
-			        "State": "Authored"
-			      },
-			      "Terms": [
-			        {
-			          "month": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "mth": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.736
-			          }
-			        }
-			      ],
-			      "SemanticType": "Time"
-			    },
-			    "date_table.date_hierarchy.date": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "DateTable",
-			          "Hierarchy": "Date Hierarchy",
-			          "HierarchyLevel": "Date"
-			        }
-			      },
-			      "State": "Generated",
-			      "Visibility": {
-			        "Value": "Visible",
-			        "State": "Authored"
-			      },
-			      "Terms": [
-			        {
-			          "date": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "moment": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.736
-			          }
-			        },
-			        {
-			          "period": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.714
-			          }
-			        }
-			      ],
-			      "SemanticType": "Time"
 			    },
 			    "entity_1_measure.clear_filters": {
 			      "Definition": {
@@ -3910,16 +2722,6 @@ cultureInfo en-GB
 			            },
 			            "Weight": 0.714
 			          }
-			        },
-			        {
-			          "label": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.714
-			          }
 			        }
 			      ]
 			    },
@@ -4395,16 +3197,6 @@ cultureInfo en-GB
 			        },
 			        {
 			          "heading": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.714
-			          }
-			        },
-			        {
-			          "label": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
@@ -6534,11 +5326,11 @@ cultureInfo en-GB
 			        }
 			      ]
 			    },
-			    "JMS_table.compliant_and_expired__copy": {
+			    "JMS_table.compliance_outcome": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "JMS Table",
-			          "ConceptualProperty": "Compliant and Expired - Copy"
+			          "ConceptualProperty": "Compliance Outcome"
 			        }
 			      },
 			      "State": "Generated",
@@ -6548,144 +5340,114 @@ cultureInfo en-GB
 			      },
 			      "Terms": [
 			        {
-			          "compliant and expired - copy": {
+			          "compliance outcome": {
 			            "State": "Generated"
 			          }
 			        },
 			        {
-			          "compliant": {
+			          "outcome": {
 			            "State": "Generated",
 			            "Weight": 0.97
 			          }
 			        },
 			        {
-			          "compliant expired - copy": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "expired - copy": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "compliant expired copy": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "expired copy": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "copy": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "compliant and expired - reproduction": {
+			          "compliance consequence": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.504
+			            "Weight": 0.5
 			          }
 			        },
 			        {
-			          "compliant and expired - duplicate": {
+			          "compliance product": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.504
+			            "Weight": 0.5
 			          }
 			        },
 			        {
-			          "compliant and expired - replica": {
+			          "compliance conclusion": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.504
+			            "Weight": 0.5
 			          }
 			        },
 			        {
-			          "compliant and expired - facsimile": {
+			          "compliance upshot": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.504
+			            "Weight": 0.5
 			          }
 			        },
 			        {
-			          "compliant and expired - print": {
+			          "compliance aftermath": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.504
+			            "Weight": 0.5
 			          }
 			        },
 			        {
-			          "compliant and expired - photocopy": {
+			          "compliance sequel": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.504
+			            "Weight": 0.5
 			          }
 			        },
 			        {
-			          "compliant and expired - fake": {
+			          "compliance aftereffect": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.504
+			            "Weight": 0.5
 			          }
 			        },
 			        {
-			          "compliant and expired - counterfeit": {
+			          "consequence": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.504
+			            "Weight": 0.491
 			          }
 			        },
 			        {
-			          "compliant and expired - imitation": {
+			          "conclusion": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.504
+			            "Weight": 0.491
 			          }
 			        },
 			        {
-			          "compliant and expired - model": {
+			          "upshot": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.504
+			            "Weight": 0.491
 			          }
 			        }
 			      ]
@@ -9417,16 +8179,6 @@ cultureInfo en-GB
 			            },
 			            "Weight": 0.9
 			          }
-			        },
-			        {
-			          "Status": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
 			        }
 			      ]
 			    },
@@ -9557,6 +8309,16 @@ cultureInfo en-GB
 			          }
 			        },
 			        {
+			          "Status": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
 			          "Review Priority": {
 			            "State": "Suggested",
 			            "Source": {
@@ -9568,22 +8330,27 @@ cultureInfo en-GB
 			        }
 			      ]
 			    },
-			    "JMS_table.docs_within_date": {
+			    "KPI_date_table": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "JMS Table",
-			          "ConceptualProperty": "Docs within Date"
+			          "ConceptualEntity": "KPI Date Table"
 			        }
 			      },
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "docs within date": {
+			          "KPI date table": {
 			            "State": "Generated"
 			          }
 			        },
 			        {
-			          "doc within moment": {
+			          "date table": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "kpi moment table": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
@@ -9593,7 +8360,17 @@ cultureInfo en-GB
 			          }
 			        },
 			        {
-			          "doc within period": {
+			          "moment table": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "kpi period table": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
@@ -9601,45 +8378,9 @@ cultureInfo en-GB
 			            },
 			            "Weight": 0.591
 			          }
-			        }
-			      ]
-			    },
-			    "JMS_table.target_": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "JMS Table",
-			          "ConceptualProperty": "Target %"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "target %": {
-			            "State": "Generated"
-			          }
 			        },
 			        {
-			          "target percentage": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.75
-			          }
-			        },
-			        {
-			          "target pct": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.727
-			          }
-			        },
-			        {
-			          "focus %": {
+			          "period table": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
@@ -9649,42 +8390,17 @@ cultureInfo en-GB
 			          }
 			        },
 			        {
-			          "goal %": {
+			          "kpi date tabletop": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.582
+			            "Weight": 0.508
 			          }
 			        },
 			        {
-			          "objective %": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.582
-			          }
-			        }
-			      ]
-			    },
-			    "table_value": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Table Value"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "table value": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "table assessment": {
+			          "date tabletop": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
@@ -9694,101 +8410,51 @@ cultureInfo en-GB
 			          }
 			        },
 			        {
-			          "table worth": {
+			          "kpi date bench": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.485
+			            "Weight": 0.492
 			          }
 			        },
 			        {
-			          "table price": {
+			          "kpi date board": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.485
+			            "Weight": 0.492
 			          }
 			        },
 			        {
-			          "table cost": {
+			          "kpi date counter": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.485
+			            "Weight": 0.492
 			          }
 			        },
 			        {
-			          "table charge": {
+			          "kpi date stand": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.485
-			          }
-			        },
-			        {
-			          "table rate": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.485
-			          }
-			        },
-			        {
-			          "table importance": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.475
-			          }
-			        },
-			        {
-			          "table significance": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.475
-			          }
-			        },
-			        {
-			          "table usefulness": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.475
-			          }
-			        },
-			        {
-			          "table consequence": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.475
+			            "Weight": 0.492
 			          }
 			        }
 			      ]
 			    },
-			    "table_value.value": {
+			    "KPI_date_table.value": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Table Value",
+			          "ConceptualEntity": "KPI Date Table",
 			          "ConceptualProperty": "Value"
 			        }
 			      },
@@ -10024,118 +8690,78 @@ cultureInfo en-GB
 			        }
 			      ]
 			    },
-			    "JMS_table.complaint_documents": {
+			    "JMS_table.created": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "JMS Table",
-			          "ConceptualProperty": "Complaint Documents"
+			          "ConceptualProperty": "Created"
 			        }
 			      },
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "complaint documents": {
+			          "created": {
 			            "State": "Generated"
 			          }
 			        },
 			        {
-			          "documents": {
+			          "date": {
 			            "State": "Generated",
-			            "Weight": 0.97
+			            "Weight": 0.7
 			          }
 			        },
 			        {
-			          "complaint pamphlet": {
+			          "shaped": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.5
+			            "Weight": 0.476
 			          }
 			        },
 			        {
-			          "complaint brochure": {
+			          "bent": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.5
+			            "Weight": 0.476
 			          }
 			        },
 			        {
-			          "complaint booklet": {
+			          "fashioned": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.5
+			            "Weight": 0.476
 			          }
 			        },
 			        {
-			          "pamphlet": {
+			          "twisted": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.491
+			            "Weight": 0.476
 			          }
 			        },
 			        {
-			          "brochure": {
+			          "formed": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.491
+			            "Weight": 0.476
 			          }
 			        },
 			        {
-			          "booklet": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.491
-			          }
-			        },
-			        {
-			          "complaint leaflet": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.485
-			          }
-			        },
-			        {
-			          "complaint paper": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.485
-			          }
-			        },
-			        {
-			          "complaint form": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.485
-			          }
-			        },
-			        {
-			          "leaflet": {
+			          "produced": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
@@ -10144,28 +8770,856 @@ cultureInfo en-GB
 			            "Weight": 0.476
 			          }
 			        }
-			      ]
+			      ],
+			      "SemanticType": "Time"
 			    },
-			    "JMS_table.docs": {
+			    "entity_1_measure.items": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "JMS Table",
-			          "ConceptualProperty": "Docs"
+			          "ConceptualEntity": "1_Measures",
+			          "ConceptualProperty": "Items"
 			        }
 			      },
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "docs": {
+			          "items": {
 			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "substance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "thing": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "matter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "stuff": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "object": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "entries": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "element": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "article": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "piece": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "point": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
 			          }
 			        }
 			      ]
 			    },
-			    "JMS_table.days_till_review_": {
+			    "entity_1_measure.count_rows": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "JMS Table",
+			          "ConceptualEntity": "1_Measures",
+			          "ConceptualProperty": "Count Rows"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "count rows": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "rows": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "amount row": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "count ruckus": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "count commotion": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "count rumpus": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "count disturbance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "ruckus": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "commotion": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "rumpus": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "disturbance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "count noise": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        }
+			      ]
+			    },
+			    "owner_authority": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Owner/Authority"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "owner/authority": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "owner authority": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "authority": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "ownership /authority": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "holder /authority": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "landlord /authority": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "possessor /authority": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "proprietor /authority": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "shareholder /authority": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "titleholder /authority": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "ownership authority": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "holder authority": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "landlord authority": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        }
+			      ]
+			    },
+			    "owner_authority.owner_authority": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Owner/Authority",
+			          "ConceptualProperty": "Owner/Authority"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "owner/authority": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "owner/authority name": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "owner authority": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "authority": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "ownership /authority": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "holder /authority": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "landlord /authority": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "possessor /authority": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "proprietor /authority": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "shareholder /authority": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "titleholder /authority": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "ownership authority": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "holder authority": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "landlord authority": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "Parameter": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ],
+			      "NameType": "Name"
+			    },
+			    "owner_authority.owner_authority_field": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Owner/Authority",
+			          "ConceptualProperty": "Owner/Authority Fields"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "owner/authority field": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "owner authority field": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "authority field": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "field": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "ownership /authority field": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "holder /authority field": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "landlord /authority field": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "possessor /authority field": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "proprietor /authority field": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "shareholder /authority field": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "titleholder /authority field": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "ownership authority field": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "holder authority field": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "landlord authority field": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        }
+			      ]
+			    },
+			    "owner_authority.owner_authority_order": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Owner/Authority",
+			          "ConceptualProperty": "Owner/Authority Order"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "owner/authority order": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "owner authority order": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "authority order": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "order": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "ownership /authority order": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "holder /authority order": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "landlord /authority order": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "possessor /authority order": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "proprietor /authority order": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "shareholder /authority order": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "titleholder /authority order": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "ownership authority order": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "holder authority order": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "landlord authority order": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        }
+			      ]
+			    },
+			    "entity_1_measure.target_": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "1_Measures",
+			          "ConceptualProperty": "Target %"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "target %": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "target percentage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "target pct": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "focus %": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "goal %": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "objective %": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "entity_1_measure.days_till_review_": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "1_Measures",
 			          "ConceptualProperty": "Days Till Review."
 			        }
 			      },
@@ -10278,10 +9732,62 @@ cultureInfo en-GB
 			        }
 			      ]
 			    },
-			    "JMS_table.overdue_docs": {
+			    "entity_1_measure.docs": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "JMS Table",
+			          "ConceptualEntity": "1_Measures",
+			          "ConceptualProperty": "Docs"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "docs": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity_1_measure.docs_within_date": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "1_Measures",
+			          "ConceptualProperty": "Docs within Date"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "docs within date": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "doc within moment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "doc within period": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "entity_1_measure.overdue_docs": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "1_Measures",
 			          "ConceptualProperty": "Overdue Docs"
 			        }
 			      },
@@ -10294,249 +9800,22 @@ cultureInfo en-GB
 			        }
 			      ]
 			    },
-			    "JMS_table.created": {
+			    "entity_1_measure.review_count": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "JMS Table",
-			          "ConceptualProperty": "Created"
+			          "ConceptualEntity": "1_Measures",
+			          "ConceptualProperty": "Review Count"
 			        }
 			      },
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "created": {
+			          "review count": {
 			            "State": "Generated"
 			          }
 			        },
 			        {
-			          "date": {
-			            "State": "Generated",
-			            "Weight": 0.7
-			          }
-			        },
-			        {
-			          "shaped": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        },
-			        {
-			          "bent": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        },
-			        {
-			          "fashioned": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        },
-			        {
-			          "twisted": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        },
-			        {
-			          "formed": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        },
-			        {
-			          "produced": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        }
-			      ],
-			      "SemanticType": "Time"
-			    },
-			    "JMS_table.due_01__30_days": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "JMS Table",
-			          "ConceptualProperty": "Due 01 - 30 Days"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "due 01 - 30 days": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "due 01 30 days": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "30 days": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "01 30 days": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "due 01 - 30 existence": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.52
-			          }
-			        },
-			        {
-			          "due 01 30 existence": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.514
-			          }
-			        },
-			        {
-			          "01 30 existence": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.508
-			          }
-			        },
-			        {
-			          "due 01 - 30 being": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.504
-			          }
-			        },
-			        {
-			          "due 01 - 30 living": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.504
-			          }
-			        },
-			        {
-			          "30 existence": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.5
-			          }
-			        },
-			        {
-			          "due 01 30 being": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.499
-			          }
-			        },
-			        {
-			          "due 01 30 living": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.499
-			          }
-			        },
-			        {
-			          "due 01 - 30 eras": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.494
-			          }
-			        },
-			        {
-			          "due 01 - 30 generation": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.494
-			          }
-			        }
-			      ]
-			    },
-			    "JMS_table.compliant_": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "JMS Table",
-			          "ConceptualProperty": "Compliant %"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "compliant %": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "compliant percentage": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.75
-			          }
-			        },
-			        {
-			          "compliant pct": {
+			          "review amount": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
@@ -10547,22 +9826,22 @@ cultureInfo en-GB
 			        }
 			      ]
 			    },
-			    "JMS_table.overdue_": {
+			    "JMS_table.JMS_status": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "JMS Table",
-			          "ConceptualProperty": "Overdue %"
+			          "ConceptualProperty": "JMS Status"
 			        }
 			      },
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "overdue %": {
+			          "JMS status": {
 			            "State": "Generated"
 			          }
 			        },
 			        {
-			          "overdue percentage": {
+			          "jms category": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
@@ -10572,20 +9851,1364 @@ cultureInfo en-GB
 			          }
 			        },
 			        {
-			          "overdue pct": {
+			          "jms importance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "jms prestige": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "jms prominence": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "jms condition": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "jms class": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "jms grade": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "jms level": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "jms position": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "jms rank": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "dim_status": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimStatus"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dim status": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "DimStatus": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "dim category": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "dim importance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "dim prestige": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "dim prominence": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "dim condition": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "dim class": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "dim grade": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "dim level": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "dim position": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "dim rank": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "dim_status.status": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimStatus",
+			          "ConceptualProperty": "Status"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "status": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "category": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "importance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "prestige": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "prominence": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "condition": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "class": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "grade": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "level": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "position": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ]
+			    },
+			    "dim_status.sort": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimStatus",
+			          "ConceptualProperty": "Sort"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "sort": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "category": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "genus": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "species": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "variety": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "nature": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "kind": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "class": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "ilk": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "person": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "character": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        }
+			      ]
+			    },
+			    "owner_status_summary": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Owner Status Summary"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "owner status summary": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "summary": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "status summary": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "owner status synopsis": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "owner status explanation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "owner status extraction": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "owner status summarisation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "status synopsis": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "status explanation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "status extraction": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "status summarisation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "owner status review": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "owner status abstract": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        }
+			      ]
+			    },
+			    "owner_status_summary.items": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Owner Status Summary",
+			          "ConceptualProperty": "Items"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "items": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "item": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "substance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "thing": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "matter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "stuff": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "object": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "entries": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "element": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "article": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "piece": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "point": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        }
+			      ]
+			    },
+			    "owner_status_summary.owner_rank_within_status": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Owner Status Summary",
+			          "ConceptualProperty": "Owner Rank Within Status"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "owner rank within status": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "owner rank": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "ownership rank within status": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "holder rank within status": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "landlord rank within status": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "possessor rank within status": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "proprietor rank within status": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "shareholder rank within status": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "titleholder rank within status": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "owner rank within category": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "owner rank within importance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "owner rank within prestige": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        }
+			      ]
+			    },
+			    "owner_status_summary.axis_sort_key": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Owner Status Summary",
+			          "ConceptualProperty": "Axis Sort Key"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "axis sort key": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "key": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "sort key": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "axis sort solution": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "axis sort explanation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "axis sort basis": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "axis sort recipe": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "axis sort interpretation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "axis sort resolution": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "main": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "basic": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "fundamental": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "central": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "owner_status_summary.axis_label": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Owner Status Summary",
+			          "ConceptualProperty": "Axis Label"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "axis label": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "label": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "axis sticker": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "sticker": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "axis tag": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "axis decal": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "tag": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "decal": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "axis name tag": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.589
+			          }
+			        },
+			        {
+			          "name tag": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.571
+			          }
+			        },
+			        {
+			          "Document Owner": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "owner_status_summary.document_owner": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Owner Status Summary",
+			          "ConceptualProperty": "Document Owner"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "document owner": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "document ownership": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "document holder": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "document landlord": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "document possessor": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "document proprietor": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "document shareholder": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "document titleholder": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        }
+			      ]
+			    },
+			    "owner_status_summary.status": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Owner Status Summary",
+			          "ConceptualProperty": "Status"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "status": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "category": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "importance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "prestige": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "prominence": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "condition": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "class": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "grade": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "level": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "position": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ]
+			    },
+			    "owner_status_summary.sort": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Owner Status Summary",
+			          "ConceptualProperty": "Sort"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "sort": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "category": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "genus": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "species": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "variety": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "nature": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "kind": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "class": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "ilk": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "person": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "character": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
 			          }
 			        }
 			      ]
 			    }
 			  },
 			  "Relationships": {
-			    "JMS_table_has_due__10_days": {
+			    "JMS_table_has_entity_1_measure_items": {
 			      "Binding": {
 			        "ConceptualEntity": "JMS Table"
 			      },
@@ -10596,9 +11219,9 @@ cultureInfo en-GB
 			            "Entity": "JMS_table"
 			          }
 			        },
-			        "JMS_table.due__10_days": {
+			        "entity_1_measure.items": {
 			          "Target": {
-			            "Entity": "JMS_table.due__10_days"
+			            "Entity": "entity_1_measure.items"
 			          }
 			        }
 			      },
@@ -10609,144 +11232,12 @@ cultureInfo en-GB
 			              "Role": "JMS_table"
 			            },
 			            "Object": {
-			              "Role": "JMS_table.due__10_days"
+			              "Role": "entity_1_measure.items"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "JMS_tables_have_due__10_days"
-			        }
-			      ]
-			    },
-			    "JMS_table_has_overdue_": {
-			      "Binding": {
-			        "ConceptualEntity": "JMS Table"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "JMS_table": {
-			          "Target": {
-			            "Entity": "JMS_table"
-			          }
-			        },
-			        "JMS_table.overdue_": {
-			          "Target": {
-			            "Entity": "JMS_table.overdue_"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "JMS_table"
-			            },
-			            "Object": {
-			              "Role": "JMS_table.overdue_"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "JMS_tables_have_overdue_"
-			        }
-			      ]
-			    },
-			    "JMS_table_has_compliant_": {
-			      "Binding": {
-			        "ConceptualEntity": "JMS Table"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "JMS_table": {
-			          "Target": {
-			            "Entity": "JMS_table"
-			          }
-			        },
-			        "JMS_table.compliant_": {
-			          "Target": {
-			            "Entity": "JMS_table.compliant_"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "JMS_table"
-			            },
-			            "Object": {
-			              "Role": "JMS_table.compliant_"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "JMS_tables_have_compliant_"
-			        }
-			      ]
-			    },
-			    "JMS_table_has_docs_trend": {
-			      "Binding": {
-			        "ConceptualEntity": "JMS Table"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "JMS_table": {
-			          "Target": {
-			            "Entity": "JMS_table"
-			          }
-			        },
-			        "JMS_table.docs_trend": {
-			          "Target": {
-			            "Entity": "JMS_table.docs_trend"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "JMS_table"
-			            },
-			            "Object": {
-			              "Role": "JMS_table.docs_trend"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "JMS_tables_have_docs_trend"
-			        }
-			      ]
-			    },
-			    "JMS_table_has_due_01__30_days": {
-			      "Binding": {
-			        "ConceptualEntity": "JMS Table"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "JMS_table": {
-			          "Target": {
-			            "Entity": "JMS_table"
-			          }
-			        },
-			        "JMS_table.due_01__30_days": {
-			          "Target": {
-			            "Entity": "JMS_table.due_01__30_days"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "JMS_table"
-			            },
-			            "Object": {
-			              "Role": "JMS_table.due_01__30_days"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "JMS_tables_have_due_01__30_days"
+			          "ID": "JMS_tables_have_items"
 			        }
 			      ]
 			    },
@@ -10783,171 +11274,6 @@ cultureInfo en-GB
 			        }
 			      ]
 			    },
-			    "JMS_table_has_overdue_docs": {
-			      "Binding": {
-			        "ConceptualEntity": "JMS Table"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "JMS_table": {
-			          "Target": {
-			            "Entity": "JMS_table"
-			          }
-			        },
-			        "JMS_table.overdue_docs": {
-			          "Target": {
-			            "Entity": "JMS_table.overdue_docs"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "JMS_table"
-			            },
-			            "Object": {
-			              "Role": "JMS_table.overdue_docs"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "JMS_tables_have_overdue_docs"
-			        }
-			      ]
-			    },
-			    "JMS_table_has_days_till_review_": {
-			      "Binding": {
-			        "ConceptualEntity": "JMS Table"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "JMS_table": {
-			          "Target": {
-			            "Entity": "JMS_table"
-			          }
-			        },
-			        "JMS_table.days_till_review_": {
-			          "Target": {
-			            "Entity": "JMS_table.days_till_review_"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "JMS_table"
-			            },
-			            "Object": {
-			              "Role": "JMS_table.days_till_review_"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "JMS_tables_have_days_till_review_"
-			        }
-			      ]
-			    },
-			    "JMS_table_has_docs": {
-			      "Binding": {
-			        "ConceptualEntity": "JMS Table"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "JMS_table": {
-			          "Target": {
-			            "Entity": "JMS_table"
-			          }
-			        },
-			        "JMS_table.docs": {
-			          "Target": {
-			            "Entity": "JMS_table.docs"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "JMS_table"
-			            },
-			            "Object": {
-			              "Role": "JMS_table.docs"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "JMS_tables_have_docs"
-			        }
-			      ]
-			    },
-			    "JMS_table_has_complaint_documents": {
-			      "Binding": {
-			        "ConceptualEntity": "JMS Table"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "JMS_table": {
-			          "Target": {
-			            "Entity": "JMS_table"
-			          }
-			        },
-			        "JMS_table.complaint_documents": {
-			          "Target": {
-			            "Entity": "JMS_table.complaint_documents"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "JMS_table"
-			            },
-			            "Object": {
-			              "Role": "JMS_table.complaint_documents"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "JMS_tables_have_complaint_documents"
-			        }
-			      ]
-			    },
-			    "JMS_table_has_expired_documents": {
-			      "Binding": {
-			        "ConceptualEntity": "JMS Table"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "JMS_table": {
-			          "Target": {
-			            "Entity": "JMS_table"
-			          }
-			        },
-			        "JMS_table.expired_documents": {
-			          "Target": {
-			            "Entity": "JMS_table.expired_documents"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "JMS_table"
-			            },
-			            "Object": {
-			              "Role": "JMS_table.expired_documents"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "JMS_tables_have_expired_documents"
-			        }
-			      ]
-			    },
 			    "JMS_table_has_continual_improvement_required": {
 			      "Binding": {
 			        "ConceptualEntity": "JMS Table"
@@ -10981,20 +11307,20 @@ cultureInfo en-GB
 			        }
 			      ]
 			    },
-			    "JMS_table_has_email_link": {
+			    "KPI_date_table_has_value": {
 			      "Binding": {
-			        "ConceptualEntity": "JMS Table"
+			        "ConceptualEntity": "KPI Date Table"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "JMS_table": {
+			        "KPI_date_table": {
 			          "Target": {
-			            "Entity": "JMS_table"
+			            "Entity": "KPI_date_table"
 			          }
 			        },
-			        "JMS_table.email_link": {
+			        "KPI_date_table.value": {
 			          "Target": {
-			            "Entity": "JMS_table.email_link"
+			            "Entity": "KPI_date_table.value"
 			          }
 			        }
 			      },
@@ -11002,114 +11328,15 @@ cultureInfo en-GB
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "JMS_table"
+			              "Role": "KPI_date_table"
 			            },
 			            "Object": {
-			              "Role": "JMS_table.email_link"
+			              "Role": "KPI_date_table.value"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "JMS_tables_have_email_link"
-			        }
-			      ]
-			    },
-			    "table_value_has_value": {
-			      "Binding": {
-			        "ConceptualEntity": "Table Value"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "table_value": {
-			          "Target": {
-			            "Entity": "table_value"
-			          }
-			        },
-			        "table_value.value": {
-			          "Target": {
-			            "Entity": "table_value.value"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "table_value"
-			            },
-			            "Object": {
-			              "Role": "table_value.value"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "table_values_have_values"
-			        }
-			      ]
-			    },
-			    "JMS_table_has_target_": {
-			      "Binding": {
-			        "ConceptualEntity": "JMS Table"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "JMS_table": {
-			          "Target": {
-			            "Entity": "JMS_table"
-			          }
-			        },
-			        "JMS_table.target_": {
-			          "Target": {
-			            "Entity": "JMS_table.target_"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "JMS_table"
-			            },
-			            "Object": {
-			              "Role": "JMS_table.target_"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "JMS_tables_have_target_"
-			        }
-			      ]
-			    },
-			    "JMS_table_has_docs_within_date": {
-			      "Binding": {
-			        "ConceptualEntity": "JMS Table"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "JMS_table": {
-			          "Target": {
-			            "Entity": "JMS_table"
-			          }
-			        },
-			        "JMS_table.docs_within_date": {
-			          "Target": {
-			            "Entity": "JMS_table.docs_within_date"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "JMS_table"
-			            },
-			            "Object": {
-			              "Role": "JMS_table.docs_within_date"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "JMS_tables_have_docs_within_date"
+			          "ID": "KPI_date_tables_have_values"
 			        }
 			      ]
 			    },
@@ -12757,7 +12984,7 @@ cultureInfo en-GB
 			        }
 			      ]
 			    },
-			    "JMS_table_has_compliant_and_expired__copy": {
+			    "JMS_table_has_compliance_outcome": {
 			      "Binding": {
 			        "ConceptualEntity": "JMS Table"
 			      },
@@ -12768,9 +12995,9 @@ cultureInfo en-GB
 			            "Entity": "JMS_table"
 			          }
 			        },
-			        "JMS_table.compliant_and_expired__copy": {
+			        "JMS_table.compliance_outcome": {
 			          "Target": {
-			            "Entity": "JMS_table.compliant_and_expired__copy"
+			            "Entity": "JMS_table.compliance_outcome"
 			          }
 			        }
 			      },
@@ -12781,32 +13008,12 @@ cultureInfo en-GB
 			              "Role": "JMS_table"
 			            },
 			            "Object": {
-			              "Role": "JMS_table.compliant_and_expired__copy"
+			              "Role": "JMS_table.compliance_outcome"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "JMS_tables_have_compliant_and_expired__copies"
-			        },
-			        {
-			          "Adjective": {
-			            "Subject": {
-			              "Role": "JMS_table"
-			            },
-			            "Adjectives": [
-			              {
-			                "compliant": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Measurement": {
-			              "Role": "JMS_table.compliant_and_expired__copy"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "compliant_and_expired__copy_indicates_how_compliant_JMS_tables_are"
+			          "ID": "JMS_tables_have_compliance_outcomes"
 			        }
 			      ]
 			    },
@@ -13183,6 +13390,39 @@ cultureInfo en-GB
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "JMS_tables_have_document_owners"
+			        },
+			        {
+			          "Verb": {
+			            "Subject": {
+			              "Role": "JMS_table.document_owner"
+			            },
+			            "Verbs": [
+			              {
+			                "Own": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "JMS_table"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.75,
+			          "ID": "document_owners_Own_JMS_tables"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "JMS_table.document_owner"
+			            },
+			            "Object": {
+			              "Role": "JMS_table"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "document_owners_have_JMS_tables"
 			        }
 			      ]
 			    },
@@ -14849,39 +15089,6 @@ cultureInfo en-GB
 			        }
 			      ]
 			    },
-			    "date_table_has_date_hierarchy": {
-			      "Binding": {
-			        "ConceptualEntity": "DateTable"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "date_table": {
-			          "Target": {
-			            "Entity": "date_table"
-			          }
-			        },
-			        "date_table.date_hierarchy": {
-			          "Target": {
-			            "Entity": "date_table.date_hierarchy"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "date_table"
-			            },
-			            "Object": {
-			              "Role": "date_table.date_hierarchy"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "date_tables_have_date_hierarchies"
-			        }
-			      ]
-			    },
 			    "entity_1_measure_has_refresh_message": {
 			      "Binding": {
 			        "ConceptualEntity": "1_Measures"
@@ -14912,600 +15119,6 @@ cultureInfo en-GB
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "Phrasing1_measures_have_refresh_message"
-			        }
-			      ]
-			    },
-			    "date_table_has_day_of_year": {
-			      "Binding": {
-			        "ConceptualEntity": "DateTable"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "date_table": {
-			          "Target": {
-			            "Entity": "date_table"
-			          }
-			        },
-			        "date_table.day_of_year": {
-			          "Target": {
-			            "Entity": "date_table.day_of_year"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "date_table"
-			            },
-			            "Object": {
-			              "Role": "date_table.day_of_year"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "date_tables_have_day_of_year"
-			        }
-			      ]
-			    },
-			    "date_table_has_fiscal_year": {
-			      "Binding": {
-			        "ConceptualEntity": "DateTable"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "date_table": {
-			          "Target": {
-			            "Entity": "date_table"
-			          }
-			        },
-			        "date_table.fiscal_year": {
-			          "Target": {
-			            "Entity": "date_table.fiscal_year"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "date_table"
-			            },
-			            "Object": {
-			              "Role": "date_table.fiscal_year"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "date_tables_have_fiscal_years"
-			        }
-			      ]
-			    },
-			    "date_table_has_year": {
-			      "Binding": {
-			        "ConceptualEntity": "DateTable"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "date_table": {
-			          "Target": {
-			            "Entity": "date_table"
-			          }
-			        },
-			        "date_table.year": {
-			          "Target": {
-			            "Entity": "date_table.year"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "date_table"
-			            },
-			            "Object": {
-			              "Role": "date_table.year"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "date_tables_have_years"
-			        }
-			      ]
-			    },
-			    "date_table_has_fiscal_quarter": {
-			      "Binding": {
-			        "ConceptualEntity": "DateTable"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "date_table": {
-			          "Target": {
-			            "Entity": "date_table"
-			          }
-			        },
-			        "date_table.fiscal_quarter": {
-			          "Target": {
-			            "Entity": "date_table.fiscal_quarter"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "date_table"
-			            },
-			            "Object": {
-			              "Role": "date_table.fiscal_quarter"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "date_tables_have_fiscal_quarters"
-			        }
-			      ]
-			    },
-			    "date_table_has_calendar_quarter": {
-			      "Binding": {
-			        "ConceptualEntity": "DateTable"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "date_table": {
-			          "Target": {
-			            "Entity": "date_table"
-			          }
-			        },
-			        "date_table.calendar_quarter": {
-			          "Target": {
-			            "Entity": "date_table.calendar_quarter"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "date_table"
-			            },
-			            "Object": {
-			              "Role": "date_table.calendar_quarter"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "date_tables_have_calendar_quarters"
-			        }
-			      ]
-			    },
-			    "date_table_has_day_of_week_number": {
-			      "Binding": {
-			        "ConceptualEntity": "DateTable"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "date_table": {
-			          "Target": {
-			            "Entity": "date_table"
-			          }
-			        },
-			        "date_table.day_of_week_number": {
-			          "Target": {
-			            "Entity": "date_table.day_of_week_number"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "date_table"
-			            },
-			            "Object": {
-			              "Role": "date_table.day_of_week_number"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "date_tables_have_day_of_week_number"
-			        }
-			      ]
-			    },
-			    "date_table_has_day_of_week": {
-			      "Binding": {
-			        "ConceptualEntity": "DateTable"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "date_table": {
-			          "Target": {
-			            "Entity": "date_table"
-			          }
-			        },
-			        "date_table.day_of_week": {
-			          "Target": {
-			            "Entity": "date_table.day_of_week"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "date_table"
-			            },
-			            "Object": {
-			              "Role": "date_table.day_of_week"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "date_tables_have_day_of_week"
-			        }
-			      ]
-			    },
-			    "date_table_has_day_in_month": {
-			      "Binding": {
-			        "ConceptualEntity": "DateTable"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "date_table": {
-			          "Target": {
-			            "Entity": "date_table"
-			          }
-			        },
-			        "date_table.day_in_month": {
-			          "Target": {
-			            "Entity": "date_table.day_in_month"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "date_table"
-			            },
-			            "Object": {
-			              "Role": "date_table.day_in_month"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "date_tables_have_day_in_month"
-			        }
-			      ]
-			    },
-			    "date_table_has_month_end": {
-			      "Binding": {
-			        "ConceptualEntity": "DateTable"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "date_table": {
-			          "Target": {
-			            "Entity": "date_table"
-			          }
-			        },
-			        "date_table.month_end": {
-			          "Target": {
-			            "Entity": "date_table.month_end"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "date_table"
-			            },
-			            "Object": {
-			              "Role": "date_table.month_end"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "date_tables_have_month_ends"
-			        }
-			      ]
-			    },
-			    "date_table_has_month_start": {
-			      "Binding": {
-			        "ConceptualEntity": "DateTable"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "date_table": {
-			          "Target": {
-			            "Entity": "date_table"
-			          }
-			        },
-			        "date_table.month_start": {
-			          "Target": {
-			            "Entity": "date_table.month_start"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "date_table"
-			            },
-			            "Object": {
-			              "Role": "date_table.month_start"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "date_tables_have_month_starts"
-			        }
-			      ]
-			    },
-			    "date_table_has_fiscal_month_number": {
-			      "Binding": {
-			        "ConceptualEntity": "DateTable"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "date_table": {
-			          "Target": {
-			            "Entity": "date_table"
-			          }
-			        },
-			        "date_table.fiscal_month_number": {
-			          "Target": {
-			            "Entity": "date_table.fiscal_month_number"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "date_table"
-			            },
-			            "Object": {
-			              "Role": "date_table.fiscal_month_number"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "date_tables_have_fiscal_month_numbers"
-			        }
-			      ]
-			    },
-			    "date_table_has_month_number": {
-			      "Binding": {
-			        "ConceptualEntity": "DateTable"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "date_table": {
-			          "Target": {
-			            "Entity": "date_table"
-			          }
-			        },
-			        "date_table.month_number": {
-			          "Target": {
-			            "Entity": "date_table.month_number"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "date_table"
-			            },
-			            "Object": {
-			              "Role": "date_table.month_number"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "date_tables_have_month_numbers"
-			        }
-			      ]
-			    },
-			    "date_table_has_month": {
-			      "Binding": {
-			        "ConceptualEntity": "DateTable"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "date_table": {
-			          "Target": {
-			            "Entity": "date_table"
-			          }
-			        },
-			        "date_table.month": {
-			          "Target": {
-			            "Entity": "date_table.month"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "date_table"
-			            },
-			            "Object": {
-			              "Role": "date_table.month"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "date_tables_have_months"
-			        }
-			      ]
-			    },
-			    "date_table_has_date": {
-			      "Binding": {
-			        "ConceptualEntity": "DateTable"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "date_table": {
-			          "Target": {
-			            "Entity": "date_table"
-			          }
-			        },
-			        "date_table.date": {
-			          "Target": {
-			            "Entity": "date_table.date"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "date_table"
-			            },
-			            "Object": {
-			              "Role": "date_table.date"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "date_tables_have_dates"
-			        }
-			      ]
-			    },
-			    "entity_1_measure_has_user_greeting": {
-			      "Binding": {
-			        "ConceptualEntity": "1_Measures"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "entity_1_measure": {
-			          "Target": {
-			            "Entity": "entity_1_measure"
-			          }
-			        },
-			        "entity_1_measure.user_greeting": {
-			          "Target": {
-			            "Entity": "entity_1_measure.user_greeting"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "entity_1_measure"
-			            },
-			            "Object": {
-			              "Role": "entity_1_measure.user_greeting"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "Phrasing1_measures_have_user_greeting"
-			        }
-			      ]
-			    },
-			    "entity_1_measure_has_user": {
-			      "Binding": {
-			        "ConceptualEntity": "1_Measures"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "entity_1_measure": {
-			          "Target": {
-			            "Entity": "entity_1_measure"
-			          }
-			        },
-			        "entity_1_measure.user": {
-			          "Target": {
-			            "Entity": "entity_1_measure.user"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "entity_1_measure"
-			            },
-			            "Object": {
-			              "Role": "entity_1_measure.user"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "Phrasing1_measures_have_user"
-			        },
-			        {
-			          "Verb": {
-			            "Subject": {
-			              "Role": "entity_1_measure.user"
-			            },
-			            "Verbs": [
-			              {
-			                "use": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Object": {
-			              "Role": "entity_1_measure"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.75,
-			          "ID": "user_use_1_measures"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "entity_1_measure.user"
-			            },
-			            "Object": {
-			              "Role": "entity_1_measure"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "user_have_1_measures"
-			        }
-			      ]
-			    },
-			    "entity_1_measure_has_greeting": {
-			      "Binding": {
-			        "ConceptualEntity": "1_Measures"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "entity_1_measure": {
-			          "Target": {
-			            "Entity": "entity_1_measure"
-			          }
-			        },
-			        "entity_1_measure.greeting": {
-			          "Target": {
-			            "Entity": "entity_1_measure.greeting"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "entity_1_measure"
-			            },
-			            "Object": {
-			              "Role": "entity_1_measure.greeting"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "Phrasing1_measures_have_greeting"
 			        }
 			      ]
 			    },
@@ -16049,40 +15662,53 @@ cultureInfo en-GB
 			        }
 			      ]
 			    },
-			    "entity_1_measure_has_HTML_bullated_list": {
+			    "owner_authority_is_named_owner_authority": {
 			      "Binding": {
-			        "ConceptualEntity": "1_Measures"
+			        "ConceptualEntity": "Owner/Authority"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "entity_1_measure": {
+			        "owner_authority": {
 			          "Target": {
-			            "Entity": "entity_1_measure"
+			            "Entity": "owner_authority"
 			          }
 			        },
-			        "entity_1_measure.HTML_bullated_list": {
+			        "owner_authority.owner_authority": {
 			          "Target": {
-			            "Entity": "entity_1_measure.HTML_bullated_list"
+			            "Entity": "owner_authority.owner_authority"
 			          }
 			        }
 			      },
 			      "Phrasings": [
 			        {
-			          "Attribute": {
+			          "Name": {
 			            "Subject": {
-			              "Role": "entity_1_measure"
+			              "Role": "owner_authority"
 			            },
-			            "Object": {
-			              "Role": "entity_1_measure.HTML_bullated_list"
+			            "Name": {
+			              "Role": "owner_authority.owner_authority"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "Phrasing1_measures_have_HTML_bullated_list"
+			          "ID": "owner_authorities_are_names_IDs_of_owner_authorities"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "owner_authority"
+			            },
+			            "Object": {
+			              "Role": "owner_authority.owner_authority"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "owner_authorities_have_owner_authorities"
 			        }
 			      ]
 			    },
-			    "JMS_table_has_date_table": {
+			    "JMS_table_has_entity_1_measure_count_rows": {
 			      "Binding": {
 			        "ConceptualEntity": "JMS Table"
 			      },
@@ -16093,9 +15719,9 @@ cultureInfo en-GB
 			            "Entity": "JMS_table"
 			          }
 			        },
-			        "date_table": {
+			        "entity_1_measure.count_rows": {
 			          "Target": {
-			            "Entity": "date_table"
+			            "Entity": "entity_1_measure.count_rows"
 			          }
 			        }
 			      },
@@ -16106,42 +15732,194 @@ cultureInfo en-GB
 			              "Role": "JMS_table"
 			            },
 			            "Object": {
-			              "Role": "date_table"
+			              "Role": "entity_1_measure.count_rows"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "JMS_tables_have_date_tables"
+			          "ID": "JMS_tables_have_count_rows"
+			        }
+			      ]
+			    },
+			    "owner_authority_has_owner_authority_field": {
+			      "Binding": {
+			        "ConceptualEntity": "Owner/Authority"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "owner_authority": {
+			          "Target": {
+			            "Entity": "owner_authority"
+			          }
 			        },
+			        "owner_authority.owner_authority_field": {
+			          "Target": {
+			            "Entity": "owner_authority.owner_authority_field"
+			          }
+			        }
+			      },
+			      "Phrasings": [
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "date_table"
+			              "Role": "owner_authority"
 			            },
 			            "Object": {
+			              "Role": "owner_authority.owner_authority_field"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "owner_authorities_have_owner_authority_fields"
+			        }
+			      ]
+			    },
+			    "owner_authority_has_owner_authority_order": {
+			      "Binding": {
+			        "ConceptualEntity": "Owner/Authority"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "owner_authority": {
+			          "Target": {
+			            "Entity": "owner_authority"
+			          }
+			        },
+			        "owner_authority.owner_authority_order": {
+			          "Target": {
+			            "Entity": "owner_authority.owner_authority_order"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "owner_authority"
+			            },
+			            "Object": {
+			              "Role": "owner_authority.owner_authority_order"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "owner_authorities_have_owner_authority_orders"
+			        }
+			      ]
+			    },
+			    "entity_1_measure_has_target_": {
+			      "Binding": {
+			        "ConceptualEntity": "1_Measures"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity_1_measure": {
+			          "Target": {
+			            "Entity": "entity_1_measure"
+			          }
+			        },
+			        "entity_1_measure.target_": {
+			          "Target": {
+			            "Entity": "entity_1_measure.target_"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity_1_measure"
+			            },
+			            "Object": {
+			              "Role": "entity_1_measure.target_"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing1_measures_have_target_"
+			        }
+			      ]
+			    },
+			    "entity_1_measure_has_days_till_review_": {
+			      "Binding": {
+			        "ConceptualEntity": "1_Measures"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity_1_measure": {
+			          "Target": {
+			            "Entity": "entity_1_measure"
+			          }
+			        },
+			        "entity_1_measure.days_till_review_": {
+			          "Target": {
+			            "Entity": "entity_1_measure.days_till_review_"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity_1_measure"
+			            },
+			            "Object": {
+			              "Role": "entity_1_measure.days_till_review_"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing1_measures_have_days_till_review_"
+			        }
+			      ]
+			    },
+			    "JMS_table_has_entity_1_measure_docs": {
+			      "Binding": {
+			        "ConceptualEntity": "JMS Table"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "JMS_table": {
+			          "Target": {
+			            "Entity": "JMS_table"
+			          }
+			        },
+			        "entity_1_measure.docs": {
+			          "Target": {
+			            "Entity": "entity_1_measure.docs"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
 			              "Role": "JMS_table"
+			            },
+			            "Object": {
+			              "Role": "entity_1_measure.docs"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "date_tables_have_JMS_tables"
+			          "ID": "JMS_tables_have_docs"
 			        }
 			      ]
 			    },
-			    "date_table_date_hierarchy_has_year": {
+			    "JMS_table_has_entity_1_measure_docs_within_date": {
 			      "Binding": {
-			        "ConceptualEntity": "DateTable"
+			        "ConceptualEntity": "JMS Table"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "date_table.date_hierarchy": {
+			        "JMS_table": {
 			          "Target": {
-			            "Entity": "date_table.date_hierarchy"
+			            "Entity": "JMS_table"
 			          }
 			        },
-			        "date_table.date_hierarchy.year": {
+			        "entity_1_measure.docs_within_date": {
 			          "Target": {
-			            "Entity": "date_table.date_hierarchy.year"
+			            "Entity": "entity_1_measure.docs_within_date"
 			          }
 			        }
 			      },
@@ -16149,32 +15927,32 @@ cultureInfo en-GB
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "date_table.date_hierarchy"
+			              "Role": "JMS_table"
 			            },
 			            "Object": {
-			              "Role": "date_table.date_hierarchy.year"
+			              "Role": "entity_1_measure.docs_within_date"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "date_hierarchies_have_years"
+			          "ID": "JMS_tables_have_docs_within_date"
 			        }
 			      ]
 			    },
-			    "date_table_date_hierarchy_has_month": {
+			    "JMS_table_has_entity_1_measure_overdue_docs": {
 			      "Binding": {
-			        "ConceptualEntity": "DateTable"
+			        "ConceptualEntity": "JMS Table"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "date_table.date_hierarchy": {
+			        "JMS_table": {
 			          "Target": {
-			            "Entity": "date_table.date_hierarchy"
+			            "Entity": "JMS_table"
 			          }
 			        },
-			        "date_table.date_hierarchy.month": {
+			        "entity_1_measure.overdue_docs": {
 			          "Target": {
-			            "Entity": "date_table.date_hierarchy.month"
+			            "Entity": "entity_1_measure.overdue_docs"
 			          }
 			        }
 			      },
@@ -16182,32 +15960,32 @@ cultureInfo en-GB
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "date_table.date_hierarchy"
+			              "Role": "JMS_table"
 			            },
 			            "Object": {
-			              "Role": "date_table.date_hierarchy.month"
+			              "Role": "entity_1_measure.overdue_docs"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "date_hierarchies_have_months"
+			          "ID": "JMS_tables_have_overdue_docs"
 			        }
 			      ]
 			    },
-			    "date_table_date_hierarchy_has_date": {
+			    "JMS_table_has_entity_1_measure_review_count": {
 			      "Binding": {
-			        "ConceptualEntity": "DateTable"
+			        "ConceptualEntity": "JMS Table"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "date_table.date_hierarchy": {
+			        "JMS_table": {
 			          "Target": {
-			            "Entity": "date_table.date_hierarchy"
+			            "Entity": "JMS_table"
 			          }
 			        },
-			        "date_table.date_hierarchy.date": {
+			        "entity_1_measure.review_count": {
 			          "Target": {
-			            "Entity": "date_table.date_hierarchy.date"
+			            "Entity": "entity_1_measure.review_count"
 			          }
 			        }
 			      },
@@ -16215,15 +15993,345 @@ cultureInfo en-GB
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "date_table.date_hierarchy"
+			              "Role": "JMS_table"
 			            },
 			            "Object": {
-			              "Role": "date_table.date_hierarchy.date"
+			              "Role": "entity_1_measure.review_count"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "date_hierarchies_have_dates"
+			          "ID": "JMS_tables_have_review_count"
+			        }
+			      ]
+			    },
+			    "JMS_table_has_JMS_status": {
+			      "Binding": {
+			        "ConceptualEntity": "JMS Table"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "JMS_table": {
+			          "Target": {
+			            "Entity": "JMS_table"
+			          }
+			        },
+			        "JMS_table.JMS_status": {
+			          "Target": {
+			            "Entity": "JMS_table.JMS_status"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "JMS_table"
+			            },
+			            "Object": {
+			              "Role": "JMS_table.JMS_status"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "JMS_tables_have_JMS_statuses"
+			        }
+			      ]
+			    },
+			    "dim_status_has_status": {
+			      "Binding": {
+			        "ConceptualEntity": "DimStatus"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_status": {
+			          "Target": {
+			            "Entity": "dim_status"
+			          }
+			        },
+			        "dim_status.status": {
+			          "Target": {
+			            "Entity": "dim_status.status"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_status"
+			            },
+			            "Object": {
+			              "Role": "dim_status.status"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_statuses_have_statuses"
+			        }
+			      ]
+			    },
+			    "dim_status_has_sort": {
+			      "Binding": {
+			        "ConceptualEntity": "DimStatus"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_status": {
+			          "Target": {
+			            "Entity": "dim_status"
+			          }
+			        },
+			        "dim_status.sort": {
+			          "Target": {
+			            "Entity": "dim_status.sort"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_status"
+			            },
+			            "Object": {
+			              "Role": "dim_status.sort"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_statuses_have_sorts"
+			        }
+			      ]
+			    },
+			    "owner_status_summary_has_items": {
+			      "Binding": {
+			        "ConceptualEntity": "Owner Status Summary"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "owner_status_summary": {
+			          "Target": {
+			            "Entity": "owner_status_summary"
+			          }
+			        },
+			        "owner_status_summary.items": {
+			          "Target": {
+			            "Entity": "owner_status_summary.items"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "owner_status_summary"
+			            },
+			            "Object": {
+			              "Role": "owner_status_summary.items"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "owner_status_summaries_have_items"
+			        }
+			      ]
+			    },
+			    "owner_status_summary_has_owner_rank_within_status": {
+			      "Binding": {
+			        "ConceptualEntity": "Owner Status Summary"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "owner_status_summary": {
+			          "Target": {
+			            "Entity": "owner_status_summary"
+			          }
+			        },
+			        "owner_status_summary.owner_rank_within_status": {
+			          "Target": {
+			            "Entity": "owner_status_summary.owner_rank_within_status"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "owner_status_summary"
+			            },
+			            "Object": {
+			              "Role": "owner_status_summary.owner_rank_within_status"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "owner_status_summaries_have_owner_rank_within_status"
+			        }
+			      ]
+			    },
+			    "owner_status_summary_has_axis_sort_key": {
+			      "Binding": {
+			        "ConceptualEntity": "Owner Status Summary"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "owner_status_summary": {
+			          "Target": {
+			            "Entity": "owner_status_summary"
+			          }
+			        },
+			        "owner_status_summary.axis_sort_key": {
+			          "Target": {
+			            "Entity": "owner_status_summary.axis_sort_key"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "owner_status_summary"
+			            },
+			            "Object": {
+			              "Role": "owner_status_summary.axis_sort_key"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "owner_status_summaries_have_axis_sort_keys"
+			        }
+			      ]
+			    },
+			    "owner_status_summary_has_axis_label": {
+			      "Binding": {
+			        "ConceptualEntity": "Owner Status Summary"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "owner_status_summary": {
+			          "Target": {
+			            "Entity": "owner_status_summary"
+			          }
+			        },
+			        "owner_status_summary.axis_label": {
+			          "Target": {
+			            "Entity": "owner_status_summary.axis_label"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "owner_status_summary"
+			            },
+			            "Object": {
+			              "Role": "owner_status_summary.axis_label"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "owner_status_summaries_have_axis_labels"
+			        }
+			      ]
+			    },
+			    "owner_status_summary_has_document_owner": {
+			      "Binding": {
+			        "ConceptualEntity": "Owner Status Summary"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "owner_status_summary": {
+			          "Target": {
+			            "Entity": "owner_status_summary"
+			          }
+			        },
+			        "owner_status_summary.document_owner": {
+			          "Target": {
+			            "Entity": "owner_status_summary.document_owner"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "owner_status_summary"
+			            },
+			            "Object": {
+			              "Role": "owner_status_summary.document_owner"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "owner_status_summaries_have_document_owners"
+			        }
+			      ]
+			    },
+			    "owner_status_summary_has_status": {
+			      "Binding": {
+			        "ConceptualEntity": "Owner Status Summary"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "owner_status_summary": {
+			          "Target": {
+			            "Entity": "owner_status_summary"
+			          }
+			        },
+			        "owner_status_summary.status": {
+			          "Target": {
+			            "Entity": "owner_status_summary.status"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "owner_status_summary"
+			            },
+			            "Object": {
+			              "Role": "owner_status_summary.status"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "owner_status_summaries_have_statuses"
+			        }
+			      ]
+			    },
+			    "owner_status_summary_has_sort": {
+			      "Binding": {
+			        "ConceptualEntity": "Owner Status Summary"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "owner_status_summary": {
+			          "Target": {
+			            "Entity": "owner_status_summary"
+			          }
+			        },
+			        "owner_status_summary.sort": {
+			          "Target": {
+			            "Entity": "owner_status_summary.sort"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "owner_status_summary"
+			            },
+			            "Object": {
+			              "Role": "owner_status_summary.sort"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "owner_status_summaries_have_sorts"
 			        }
 			      ]
 			    }

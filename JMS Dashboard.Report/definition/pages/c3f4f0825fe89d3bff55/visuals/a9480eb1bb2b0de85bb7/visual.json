@@ -5,7 +5,7 @@
     "x": 864,
     "y": 0,
     "z": 1000,
-    "height": 110,
+    "height": 117.99999999999999,
     "width": 414,
     "tabOrder": 2000
   },
@@ -20,19 +20,34 @@
                 "Measure": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "JMS Table"
+                      "Entity": "1_Measures"
                     }
                   },
                   "Property": "Overdue Docs"
                 }
               },
-              "queryRef": "JMS Table.Overdue Docs",
+              "queryRef": "1_Measures.Overdue Docs",
               "nativeQueryRef": "Overdue Docs"
             }
           ]
         }
       },
       "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "1_Measures"
+                  }
+                },
+                "Property": "Overdue Docs"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
         "isDefaultSort": true
       }
     },
@@ -303,9 +318,8 @@
               "solid": {
                 "color": {
                   "expr": {
-                    "ThemeDataColor": {
-                      "ColorId": 7,
-                      "Percent": 0
+                    "Literal": {
+                      "Value": "'#E30909'"
                     }
                   }
                 }
@@ -321,32 +335,6 @@
           },
           "selector": {
             "id": "default"
-          }
-        },
-        {
-          "properties": {
-            "fontColor": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "ThemeDataColor": {
-                      "ColorId": 7,
-                      "Percent": 0
-                    }
-                  }
-                }
-              }
-            },
-            "fontSize": {
-              "expr": {
-                "Literal": {
-                  "Value": "28D"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "JMS Table.Overdue Docs"
           }
         }
       ],
@@ -506,7 +494,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Overdue Document'"
+                  "Value": "'Overdue Documents'"
                 }
               }
             },
@@ -573,23 +561,5 @@
     },
     "drillFilterOtherVisuals": true
   },
-  "parentGroupName": "5b375c197d3a57bc4506",
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "68d8fe8da80a07cb4011",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "JMS Table"
-              }
-            },
-            "Property": "Overdue Docs"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
-  }
+  "parentGroupName": "5b375c197d3a57bc4506"
 }

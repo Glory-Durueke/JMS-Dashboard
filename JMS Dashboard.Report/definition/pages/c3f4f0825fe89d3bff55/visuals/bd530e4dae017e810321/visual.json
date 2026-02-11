@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
   "name": "bd530e4dae017e810321",
   "position": {
-    "x": 0,
-    "y": 0,
-    "z": 1000,
-    "height": 295.03311258278143,
-    "width": 1264,
+    "x": 4,
+    "y": 42.714285714285722,
+    "z": 2000,
+    "height": 256.28571428571433,
+    "width": 1270,
     "tabOrder": 0
   },
   "visual": {
@@ -23,12 +23,46 @@
                       "Entity": "JMS Table"
                     }
                   },
+                  "Property": "Process Authority"
+                }
+              },
+              "queryRef": "JMS Table.Process Authority",
+              "nativeQueryRef": "Authority",
+              "active": false,
+              "displayName": "Authority"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "JMS Table"
+                    }
+                  },
                   "Property": "Document Owner"
                 }
               },
               "queryRef": "JMS Table.Document Owner",
-              "nativeQueryRef": "Document Owner",
-              "active": true
+              "nativeQueryRef": "Owner",
+              "active": true,
+              "displayName": "Owner"
+            }
+          ],
+          "fieldParameters": [
+            {
+              "parameterExpr": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Owner/Authority"
+                    }
+                  },
+                  "Property": "Owner/Authority"
+                }
+              },
+              "index": 0,
+              "length": 2,
+              "sortDirection": "Ascending"
             }
           ]
         },
@@ -42,10 +76,10 @@
                       "Entity": "JMS Table"
                     }
                   },
-                  "Property": "Review Status Signs"
+                  "Property": "Review Priority Signs"
                 }
               },
-              "queryRef": "JMS Table.Review Status Signs",
+              "queryRef": "JMS Table.Review Priority Signs",
               "nativeQueryRef": "Status",
               "displayName": "Status"
             }
@@ -55,23 +89,17 @@
           "projections": [
             {
               "field": {
-                "Aggregation": {
+                "Measure": {
                   "Expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "JMS Table"
-                        }
-                      },
-                      "Property": "Document Owner"
+                    "SourceRef": {
+                      "Entity": "1_Measures"
                     }
                   },
-                  "Function": 5
+                  "Property": "Items"
                 }
               },
-              "queryRef": "CountNonNull(JMS Table.Document Owner)",
-              "nativeQueryRef": " Document Owner",
-              "displayName": " Document Owner"
+              "queryRef": "1_Measures.Count Row",
+              "nativeQueryRef": "Items"
             }
           ]
         }
@@ -80,31 +108,13 @@
         "sort": [
           {
             "field": {
-              "Aggregation": {
-                "Expression": {
-                  "Column": {
-                    "Expression": {
-                      "SourceRef": {
-                        "Entity": "JMS Table"
-                      }
-                    },
-                    "Property": "Document Owner"
-                  }
-                },
-                "Function": 5
-              }
-            },
-            "direction": "Descending"
-          },
-          {
-            "field": {
               "Column": {
                 "Expression": {
                   "SourceRef": {
                     "Entity": "JMS Table"
                   }
                 },
-                "Property": "Review Status Signs"
+                "Property": "Document Owner"
               }
             },
             "direction": "Ascending"
@@ -120,6 +130,13 @@
               "expr": {
                 "Literal": {
                   "Value": "true"
+                }
+              }
+            },
+            "position": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Top'"
                 }
               }
             }
@@ -451,6 +468,173 @@
               }
             ]
           }
+        },
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#E30909'"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "JMS Table"
+                          }
+                        },
+                        "Property": "Review Priority Signs"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'Overdue'"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 6,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "JMS Table"
+                          }
+                        },
+                        "Property": "Review Priority Signs"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'01 - 30 Days'"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 5,
+                      "Percent": 0.6
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "JMS Table"
+                          }
+                        },
+                        "Property": "Review Priority Signs"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'31 - 60 Days'"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 5,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "JMS Table"
+                          }
+                        },
+                        "Property": "Review Priority Signs"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'61 - 90 Days'"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
         }
       ],
       "categoryAxis": [
@@ -470,13 +654,6 @@
                 }
               }
             },
-            "maxMarginFactor": {
-              "expr": {
-                "Literal": {
-                  "Value": "39L"
-                }
-              }
-            },
             "innerPadding": {
               "expr": {
                 "Literal": {
@@ -487,7 +664,14 @@
             "preferredCategoryWidth": {
               "expr": {
                 "Literal": {
-                  "Value": "64D"
+                  "Value": "100D"
+                }
+              }
+            },
+            "maxMarginFactor": {
+              "expr": {
+                "Literal": {
+                  "Value": "26L"
                 }
               }
             }
@@ -513,7 +697,7 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "false"
                 }
               }
             },
@@ -522,7 +706,7 @@
                 "color": {
                   "expr": {
                     "ThemeDataColor": {
-                      "ColorId": 0,
+                      "ColorId": 1,
                       "Percent": 0
                     }
                   }
@@ -560,7 +744,7 @@
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "9D"
+                  "Value": "12D"
                 }
               }
             },
@@ -574,7 +758,7 @@
             "labelOverflow": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "false"
                 }
               }
             },
@@ -582,6 +766,20 @@
               "expr": {
                 "Literal": {
                   "Value": "'left'"
+                }
+              }
+            },
+            "optimizeLabelDisplay": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "enableValueDataLabel": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
                 }
               }
             }
@@ -672,7 +870,7 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "false"
                 }
               }
             },
@@ -699,6 +897,65 @@
             }
           }
         }
+      ],
+      "totals": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "12D"
+                }
+              }
+            },
+            "showPositiveAndNegative": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "enableBackground": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        },
+        {
+          "properties": {
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 1,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "dataViewWildcard": {
+                  "matchingOption": 1
+                }
+              }
+            ]
+          }
+        }
       ]
     },
     "visualContainerObjects": {
@@ -708,14 +965,14 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Owner'"
+                  "Value": "'.'"
                 }
               }
             },
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "false"
                 }
               }
             },
@@ -723,6 +980,18 @@
               "expr": {
                 "Literal": {
                   "Value": "false"
+                }
+              }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": 0
+                    }
+                  }
                 }
               }
             }
@@ -807,7 +1076,7 @@
             "left": {
               "expr": {
                 "Literal": {
-                  "Value": "5D"
+                  "Value": "11D"
                 }
               }
             },
@@ -827,6 +1096,26 @@
             }
           }
         }
+      ],
+      "subTitle": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Authority'"
+                }
+              }
+            }
+          }
+        }
       ]
     },
     "drillFilterOtherVisuals": true
@@ -835,7 +1124,7 @@
   "filterConfig": {
     "filters": [
       {
-        "name": "bce62727f7919bf061a8",
+        "name": "3e3481d17d75cf4f0c36",
         "field": {
           "Column": {
             "Expression": {
@@ -843,7 +1132,7 @@
                 "Entity": "JMS Table"
               }
             },
-            "Property": "Review Status Signs"
+            "Property": "Review Priority Signs"
           }
         },
         "type": "Categorical",
@@ -870,7 +1159,7 @@
                                 "Source": "j"
                               }
                             },
-                            "Property": "Review Status Signs"
+                            "Property": "Review Priority Signs"
                           }
                         }
                       ],
@@ -879,6 +1168,13 @@
                           {
                             "Literal": {
                               "Value": "'> 180 Days'"
+                            }
+                          }
+                        ],
+                        [
+                          {
+                            "Literal": {
+                              "Value": "'> 1 Year'"
                             }
                           }
                         ]

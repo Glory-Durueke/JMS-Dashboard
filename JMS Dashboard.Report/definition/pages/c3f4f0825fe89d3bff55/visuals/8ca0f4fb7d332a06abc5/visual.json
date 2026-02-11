@@ -5,7 +5,7 @@
     "x": 0,
     "y": 0,
     "z": 0,
-    "height": 110,
+    "height": 117.99999999999999,
     "width": 414.46676970633695,
     "tabOrder": 1000
   },
@@ -20,13 +20,13 @@
                 "Measure": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "JMS Table"
+                      "Entity": "1_Measures"
                     }
                   },
                   "Property": "Target %"
                 }
               },
-              "queryRef": "JMS Table.Target %",
+              "queryRef": "1_Measures.Target %",
               "nativeQueryRef": "Target %"
             }
           ]
@@ -38,13 +38,13 @@
                 "Measure": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "JMS Table"
+                      "Entity": "1_Measures"
                     }
                   },
                   "Property": "Docs within Date"
                 }
               },
-              "queryRef": "JMS Table.Docs within Date",
+              "queryRef": "1_Measures.Docs within Date",
               "nativeQueryRef": "Docs within Date"
             }
           ]
@@ -56,7 +56,7 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Table Value"
+                      "Entity": "KPI Date Table"
                     }
                   },
                   "Property": "Value"
@@ -97,7 +97,14 @@
             "showIcon": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "true"
+                }
+              }
+            },
+            "iconSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "12D"
                 }
               }
             }
@@ -114,76 +121,12 @@
                 }
               }
             },
-            "neutralColor": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Conditional": {
-                      "Cases": [
-                        {
-                          "Condition": {
-                            "And": {
-                              "Left": {
-                                "Comparison": {
-                                  "ComparisonKind": 2,
-                                  "Left": {
-                                    "Measure": {
-                                      "Expression": {
-                                        "SourceRef": {
-                                          "Entity": "JMS Table"
-                                        }
-                                      },
-                                      "Property": "Target %"
-                                    }
-                                  },
-                                  "Right": {
-                                    "Literal": {
-                                      "Value": "50D"
-                                    }
-                                  }
-                                }
-                              },
-                              "Right": {
-                                "Comparison": {
-                                  "ComparisonKind": 3,
-                                  "Left": {
-                                    "Measure": {
-                                      "Expression": {
-                                        "SourceRef": {
-                                          "Entity": "JMS Table"
-                                        }
-                                      },
-                                      "Property": "Target %"
-                                    }
-                                  },
-                                  "Right": {
-                                    "Literal": {
-                                      "Value": "65D"
-                                    }
-                                  }
-                                }
-                              }
-                            }
-                          },
-                          "Value": {
-                            "Literal": {
-                              "Value": "'#ED9121'"
-                            }
-                          }
-                        }
-                      ]
-                    }
-                  }
-                }
-              }
-            },
             "badColor": {
               "solid": {
                 "color": {
                   "expr": {
-                    "ThemeDataColor": {
-                      "ColorId": 7,
-                      "Percent": 0
+                    "Literal": {
+                      "Value": "'#E30909'"
                     }
                   }
                 }
@@ -219,7 +162,7 @@
             "showGoal": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "false"
                 }
               }
             },
@@ -259,6 +202,19 @@
             }
           }
         }
+      ],
+      "lastDate": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
       ]
     },
     "visualContainerObjects": {
@@ -268,7 +224,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Percentage of Document in Date'"
+                  "Value": "'Percentage of Documents in Date'"
                 }
               }
             },
@@ -276,6 +232,13 @@
               "expr": {
                 "Literal": {
                   "Value": "true"
+                }
+              }
+            },
+            "titleWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
                 }
               }
             }
@@ -295,7 +258,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'.'"
+                  "Value": "'Goal: 95%'"
                 }
               }
             },
@@ -304,10 +267,17 @@
                 "color": {
                   "expr": {
                     "ThemeDataColor": {
-                      "ColorId": 0,
+                      "ColorId": 1,
                       "Percent": 0
                     }
                   }
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'left'"
                 }
               }
             }

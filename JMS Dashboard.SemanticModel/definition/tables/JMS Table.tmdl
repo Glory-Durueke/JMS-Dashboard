@@ -2,102 +2,6 @@
 table 'JMS Table'
 	lineageTag: 7cefd9e1-f42c-46e0-a381-b77e1c499c67
 
-	/// Calculates the proportion of documents in the JMS Table that are not marked as 'Compliant and Expired', representing the share of documents within the valid date range.
-	measure 'Docs within Date' = 1-((COUNTROWS(FILTER('JMS Table','JMS Table'[Compliant and Expired - Copy]==1)))/COUNTROWS('JMS Table'))
-		formatString: 0.0%;-0.0%;0.0%
-		displayFolder: Main Measure
-		lineageTag: ef7c60a8-f618-4302-838c-86995e185fb2
-
-		changedProperty = IsHidden
-
-	/// A static value of 0.95 for Target %.
-	measure 'Target %' = 0.95
-		formatString: 0%;-0%;0%
-		displayFolder: Main Measure
-		lineageTag: e509e8e3-bf5d-4a3e-89b9-c5b13ffff4d3
-
-		changedProperty = IsHidden
-
-	measure 'Complaint Documents' = ```
-			
-			CALCULATE (
-			    COUNTROWS ( 'JMS Table' ),
-			    'JMS Table'[Compliant and Expired - Copy] = 2
-			)
-			
-			
-			```
-		formatString: 0
-		displayFolder: Utility
-		lineageTag: b00b7a2f-c2d2-4934-8184-d12035e55011
-
-		changedProperty = IsHidden
-
-	/// Counts the total number of rows in the 'JMS Table', representing the total number of documents.
-	measure Docs = COUNTROWS('JMS Table')
-		formatString: 0
-		displayFolder: Main Measure
-		lineageTag: d95abd33-b78e-4211-9caf-34bbe8c7d41f
-
-		changedProperty = IsHidden
-
-	/// Calculates the number of days from today until the earliest review date in the JMS Table.
-	measure 'Days Till Review.' = DATEDIFF ( TODAY(), MIN('JMS Table'[Review Date]), DAY )
-		formatString: 0
-		displayFolder: Main Measure
-		lineageTag: 7cd27123-a18a-4b72-82d5-6df200bfe10c
-
-		changedProperty = IsHidden
-
-	/// Calculates the total number of documents that are overdue by counting those with a review date in the past.
-	measure 'Overdue Docs' =
-			
-			CALCULATE ( [Docs], FILTER( ALL('JMS Table'[ReviewDate]), [Days Till Review.] < 0 ) )
-		formatString: 0
-		displayFolder: Main Measure
-		lineageTag: 1ace4e45-a0cb-4564-855a-3a2b2692de4f
-
-		changedProperty = IsHidden
-
-	/// Calculates the number of documents that are due for review within the next 30 days, including today, based on the 'Days Till Review.' measure.
-	measure 'Due 01 - 30 Days' =
-			
-			CALCULATE ( [Docs], FILTER( ALL('JMS Table'[ReviewDate]), [Days Till Review.] >= 0 && [Days Till Review.] = 30 ) )
-		formatString: 0
-		displayFolder: Main Measure
-		lineageTag: feafb6a0-c631-4b3d-90d2-cb1298098f8f
-
-		changedProperty = IsHidden
-
-	measure 'Compliant %' = ```
-			
-			VAR TotalDocs = [Docs]
-			VAR CompliantDocs =
-			    CALCULATE ( [Docs], KEEPFILTERS( VALUE('JMS Table'[Compliant and Expired - Copy]) = 2 ) )
-			RETURN DIVIDE( CompliantDocs, TotalDocs )
-			
-			```
-		formatString: 0%;-0%;0%
-		displayFolder: Utility
-		lineageTag: 6a7a36a4-beff-4c44-861f-0edda807e82f
-
-		changedProperty = IsHidden
-
-	/// Calculates the percentage of documents that are both compliant and expired out of the total number of documents. This measure helps track the proportion of overdue compliant documents.
-	measure 'Overdue %' = ```
-			
-			VAR TotalDocs = [Docs]
-			VAR CompliantDocs =
-			    CALCULATE ( [Docs], KEEPFILTERS( VALUE('JMS Table'[Compliant and Expired - Copy]) = 1 ) )
-			RETURN DIVIDE( CompliantDocs, TotalDocs )
-			
-			```
-		formatString: 0.00%;-0.00%;0.00%
-		displayFolder: Main Measure
-		lineageTag: d36da719-070b-422a-aa1b-3662ab1e45d0
-
-		changedProperty = IsHidden
-
 	column Id
 		dataType: int64
 		formatString: 0
@@ -264,6 +168,8 @@ table 'JMS Table'
 
 		changedProperty = IsHidden
 
+		changedProperty = SortByColumn
+
 		annotation SummarizationSetBy = Automatic
 
 	column 'Process Authority'
@@ -373,12 +279,12 @@ table 'JMS Table'
 
 		annotation SummarizationSetBy = Automatic
 
-	column 'Compliant and Expired - Copy'
+	column 'Compliance Outcome'
 		dataType: int64
 		formatString: 0
 		lineageTag: 39a93bd6-6223-4ec5-a29b-d25a68a01045
 		summarizeBy: sum
-		sourceColumn: Compliant and Expired - Copy
+		sourceColumn: Compliance Outcome
 
 		changedProperty = IsHidden
 
@@ -413,8 +319,11 @@ table 'JMS Table'
 		lineageTag: fe16953f-2fa0-4035-95d4-a45baaee428d
 		summarizeBy: none
 		sourceColumn: Review Priority Signs
+		sortByColumn: 'Review Priority'
 
 		changedProperty = IsHidden
+
+		changedProperty = SortByColumn
 
 		annotation SummarizationSetBy = Automatic
 
@@ -443,6 +352,24 @@ table 'JMS Table'
 
 		annotation UnderlyingDateTimeDataType = Date
 
+	column 'JMS Status' = ```
+			
+			VAR s = LOWER ( TRIM ( 'JMS Table'[Review Status Signs] ) )
+			RETURN
+			  SWITCH ( TRUE(),
+			    CONTAINSSTRING(s, "overdue"), "Overdue",
+			    s IN { "0-30", "0 – 30", "0–30", "0 to 30", "due in 30" }, "0–30 Days",
+			    s IN { "31-60", "31 – 60", "31–60" }, "31–60 Days",
+			    s IN { "61-90", "61 – 90", "61–90" }, "61–90 Days",
+			    " > 90 Days"
+			  )
+			
+			```
+		lineageTag: 529672df-c1ab-44c7-aec6-68859c8e4503
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
 	partition 'JMS Table' = m
 		mode: import
 		source = ```
@@ -461,7 +388,7 @@ table 'JMS Table'
 				    #"Renamed Columns3" = Table.RenameColumns(#"Expanded FieldValuesAsText",{{"ServerRedirectedEmbedUri", "Document Link"}}),
 				    #"Removed Columns" = Table.RemoveColumns(#"Renamed Columns3",{"FileSystemObjectType", "ServerRedirectedEmbedUrl", "ContentTypeId", "ComplianceAssetId", "Title", "DocumentOwnerStringId", "MethodStatementServiceDeliveryPlan", "OData__Copyright"}),
 				    #"Changed Type" = Table.TransformColumnTypes(#"Removed Columns",{{"ReviewDate", type date}}),
-				    #"Filtered Rows" = Table.SelectRows(#"Changed Type", each ([ReviewDate] <> null)),
+				    #"Filtered Rows" = Table.SelectRows(#"Changed Type", each [ReviewDate] <> null),
 				    #"Removed Columns1" = Table.RemoveColumns(#"Filtered Rows",{ "URL", "ReviewPeriod", "FieldValuesAsHtml.Title"}),
 				    #"Split Column by Delimiter" = Table.SplitColumn(#"Removed Columns1", "FieldValuesAsHtml.FileLeafRef", Splitter.SplitTextByEachDelimiter({"-"}, QuoteStyle.Csv, false), {"FieldValuesAsHtml.FileLeafRef.1", "FieldValuesAsHtml.FileLeafRef.2"}),
 				    #"Renamed Columns4" = Table.RenameColumns(#"Split Column by Delimiter",{{"FieldValuesAsHtml.FileLeafRef.1", "JMS ID"}}),
@@ -555,9 +482,9 @@ table 'JMS Table'
 				    #"Replaced Value16" = Table.ReplaceValue(#"Replaced Value15","Review Overdue","Overdue",Replacer.ReplaceText,{"Review Priority Signs"}),
 				    #"Replaced Value17" = Table.ReplaceValue(#"Replaced Value16","Expired","Overdue",Replacer.ReplaceText,{"Review Status Signs"}),
 				    #"Replaced Value18" = Table.ReplaceValue(#"Replaced Value17","<= 180 Days","61 - 90 Days",Replacer.ReplaceText,{"Review Status Signs"}),
-				    #"Filtered Rows3" = Table.SelectRows(#"Replaced Value18", each true)
+				    #"Renamed Columns19" = Table.RenameColumns(#"Replaced Value18",{{"Compliant and Expired - Copy", "Compliance Outcome"}})
 				in
-				    #"Filtered Rows3"
+				    #"Renamed Columns19"
 				```
 
 	annotation PBI_NavigationStepName = Navigation

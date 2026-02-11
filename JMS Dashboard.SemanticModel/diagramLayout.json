@@ -10,42 +10,30 @@
       "nodes": [
         {
           "location": {
-            "x": 368.82117181163295,
-            "y": 390.41433609270314
+            "x": 371.37356746430868,
+            "y": 265.34694911159573
           },
           "nodeIndex": "1_Measures",
           "nodeLineageTag": "fca0b643-062c-4cfe-911a-63a9e040b594",
           "size": {
-            "height": 257.63458223787319,
+            "height": 145,
             "width": 348.70709437572805
           },
-          "zIndex": 2
+          "zIndex": 3
         },
         {
           "location": {
-            "x": 0,
+            "x": 14.038176089716131,
             "y": 0
-          },
-          "nodeIndex": "DateTable",
-          "nodeLineageTag": "6c60b3fd-b156-4c4c-b750-be665d10f7b9",
-          "size": {
-            "height": 219.59953694071658,
-            "width": 348.70709437572805
-          },
-          "zIndex": 1
-        },
-        {
-          "location": {
-            "x": 0,
-            "y": 395.43690689577824
           },
           "nodeIndex": "JMS Table",
           "nodeLineageTag": "7cefd9e1-f42c-46e0-a381-b77e1c499c67",
           "size": {
-            "height": 250.22828477282462,
+            "height": 72,
             "width": 348.70709437572805
           },
-          "zIndex": 3
+          "zIndex": 4,
+          "expandedHeight": 575.65873048897151
         },
         {
           "location": {
@@ -55,23 +43,76 @@
           "nodeIndex": "Product Information",
           "nodeLineageTag": "32e73e29-1971-46b3-96e7-badcf6d76f83",
           "size": {
-            "height": 248.37202393336429,
+            "height": 145,
             "width": 348.70709437572805
           },
           "zIndex": 5
         },
         {
           "location": {
+            "x": 371.09496861760027,
+            "y": 426.69215485258445
+          },
+          "nodeIndex": "Owner/Authority",
+          "nodeLineageTag": "cb05c67f-0ac5-4f4c-b644-069b0ff2a928",
+          "size": {
+            "height": 72,
+            "width": 341.20061741237782
+          },
+          "zIndex": 1,
+          "expandedHeight": 145
+        },
+        {
+          "location": {
             "x": 375.66638736462676,
             "y": 2.7070317318106305
           },
-          "nodeIndex": "Table Value",
+          "nodeIndex": "KPI Date Table",
           "size": {
             "height": 72,
             "width": 348.70709437572805
           },
-          "zIndex": 4,
+          "zIndex": 2,
           "expandedHeight": 145
+        },
+        {
+          "location": {
+            "x": 376.88384247595354,
+            "y": 510.51006227989831
+          },
+          "nodeIndex": "Owner Status Summary",
+          "nodeLineageTag": "dea4396a-2cb4-4df9-b611-2d3b7cc981b4",
+          "size": {
+            "height": 145,
+            "width": 336.09582610702648
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 750.12572303993613,
+            "y": 0
+          },
+          "nodeIndex": "DimStatus",
+          "nodeLineageTag": "dc624570-e76a-4d4b-8b57-c8376817535b",
+          "size": {
+            "height": 145,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1631.386305766041,
+            "y": 335.4272094264079
+          },
+          "nodeIndex": "JMS Table (2)",
+          "nodeLineageTag": "2784e14b-688d-4cd3-bb04-27254fe08744",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
         }
       ],
       "name": "All tables",

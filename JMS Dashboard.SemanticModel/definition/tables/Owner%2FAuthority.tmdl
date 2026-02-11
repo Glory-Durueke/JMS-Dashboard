@@ -1,0 +1,46 @@
+table Owner/Authority
+	lineageTag: cb05c67f-0ac5-4f4c-b644-069b0ff2a928
+
+	column Owner/Authority
+		lineageTag: 6e43eb7f-0431-4d0c-b11c-54987498cceb
+		summarizeBy: none
+		sourceColumn: [Value1]
+		sortByColumn: 'Owner/Authority Order'
+
+		relatedColumnDetails
+			groupByColumn: 'Owner/Authority Fields'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Owner/Authority Fields'
+		lineageTag: 82ecd63e-88fb-4c1c-a05a-235144cfe2b0
+		summarizeBy: none
+		sourceColumn: [Value2]
+		sortByColumn: 'Owner/Authority Order'
+
+		extendedProperty ParameterMetadata =
+				{
+				  "version": 3,
+				  "kind": 2
+				}
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Owner/Authority Order'
+		formatString: 0
+		lineageTag: 90ce682d-2103-48d8-8d1a-363a5dfbed8e
+		summarizeBy: sum
+		sourceColumn: [Value3]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Owner/Authority = calculated
+		mode: import
+		source =
+				{
+				    ("Owner", NAMEOF('JMS Table'[Document Owner]), 1),
+				    ("Authority", NAMEOF('JMS Table'[Process Authority]), 0)
+				}
+
+	annotation PBI_Id = 4be8217368a0403c8eb3382e7b75625a
+

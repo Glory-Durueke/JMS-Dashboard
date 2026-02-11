@@ -6,17 +6,20 @@ model Model
 		legacyRedirects
 		returnErrorValuesAsNull
 
-annotation PBI_QueryOrder = ["1_Measures","StartDate","EndDate","DateTable","Product Information","JMS Table","Sorted Priority","Sorted Rows"]
+annotation PBI_QueryOrder = ["1_Measures","Product Information","JMS Table","Sorted Priority","Sorted Rows","JMS Table (2)","Sorted Priority (2)","Sorted Rows (2)"]
 
 annotation __PBI_TimeIntelligenceEnabled = 0
 
 annotation PBI_ProTooling = ["DevMode","CopilotTooling","DaxQueryView_Desktop","DaxCopilot_Change_Accepted_In_Desktop","Copilot","CopilotMeasureDescriptions"]
 
 ref table 1_Measures
-ref table DateTable
 ref table 'Product Information'
 ref table 'JMS Table'
-ref table 'Table Value'
+ref table 'KPI Date Table'
+ref table Owner/Authority
+ref table DimStatus
+ref table 'Owner Status Summary'
+ref table 'JMS Table (2)'
 
 ref cultureInfo en-GB
 

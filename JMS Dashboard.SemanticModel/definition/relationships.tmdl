@@ -1,4 +1,0 @@
-relationship 7cff8ee4-512f-42b3-728c-7e0c39b73e0f
-	fromColumn: 'JMS Table'.'Review Date'
-	toColumn: DateTable.Date
-

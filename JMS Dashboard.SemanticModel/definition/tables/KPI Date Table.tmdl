@@ -1,5 +1,5 @@
 /// The "Table Value" table contains a single column called "Value," which stores date and time information.
-table 'Table Value'
+table 'KPI Date Table'
 	lineageTag: 28f6859f-1855-49b4-ad31-b7c143de7274
 
 	column Value
@@ -13,7 +13,7 @@ table 'Table Value'
 
 		annotation UnderlyingDateTimeDataType = Date
 
-	partition 'Table Value' = calculated
+	partition 'KPI Date Table' = calculated
 		mode: import
 		source = {{today()}}
 

@@ -16,6 +16,78 @@ table 1_Measures
 
 		changedProperty = IsHidden
 
+	measure Items = ```
+			
+			
+			    COUNTROWS('JMS Table')
+			
+			```
+		formatString: 0
+		displayFolder: Doc. Measures
+		lineageTag: f68ce464-e62b-4bc3-9dfa-95503ec609bb
+
+		changedProperty = IsHidden
+
+	measure 'Count Rows' = ```
+			
+			ROW(
+			    "JMS Table Row Count",
+			    COUNTROWS('JMS Table')
+			)
+			
+			```
+		formatString: 0
+		displayFolder: Doc. Measures
+		lineageTag: 268acab6-f945-4605-a789-442b93309870
+
+		changedProperty = IsHidden
+
+	measure 'Target %' = 0.95
+		formatString: 0%;-0%;0%
+		displayFolder: Doc. Measures
+		lineageTag: 53d564bd-3bf0-43bd-9068-832b4dc1d1d0
+
+		changedProperty = IsHidden
+
+	measure 'Days Till Review.' = DATEDIFF ( TODAY(), MIN('JMS Table'[Review Date]), DAY )
+		formatString: 0%;-0%;0%
+		displayFolder: Doc. Measures
+		lineageTag: d46346c3-fa80-4e78-9d96-51db1bb55329
+
+		changedProperty = IsHidden
+
+	measure Docs = COUNTROWS('JMS Table')
+		formatString: 0
+		displayFolder: Doc. Measures
+		lineageTag: 6ca8bae9-e728-4dcf-a550-46e09975f0fb
+
+		changedProperty = IsHidden
+
+	measure 'Docs within Date' = 1-((COUNTROWS(FILTER('JMS Table','JMS Table'[Compliance Outcome]==1)))/COUNTROWS('JMS Table'))
+		formatString: 0%;-0%;0%
+		displayFolder: Doc. Measures
+		lineageTag: dbdc41aa-1e23-4a4b-9d5a-5da9f2c49d34
+
+		changedProperty = IsHidden
+
+	measure 'Overdue Docs' =
+			
+			CALCULATE ( [Docs], FILTER( ALL('JMS Table'[ReviewDate]), [Days Till Review.] < 0 ) )
+		formatString: 0
+		displayFolder: Doc. Measures
+		lineageTag: 3ce530eb-ff4a-47f0-98ff-8b023f9e0b0a
+
+		changedProperty = IsHidden
+
+	measure 'Review Count' = ```
+			
+			DISTINCTCOUNT ( 'JMS Table'[JMS ID] )
+			
+			```
+		formatString: 0
+		displayFolder: Doc. Measures
+		lineageTag: 92dbfbcf-1966-4e58-b940-12da9e7420fb
+
 	column 'Refresh Time'
 		dataType: dateTime
 		formatString: Long Date

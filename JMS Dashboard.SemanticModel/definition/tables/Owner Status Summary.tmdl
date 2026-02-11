@@ -1,0 +1,95 @@
+/// Sort Table
+/// 
+table 'Owner Status Summary'
+	lineageTag: dea4396a-2cb4-4df9-b611-2d3b7cc981b4
+
+	column Items
+		formatString: 0
+		lineageTag: 2e83febe-2b6e-47d0-8181-dc0e4444da4c
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Items]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Owner Rank Within Status' = ```
+			
+			VAR st = 'Owner Status Summary'[Status]
+			RETURN
+			RANKX (
+			  FILTER ( 'Owner Status Summary', 'Owner Status Summary'[Status] = st ),
+			  'Owner Status Summary'[Items],
+			  ,
+			  DESC,
+			  DENSE
+			)
+			
+			```
+		formatString: 0
+		lineageTag: 8489fd37-8c16-46e7-8f66-3da73dc3142c
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Axis Sort Key' = ```
+			
+			FORMAT ( 'Owner Status Summary'[Sort], "00" ) &
+			"-" &
+			FORMAT ( 'Owner Status Summary'[Owner Rank Within Status], "000" ) &
+			"-" &
+			'Owner Status Summary'[Document Owner]
+			
+			```
+		lineageTag: e7a12f72-f3c6-49db-b53a-8901930ebba1
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Axis Label' = 'Owner Status Summary'[Document Owner]
+		lineageTag: 7d424501-4665-49b7-ade7-978aa7a3f078
+		summarizeBy: none
+		sortByColumn: 'Document Owner'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Document Owner'
+		lineageTag: 7159e833-71c5-4c3b-a44a-656e70b78bad
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: JMS Table[Document Owner]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Status
+		lineageTag: 78286c33-5b63-4a6d-a2a1-fa42f9658592
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: DimStatus[Status]
+		sortByColumn: Sort
+
+		annotation SummarizationSetBy = Automatic
+
+	column Sort
+		formatString: 0
+		lineageTag: 8329f23f-cf6e-40e2-b167-4320477935aa
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: DimStatus[Sort]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Owner Status Summary' = calculated
+		mode: import
+		source = ```
+				
+				SUMMARIZECOLUMNS (
+				    'JMS Table'[Document Owner],
+				    'DimStatus'[Status],
+				    'DimStatus'[Sort],          -- include the sort here
+				    "Items", [Items]
+				)
+				
+				```
+
+	annotation PBI_Id = a0375e525678479ea32384493c6fe04e
+

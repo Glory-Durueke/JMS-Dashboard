@@ -2,15 +2,15 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
   "name": "e3956f0ec09be3dbfa77",
   "position": {
-    "x": 608,
-    "y": 197,
-    "z": 10000,
-    "height": 297,
-    "width": 1264,
-    "tabOrder": 10000
+    "x": 606,
+    "y": 160,
+    "z": 7125,
+    "height": 300.77976190476181,
+    "width": 1280,
+    "tabOrder": 3000
   },
   "visualGroup": {
-    "displayName": "Group 3",
+    "displayName": "JMS Documents",
     "groupMode": "ScaleMode"
   }
 }
