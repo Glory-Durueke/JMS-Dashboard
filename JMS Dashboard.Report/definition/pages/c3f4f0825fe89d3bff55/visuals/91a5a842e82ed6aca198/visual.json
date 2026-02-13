@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
-  "name": "d50860af49a2068547e7",
+  "name": "91a5a842e82ed6aca198",
   "position": {
-    "x": 604,
+    "x": 608,
     "y": 784,
-    "z": 6000,
-    "height": 266,
+    "z": 7000,
+    "height": 272,
     "width": 1280,
-    "tabOrder": 6000
+    "tabOrder": 7000
   },
   "visual": {
     "visualType": "tableEx",
@@ -26,7 +26,7 @@
                   "Property": "JMS ID"
                 }
               },
-              "queryRef": "CountNonNull(JMS Table.JMS ID)",
+              "queryRef": "CountNonNull(JMS Table (2).JMS ID)",
               "nativeQueryRef": "JMS ID"
             },
             {
@@ -40,7 +40,7 @@
                   "Property": "Title"
                 }
               },
-              "queryRef": "JMS Table.Title",
+              "queryRef": "JMS Table (2).Title",
               "nativeQueryRef": "Title"
             },
             {
@@ -54,7 +54,7 @@
                   "Property": "Document Owner"
                 }
               },
-              "queryRef": "JMS Table.Document Owner",
+              "queryRef": "JMS Table (2).Document Owner",
               "nativeQueryRef": "Document Owner"
             },
             {
@@ -65,12 +65,11 @@
                       "Entity": "JMS Table"
                     }
                   },
-                  "Property": "Review Priority Signs"
+                  "Property": "Review Priority"
                 }
               },
-              "queryRef": "JMS Table.Review Priority Signs",
-              "nativeQueryRef": "Review Priority",
-              "displayName": "Review Priority"
+              "queryRef": "JMS Table (2).Review Priority",
+              "nativeQueryRef": "Review Priority"
             },
             {
               "field": {
@@ -80,11 +79,11 @@
                       "Entity": "JMS Table"
                     }
                   },
-                  "Property": "Review Date"
+                  "Property": "ReviewDate"
                 }
               },
-              "queryRef": "JMS Table.Review Date",
-              "nativeQueryRef": "Review Date"
+              "queryRef": "JMS Table (2).ReviewDate",
+              "nativeQueryRef": "ReviewDate"
             },
             {
               "field": {
@@ -97,7 +96,7 @@
                   "Property": "Quality Team Comments"
                 }
               },
-              "queryRef": "JMS Table.Quality Team Comments",
+              "queryRef": "JMS Table (2).Quality Team Comments",
               "nativeQueryRef": "Quality Team Comments"
             },
             {
@@ -108,31 +107,14 @@
                       "Entity": "JMS Table"
                     }
                   },
-                  "Property": "Owners Email"
+                  "Property": "Owner Email"
                 }
               },
-              "queryRef": "JMS Table.Owners Email",
-              "nativeQueryRef": "Owners Email"
+              "queryRef": "JMS Table (2).Owner Email",
+              "nativeQueryRef": "Owner Email"
             }
           ]
         }
-      },
-      "sortDefinition": {
-        "sort": [
-          {
-            "field": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "JMS Table"
-                  }
-                },
-                "Property": "Review Priority Signs"
-              }
-            },
-            "direction": "Ascending"
-          }
-        ]
       }
     },
     "objects": {
@@ -161,138 +143,7 @@
           }
         }
       ],
-      "columnWidth": [
-        {
-          "properties": {
-            "value": {
-              "expr": {
-                "Literal": {
-                  "Value": "205.82698916195469D"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "JMS Table.Quality Team Comments"
-          }
-        },
-        {
-          "properties": {
-            "value": {
-              "expr": {
-                "Literal": {
-                  "Value": "323.7821104209697D"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "JMS Table.Title"
-          }
-        },
-        {
-          "properties": {
-            "value": {
-              "expr": {
-                "Literal": {
-                  "Value": "107.13942553753304D"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "JMS Table.Review Date"
-          }
-        },
-        {
-          "properties": {
-            "value": {
-              "expr": {
-                "Literal": {
-                  "Value": "152.77189431914502D"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "JMS Table.Document Owner"
-          }
-        },
-        {
-          "properties": {
-            "value": {
-              "expr": {
-                "Literal": {
-                  "Value": "254.58452806594102D"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "JMS Table.Owners Email"
-          }
-        },
-        {
-          "properties": {
-            "value": {
-              "expr": {
-                "Literal": {
-                  "Value": "69.29290122463608D"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "CountNonNull(JMS Table.JMS ID)"
-          }
-        },
-        {
-          "properties": {
-            "value": {
-              "expr": {
-                "Literal": {
-                  "Value": "126.59163870024338D"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "JMS Table.Review Priority Signs"
-          }
-        }
-      ],
       "values": [
-        {
-          "properties": {
-            "webURL": {
-              "expr": {
-                "Aggregation": {
-                  "Expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "JMS Table"
-                        }
-                      },
-                      "Property": "Document Link"
-                    }
-                  },
-                  "Function": 3
-                }
-              }
-            }
-          },
-          "selector": {
-            "data": [
-              {
-                "dataViewWildcard": {
-                  "matchingOption": 1
-                }
-              }
-            ],
-            "metadata": "JMS Table.Title"
-          }
-        },
         {
           "properties": {
             "urlIcon": {
@@ -337,6 +188,37 @@
         },
         {
           "properties": {
+            "webURL": {
+              "expr": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "JMS Table"
+                        }
+                      },
+                      "Property": "Document Link"
+                    }
+                  },
+                  "Function": 3
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "dataViewWildcard": {
+                  "matchingOption": 1
+                }
+              }
+            ],
+            "metadata": "JMS Table (2).Title"
+          }
+        },
+        {
+          "properties": {
             "backColor": {
               "solid": {
                 "color": {
@@ -356,7 +238,7 @@
                                           "Entity": "JMS Table"
                                         }
                                       },
-                                      "Property": "Review Priority Signs"
+                                      "Property": "Review Priority"
                                     }
                                   },
                                   "Function": 3
@@ -364,7 +246,7 @@
                               },
                               "Right": {
                                 "Literal": {
-                                  "Value": "'61 - 90 Days'"
+                                  "Value": "'61-90 Days'"
                                 }
                               }
                             },
@@ -392,7 +274,7 @@
                                           "Entity": "JMS Table"
                                         }
                                       },
-                                      "Property": "Review Priority Signs"
+                                      "Property": "Review Priority"
                                     }
                                   },
                                   "Function": 3
@@ -400,7 +282,7 @@
                               },
                               "Right": {
                                 "Literal": {
-                                  "Value": "'31 - 60 Days'"
+                                  "Value": "'31-60 Days'"
                                 }
                               }
                             },
@@ -428,7 +310,7 @@
                                           "Entity": "JMS Table"
                                         }
                                       },
-                                      "Property": "Review Priority Signs"
+                                      "Property": "Review Priority"
                                     }
                                   },
                                   "Function": 3
@@ -436,7 +318,7 @@
                               },
                               "Right": {
                                 "Literal": {
-                                  "Value": "'01 - 30 Days'"
+                                  "Value": "'01-30 Days'"
                                 }
                               }
                             },
@@ -464,7 +346,7 @@
                                           "Entity": "JMS Table"
                                         }
                                       },
-                                      "Property": "Review Priority Signs"
+                                      "Property": "Review Priority"
                                     }
                                   },
                                   "Function": 3
@@ -502,97 +384,7 @@
                 }
               }
             ],
-            "metadata": "JMS Table.Review Priority Signs"
-          }
-        },
-        {
-          "properties": {},
-          "selector": {
-            "data": [
-              {
-                "dataViewWildcard": {
-                  "matchingOption": 2
-                }
-              }
-            ],
-            "metadata": "JMS Table.Review Priority Signs"
-          }
-        }
-      ],
-      "columnFormatting": [
-        {
-          "properties": {
-            "styleValues": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "alignment": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Left'"
-                }
-              }
-            },
-            "styleTotal": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "styleHeader": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "fontColor": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "ThemeDataColor": {
-                      "ColorId": 1,
-                      "Percent": 0
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "CountNonNull(JMS Table.JMS ID)"
-          }
-        },
-        {
-          "properties": {
-            "alignment": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Center'"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "JMS Table.Review Date"
-          }
-        },
-        {
-          "properties": {
-            "styleTotal": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "JMS Table.Title"
+            "metadata": "JMS Table (2).Review Priority"
           }
         }
       ],
@@ -640,6 +432,64 @@
             }
           }
         }
+      ],
+      "columnWidth": [
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "260.64616417475054D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "JMS Table (2).Title"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "253.9645388747913D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "JMS Table (2).Quality Team Comments"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "175.5976258953985D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "JMS Table (2).Document Owner"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "255.1538279956182D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "JMS Table (2).Owner Email"
+          }
+        }
       ]
     },
     "visualContainerObjects": {
@@ -664,6 +514,13 @@
               "expr": {
                 "Literal": {
                   "Value": "'left'"
+                }
+              }
+            },
+            "titleWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
                 }
               }
             }
@@ -735,7 +592,7 @@
   "filterConfig": {
     "filters": [
       {
-        "name": "8c8b39d155da609d0d9f",
+        "name": "25c4360894b8d5fda8b4",
         "field": {
           "Column": {
             "Expression": {
@@ -743,59 +600,7 @@
                 "Entity": "JMS Table"
               }
             },
-            "Property": "Document Owner"
-          }
-        },
-        "type": "Advanced",
-        "filter": {
-          "Version": 2,
-          "From": [
-            {
-              "Name": "j",
-              "Entity": "JMS Table",
-              "Type": 0
-            }
-          ],
-          "Where": [
-            {
-              "Condition": {
-                "Not": {
-                  "Expression": {
-                    "Comparison": {
-                      "ComparisonKind": 0,
-                      "Left": {
-                        "Column": {
-                          "Expression": {
-                            "SourceRef": {
-                              "Source": "j"
-                            }
-                          },
-                          "Property": "Document Owner"
-                        }
-                      },
-                      "Right": {
-                        "Literal": {
-                          "Value": "null"
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          ]
-        }
-      },
-      {
-        "name": "80f59145f4f94b81c8cf",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "JMS Table"
-              }
-            },
-            "Property": "Review Priority Signs"
+            "Property": "Review Priority"
           }
         },
         "type": "Categorical",
@@ -822,7 +627,7 @@
                                 "Source": "j"
                               }
                             },
-                            "Property": "Review Priority Signs"
+                            "Property": "Review Priority"
                           }
                         }
                       ],
@@ -830,14 +635,14 @@
                         [
                           {
                             "Literal": {
-                              "Value": "'> 1 Year'"
+                              "Value": "' = 1Year'"
                             }
                           }
                         ],
                         [
                           {
                             "Literal": {
-                              "Value": "'> 180 Days'"
+                              "Value": "'> 1Year'"
                             }
                           }
                         ]

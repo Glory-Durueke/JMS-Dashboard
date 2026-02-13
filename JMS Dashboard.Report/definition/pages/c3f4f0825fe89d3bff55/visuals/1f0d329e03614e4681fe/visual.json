@@ -23,11 +23,12 @@
                       "Entity": "JMS Table"
                     }
                   },
-                  "Property": "Continual Improvement Required"
+                  "Property": "ContinualImprovementRequired"
                 }
               },
-              "queryRef": "JMS Table.Continual Improvement Required",
-              "nativeQueryRef": "Continual Improvement Required"
+              "queryRef": "JMS Table (2).ContinualImprovementRequired",
+              "nativeQueryRef": "Continual Improvement Required",
+              "displayName": "Continual Improvement Required"
             }
           ]
         }
@@ -348,7 +349,7 @@
   "filterConfig": {
     "filters": [
       {
-        "name": "8de418739bd79c0c1e02",
+        "name": "fbe2d4970642bd608fc0",
         "field": {
           "Column": {
             "Expression": {
@@ -356,7 +357,7 @@
                 "Entity": "JMS Table"
               }
             },
-            "Property": "Review Priority Signs"
+            "Property": "ContinualImprovementRequired"
           }
         },
         "type": "Categorical",
@@ -372,141 +373,28 @@
           "Where": [
             {
               "Condition": {
-                "Not": {
-                  "Expression": {
-                    "In": {
-                      "Expressions": [
-                        {
-                          "Column": {
-                            "Expression": {
-                              "SourceRef": {
-                                "Source": "j"
-                              }
-                            },
-                            "Property": "Review Priority Signs"
+                "In": {
+                  "Expressions": [
+                    {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Source": "j"
                           }
+                        },
+                        "Property": "ContinualImprovementRequired"
+                      }
+                    }
+                  ],
+                  "Values": [
+                    [
+                      {
+                        "Literal": {
+                          "Value": "'Yes'"
                         }
-                      ],
-                      "Values": [
-                        [
-                          {
-                            "Literal": {
-                              "Value": "'> 1 Year'"
-                            }
-                          }
-                        ],
-                        [
-                          {
-                            "Literal": {
-                              "Value": "'> 180 Days'"
-                            }
-                          }
-                        ]
-                      ]
-                    }
-                  }
-                }
-              }
-            }
-          ]
-        },
-        "howCreated": "User",
-        "objects": {
-          "general": [
-            {
-              "properties": {
-                "isInvertedSelectionMode": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "true"
-                    }
-                  }
-                }
-              }
-            }
-          ]
-        }
-      },
-      {
-        "name": "252e67ec6ac54fe52eec",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "JMS Table"
-              }
-            },
-            "Property": "Continual Improvement Required"
-          }
-        },
-        "type": "Categorical",
-        "filter": {
-          "Version": 2,
-          "From": [
-            {
-              "Name": "j",
-              "Entity": "JMS Table",
-              "Type": 0
-            }
-          ],
-          "Where": [
-            {
-              "Condition": {
-                "Not": {
-                  "Expression": {
-                    "In": {
-                      "Expressions": [
-                        {
-                          "Column": {
-                            "Expression": {
-                              "SourceRef": {
-                                "Source": "j"
-                              }
-                            },
-                            "Property": "Continual Improvement Required"
-                          }
-                        }
-                      ],
-                      "Values": [
-                        [
-                          {
-                            "Literal": {
-                              "Value": "'false'"
-                            }
-                          }
-                        ],
-                        [
-                          {
-                            "Literal": {
-                              "Value": "'No'"
-                            }
-                          }
-                        ],
-                        [
-                          {
-                            "Literal": {
-                              "Value": "null"
-                            }
-                          }
-                        ]
-                      ]
-                    }
-                  }
-                }
-              }
-            }
-          ]
-        },
-        "objects": {
-          "general": [
-            {
-              "properties": {
-                "isInvertedSelectionMode": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "true"
-                    }
-                  }
+                      }
+                    ]
+                  ]
                 }
               }
             }

@@ -1,7 +1,9 @@
 table Owner/Authority
+	isHidden
 	lineageTag: cb05c67f-0ac5-4f4c-b644-069b0ff2a928
 
 	column Owner/Authority
+		isHidden
 		lineageTag: 6e43eb7f-0431-4d0c-b11c-54987498cceb
 		summarizeBy: none
 		sourceColumn: [Value1]
@@ -13,6 +15,7 @@ table Owner/Authority
 		annotation SummarizationSetBy = Automatic
 
 	column 'Owner/Authority Fields'
+		isHidden
 		lineageTag: 82ecd63e-88fb-4c1c-a05a-235144cfe2b0
 		summarizeBy: none
 		sourceColumn: [Value2]
@@ -27,6 +30,7 @@ table Owner/Authority
 		annotation SummarizationSetBy = Automatic
 
 	column 'Owner/Authority Order'
+		isHidden
 		formatString: 0
 		lineageTag: 90ce682d-2103-48d8-8d1a-363a5dfbed8e
 		summarizeBy: sum

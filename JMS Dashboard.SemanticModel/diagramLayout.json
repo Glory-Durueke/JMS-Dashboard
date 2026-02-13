@@ -10,48 +10,36 @@
       "nodes": [
         {
           "location": {
-            "x": 371.37356746430868,
-            "y": 265.34694911159573
+            "x": 362.44018267994386,
+            "y": 276.49640100494855
           },
           "nodeIndex": "1_Measures",
           "nodeLineageTag": "fca0b643-062c-4cfe-911a-63a9e040b594",
-          "size": {
-            "height": 145,
-            "width": 348.70709437572805
-          },
-          "zIndex": 3
-        },
-        {
-          "location": {
-            "x": 14.038176089716131,
-            "y": 0
-          },
-          "nodeIndex": "JMS Table",
-          "nodeLineageTag": "7cefd9e1-f42c-46e0-a381-b77e1c499c67",
           "size": {
             "height": 72,
             "width": 348.70709437572805
           },
           "zIndex": 4,
-          "expandedHeight": 575.65873048897151
+          "expandedHeight": 145
         },
         {
           "location": {
-            "x": 375.18274406889492,
-            "y": 107.20061741237777
+            "x": 363.69696363185443,
+            "y": 192.36954323332478
           },
           "nodeIndex": "Product Information",
           "nodeLineageTag": "32e73e29-1971-46b3-96e7-badcf6d76f83",
           "size": {
-            "height": 145,
+            "height": 72,
             "width": 348.70709437572805
           },
-          "zIndex": 5
+          "zIndex": 5,
+          "expandedHeight": 145
         },
         {
           "location": {
-            "x": 371.09496861760027,
-            "y": 426.69215485258445
+            "x": 363.43778165957332,
+            "y": 361.26973716566738
           },
           "nodeIndex": "Owner/Authority",
           "nodeLineageTag": "cb05c67f-0ac5-4f4c-b644-069b0ff2a928",
@@ -59,57 +47,45 @@
             "height": 72,
             "width": 341.20061741237782
           },
-          "zIndex": 1,
-          "expandedHeight": 145
-        },
-        {
-          "location": {
-            "x": 375.66638736462676,
-            "y": 2.7070317318106305
-          },
-          "nodeIndex": "KPI Date Table",
-          "size": {
-            "height": 72,
-            "width": 348.70709437572805
-          },
           "zIndex": 2,
           "expandedHeight": 145
         },
         {
           "location": {
-            "x": 376.88384247595354,
-            "y": 510.51006227989831
+            "x": 365.45680475392413,
+            "y": 98.0855401634603
           },
-          "nodeIndex": "Owner Status Summary",
-          "nodeLineageTag": "dea4396a-2cb4-4df9-b611-2d3b7cc981b4",
+          "nodeIndex": "KPI Date Table",
+          "nodeLineageTag": "28f6859f-1855-49b4-ad31-b7c143de7274",
           "size": {
-            "height": 145,
-            "width": 336.09582610702648
+            "height": 72,
+            "width": 348.70709437572805
           },
-          "zIndex": 0
+          "zIndex": 3,
+          "expandedHeight": 145
         },
         {
           "location": {
-            "x": 750.12572303993613,
-            "y": 0
+            "x": 97.396508771351776,
+            "y": 98.9942830102216
           },
-          "nodeIndex": "DimStatus",
-          "nodeLineageTag": "dc624570-e76a-4d4b-8b57-c8376817535b",
+          "nodeIndex": "JMS Table",
+          "nodeLineageTag": "2784e14b-688d-4cd3-bb04-27254fe08744",
           "size": {
-            "height": 145,
+            "height": 610.11607180009287,
             "width": 234
           },
           "zIndex": 0
         },
         {
           "location": {
-            "x": 1631.386305766041,
-            "y": 335.4272094264079
+            "x": 363.0323076898967,
+            "y": 483.39438515735833
           },
-          "nodeIndex": "JMS Table (2)",
-          "nodeLineageTag": "2784e14b-688d-4cd3-bb04-27254fe08744",
+          "nodeIndex": "Priority",
+          "nodeLineageTag": "333d6ed9-6697-4137-afd7-4a2bfa87751c",
           "size": {
-            "height": 300,
+            "height": 248,
             "width": 234
           },
           "zIndex": 0

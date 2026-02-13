@@ -76,7 +76,7 @@
             "indicatorDisplayUnits": {
               "expr": {
                 "Literal": {
-                  "Value": "1D"
+                  "Value": "0D"
                 }
               }
             },
@@ -118,17 +118,6 @@
               "expr": {
                 "Literal": {
                   "Value": "'Positive'"
-                }
-              }
-            },
-            "badColor": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "'#E30909'"
-                    }
-                  }
                 }
               }
             }

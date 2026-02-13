@@ -2,12 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
   "name": "e3956f0ec09be3dbfa77",
   "position": {
-    "x": 606,
+    "x": 608,
     "y": 160,
-    "z": 7125,
-    "height": 300.77976190476181,
-    "width": 1280,
-    "tabOrder": 3000
+    "z": 1000,
+    "height": 304,
+    "width": 1280
   },
   "visualGroup": {
     "displayName": "JMS Documents",

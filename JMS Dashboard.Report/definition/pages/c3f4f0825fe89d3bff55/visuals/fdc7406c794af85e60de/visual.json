@@ -26,8 +26,8 @@
                   "Property": "Content Type"
                 }
               },
-              "queryRef": "JMS Table.Content Type",
-              "nativeQueryRef": "Content Type",
+              "queryRef": "JMS Table (2).Content Type",
+              "nativeQueryRef": "Content Type1",
               "active": true
             }
           ]

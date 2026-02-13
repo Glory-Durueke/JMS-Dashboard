@@ -6,7 +6,7 @@
     "y": 240,
     "z": 1000,
     "height": 160,
-    "width": 416,
+    "width": 415.99999999999994,
     "tabOrder": 5000
   },
   "visual": {
@@ -23,32 +23,17 @@
                       "Entity": "JMS Table"
                     }
                   },
-                  "Property": "Review Priority Signs"
+                  "Property": "Review Priority"
                 }
               },
-              "queryRef": "JMS Table.Review Priority Signs",
-              "nativeQueryRef": "Review Priority",
-              "displayName": "Review Priority"
+              "queryRef": "JMS Table.Review Priority",
+              "nativeQueryRef": "Review Priority"
             }
           ]
         }
       },
       "sortDefinition": {
-        "sort": [
-          {
-            "field": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "JMS Table"
-                  }
-                },
-                "Property": "Review Priority Signs"
-              }
-            },
-            "direction": "Ascending"
-          }
-        ]
+        "isDefaultSort": true
       }
     },
     "objects": {
@@ -318,7 +303,7 @@
   "filterConfig": {
     "filters": [
       {
-        "name": "8de418739bd79c0c1e02",
+        "name": "6ef0bc3061d4b8bb0e0d",
         "field": {
           "Column": {
             "Expression": {
@@ -326,7 +311,7 @@
                 "Entity": "JMS Table"
               }
             },
-            "Property": "Review Priority Signs"
+            "Property": "Review Priority"
           }
         },
         "type": "Categorical",
@@ -353,7 +338,7 @@
                                 "Source": "j"
                               }
                             },
-                            "Property": "Review Priority Signs"
+                            "Property": "Review Priority"
                           }
                         }
                       ],
@@ -361,14 +346,14 @@
                         [
                           {
                             "Literal": {
-                              "Value": "'> 1 Year'"
+                              "Value": "' = 1Year'"
                             }
                           }
                         ],
                         [
                           {
                             "Literal": {
-                              "Value": "'> 180 Days'"
+                              "Value": "'> 1Year'"
                             }
                           }
                         ]
@@ -380,7 +365,6 @@
             }
           ]
         },
-        "isLockedInViewMode": true,
         "objects": {
           "general": [
             {
