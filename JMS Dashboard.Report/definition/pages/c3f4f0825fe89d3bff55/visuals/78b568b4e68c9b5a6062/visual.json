@@ -1097,39 +1097,6 @@
             }
           ]
         }
-      },
-      {
-        "name": "b7f8037975bf5926bb40",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "JMS Table"
-              }
-            },
-            "Property": "Content Type"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "f38e3f482f06cdbeed73",
-        "field": {
-          "Aggregation": {
-            "Expression": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "JMS Table"
-                  }
-                },
-                "Property": "JMS ID"
-              }
-            },
-            "Function": 5
-          }
-        },
-        "type": "Advanced"
       }
     ]
   }

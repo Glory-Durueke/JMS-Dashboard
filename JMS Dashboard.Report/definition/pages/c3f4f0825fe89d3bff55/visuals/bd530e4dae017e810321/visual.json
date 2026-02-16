@@ -1378,20 +1378,6 @@
             }
           ]
         }
-      },
-      {
-        "name": "7fc7465ff672c221cd9c",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "1_Measures"
-              }
-            },
-            "Property": "Docs"
-          }
-        },
-        "type": "Advanced"
       }
     ]
   }

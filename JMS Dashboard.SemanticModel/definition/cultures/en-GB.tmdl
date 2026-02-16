@@ -8124,16 +8124,6 @@ cultureInfo en-GB
 			            },
 			            "Weight": 0.75
 			          }
-			        },
-			        {
-			          "Owner": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
 			        }
 			      ]
 			    },
@@ -8907,22 +8897,6 @@ cultureInfo en-GB
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.452
-			          }
-			        }
-			      ]
-			    },
-			    "JMS_table.priority_1": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "JMS Table",
-			          "ConceptualProperty": "Priority.1"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "priority.1": {
-			            "State": "Generated"
 			          }
 			        }
 			      ]
