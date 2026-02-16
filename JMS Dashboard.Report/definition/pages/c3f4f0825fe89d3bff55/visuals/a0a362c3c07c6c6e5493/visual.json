@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
   "name": "a0a362c3c07c6c6e5493",
   "position": {
-    "x": 1568,
-    "y": 176,
+    "x": 965,
+    "y": 5.6666666666666856,
     "z": 5000,
-    "height": 48,
+    "height": 44,
     "width": 288,
-    "tabOrder": 10
+    "tabOrder": 4000
   },
   "visual": {
     "visualType": "advancedSlicerVisual",
@@ -46,7 +46,7 @@
                 "Property": "Owner/Authority"
               }
             },
-            "direction": "Ascending"
+            "direction": "Descending"
           }
         ]
       }
@@ -85,7 +85,7 @@
                           [
                             {
                               "Literal": {
-                                "Value": "'''JMS Table''[Process Authority]'"
+                                "Value": "'''JMS Table''[Document Owner]'"
                               }
                             }
                           ]
@@ -113,7 +113,7 @@
                                 "0": [
                                   {
                                     "Literal": {
-                                      "Value": "'''JMS Table''[Process Authority]'"
+                                      "Value": "'''JMS Table''[Document Owner]'"
                                     }
                                   }
                                 ]
@@ -137,7 +137,7 @@
                         },
                         "valueMap": [
                           {
-                            "0": "Authority"
+                            "0": "Owner"
                           }
                         ]
                       }
@@ -810,6 +810,19 @@
             "id": "default"
           }
         }
+      ],
+      "selection": [
+        {
+          "properties": {
+            "strictSingleSelect": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
       ]
     },
     "visualContainerObjects": {
@@ -926,5 +939,6 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  }
+  },
+  "parentGroupName": "00fc9b0f1254e3ee7b03"
 }

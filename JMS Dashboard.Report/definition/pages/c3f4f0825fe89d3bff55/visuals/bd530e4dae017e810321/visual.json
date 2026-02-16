@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
   "name": "bd530e4dae017e810321",
   "position": {
-    "x": 4,
-    "y": 42.714285714285722,
-    "z": 2000,
-    "height": 256.28571428571433,
-    "width": 1270,
-    "tabOrder": 0
+    "x": 0,
+    "y": 32,
+    "z": 750,
+    "height": 256,
+    "width": 1280,
+    "tabOrder": 1000
   },
   "visual": {
     "visualType": "columnChart",
@@ -23,13 +23,13 @@
                       "Entity": "JMS Table"
                     }
                   },
-                  "Property": "Process Authority"
+                  "Property": "Document Owner"
                 }
               },
-              "queryRef": "JMS Table.Process Authority",
-              "nativeQueryRef": "Authority",
+              "queryRef": "JMS Table.Document Owner",
+              "nativeQueryRef": "Owner",
               "active": true,
-              "displayName": "Authority"
+              "displayName": "Owner"
             }
           ],
           "fieldParameters": [
@@ -60,11 +60,11 @@
                       "Entity": "JMS Table"
                     }
                   },
-                  "Property": "Review Priority"
+                  "Property": "Review Status"
                 }
               },
               "queryRef": "JMS Table (2).Review Priority",
-              "nativeQueryRef": "Review Priority"
+              "nativeQueryRef": "Review Status"
             }
           ]
         },
@@ -97,7 +97,7 @@
                     "Entity": "JMS Table"
                   }
                 },
-                "Property": "Review Priority"
+                "Property": "Review Status"
               }
             },
             "direction": "Ascending"
@@ -110,7 +110,7 @@
                     "Entity": "JMS Table"
                   }
                 },
-                "Property": "Process Authority"
+                "Property": "Document Owner"
               }
             },
             "direction": "Ascending"
@@ -133,6 +133,13 @@
               "expr": {
                 "Literal": {
                   "Value": "'Top'"
+                }
+              }
+            },
+            "titleText": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Review Status:'"
                 }
               }
             }
@@ -660,7 +667,7 @@
                             "Entity": "JMS Table"
                           }
                         },
-                        "Property": "Review Priority"
+                        "Property": "Review Status"
                       }
                     },
                     "Right": {
@@ -701,7 +708,7 @@
                             "Entity": "JMS Table"
                           }
                         },
-                        "Property": "Review Priority"
+                        "Property": "Review Status"
                       }
                     },
                     "Right": {
@@ -743,7 +750,7 @@
                             "Entity": "JMS Table"
                           }
                         },
-                        "Property": "Review Priority"
+                        "Property": "Review Status"
                       }
                     },
                     "Right": {
@@ -785,7 +792,7 @@
                             "Entity": "JMS Table"
                           }
                         },
-                        "Property": "Review Priority"
+                        "Property": "Review Status"
                       }
                     },
                     "Right": {
@@ -835,6 +842,13 @@
               "expr": {
                 "Literal": {
                   "Value": "26L"
+                }
+              }
+            },
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
                 }
               }
             }
@@ -1128,7 +1142,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'.'"
+                  "Value": "'Doc. Owner/Authority'"
                 }
               }
             },
@@ -1283,7 +1297,7 @@
     },
     "drillFilterOtherVisuals": true
   },
-  "parentGroupName": "e3956f0ec09be3dbfa77",
+  "parentGroupName": "00fc9b0f1254e3ee7b03",
   "filterConfig": {
     "filters": [
       {
@@ -1295,7 +1309,7 @@
                 "Entity": "JMS Table"
               }
             },
-            "Property": "Review Priority"
+            "Property": "Review Status"
           }
         },
         "type": "Categorical",
@@ -1322,7 +1336,7 @@
                                 "Source": "j"
                               }
                             },
-                            "Property": "Review Priority"
+                            "Property": "Review Status"
                           }
                         }
                       ],
@@ -1364,6 +1378,34 @@
             }
           ]
         }
+      },
+      {
+        "name": "7fc7465ff672c221cd9c",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "1_Measures"
+              }
+            },
+            "Property": "Docs"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "bda4d2e7284aa9774af3",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "JMS Table"
+              }
+            },
+            "Property": "Document Owner"
+          }
+        },
+        "type": "Categorical"
       }
     ]
   }

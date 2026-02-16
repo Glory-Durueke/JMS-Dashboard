@@ -6,7 +6,7 @@ model Model
 		legacyRedirects
 		returnErrorValuesAsNull
 
-annotation PBI_QueryOrder = ["1_Measures","Product Information","JMS Table","Priority"]
+annotation PBI_QueryOrder = ["1_Measures","Product Information","JMS Table","Review Status"]
 
 annotation __PBI_TimeIntelligenceEnabled = 0
 

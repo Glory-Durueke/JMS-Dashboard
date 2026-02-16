@@ -6,7 +6,7 @@
     "y": 368,
     "z": 1000,
     "height": 160,
-    "width": 415.99999999999994,
+    "width": 416,
     "tabOrder": 10
   },
   "visual": {
@@ -23,17 +23,14 @@
                       "Entity": "JMS Table"
                     }
                   },
-                  "Property": "Review Priority"
+                  "Property": "Review Status"
                 }
               },
-              "queryRef": "JMS Table.Review Priority",
-              "nativeQueryRef": "Review Priority"
+              "queryRef": "JMS Table.Review Status",
+              "nativeQueryRef": "Review Status"
             }
           ]
         }
-      },
-      "sortDefinition": {
-        "isDefaultSort": true
       }
     },
     "objects": {
@@ -210,6 +207,19 @@
             }
           }
         }
+      ],
+      "selection": [
+        {
+          "properties": {
+            "strictSingleSelect": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
       ]
     },
     "visualContainerObjects": {
@@ -245,7 +255,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Review Priority'"
+                  "Value": "'Review Status'"
                 }
               }
             },
@@ -311,7 +321,7 @@
                 "Entity": "JMS Table"
               }
             },
-            "Property": "Review Priority"
+            "Property": "Review Status"
           }
         },
         "type": "Categorical",
@@ -338,7 +348,7 @@
                                 "Source": "j"
                               }
                             },
-                            "Property": "Review Priority"
+                            "Property": "Review Status"
                           }
                         }
                       ],

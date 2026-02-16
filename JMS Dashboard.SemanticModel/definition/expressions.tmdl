@@ -1,5 +1,5 @@
 /// JMS Table stores document details such as title, owner, review dates, compliance status, priority, and related comments, supporting document tracking and review management. This table is designed to support document management processes by capturing key metadata and review-related details for each document entry.
-expression Priority =
+expression 'Review Status' =
 		let
 		    Source = SharePoint.Tables("https://kbsmaritime.sharepoint.com/sites/JointManagementSystem", [ApiVersion = 15]),
 		    #"7a204d33-f1a5-4660-9105-822ef3cfee94" = Source{[Id="7a204d33-f1a5-4660-9105-822ef3cfee94"]}[Items],
@@ -15,27 +15,27 @@ expression Priority =
 		    #"Changed Data Type" = Table.TransformColumnTypes(#"Split Column by Delimiter1",{{"JMS ID", Int64.Type}, {"FieldValuesAsHtml.FileLeafRef.2.1", type text}, {"FieldValuesAsHtml.FileLeafRef.2.2", type text}}),
 		    #"Changed column name to ID" = Table.RenameColumns(#"Changed Data Type",{{"ID", "ID.1"}}),
 		    #"Days to Review" = Table.AddColumn(#"Changed column name to ID", "Review Days", each Duration.Days([ReviewDate] - Date.From(DateTime.LocalNow()))),
-		    #"Defined Review Priority" = Table.AddColumn(#"Days to Review", "Review Priority", each if  [Review Days]<= 0 then "Overdue"
+		    #"Defined Review Status" = Table.AddColumn(#"Days to Review", "Review Priority", each if  [Review Days]<= 0 then "Overdue"
 		  else if [Review Days] >= 1 and [Review Days] < 30 then "01-30 Days"
 		  else if [Review Days] >= 30 and [Review Days] < 60 then "31-60 Days"
 		  else if [Review Days] >= 60 and [Review Days]< 90 then "61-90 Days"
 		  else if [Review Days] < 365 then " = 1Year"
 		  else "> 1Year"),
-		    #"Duplicated Column" = Table.DuplicateColumn(#"Defined Review Priority", "Review Priority", "Review Priority - Copy"),
+		    #"Duplicated Column" = Table.DuplicateColumn(#"Defined Review Status", "Review Priority", "Review Priority - Copy"),
 		    #"Excluded Columns not Needed" = Table.RemoveColumns(#"Duplicated Column",{"FileSystemObjectType", "ServerRedirectedEmbedUri", "ContentTypeId", "ComplianceAssetId", "DocumentOwnerStringId", "MethodStatementServiceDeliveryPlan", "OData__Copyright", "URL", "Additional AuthorisersId", "Additional AuthorisersStringId", "External Ref. Type", "Mgt. Plan Type", "Standard Type", "Strategy Type", "Eng. Auth. Req'd?", "SHE Auth. Req'd?", "SharedWithUsersId", "SharedWithDetails", "IM Auth. Req'd?", "OData__ColorTag", "VControlTableAdded", "Mgt. System", "ReviewPeriod", "Process AuthorityStringId", "OData__ip_UnifiedCompliancePolicyProperties", "Document MS IDId", "ID.1", "EditorId", "OData__CopySource", "CheckoutUserId", "OData__UIVersionString", "GUID", "FirstUniqueAncestorSecurableObject", "RoleAssignments", "AttachmentFiles", "GetDlpPolicyTip", "FieldValuesAsHtml.FileLeafRef.2.1", "FieldValuesAsHtml.FileLeafRef.2.2", "FieldValuesAsHtml.Title", "FieldValuesAsText.ReviewDate", "FieldValuesForEdit", "File", "Folder", "LikedByInformation", "ParentList", "Properties", "Versions", "Additional Authorisers", "TaxCatchAll", "SharedWithUsers", "JMSIDLookup", "ParentIDLookup", "Document MS ID", "Author", "CheckoutUser", "Editor"}),
-		    #"Removed Other Columns" = Table.SelectColumns(#"Excluded Columns not Needed",{"Review Priority", "Review Priority - Copy"}),
-		    #"Removed Top Rows1" = Table.Skip(#"Removed Other Columns",2),
-		    #"Removed Errors" = Table.RemoveRowsWithErrors(#"Removed Top Rows1", {"Review Priority"}),
-		    #"Replaced Value" = Table.ReplaceValue(#"Removed Errors","Overdue","1",Replacer.ReplaceText,{"Review Priority - Copy"}),
-		    #"Replaced Value1" = Table.ReplaceValue(#"Replaced Value","01-30 Days","2",Replacer.ReplaceText,{"Review Priority - Copy"}),
-		    #"Replaced Value2" = Table.ReplaceValue(#"Replaced Value1","31-60 Days","3",Replacer.ReplaceText,{"Review Priority - Copy"}),
-		    #"Replaced Value3" = Table.ReplaceValue(#"Replaced Value2","61-90 Days","4",Replacer.ReplaceText,{"Review Priority - Copy"}),
-		    #"Replaced Value4" = Table.ReplaceValue(#"Replaced Value3"," = 1Year","5",Replacer.ReplaceText,{"Review Priority - Copy"}),
-		    #"Replaced Value5" = Table.ReplaceValue(#"Replaced Value4","> 1Year","6",Replacer.ReplaceText,{"Review Priority - Copy"}),
-		    #"Removed Duplicates" = Table.Distinct(#"Replaced Value5", {"Review Priority - Copy"}),
-		    #"Renamed Columns1" = Table.RenameColumns(#"Removed Duplicates",{{"Review Priority - Copy", "Priority"}})
+		    #"Removed Columns not needed" = Table.SelectColumns(#"Excluded Columns not Needed",{"Review Priority", "Review Priority - Copy"}),
+		    #"Removed Columns with Errors" = Table.Skip(#"Removed Columns not needed",2),
+		    #"Removed Errors" = Table.RemoveRowsWithErrors(#"Removed Columns with Errors", {"Review Priority"}),
+		    #"Replaced Overdue with 1" = Table.ReplaceValue(#"Removed Errors","Overdue","1",Replacer.ReplaceText,{"Review Priority - Copy"}),
+		    #"Replaced 01-30 Days with 2" = Table.ReplaceValue(#"Replaced Overdue with 1","01-30 Days","2",Replacer.ReplaceText,{"Review Priority - Copy"}),
+		    #"Replaced 31-60 Days with 3" = Table.ReplaceValue(#"Replaced 01-30 Days with 2","31-60 Days","3",Replacer.ReplaceText,{"Review Priority - Copy"}),
+		    #"Replaced 61-90 Days with 4" = Table.ReplaceValue(#"Replaced 31-60 Days with 3","61-90 Days","4",Replacer.ReplaceText,{"Review Priority - Copy"}),
+		    #"Replaced =1Year with 5" = Table.ReplaceValue(#"Replaced 61-90 Days with 4"," = 1Year","5",Replacer.ReplaceText,{"Review Priority - Copy"}),
+		    #"Replaced >1Year with 6" = Table.ReplaceValue(#"Replaced =1Year with 5","> 1Year","6",Replacer.ReplaceText,{"Review Priority - Copy"}),
+		    #"Removed Duplicates" = Table.Distinct(#"Replaced >1Year with 6", {"Review Priority - Copy"}),
+		    #"Change the column name" = Table.RenameColumns(#"Removed Duplicates",{{"Review Priority - Copy", "Sort"}})
 		in
-		    #"Renamed Columns1"
+		    #"Change the column name"
 	lineageTag: dfe20f3e-ade0-4b0d-b248-c7205009720e
 
 	annotation PBI_NavigationStepName = Navigation

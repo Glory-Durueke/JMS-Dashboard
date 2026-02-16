@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
   "name": "04c52021b27e2e1245ba",
   "position": {
     "x": 848,
@@ -15,26 +15,6 @@
       "queryState": {
         "Values": {
           "projections": [
-            {
-              "field": {
-                "Aggregation": {
-                  "Expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "Product Information"
-                        }
-                      },
-                      "Property": "Purpose"
-                    }
-                  },
-                  "Function": 3
-                }
-              },
-              "queryRef": "Min(Product Information.Purpose)",
-              "nativeQueryRef": "Purpose",
-              "displayName": "Purpose"
-            },
             {
               "field": {
                 "Aggregation": {
@@ -196,13 +176,13 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "207.55326965466568D"
+                  "Value": "179D"
                 }
               }
             }
           },
           "selector": {
-            "metadata": "Min(Product Information.Purpose)"
+            "metadata": "Min(Product Information.Initial release date)"
           }
         }
       ],

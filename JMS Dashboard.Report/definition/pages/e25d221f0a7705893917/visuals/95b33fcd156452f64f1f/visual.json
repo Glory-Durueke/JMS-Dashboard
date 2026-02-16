@@ -6,7 +6,7 @@
     "y": 80,
     "z": 2000,
     "height": 64,
-    "width": 272,
+    "width": 256,
     "tabOrder": 7250
   },
   "visual": {
@@ -19,7 +19,7 @@
               {
                 "textRuns": [
                   {
-                    "value": " Notes",
+                    "value": "Notes",
                     "textStyle": {
                       "fontStyle": "italic",
                       "fontSize": "20pt",
@@ -54,6 +54,19 @@
               "expr": {
                 "Literal": {
                   "Value": "'Subtitle'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "padding": [
+        {
+          "properties": {
+            "right": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
                 }
               }
             }

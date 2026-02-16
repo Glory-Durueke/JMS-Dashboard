@@ -196,11 +196,11 @@ table 'JMS Table'
 
 		annotation SummarizationSetBy = Automatic
 
-	column 'Review Priority'
+	column 'Review Status'
 		dataType: string
 		lineageTag: e6d3e907-1fec-4461-bc72-05445e1dba0d
 		summarizeBy: none
-		sourceColumn: Review Priority
+		sourceColumn: Review Status
 		sortByColumn: 'Priority.1'
 
 		changedProperty = IsHidden
@@ -250,6 +250,126 @@ table 'JMS Table'
 
 		annotation SummarizationSetBy = Automatic
 
+	column 'Department Affected'
+		dataType: string
+		lineageTag: 993691a5-54b3-4ad9-9ad8-37a43f1d4f0f
+		summarizeBy: none
+		sourceColumn: Department Affected
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Focus View'
+		dataType: string
+		lineageTag: 068130c0-5cd7-4856-b703-f320c4961252
+		summarizeBy: none
+		sourceColumn: Focus View
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Ops Group'
+		dataType: string
+		lineageTag: 754f7f4a-c69c-4c47-87fa-47e45806bd3a
+		summarizeBy: none
+		sourceColumn: Ops Group
+
+		annotation SummarizationSetBy = Automatic
+
+	column Flowdowntosubcontracts
+		dataType: string
+		lineageTag: 5b7d663f-dfe0-455d-ae8a-bccddd5473ee
+		summarizeBy: none
+		sourceColumn: Flowdowntosubcontracts
+
+		annotation SummarizationSetBy = Automatic
+
+	column T5FL
+		dataType: string
+		lineageTag: 835dae2b-346d-4d78-85d5-0f8ea8fde1f0
+		summarizeBy: none
+		sourceColumn: T5FL
+
+		annotation SummarizationSetBy = Automatic
+
+	column T6FL
+		dataType: string
+		lineageTag: 1c03b0fc-805f-431f-a2bb-03073afccd1a
+		summarizeBy: none
+		sourceColumn: T6FL
+
+		annotation SummarizationSetBy = Automatic
+
+	column T7FL
+		dataType: string
+		lineageTag: 2d319f0b-5f01-4457-83d4-431dbfe8d705
+		summarizeBy: none
+		sourceColumn: T7FL
+
+		annotation SummarizationSetBy = Automatic
+
+	column ProjectNumber
+		dataType: string
+		lineageTag: 986d1d4e-7d74-478c-be35-38f88ef2b3fe
+		summarizeBy: none
+		sourceColumn: ProjectNumber
+
+		annotation SummarizationSetBy = Automatic
+
+	column DocumentStatus
+		dataType: string
+		lineageTag: df290bfc-69f1-444b-9a2a-c96ed291faff
+		summarizeBy: none
+		sourceColumn: DocumentStatus
+
+		annotation SummarizationSetBy = Automatic
+
+	column XSLStyleCategory
+		dataType: string
+		lineageTag: 376c6a60-62a3-4864-8103-cc10d01d6936
+		summarizeBy: none
+		sourceColumn: XSLStyleCategory
+
+		annotation SummarizationSetBy = Automatic
+
+	column XSLStyleWPType
+		dataType: string
+		lineageTag: 5f9cc6d0-a668-4a00-a2dc-383cc12ca399
+		summarizeBy: none
+		sourceColumn: XSLStyleWPType
+
+		annotation SummarizationSetBy = Automatic
+
+	column XSLStyleIconUrl
+		dataType: string
+		lineageTag: 6410330d-8892-451e-9313-f4ff9f0f3bbd
+		summarizeBy: none
+		sourceColumn: XSLStyleIconUrl
+
+		annotation SummarizationSetBy = Automatic
+
+	column XSLStyleBaseView
+		dataType: string
+		lineageTag: 9b8f1e81-32a6-464f-afe4-3999246e67d4
+		summarizeBy: none
+		sourceColumn: XSLStyleBaseView
+
+		annotation SummarizationSetBy = Automatic
+
+	column XSLStyleRequiredFields
+		dataType: string
+		lineageTag: 4842896b-31aa-47be-9e75-b17f2a7d192b
+		summarizeBy: none
+		sourceColumn: XSLStyleRequiredFields
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Business Area Test'
+		dataType: string
+		lineageTag: a2aae2c3-fca3-46b4-a7ce-5d24c04a4df7
+		summarizeBy: none
+		sourceColumn: Business Area Test
+
+		annotation SummarizationSetBy = Automatic
+
 	partition 'JMS Table' = m
 		mode: import
 		source =
@@ -270,8 +390,8 @@ table 'JMS Table'
 				    #"Filtered out nulls" = Table.SelectRows(#"Changed to DateType", each ([ReviewDate] <> null)),
 				    #"Split Column by Delimiter" = Table.SplitColumn(#"Filtered out nulls", "FieldValuesAsHtml.FileLeafRef", Splitter.SplitTextByEachDelimiter({"-"}, QuoteStyle.Csv, false), {"FieldValuesAsHtml.FileLeafRef.1", "FieldValuesAsHtml.FileLeafRef.2"}),
 				    #"Renamed Col. to JMS ID" = Table.RenameColumns(#"Split Column by Delimiter",{{"FieldValuesAsHtml.FileLeafRef.1", "JMS ID"}}),
-				    #"Split Column by Delimiter1" = Table.SplitColumn(#"Renamed Col. to JMS ID", "FieldValuesAsHtml.FileLeafRef.2", Splitter.SplitTextByEachDelimiter({"."}, QuoteStyle.Csv, true), {"FieldValuesAsHtml.FileLeafRef.2.1", "FieldValuesAsHtml.FileLeafRef.2.2"}),
-				    #"Changed Data Type" = Table.TransformColumnTypes(#"Split Column by Delimiter1",{{"JMS ID", Int64.Type}, {"FieldValuesAsHtml.FileLeafRef.2.1", type text}, {"FieldValuesAsHtml.FileLeafRef.2.2", type text}}),
+				    #"Split Column" = Table.SplitColumn(#"Renamed Col. to JMS ID", "FieldValuesAsHtml.FileLeafRef.2", Splitter.SplitTextByEachDelimiter({"."}, QuoteStyle.Csv, true), {"FieldValuesAsHtml.FileLeafRef.2.1", "FieldValuesAsHtml.FileLeafRef.2.2"}),
+				    #"Changed Data Type" = Table.TransformColumnTypes(#"Split Column",{{"JMS ID", Int64.Type}, {"FieldValuesAsHtml.FileLeafRef.2.1", type text}, {"FieldValuesAsHtml.FileLeafRef.2.2", type text}}),
 				    #"Changed column name to ID" = Table.RenameColumns(#"Changed Data Type",{{"ID", "ID.1"}}),
 				    #"Removed Suffix" = Table.ReplaceValue(#"Changed column name to ID","(KBS PC)","",Replacer.ReplaceText,{"Document Owner"}),
 				    #"Days to Review" = Table.AddColumn(#"Removed Suffix", "Review Days", each Duration.Days([ReviewDate] - Date.From(DateTime.LocalNow()))),
@@ -289,11 +409,12 @@ table 'JMS Table'
 				    #"Changed Type" = Table.TransformColumnTypes(#"Added Owner Email Address",{{"ContinualImprovementRequired", type text}}),
 				    #"Replaced true with Yes" = Table.ReplaceValue(#"Changed Type","true","Yes",Replacer.ReplaceText,{"ContinualImprovementRequired"}),
 				    #"Excluded Columns not Needed" = Table.RemoveColumns(#"Replaced true with Yes",{"FileSystemObjectType", "ServerRedirectedEmbedUri", "ContentTypeId", "ComplianceAssetId", "DocumentOwnerStringId", "MethodStatementServiceDeliveryPlan", "OData__Copyright", "URL", "Additional AuthorisersId", "Additional AuthorisersStringId", "External Ref. Type", "Mgt. Plan Type", "Standard Type", "Strategy Type", "Eng. Auth. Req'd?", "SHE Auth. Req'd?", "SharedWithUsersId", "SharedWithDetails", "IM Auth. Req'd?", "OData__ColorTag", "VControlTableAdded", "Mgt. System", "ReviewPeriod", "Process AuthorityStringId", "OData__ip_UnifiedCompliancePolicyProperties", "Document MS IDId", "ID.1", "EditorId", "OData__CopySource", "CheckoutUserId", "OData__UIVersionString", "GUID", "FirstUniqueAncestorSecurableObject", "RoleAssignments", "AttachmentFiles", "GetDlpPolicyTip", "FieldValuesAsHtml.FileLeafRef.2.1", "FieldValuesAsHtml.FileLeafRef.2.2", "FieldValuesAsHtml.Title", "FieldValuesAsText.ReviewDate", "FieldValuesForEdit", "File", "Folder", "LikedByInformation", "ParentList", "Properties", "Versions", "Additional Authorisers", "TaxCatchAll", "SharedWithUsers", "JMSIDLookup", "ParentIDLookup", "Document MS ID", "Author", "CheckoutUser", "Editor"}),
-				    #"Merged Queries" = Table.NestedJoin(#"Excluded Columns not Needed", {"Review Priority"}, Priority, {"Review Priority"}, "Priority", JoinKind.LeftOuter),
+				    #"Merged Queries" = Table.NestedJoin(#"Excluded Columns not Needed", {"Review Priority"}, #"Review Status", {"Review Priority"}, "Priority", JoinKind.LeftOuter),
 				    #"Expanded Priority" = Table.ExpandTableColumn(#"Merged Queries", "Priority", {"Priority"}, {"Priority.1"}),
-				    #"Removed Suffix (KBS PC)" = Table.ReplaceValue(#"Expanded Priority","(KBS PC)","",Replacer.ReplaceText,{"Process Authority"})
+				    #"Removed Suffix (KBS PC)" = Table.ReplaceValue(#"Expanded Priority","(KBS PC)","",Replacer.ReplaceText,{"Process Authority"}),
+				    #"Changed column Name to ""Review Status""" = Table.RenameColumns(#"Removed Suffix (KBS PC)",{{"Review Priority", "Review Status"}})
 				in
-				    #"Removed Suffix (KBS PC)"
+				    #"Changed column Name to ""Review Status"""
 
 	changedProperty = IsHidden
 

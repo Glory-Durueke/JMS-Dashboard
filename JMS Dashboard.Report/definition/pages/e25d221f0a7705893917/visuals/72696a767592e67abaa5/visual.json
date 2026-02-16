@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
   "name": "72696a767592e67abaa5",
   "position": {
     "x": 384,
@@ -178,7 +178,15 @@
       ],
       "grid": [
         {
-          "properties": {}
+          "properties": {
+            "gridHorizontal": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
         }
       ],
       "subTotals": [
@@ -276,26 +284,23 @@
   "filterConfig": {
     "filters": [
       {
-        "name": "9d8156fe62a542d51681",
+        "name": "7d86872d5d1edce93478",
         "field": {
-          "Column": {
+          "Aggregation": {
             "Expression": {
-              "SourceRef": {
-                "Entity": "0_Meta"
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Product Information"
+                  }
+                },
+                "Property": "Description"
               }
             },
-            "Property": "ID"
+            "Function": 3
           }
         },
-        "type": "Categorical",
-        "howCreated": "User",
-        "objects": {
-          "general": [
-            {
-              "properties": {}
-            }
-          ]
-        }
+        "type": "Advanced"
       }
     ]
   }

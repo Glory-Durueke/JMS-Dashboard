@@ -1,16 +1,16 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
-  "name": "e3956f0ec09be3dbfa77",
+  "name": "00fc9b0f1254e3ee7b03",
   "position": {
-    "x": 608,
-    "y": 160,
-    "z": 1000,
-    "height": 304,
+    "x": 603,
+    "y": 162.33333333333331,
+    "z": 1500,
+    "height": 290,
     "width": 1280,
-    "tabOrder": 15
+    "tabOrder": 4001
   },
   "visualGroup": {
-    "displayName": "JMS Documents",
+    "displayName": "JMS Doc Owner/Authority",
     "groupMode": "ScaleMode"
   }
 }

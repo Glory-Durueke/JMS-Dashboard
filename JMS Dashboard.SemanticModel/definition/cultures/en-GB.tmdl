@@ -5251,6 +5251,9 @@ cultureInfo en-GB
 			        }
 			      },
 			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
 			      "Terms": [
 			        {
 			          "KPI date table": {
@@ -5373,16 +5376,13 @@ cultureInfo en-GB
 			        }
 			      },
 			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
 			      "Terms": [
 			        {
 			          "value": {
 			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "date": {
-			            "State": "Generated",
-			            "Weight": 0.7
 			          }
 			        },
 			        {
@@ -5617,6 +5617,9 @@ cultureInfo en-GB
 			        }
 			      },
 			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
 			      "Terms": [
 			        {
 			          "owner/authority": {
@@ -5745,14 +5748,12 @@ cultureInfo en-GB
 			        }
 			      },
 			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
 			      "Terms": [
 			        {
 			          "owner/authority": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "owner/authority name": {
 			            "State": "Generated"
 			          }
 			        },
@@ -5878,8 +5879,7 @@ cultureInfo en-GB
 			            "Weight": 0.9
 			          }
 			        }
-			      ],
-			      "NameType": "Name"
+			      ]
 			    },
 			    "owner_authority.owner_authority_field": {
 			      "Definition": {
@@ -5889,6 +5889,9 @@ cultureInfo en-GB
 			        }
 			      },
 			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
 			      "Terms": [
 			        {
 			          "owner/authority field": {
@@ -6023,6 +6026,9 @@ cultureInfo en-GB
 			        }
 			      },
 			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
 			      "Terms": [
 			        {
 			          "owner/authority order": {
@@ -6325,7 +6331,7 @@ cultureInfo en-GB
 			        }
 			      ]
 			    },
-			    "JMS_table_2": {
+			    "JMS_table": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "JMS Table"
@@ -6334,13 +6340,113 @@ cultureInfo en-GB
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "JMS table (2)": {
+			          "JMS table": {
 			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "jms tabletop": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "jms bench": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "jms board": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "jms counter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "jms stand": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "jms slab": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "jms desk": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "jms stall": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "jms table top": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "jms spreadsheet": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
 			          }
 			        }
 			      ]
 			    },
-			    "JMS_table_2.id": {
+			    "JMS_table.id": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "JMS Table",
@@ -6387,7 +6493,7 @@ cultureInfo en-GB
 			      ],
 			      "NameType": "Identifier"
 			    },
-			    "JMS_table_2.document_link": {
+			    "JMS_table.document_link": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "JMS Table",
@@ -6509,7 +6615,7 @@ cultureInfo en-GB
 			        }
 			      ]
 			    },
-			    "JMS_table_2.title": {
+			    "JMS_table.title": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "JMS Table",
@@ -6575,7 +6681,7 @@ cultureInfo en-GB
 			        }
 			      ]
 			    },
-			    "JMS_table_2.document_owner_id": {
+			    "JMS_table.document_owner_id": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "JMS Table",
@@ -6704,7 +6810,7 @@ cultureInfo en-GB
 			        }
 			      ]
 			    },
-			    "JMS_table_2.review_date": {
+			    "JMS_table.review_date": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "JMS Table",
@@ -6754,7 +6860,7 @@ cultureInfo en-GB
 			      ],
 			      "SemanticType": "Time"
 			    },
-			    "JMS_table_2.JMSID_lookup_id": {
+			    "JMS_table.JMSID_lookup_id": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "JMS Table",
@@ -6875,7 +6981,7 @@ cultureInfo en-GB
 			        }
 			      ]
 			    },
-			    "JMS_table_2.parent_ID_lookup_id": {
+			    "JMS_table.parent_ID_lookup_id": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "JMS Table",
@@ -7028,7 +7134,7 @@ cultureInfo en-GB
 			        }
 			      ]
 			    },
-			    "JMS_table_2.quality_team_comment": {
+			    "JMS_table.quality_team_comment": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "JMS Table",
@@ -7156,7 +7262,7 @@ cultureInfo en-GB
 			        }
 			      ]
 			    },
-			    "JMS_table_2.process_AuthorityId": {
+			    "JMS_table.process_AuthorityId": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "JMS Table",
@@ -7172,7 +7278,7 @@ cultureInfo en-GB
 			        }
 			      ]
 			    },
-			    "JMS_table_2.business_area_L1": {
+			    "JMS_table.business_area_L1": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "JMS Table",
@@ -7307,7 +7413,7 @@ cultureInfo en-GB
 			        }
 			      ]
 			    },
-			    "JMS_table_2.continual_improvement_required": {
+			    "JMS_table.continual_improvement_required": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "JMS Table",
@@ -7430,7 +7536,7 @@ cultureInfo en-GB
 			        }
 			      ]
 			    },
-			    "JMS_table_2.created": {
+			    "JMS_table.created": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "JMS Table",
@@ -7506,7 +7612,7 @@ cultureInfo en-GB
 			        }
 			      ]
 			    },
-			    "JMS_table_2.author_id": {
+			    "JMS_table.author_id": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "JMS Table",
@@ -7635,7 +7741,7 @@ cultureInfo en-GB
 			        }
 			      ]
 			    },
-			    "JMS_table_2.modified": {
+			    "JMS_table.modified": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "JMS Table",
@@ -7751,7 +7857,7 @@ cultureInfo en-GB
 			        }
 			      ]
 			    },
-			    "JMS_table_2.content_type": {
+			    "JMS_table.content_type": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "JMS Table",
@@ -7873,7 +7979,7 @@ cultureInfo en-GB
 			        }
 			      ]
 			    },
-			    "JMS_table_2.jms_id": {
+			    "JMS_table.jms_id": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "JMS Table",
@@ -7935,7 +8041,7 @@ cultureInfo en-GB
 			        }
 			      ]
 			    },
-			    "JMS_table_2.document_owner": {
+			    "JMS_table.document_owner": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "JMS Table",
@@ -8021,7 +8127,7 @@ cultureInfo en-GB
 			        }
 			      ]
 			    },
-			    "JMS_table_2.process_authority": {
+			    "JMS_table.process_authority": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "JMS Table",
@@ -8143,7 +8249,7 @@ cultureInfo en-GB
 			        }
 			      ]
 			    },
-			    "JMS_table_2.review_day": {
+			    "JMS_table.review_day": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "JMS Table",
@@ -8159,11 +8265,11 @@ cultureInfo en-GB
 			        }
 			      ]
 			    },
-			    "JMS_table_2.review_priority": {
+			    "JMS_table.review_priority": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "JMS Table",
-			          "ConceptualProperty": "Review Priority"
+			          "ConceptualProperty": "Review Status"
 			        }
 			      },
 			      "State": "Generated",
@@ -8171,6 +8277,12 @@ cultureInfo en-GB
 			        {
 			          "review priority": {
 			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "priority": {
+			            "State": "Generated",
+			            "Weight": 0.97
 			          }
 			        },
 			        {
@@ -8224,18 +8336,68 @@ cultureInfo en-GB
 			          }
 			        },
 			        {
-			          "review import": {
+			          "importance": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.485
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "precedence": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "urgency": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "significance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "primacy": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "Review Status": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
 			          }
 			        }
 			      ]
 			    },
-			    "JMS_table_2.compliant_and_expired": {
+			    "JMS_table.compliant_and_expired": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "JMS Table",
@@ -8359,7 +8521,7 @@ cultureInfo en-GB
 			        }
 			      ]
 			    },
-			    "JMS_table_2.expired_and_compliant__value": {
+			    "JMS_table.expired_and_compliant__value": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "JMS Table",
@@ -8399,6 +8561,12 @@ cultureInfo en-GB
 			        },
 			        {
 			          "compliant value": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "value": {
 			            "State": "Generated",
 			            "Weight": 0.97
 			          }
@@ -8505,7 +8673,7 @@ cultureInfo en-GB
 			        }
 			      ]
 			    },
-			    "JMS_table_2.owner_email": {
+			    "JMS_table.owner_email": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "JMS Table",
@@ -8627,6 +8795,138 @@ cultureInfo en-GB
 			        }
 			      ]
 			    },
+			    "entity_1_measure.items": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "1_Measures",
+			          "ConceptualProperty": "Items"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "items": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "substance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "thing": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "matter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "stuff": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "object": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "entries": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "element": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "article": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "piece": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "point": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        }
+			      ]
+			    },
+			    "JMS_table.priority_1": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "JMS Table",
+			          "ConceptualProperty": "Priority.1"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "priority.1": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
 			    "jms_table.review_status_signs": {
 			      "Definition": {
 			        "Binding": {
@@ -8650,20 +8950,20 @@ cultureInfo en-GB
 			    }
 			  },
 			  "Relationships": {
-			    "KPI_date_table_has_value": {
+			    "JMS_table_has_review_day": {
 			      "Binding": {
-			        "ConceptualEntity": "KPI Date Table"
+			        "ConceptualEntity": "JMS Table"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "KPI_date_table": {
+			        "JMS_table": {
 			          "Target": {
-			            "Entity": "KPI_date_table"
+			            "Entity": "JMS_table"
 			          }
 			        },
-			        "KPI_date_table.value": {
+			        "JMS_table.review_day": {
 			          "Target": {
-			            "Entity": "KPI_date_table.value"
+			            "Entity": "JMS_table.review_day"
 			          }
 			        }
 			      },
@@ -8671,15 +8971,853 @@ cultureInfo en-GB
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "KPI_date_table"
+			              "Role": "JMS_table"
 			            },
 			            "Object": {
-			              "Role": "KPI_date_table.value"
+			              "Role": "JMS_table.review_day"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "KPI_date_tables_have_values"
+			          "ID": "JMS_tables_have_review_days"
+			        }
+			      ]
+			    },
+			    "JMS_table_has_process_authority": {
+			      "Binding": {
+			        "ConceptualEntity": "JMS Table"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "JMS_table": {
+			          "Target": {
+			            "Entity": "JMS_table"
+			          }
+			        },
+			        "JMS_table.process_authority": {
+			          "Target": {
+			            "Entity": "JMS_table.process_authority"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "JMS_table"
+			            },
+			            "Object": {
+			              "Role": "JMS_table.process_authority"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "JMS_tables_have_process_authorities"
+			        }
+			      ]
+			    },
+			    "JMS_table_has_document_owner": {
+			      "Binding": {
+			        "ConceptualEntity": "JMS Table"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "JMS_table": {
+			          "Target": {
+			            "Entity": "JMS_table"
+			          }
+			        },
+			        "JMS_table.document_owner": {
+			          "Target": {
+			            "Entity": "JMS_table.document_owner"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "JMS_table"
+			            },
+			            "Object": {
+			              "Role": "JMS_table.document_owner"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "JMS_tables_have_document_owners"
+			        }
+			      ]
+			    },
+			    "JMS_table_has_jms_id": {
+			      "Binding": {
+			        "ConceptualEntity": "JMS Table"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "JMS_table": {
+			          "Target": {
+			            "Entity": "JMS_table"
+			          }
+			        },
+			        "JMS_table.jms_id": {
+			          "Target": {
+			            "Entity": "JMS_table.jms_id"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "JMS_table"
+			            },
+			            "Object": {
+			              "Role": "JMS_table.jms_id"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "JMS_tables_have_jms_ids"
+			        }
+			      ]
+			    },
+			    "JMS_table_has_content_type": {
+			      "Binding": {
+			        "ConceptualEntity": "JMS Table"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "JMS_table": {
+			          "Target": {
+			            "Entity": "JMS_table"
+			          }
+			        },
+			        "JMS_table.content_type": {
+			          "Target": {
+			            "Entity": "JMS_table.content_type"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "JMS_table"
+			            },
+			            "Object": {
+			              "Role": "JMS_table.content_type"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "JMS_tables_have_content_types"
+			        }
+			      ]
+			    },
+			    "JMS_table_has_modified": {
+			      "Binding": {
+			        "ConceptualEntity": "JMS Table"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "JMS_table": {
+			          "Target": {
+			            "Entity": "JMS_table"
+			          }
+			        },
+			        "JMS_table.modified": {
+			          "Target": {
+			            "Entity": "JMS_table.modified"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "JMS_table"
+			            },
+			            "Object": {
+			              "Role": "JMS_table.modified"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "JMS_tables_have_modified"
+			        }
+			      ]
+			    },
+			    "JMS_table_has_author_id": {
+			      "Binding": {
+			        "ConceptualEntity": "JMS Table"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "JMS_table": {
+			          "Target": {
+			            "Entity": "JMS_table"
+			          }
+			        },
+			        "JMS_table.author_id": {
+			          "Target": {
+			            "Entity": "JMS_table.author_id"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "JMS_table"
+			            },
+			            "Object": {
+			              "Role": "JMS_table.author_id"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "JMS_tables_have_author_ids"
+			        }
+			      ]
+			    },
+			    "JMS_table_has_created": {
+			      "Binding": {
+			        "ConceptualEntity": "JMS Table"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "JMS_table": {
+			          "Target": {
+			            "Entity": "JMS_table"
+			          }
+			        },
+			        "JMS_table.created": {
+			          "Target": {
+			            "Entity": "JMS_table.created"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "JMS_table"
+			            },
+			            "Object": {
+			              "Role": "JMS_table.created"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "JMS_tables_have_created"
+			        }
+			      ]
+			    },
+			    "JMS_table_has_continual_improvement_required": {
+			      "Binding": {
+			        "ConceptualEntity": "JMS Table"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "JMS_table": {
+			          "Target": {
+			            "Entity": "JMS_table"
+			          }
+			        },
+			        "JMS_table.continual_improvement_required": {
+			          "Target": {
+			            "Entity": "JMS_table.continual_improvement_required"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "JMS_table"
+			            },
+			            "Object": {
+			              "Role": "JMS_table.continual_improvement_required"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "JMS_tables_have_continual_improvement_required"
+			        }
+			      ]
+			    },
+			    "JMS_table_has_business_area_L1": {
+			      "Binding": {
+			        "ConceptualEntity": "JMS Table"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "JMS_table": {
+			          "Target": {
+			            "Entity": "JMS_table"
+			          }
+			        },
+			        "JMS_table.business_area_L1": {
+			          "Target": {
+			            "Entity": "JMS_table.business_area_L1"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "JMS_table"
+			            },
+			            "Object": {
+			              "Role": "JMS_table.business_area_L1"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "JMS_tables_have_business_area_L1"
+			        }
+			      ]
+			    },
+			    "JMS_table_has_process_AuthorityId": {
+			      "Binding": {
+			        "ConceptualEntity": "JMS Table"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "JMS_table": {
+			          "Target": {
+			            "Entity": "JMS_table"
+			          }
+			        },
+			        "JMS_table.process_AuthorityId": {
+			          "Target": {
+			            "Entity": "JMS_table.process_AuthorityId"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "JMS_table"
+			            },
+			            "Object": {
+			              "Role": "JMS_table.process_AuthorityId"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "JMS_tables_have_process_AuthorityIds"
+			        }
+			      ]
+			    },
+			    "JMS_table_has_quality_team_comment": {
+			      "Binding": {
+			        "ConceptualEntity": "JMS Table"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "JMS_table": {
+			          "Target": {
+			            "Entity": "JMS_table"
+			          }
+			        },
+			        "JMS_table.quality_team_comment": {
+			          "Target": {
+			            "Entity": "JMS_table.quality_team_comment"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "JMS_table"
+			            },
+			            "Object": {
+			              "Role": "JMS_table.quality_team_comment"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "JMS_tables_have_quality_team_comments"
+			        }
+			      ]
+			    },
+			    "JMS_table_has_parent_ID_lookup_id": {
+			      "Binding": {
+			        "ConceptualEntity": "JMS Table"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "JMS_table": {
+			          "Target": {
+			            "Entity": "JMS_table"
+			          }
+			        },
+			        "JMS_table.parent_ID_lookup_id": {
+			          "Target": {
+			            "Entity": "JMS_table.parent_ID_lookup_id"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "JMS_table"
+			            },
+			            "Object": {
+			              "Role": "JMS_table.parent_ID_lookup_id"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "JMS_tables_have_parent_ID_lookup_ids"
+			        }
+			      ]
+			    },
+			    "JMS_table_has_JMSID_lookup_id": {
+			      "Binding": {
+			        "ConceptualEntity": "JMS Table"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "JMS_table": {
+			          "Target": {
+			            "Entity": "JMS_table"
+			          }
+			        },
+			        "JMS_table.JMSID_lookup_id": {
+			          "Target": {
+			            "Entity": "JMS_table.JMSID_lookup_id"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "JMS_table"
+			            },
+			            "Object": {
+			              "Role": "JMS_table.JMSID_lookup_id"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "JMS_tables_have_JMSID_lookup_ids"
+			        }
+			      ]
+			    },
+			    "JMS_table_has_review_date": {
+			      "Binding": {
+			        "ConceptualEntity": "JMS Table"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "JMS_table": {
+			          "Target": {
+			            "Entity": "JMS_table"
+			          }
+			        },
+			        "JMS_table.review_date": {
+			          "Target": {
+			            "Entity": "JMS_table.review_date"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "JMS_table"
+			            },
+			            "Object": {
+			              "Role": "JMS_table.review_date"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "JMS_tables_have_review_dates"
+			        }
+			      ]
+			    },
+			    "JMS_table_has_document_owner_id": {
+			      "Binding": {
+			        "ConceptualEntity": "JMS Table"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "JMS_table": {
+			          "Target": {
+			            "Entity": "JMS_table"
+			          }
+			        },
+			        "JMS_table.document_owner_id": {
+			          "Target": {
+			            "Entity": "JMS_table.document_owner_id"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "JMS_table"
+			            },
+			            "Object": {
+			              "Role": "JMS_table.document_owner_id"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "JMS_tables_have_document_owner_ids"
+			        }
+			      ]
+			    },
+			    "JMS_table_has_title": {
+			      "Binding": {
+			        "ConceptualEntity": "JMS Table"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "JMS_table": {
+			          "Target": {
+			            "Entity": "JMS_table"
+			          }
+			        },
+			        "JMS_table.title": {
+			          "Target": {
+			            "Entity": "JMS_table.title"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "JMS_table"
+			            },
+			            "Object": {
+			              "Role": "JMS_table.title"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "JMS_tables_have_titles"
+			        }
+			      ]
+			    },
+			    "JMS_table_has_document_link": {
+			      "Binding": {
+			        "ConceptualEntity": "JMS Table"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "JMS_table": {
+			          "Target": {
+			            "Entity": "JMS_table"
+			          }
+			        },
+			        "JMS_table.document_link": {
+			          "Target": {
+			            "Entity": "JMS_table.document_link"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "JMS_table"
+			            },
+			            "Object": {
+			              "Role": "JMS_table.document_link"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "JMS_tables_have_document_links"
+			        }
+			      ]
+			    },
+			    "JMS_table_has_id": {
+			      "Binding": {
+			        "ConceptualEntity": "JMS Table"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "JMS_table": {
+			          "Target": {
+			            "Entity": "JMS_table"
+			          }
+			        },
+			        "JMS_table.id": {
+			          "Target": {
+			            "Entity": "JMS_table.id"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "JMS_table"
+			            },
+			            "Object": {
+			              "Role": "JMS_table.id"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "JMS_tables_have_ids"
+			        },
+			        {
+			          "Name": {
+			            "Subject": {
+			              "Role": "JMS_table"
+			            },
+			            "Name": {
+			              "Role": "JMS_table.id"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "ids_are_names_IDs_of_JMS_tables"
+			        }
+			      ]
+			    },
+			    "JMS_table_has_entity_1_measure_review_count": {
+			      "Binding": {
+			        "ConceptualEntity": "JMS Table"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "JMS_table": {
+			          "Target": {
+			            "Entity": "JMS_table"
+			          }
+			        },
+			        "entity_1_measure.review_count": {
+			          "Target": {
+			            "Entity": "entity_1_measure.review_count"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "JMS_table"
+			            },
+			            "Object": {
+			              "Role": "entity_1_measure.review_count"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "JMS_tables_have_review_count"
+			        }
+			      ]
+			    },
+			    "JMS_table_has_entity_1_measure_overdue_docs": {
+			      "Binding": {
+			        "ConceptualEntity": "JMS Table"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "JMS_table": {
+			          "Target": {
+			            "Entity": "JMS_table"
+			          }
+			        },
+			        "entity_1_measure.overdue_docs": {
+			          "Target": {
+			            "Entity": "entity_1_measure.overdue_docs"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "JMS_table"
+			            },
+			            "Object": {
+			              "Role": "entity_1_measure.overdue_docs"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "JMS_tables_have_overdue_docs"
+			        }
+			      ]
+			    },
+			    "JMS_table_has_entity_1_measure_docs_within_date": {
+			      "Binding": {
+			        "ConceptualEntity": "JMS Table"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "JMS_table": {
+			          "Target": {
+			            "Entity": "JMS_table"
+			          }
+			        },
+			        "entity_1_measure.docs_within_date": {
+			          "Target": {
+			            "Entity": "entity_1_measure.docs_within_date"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "JMS_table"
+			            },
+			            "Object": {
+			              "Role": "entity_1_measure.docs_within_date"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "JMS_tables_have_docs_within_date"
+			        }
+			      ]
+			    },
+			    "JMS_table_has_entity_1_measure_docs": {
+			      "Binding": {
+			        "ConceptualEntity": "JMS Table"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "JMS_table": {
+			          "Target": {
+			            "Entity": "JMS_table"
+			          }
+			        },
+			        "entity_1_measure.docs": {
+			          "Target": {
+			            "Entity": "entity_1_measure.docs"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "JMS_table"
+			            },
+			            "Object": {
+			              "Role": "entity_1_measure.docs"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "JMS_tables_have_docs"
+			        }
+			      ]
+			    },
+			    "entity_1_measure_has_review_day_": {
+			      "Binding": {
+			        "ConceptualEntity": "1_Measures"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity_1_measure": {
+			          "Target": {
+			            "Entity": "entity_1_measure"
+			          }
+			        },
+			        "entity_1_measure.review_day_": {
+			          "Target": {
+			            "Entity": "entity_1_measure.review_day_"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity_1_measure"
+			            },
+			            "Object": {
+			              "Role": "entity_1_measure.review_day_"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing1_measures_have_review_day_"
+			        }
+			      ]
+			    },
+			    "entity_1_measure_has_target_": {
+			      "Binding": {
+			        "ConceptualEntity": "1_Measures"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity_1_measure": {
+			          "Target": {
+			            "Entity": "entity_1_measure"
+			          }
+			        },
+			        "entity_1_measure.target_": {
+			          "Target": {
+			            "Entity": "entity_1_measure.target_"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity_1_measure"
+			            },
+			            "Object": {
+			              "Role": "entity_1_measure.target_"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing1_measures_have_target_"
+			        }
+			      ]
+			    },
+			    "JMS_table_has_entity_1_measure_count_rows": {
+			      "Binding": {
+			        "ConceptualEntity": "JMS Table"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "JMS_table": {
+			          "Target": {
+			            "Entity": "JMS_table"
+			          }
+			        },
+			        "entity_1_measure.count_rows": {
+			          "Target": {
+			            "Entity": "entity_1_measure.count_rows"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "JMS_table"
+			            },
+			            "Object": {
+			              "Role": "entity_1_measure.count_rows"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "JMS_tables_have_count_rows"
 			        }
 			      ]
 			    },
@@ -11482,33 +12620,33 @@ cultureInfo en-GB
 			        }
 			      ]
 			    },
-			    "JMS_table_2_in_business_area_L1": {
+			    "JMS_table_in_business_area_L1": {
 			      "Binding": {
 			        "ConceptualEntity": "JMS Table"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "JMS_table_2": {
+			        "JMS_table": {
 			          "Target": {
-			            "Entity": "JMS_table_2"
+			            "Entity": "JMS_table"
 			          }
 			        },
-			        "JMS_table_2.business_area_L1": {
+			        "JMS_table.business_area_L1": {
 			          "Target": {
-			            "Entity": "JMS_table_2.business_area_L1"
+			            "Entity": "JMS_table.business_area_L1"
 			          }
 			        }
 			      },
 			      "SemanticSlots": {
 			        "Where": {
-			          "Role": "JMS_table_2.business_area_L1"
+			          "Role": "JMS_table.business_area_L1"
 			        }
 			      },
 			      "Phrasings": [
 			        {
 			          "Preposition": {
 			            "Subject": {
-			              "Role": "JMS_table_2"
+			              "Role": "JMS_table"
 			            },
 			            "Prepositions": [
 			              {
@@ -11518,35 +12656,35 @@ cultureInfo en-GB
 			              }
 			            ],
 			            "Object": {
-			              "Role": "JMS_table_2.business_area_L1"
+			              "Role": "JMS_table.business_area_L1"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "JMS_table_2_are_in_business_area_L1"
+			          "ID": "JMS_tables_are_in_business_area_L1"
 			        }
 			      ]
 			    },
-			    "JMS_table_2_is_reviewed_on_review_date": {
+			    "JMS_table_is_reviewed_on_review_date": {
 			      "Binding": {
 			        "ConceptualEntity": "JMS Table"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "JMS_table_2": {
+			        "JMS_table": {
 			          "Target": {
-			            "Entity": "JMS_table_2"
+			            "Entity": "JMS_table"
 			          }
 			        },
-			        "JMS_table_2.review_date": {
+			        "JMS_table.review_date": {
 			          "Target": {
-			            "Entity": "JMS_table_2.review_date"
+			            "Entity": "JMS_table.review_date"
 			          }
 			        }
 			      },
 			      "SemanticSlots": {
 			        "When": {
-			          "Role": "JMS_table_2.review_date"
+			          "Role": "JMS_table.review_date"
 			        }
 			      },
 			      "Phrasings": [
@@ -11560,12 +12698,12 @@ cultureInfo en-GB
 			              }
 			            ],
 			            "Object": {
-			              "Role": "JMS_table_2"
+			              "Role": "JMS_table"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.9,
-			          "ID": "JMS_table_2_are_reviewed_on_review_dates"
+			          "ID": "JMS_tables_are_reviewed_on_review_dates"
 			        }
 			      ]
 			    },
@@ -11863,20 +13001,20 @@ cultureInfo en-GB
 			        }
 			      ]
 			    },
-			    "JMS_table_2_is_expired": {
+			    "JMS_table_is_expired": {
 			      "Binding": {
 			        "ConceptualEntity": "JMS Table"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "JMS_table_2": {
+			        "JMS_table": {
 			          "Target": {
-			            "Entity": "JMS_table_2"
+			            "Entity": "JMS_table"
 			          }
 			        },
-			        "JMS_table_2.expired_and_compliant__value": {
+			        "JMS_table.expired_and_compliant__value": {
 			          "Target": {
-			            "Entity": "JMS_table_2.expired_and_compliant__value"
+			            "Entity": "JMS_table.expired_and_compliant__value"
 			          }
 			        }
 			      },
@@ -11884,7 +13022,7 @@ cultureInfo en-GB
 			        {
 			          "Adjective": {
 			            "Subject": {
-			              "Role": "JMS_table_2"
+			              "Role": "JMS_table"
 			            },
 			            "Adjectives": [
 			              {
@@ -11894,134 +13032,75 @@ cultureInfo en-GB
 			              }
 			            ],
 			            "Measurement": {
-			              "Role": "JMS_table_2.expired_and_compliant__value"
+			              "Role": "JMS_table.expired_and_compliant__value"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "expired_and_compliant__value_indicates_how_expired_JMS_table_2_are"
+			          "ID": "expired_and_compliant__value_indicates_how_expired_JMS_tables_are"
 			        },
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "JMS_table_2"
+			              "Role": "JMS_table"
 			            },
 			            "Object": {
-			              "Role": "JMS_table_2.expired_and_compliant__value"
+			              "Role": "JMS_table.expired_and_compliant__value"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "JMS_table_2_have_expired_and_compliant__values"
+			          "ID": "JMS_tables_have_expired_and_compliant__values"
 			        }
 			      ]
 			    },
-			    "JMS_table_2_is_named_id": {
+			    "JMS_table_has_review_priority": {
 			      "Binding": {
 			        "ConceptualEntity": "JMS Table"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "JMS_table_2": {
+			        "JMS_table": {
 			          "Target": {
-			            "Entity": "JMS_table_2"
+			            "Entity": "JMS_table"
 			          }
 			        },
-			        "JMS_table_2.id": {
+			        "JMS_table.review_priority": {
 			          "Target": {
-			            "Entity": "JMS_table_2.id"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Name": {
-			            "Subject": {
-			              "Role": "JMS_table_2"
-			            },
-			            "Name": {
-			              "Role": "JMS_table_2.id"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "ids_are_names_IDs_of_JMS_table_2"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "JMS_table_2"
-			            },
-			            "Object": {
-			              "Role": "JMS_table_2.id"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "JMS_table_2_have_ids"
-			        }
-			      ]
-			    },
-			    "owner_authority_is_named_owner_authority": {
-			      "Binding": {
-			        "ConceptualEntity": "Owner/Authority"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "owner_authority": {
-			          "Target": {
-			            "Entity": "owner_authority"
-			          }
-			        },
-			        "owner_authority.owner_authority": {
-			          "Target": {
-			            "Entity": "owner_authority.owner_authority"
+			            "Entity": "JMS_table.review_priority"
 			          }
 			        }
 			      },
 			      "Phrasings": [
 			        {
-			          "Name": {
-			            "Subject": {
-			              "Role": "owner_authority"
-			            },
-			            "Name": {
-			              "Role": "owner_authority.owner_authority"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "owner_authorities_are_names_IDs_of_owner_authorities"
-			        },
-			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "owner_authority"
+			              "Role": "JMS_table"
 			            },
 			            "Object": {
-			              "Role": "owner_authority.owner_authority"
+			              "Role": "JMS_table.review_priority"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "owner_authorities_have_owner_authorities"
+			          "ID": "JMS_tables_have_review_priorities"
 			        }
 			      ]
 			    },
-			    "JMS_table_2_has_entity_1_measure_count_rows": {
+			    "JMS_table_has_compliant_and_expired": {
 			      "Binding": {
 			        "ConceptualEntity": "JMS Table"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "JMS_table_2": {
+			        "JMS_table": {
 			          "Target": {
-			            "Entity": "JMS_table_2"
+			            "Entity": "JMS_table"
 			          }
 			        },
-			        "entity_1_measure.count_rows": {
+			        "JMS_table.compliant_and_expired": {
 			          "Target": {
-			            "Entity": "entity_1_measure.count_rows"
+			            "Entity": "JMS_table.compliant_and_expired"
 			          }
 			        }
 			      },
@@ -12029,164 +13108,32 @@ cultureInfo en-GB
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "JMS_table_2"
+			              "Role": "JMS_table"
 			            },
 			            "Object": {
-			              "Role": "entity_1_measure.count_rows"
+			              "Role": "JMS_table.compliant_and_expired"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "JMS_table_2_have_count_rows"
+			          "ID": "JMS_tables_have_compliant_and_expired"
 			        }
 			      ]
 			    },
-			    "owner_authority_has_owner_authority_field": {
-			      "Binding": {
-			        "ConceptualEntity": "Owner/Authority"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "owner_authority": {
-			          "Target": {
-			            "Entity": "owner_authority"
-			          }
-			        },
-			        "owner_authority.owner_authority_field": {
-			          "Target": {
-			            "Entity": "owner_authority.owner_authority_field"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "owner_authority"
-			            },
-			            "Object": {
-			              "Role": "owner_authority.owner_authority_field"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "owner_authorities_have_owner_authority_fields"
-			        }
-			      ]
-			    },
-			    "owner_authority_has_owner_authority_order": {
-			      "Binding": {
-			        "ConceptualEntity": "Owner/Authority"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "owner_authority": {
-			          "Target": {
-			            "Entity": "owner_authority"
-			          }
-			        },
-			        "owner_authority.owner_authority_order": {
-			          "Target": {
-			            "Entity": "owner_authority.owner_authority_order"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "owner_authority"
-			            },
-			            "Object": {
-			              "Role": "owner_authority.owner_authority_order"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "owner_authorities_have_owner_authority_orders"
-			        }
-			      ]
-			    },
-			    "entity_1_measure_has_target_": {
-			      "Binding": {
-			        "ConceptualEntity": "1_Measures"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "entity_1_measure": {
-			          "Target": {
-			            "Entity": "entity_1_measure"
-			          }
-			        },
-			        "entity_1_measure.target_": {
-			          "Target": {
-			            "Entity": "entity_1_measure.target_"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "entity_1_measure"
-			            },
-			            "Object": {
-			              "Role": "entity_1_measure.target_"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "Phrasing1_measures_have_target_"
-			        }
-			      ]
-			    },
-			    "entity_1_measure_has_review_day_": {
-			      "Binding": {
-			        "ConceptualEntity": "1_Measures"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "entity_1_measure": {
-			          "Target": {
-			            "Entity": "entity_1_measure"
-			          }
-			        },
-			        "entity_1_measure.review_day_": {
-			          "Target": {
-			            "Entity": "entity_1_measure.review_day_"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "entity_1_measure"
-			            },
-			            "Object": {
-			              "Role": "entity_1_measure.review_day_"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "Phrasing1_measures_have_review_day_"
-			        }
-			      ]
-			    },
-			    "JMS_table_2_has_entity_1_measure_docs": {
+			    "JMS_table_has_owner_email": {
 			      "Binding": {
 			        "ConceptualEntity": "JMS Table"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "JMS_table_2": {
+			        "JMS_table": {
 			          "Target": {
-			            "Entity": "JMS_table_2"
+			            "Entity": "JMS_table"
 			          }
 			        },
-			        "entity_1_measure.docs": {
+			        "JMS_table.owner_email": {
 			          "Target": {
-			            "Entity": "entity_1_measure.docs"
+			            "Entity": "JMS_table.owner_email"
 			          }
 			        }
 			      },
@@ -12194,32 +13141,32 @@ cultureInfo en-GB
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "JMS_table_2"
+			              "Role": "JMS_table"
 			            },
 			            "Object": {
-			              "Role": "entity_1_measure.docs"
+			              "Role": "JMS_table.owner_email"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "JMS_table_2_have_docs"
+			          "ID": "JMS_tables_have_owner_emails"
 			        }
 			      ]
 			    },
-			    "JMS_table_2_has_entity_1_measure_docs_within_date": {
+			    "JMS_table_has_entity_1_measure_items": {
 			      "Binding": {
 			        "ConceptualEntity": "JMS Table"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "JMS_table_2": {
+			        "JMS_table": {
 			          "Target": {
-			            "Entity": "JMS_table_2"
+			            "Entity": "JMS_table"
 			          }
 			        },
-			        "entity_1_measure.docs_within_date": {
+			        "entity_1_measure.items": {
 			          "Target": {
-			            "Entity": "entity_1_measure.docs_within_date"
+			            "Entity": "entity_1_measure.items"
 			          }
 			        }
 			      },
@@ -12227,32 +13174,32 @@ cultureInfo en-GB
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "JMS_table_2"
+			              "Role": "JMS_table"
 			            },
 			            "Object": {
-			              "Role": "entity_1_measure.docs_within_date"
+			              "Role": "entity_1_measure.items"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "JMS_table_2_have_docs_within_date"
+			          "ID": "JMS_tables_have_items"
 			        }
 			      ]
 			    },
-			    "JMS_table_2_has_entity_1_measure_overdue_docs": {
+			    "JMS_table_has_priority_1": {
 			      "Binding": {
 			        "ConceptualEntity": "JMS Table"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "JMS_table_2": {
+			        "JMS_table": {
 			          "Target": {
-			            "Entity": "JMS_table_2"
+			            "Entity": "JMS_table"
 			          }
 			        },
-			        "entity_1_measure.overdue_docs": {
+			        "JMS_table.priority_1": {
 			          "Target": {
-			            "Entity": "entity_1_measure.overdue_docs"
+			            "Entity": "JMS_table.priority_1"
 			          }
 			        }
 			      },
@@ -12260,741 +13207,15 @@ cultureInfo en-GB
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "JMS_table_2"
+			              "Role": "JMS_table"
 			            },
 			            "Object": {
-			              "Role": "entity_1_measure.overdue_docs"
+			              "Role": "JMS_table.priority_1"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "JMS_table_2_have_overdue_docs"
-			        }
-			      ]
-			    },
-			    "JMS_table_2_has_document_link": {
-			      "Binding": {
-			        "ConceptualEntity": "JMS Table"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "JMS_table_2": {
-			          "Target": {
-			            "Entity": "JMS_table_2"
-			          }
-			        },
-			        "JMS_table_2.document_link": {
-			          "Target": {
-			            "Entity": "JMS_table_2.document_link"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "JMS_table_2"
-			            },
-			            "Object": {
-			              "Role": "JMS_table_2.document_link"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "JMS_table_2_have_document_links"
-			        }
-			      ]
-			    },
-			    "JMS_table_2_has_title": {
-			      "Binding": {
-			        "ConceptualEntity": "JMS Table"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "JMS_table_2": {
-			          "Target": {
-			            "Entity": "JMS_table_2"
-			          }
-			        },
-			        "JMS_table_2.title": {
-			          "Target": {
-			            "Entity": "JMS_table_2.title"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "JMS_table_2"
-			            },
-			            "Object": {
-			              "Role": "JMS_table_2.title"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "JMS_table_2_have_titles"
-			        }
-			      ]
-			    },
-			    "JMS_table_2_has_document_owner_id": {
-			      "Binding": {
-			        "ConceptualEntity": "JMS Table"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "JMS_table_2": {
-			          "Target": {
-			            "Entity": "JMS_table_2"
-			          }
-			        },
-			        "JMS_table_2.document_owner_id": {
-			          "Target": {
-			            "Entity": "JMS_table_2.document_owner_id"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "JMS_table_2"
-			            },
-			            "Object": {
-			              "Role": "JMS_table_2.document_owner_id"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "JMS_table_2_have_document_owner_ids"
-			        }
-			      ]
-			    },
-			    "JMS_table_2_has_review_date": {
-			      "Binding": {
-			        "ConceptualEntity": "JMS Table"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "JMS_table_2": {
-			          "Target": {
-			            "Entity": "JMS_table_2"
-			          }
-			        },
-			        "JMS_table_2.review_date": {
-			          "Target": {
-			            "Entity": "JMS_table_2.review_date"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "JMS_table_2"
-			            },
-			            "Object": {
-			              "Role": "JMS_table_2.review_date"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "JMS_table_2_have_review_dates"
-			        }
-			      ]
-			    },
-			    "JMS_table_2_has_JMSID_lookup_id": {
-			      "Binding": {
-			        "ConceptualEntity": "JMS Table"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "JMS_table_2": {
-			          "Target": {
-			            "Entity": "JMS_table_2"
-			          }
-			        },
-			        "JMS_table_2.JMSID_lookup_id": {
-			          "Target": {
-			            "Entity": "JMS_table_2.JMSID_lookup_id"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "JMS_table_2"
-			            },
-			            "Object": {
-			              "Role": "JMS_table_2.JMSID_lookup_id"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "JMS_table_2_have_JMSID_lookup_ids"
-			        }
-			      ]
-			    },
-			    "JMS_table_2_has_parent_ID_lookup_id": {
-			      "Binding": {
-			        "ConceptualEntity": "JMS Table"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "JMS_table_2": {
-			          "Target": {
-			            "Entity": "JMS_table_2"
-			          }
-			        },
-			        "JMS_table_2.parent_ID_lookup_id": {
-			          "Target": {
-			            "Entity": "JMS_table_2.parent_ID_lookup_id"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "JMS_table_2"
-			            },
-			            "Object": {
-			              "Role": "JMS_table_2.parent_ID_lookup_id"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "JMS_table_2_have_parent_ID_lookup_ids"
-			        }
-			      ]
-			    },
-			    "JMS_table_2_has_quality_team_comment": {
-			      "Binding": {
-			        "ConceptualEntity": "JMS Table"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "JMS_table_2": {
-			          "Target": {
-			            "Entity": "JMS_table_2"
-			          }
-			        },
-			        "JMS_table_2.quality_team_comment": {
-			          "Target": {
-			            "Entity": "JMS_table_2.quality_team_comment"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "JMS_table_2"
-			            },
-			            "Object": {
-			              "Role": "JMS_table_2.quality_team_comment"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "JMS_table_2_have_quality_team_comments"
-			        }
-			      ]
-			    },
-			    "JMS_table_2_has_process_AuthorityId": {
-			      "Binding": {
-			        "ConceptualEntity": "JMS Table"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "JMS_table_2": {
-			          "Target": {
-			            "Entity": "JMS_table_2"
-			          }
-			        },
-			        "JMS_table_2.process_AuthorityId": {
-			          "Target": {
-			            "Entity": "JMS_table_2.process_AuthorityId"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "JMS_table_2"
-			            },
-			            "Object": {
-			              "Role": "JMS_table_2.process_AuthorityId"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "JMS_table_2_have_process_AuthorityIds"
-			        }
-			      ]
-			    },
-			    "JMS_table_2_has_business_area_L1": {
-			      "Binding": {
-			        "ConceptualEntity": "JMS Table"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "JMS_table_2": {
-			          "Target": {
-			            "Entity": "JMS_table_2"
-			          }
-			        },
-			        "JMS_table_2.business_area_L1": {
-			          "Target": {
-			            "Entity": "JMS_table_2.business_area_L1"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "JMS_table_2"
-			            },
-			            "Object": {
-			              "Role": "JMS_table_2.business_area_L1"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "JMS_table_2_have_business_area_L1"
-			        }
-			      ]
-			    },
-			    "JMS_table_2_has_continual_improvement_required": {
-			      "Binding": {
-			        "ConceptualEntity": "JMS Table"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "JMS_table_2": {
-			          "Target": {
-			            "Entity": "JMS_table_2"
-			          }
-			        },
-			        "JMS_table_2.continual_improvement_required": {
-			          "Target": {
-			            "Entity": "JMS_table_2.continual_improvement_required"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "JMS_table_2"
-			            },
-			            "Object": {
-			              "Role": "JMS_table_2.continual_improvement_required"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "JMS_table_2_have_continual_improvement_required"
-			        }
-			      ]
-			    },
-			    "JMS_table_2_has_created": {
-			      "Binding": {
-			        "ConceptualEntity": "JMS Table"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "JMS_table_2": {
-			          "Target": {
-			            "Entity": "JMS_table_2"
-			          }
-			        },
-			        "JMS_table_2.created": {
-			          "Target": {
-			            "Entity": "JMS_table_2.created"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "JMS_table_2"
-			            },
-			            "Object": {
-			              "Role": "JMS_table_2.created"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "JMS_table_2_have_created"
-			        }
-			      ]
-			    },
-			    "JMS_table_2_has_author_id": {
-			      "Binding": {
-			        "ConceptualEntity": "JMS Table"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "JMS_table_2": {
-			          "Target": {
-			            "Entity": "JMS_table_2"
-			          }
-			        },
-			        "JMS_table_2.author_id": {
-			          "Target": {
-			            "Entity": "JMS_table_2.author_id"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "JMS_table_2"
-			            },
-			            "Object": {
-			              "Role": "JMS_table_2.author_id"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "JMS_table_2_have_author_ids"
-			        }
-			      ]
-			    },
-			    "JMS_table_2_has_modified": {
-			      "Binding": {
-			        "ConceptualEntity": "JMS Table"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "JMS_table_2": {
-			          "Target": {
-			            "Entity": "JMS_table_2"
-			          }
-			        },
-			        "JMS_table_2.modified": {
-			          "Target": {
-			            "Entity": "JMS_table_2.modified"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "JMS_table_2"
-			            },
-			            "Object": {
-			              "Role": "JMS_table_2.modified"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "JMS_table_2_have_modified"
-			        }
-			      ]
-			    },
-			    "JMS_table_2_has_content_type": {
-			      "Binding": {
-			        "ConceptualEntity": "JMS Table"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "JMS_table_2": {
-			          "Target": {
-			            "Entity": "JMS_table_2"
-			          }
-			        },
-			        "JMS_table_2.content_type": {
-			          "Target": {
-			            "Entity": "JMS_table_2.content_type"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "JMS_table_2"
-			            },
-			            "Object": {
-			              "Role": "JMS_table_2.content_type"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "JMS_table_2_have_content_types"
-			        }
-			      ]
-			    },
-			    "JMS_table_2_has_jms_id": {
-			      "Binding": {
-			        "ConceptualEntity": "JMS Table"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "JMS_table_2": {
-			          "Target": {
-			            "Entity": "JMS_table_2"
-			          }
-			        },
-			        "JMS_table_2.jms_id": {
-			          "Target": {
-			            "Entity": "JMS_table_2.jms_id"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "JMS_table_2"
-			            },
-			            "Object": {
-			              "Role": "JMS_table_2.jms_id"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "JMS_table_2_have_jms_ids"
-			        }
-			      ]
-			    },
-			    "JMS_table_2_has_document_owner": {
-			      "Binding": {
-			        "ConceptualEntity": "JMS Table"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "JMS_table_2": {
-			          "Target": {
-			            "Entity": "JMS_table_2"
-			          }
-			        },
-			        "JMS_table_2.document_owner": {
-			          "Target": {
-			            "Entity": "JMS_table_2.document_owner"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "JMS_table_2"
-			            },
-			            "Object": {
-			              "Role": "JMS_table_2.document_owner"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "JMS_table_2_have_document_owners"
-			        }
-			      ]
-			    },
-			    "JMS_table_2_has_process_authority": {
-			      "Binding": {
-			        "ConceptualEntity": "JMS Table"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "JMS_table_2": {
-			          "Target": {
-			            "Entity": "JMS_table_2"
-			          }
-			        },
-			        "JMS_table_2.process_authority": {
-			          "Target": {
-			            "Entity": "JMS_table_2.process_authority"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "JMS_table_2"
-			            },
-			            "Object": {
-			              "Role": "JMS_table_2.process_authority"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "JMS_table_2_have_process_authorities"
-			        }
-			      ]
-			    },
-			    "JMS_table_2_has_entity_10K_or_30K": {
-			      "Binding": {
-			        "ConceptualEntity": "JMS Table"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "JMS_table_2": {
-			          "Target": {
-			            "Entity": "JMS_table_2"
-			          }
-			        },
-			        "JMS_table_2.entity_10K_or_30K": {
-			          "Target": {
-			            "Entity": "JMS_table_2.entity_10K_or_30K"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "JMS_table_2"
-			            },
-			            "Object": {
-			              "Role": "JMS_table_2.entity_10K_or_30K"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "JMS_table_2_have_10K_or_30K"
-			        }
-			      ]
-			    },
-			    "JMS_table_2_has_review_day": {
-			      "Binding": {
-			        "ConceptualEntity": "JMS Table"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "JMS_table_2": {
-			          "Target": {
-			            "Entity": "JMS_table_2"
-			          }
-			        },
-			        "JMS_table_2.review_day": {
-			          "Target": {
-			            "Entity": "JMS_table_2.review_day"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "JMS_table_2"
-			            },
-			            "Object": {
-			              "Role": "JMS_table_2.review_day"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "JMS_table_2_have_review_days"
-			        }
-			      ]
-			    },
-			    "JMS_table_2_has_review_priority": {
-			      "Binding": {
-			        "ConceptualEntity": "JMS Table"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "JMS_table_2": {
-			          "Target": {
-			            "Entity": "JMS_table_2"
-			          }
-			        },
-			        "JMS_table_2.review_priority": {
-			          "Target": {
-			            "Entity": "JMS_table_2.review_priority"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "JMS_table_2"
-			            },
-			            "Object": {
-			              "Role": "JMS_table_2.review_priority"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "JMS_table_2_have_review_priorities"
-			        }
-			      ]
-			    },
-			    "JMS_table_2_has_compliant_and_expired": {
-			      "Binding": {
-			        "ConceptualEntity": "JMS Table"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "JMS_table_2": {
-			          "Target": {
-			            "Entity": "JMS_table_2"
-			          }
-			        },
-			        "JMS_table_2.compliant_and_expired": {
-			          "Target": {
-			            "Entity": "JMS_table_2.compliant_and_expired"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "JMS_table_2"
-			            },
-			            "Object": {
-			              "Role": "JMS_table_2.compliant_and_expired"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "JMS_table_2_have_compliant_and_expired"
-			        }
-			      ]
-			    },
-			    "JMS_table_2_has_owner_email": {
-			      "Binding": {
-			        "ConceptualEntity": "JMS Table"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "JMS_table_2": {
-			          "Target": {
-			            "Entity": "JMS_table_2"
-			          }
-			        },
-			        "JMS_table_2.owner_email": {
-			          "Target": {
-			            "Entity": "JMS_table_2.owner_email"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "JMS_table_2"
-			            },
-			            "Object": {
-			              "Role": "JMS_table_2.owner_email"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "JMS_table_2_have_owner_emails"
+			          "ID": "JMS_tables_have_priority_1"
 			        }
 			      ]
 			    }
