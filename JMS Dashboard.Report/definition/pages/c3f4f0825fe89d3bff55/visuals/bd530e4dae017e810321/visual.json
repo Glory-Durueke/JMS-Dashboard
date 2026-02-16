@@ -4,10 +4,10 @@
   "position": {
     "x": 0,
     "y": 32,
-    "z": 750,
+    "z": 5500,
     "height": 256,
     "width": 1280,
-    "tabOrder": 1000
+    "tabOrder": 0
   },
   "visual": {
     "visualType": "columnChart",
@@ -1392,20 +1392,6 @@
           }
         },
         "type": "Advanced"
-      },
-      {
-        "name": "bda4d2e7284aa9774af3",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "JMS Table"
-              }
-            },
-            "Property": "Document Owner"
-          }
-        },
-        "type": "Categorical"
       }
     ]
   }

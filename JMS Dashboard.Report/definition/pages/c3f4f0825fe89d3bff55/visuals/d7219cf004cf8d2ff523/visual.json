@@ -3,11 +3,11 @@
   "name": "d7219cf004cf8d2ff523",
   "position": {
     "x": 320,
-    "y": 128,
+    "y": 132,
     "z": 3000,
     "height": 48,
     "width": 176,
-    "tabOrder": 20
+    "tabOrder": 2000
   },
   "visual": {
     "visualType": "actionButton",
