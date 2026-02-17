@@ -416,7 +416,7 @@ table 'JMS Table'
 				  else "> 1Year"),
 				    #"Compliant and Expired Status (Defined)" = Table.AddColumn(#"Defined Review Priority", "Compliant and Expired", each if [Review Priority] = "Overdue" then "Overdue" else "Complaint"),
 				    #"Expired and Compliant - Outcome" = Table.AddColumn(#"Compliant and Expired Status (Defined)", "Expired and Compliant - Values", each if [Compliant and Expired] = "Overdue" then 1 else 2),
-				    #"Replaced 'Null' with No Comment" = Table.ReplaceValue(#"Expired and Compliant - Outcome",null,"No Comment",Replacer.ReplaceValue,{"JMSReadyTBCComments"}),
+				    #"Replaced 'Null' with No Comment" = Table.ReplaceValue(#"Expired and Compliant - Outcome",null,"",Replacer.ReplaceValue,{"JMSReadyTBCComments"}),
 				    #"Renamed to Quality Team Comments" = Table.RenameColumns(#"Replaced 'Null' with No Comment",{{"JMSReadyTBCComments", "Quality Team Comments"}}),
 				    #"Added Owner Email Address" = Table.AddColumn(#"Renamed to Quality Team Comments", "Owner Email", each Text.Lower(Text.Replace([Document Owner], " ", ".")) & "@kbsMaritime.com"),
 				    #"Changed Type" = Table.TransformColumnTypes(#"Added Owner Email Address",{{"ContinualImprovementRequired", type text}}),
@@ -426,10 +426,10 @@ table 'JMS Table'
 				    #"Expanded Priority" = Table.ExpandTableColumn(#"Merged Queries", "Priority", {"Sort"}, {"Sort"}),
 				    #"Removed Suffix (KBS PC)" = Table.ReplaceValue(#"Expanded Priority","(KBS PC)","",Replacer.ReplaceText,{"Process Authority"}),
 				    #"Changed column Name to ""Review Status""" = Table.RenameColumns(#"Removed Suffix (KBS PC)",{{"Review Priority", "Review Status"}}),
-				    #"Removed Columns" = Table.RemoveColumns(#"Changed column Name to ""Review Status""",{"T5FL"}),
-				    #"Renamed Columns1" = Table.RenameColumns(#"Removed Columns",{{"Sort", "Sorted Status"}})
+				    #"Removed ""T5FL column""" = Table.RemoveColumns(#"Changed column Name to ""Review Status""",{"T5FL"}),
+				    #"Renamed Soted Status to Sort" = Table.RenameColumns(#"Removed ""T5FL column""",{{"Sort", "Sorted Status"}})
 				in
-				    #"Renamed Columns1"
+				    #"Renamed Soted Status to Sort"
 
 	changedProperty = IsHidden
 

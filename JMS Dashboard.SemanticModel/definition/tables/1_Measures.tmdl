@@ -52,7 +52,7 @@ table 1_Measures
 		changedProperty = IsHidden
 
 	measure 'Docs within Date' = 1-((COUNTROWS(FILTER('JMS Table','JMS Table'[Expired and Compliant - Values]==1)))/COUNTROWS('JMS Table'))
-		formatString: 0%;-0%;0%
+		formatString: 0.0%;-0.0%;0.0%
 		displayFolder: Doc. Measures
 		lineageTag: dbdc41aa-1e23-4a4b-9d5a-5da9f2c49d34
 
@@ -83,6 +83,18 @@ table 1_Measures
 		formatString: 0
 		displayFolder: Doc. Measures
 		lineageTag: 731d175b-f294-49e9-8f84-52ec61470b0a
+
+	measure 'JMS Count (All, by ID)' = ```
+			
+			CALCULATE(
+			    COUNT('JMS Table'[JMS ID] ),  -- counts non-blank values in JMSID
+			    ALL('JMS Table')
+			)
+			
+			```
+		formatString: 0
+		displayFolder: Doc. Measures
+		lineageTag: 9ac5cd4f-ea20-4c5b-9865-29462b9b2e85
 
 	column 'Refresh Time'
 		dataType: dateTime

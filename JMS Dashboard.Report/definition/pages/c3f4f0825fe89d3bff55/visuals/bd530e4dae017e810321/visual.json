@@ -45,8 +45,7 @@
                 }
               },
               "index": 0,
-              "length": 1,
-              "sortDirection": "Ascending"
+              "length": 1
             }
           ]
         },
@@ -78,11 +77,11 @@
                       "Entity": "1_Measures"
                     }
                   },
-                  "Property": "Docs"
+                  "Property": "Items"
                 }
               },
-              "queryRef": "1_Measures.Docs",
-              "nativeQueryRef": "Docs"
+              "queryRef": "1_Measures.Items",
+              "nativeQueryRef": "Items"
             }
           ]
         }
@@ -98,19 +97,6 @@
                   }
                 },
                 "Property": "Review Status"
-              }
-            },
-            "direction": "Ascending"
-          },
-          {
-            "field": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "JMS Table"
-                  }
-                },
-                "Property": "Document Owner"
               }
             },
             "direction": "Ascending"
@@ -874,7 +860,7 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "true"
                 }
               }
             },
@@ -921,7 +907,7 @@
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "12D"
+                  "Value": "10D"
                 }
               }
             },
@@ -957,6 +943,25 @@
               "expr": {
                 "Literal": {
                   "Value": "true"
+                }
+              }
+            },
+            "labelDisplayUnits": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            },
+            "detailColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 4,
+                      "Percent": 0
+                    }
+                  }
                 }
               }
             }
@@ -1004,6 +1009,19 @@
                 }
               }
             ]
+          }
+        },
+        {
+          "properties": {},
+          "selector": {
+            "data": [
+              {
+                "dataViewWildcard": {
+                  "matchingOption": 1
+                }
+              }
+            ],
+            "highlightMatching": 1
           }
         }
       ],
@@ -1081,7 +1099,7 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "false"
                 }
               }
             },
