@@ -896,16 +896,6 @@ cultureInfo en-GB
 			          }
 			        },
 			        {
-			          "category": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.736
-			          }
-			        },
-			        {
 			          "importance": {
 			            "Type": "Noun",
 			            "State": "Suggested",
@@ -1565,16 +1555,6 @@ cultureInfo en-GB
 			          }
 			        },
 			        {
-			          "category": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.736
-			          }
-			        },
-			        {
 			          "genre": {
 			            "Type": "Noun",
 			            "State": "Suggested",
@@ -1616,6 +1596,16 @@ cultureInfo en-GB
 			        },
 			        {
 			          "product class": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "product kind": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
@@ -7918,16 +7908,6 @@ cultureInfo en-GB
 			          }
 			        },
 			        {
-			          "category": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.736
-			          }
-			        },
-			        {
 			          "genre": {
 			            "Type": "Noun",
 			            "State": "Suggested",
@@ -7969,6 +7949,16 @@ cultureInfo en-GB
 			        },
 			        {
 			          "content class": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "content kind": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
@@ -8275,7 +8265,7 @@ cultureInfo en-GB
 			        }
 			      ]
 			    },
-			    "JMS_table.review_priority": {
+			    "JMS_table.review_status": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "JMS Table",
@@ -8285,14 +8275,18 @@ cultureInfo en-GB
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "review priority": {
+			          "review status": {
 			            "State": "Generated"
 			          }
 			        },
 			        {
-			          "priority": {
-			            "State": "Generated",
-			            "Weight": 0.97
+			          "review category": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
 			          }
 			        },
 			        {
@@ -8302,97 +8296,87 @@ cultureInfo en-GB
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.5
+			            "Weight": 0.75
 			          }
 			        },
 			        {
-			          "review precedence": {
+			          "review prestige": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.5
+			            "Weight": 0.75
 			          }
 			        },
 			        {
-			          "review urgency": {
+			          "review prominence": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.5
+			            "Weight": 0.75
 			          }
 			        },
 			        {
-			          "review significance": {
+			          "review condition": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.5
+			            "Weight": 0.727
 			          }
 			        },
 			        {
-			          "review primacy": {
+			          "review class": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.5
+			            "Weight": 0.727
 			          }
 			        },
 			        {
-			          "importance": {
+			          "review grade": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.491
+			            "Weight": 0.727
 			          }
 			        },
 			        {
-			          "precedence": {
+			          "review level": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.491
+			            "Weight": 0.727
 			          }
 			        },
 			        {
-			          "urgency": {
+			          "review position": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.491
+			            "Weight": 0.727
 			          }
 			        },
 			        {
-			          "significance": {
+			          "review rank": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.491
-			          }
-			        },
-			        {
-			          "primacy": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.491
+			            "Weight": 0.727
 			          }
 			        }
 			      ]
@@ -8911,149 +8895,1589 @@ cultureInfo en-GB
 			        }
 			      ]
 			    },
-			    "jms_table.review_status_signs": {
+			    "entity_1_measure.JMS_count_all_by_ID": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "1_Measures",
+			          "ConceptualProperty": "JMS Count (All, by ID)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "JMS count (all, by ID)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "JMS count": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        }
+			      ]
+			    },
+			    "JMS_table.department_affected": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "JMS Table",
-			          "ConceptualProperty": "Review Status Signs"
+			          "ConceptualProperty": "Department Affected"
 			        }
 			      },
-			      "State": "Generated"
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "department affected": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "subdivision affected": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "division affected": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "unit affected": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "section affected": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "branch affected": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "sector affected": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "responsibility affected": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "specialty affected": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "realm affected": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "area affected": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.461
+			          }
+			        }
+			      ]
+			    },
+			    "JMS_table.focus_view": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "JMS Table",
+			          "ConceptualProperty": "Focus View"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "focus view": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "view": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "focus opinion": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "focus interpretation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "focus assessment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "opinion": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "interpretation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "assessment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "focus understanding": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "understanding": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "focus outlook": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "focus observation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        }
+			      ]
+			    },
+			    "JMS_table.ops_group": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "JMS Table",
+			          "ConceptualProperty": "Ops Group"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ops group": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "op group": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "op category": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "op organization": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "op bracket": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "op class": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "op crew": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "op team": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "JMS_table.flowdowntosubcontract": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "JMS Table",
+			          "ConceptualProperty": "Flowdowntosubcontracts"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "flowdowntosubcontract": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "JMS_table.t_6fl": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "JMS Table",
+			          "ConceptualProperty": "T6FL"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "t 6fl": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "T6FL": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "JMS_table.t_7fl": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "JMS Table",
+			          "ConceptualProperty": "T7FL"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "t 7fl": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "T7FL": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "JMS_table.project_number": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "JMS Table",
+			          "ConceptualProperty": "ProjectNumber"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "project number": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ProjectNumber": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "project no": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "assignment number": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "development number": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "blueprint number": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "design number": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "estimate number": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "forecast number": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "initiative number": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "plan number": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "task number": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "JMS_table.document_status": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "JMS Table",
+			          "ConceptualProperty": "DocumentStatus"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "document status": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "DocumentStatus": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "document category": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "document importance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "document prestige": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "document prominence": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "document condition": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "document class": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "document grade": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "document level": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "document position": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "document rank": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "JMS_table.XSL_style_category": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "JMS Table",
+			          "ConceptualProperty": "XSLStyleCategory"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "XSL style category": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "XSLStyleCategory": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "category": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "style category": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "xsl style classification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "style classification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "xsl style class": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "xsl style group": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "xsl style type": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "xsl style grouping": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "xsl style kind": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "classification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "style class": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "style group": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "JMS_table.XSL_style_WP_type": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "JMS Table",
+			          "ConceptualProperty": "XSLStyleWPType"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "XSL style WP type": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "XSLStyleWPType": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "type": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "WP type": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "style WP type": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "xsl style wp category": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.771
+			          }
+			        },
+			        {
+			          "xsl style wp genre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.771
+			          }
+			        },
+			        {
+			          "xsl style wp manner": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.771
+			          }
+			        },
+			        {
+			          "xsl style wp variety": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.771
+			          }
+			        },
+			        {
+			          "style wp category": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "style wp genre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "style wp manner": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "style wp variety": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "wp category": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "wp genre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        }
+			      ]
+			    },
+			    "JMS_table.XSL_style_icon_url": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "JMS Table",
+			          "ConceptualProperty": "XSLStyleIconUrl"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "XSL style icon url": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "XSLStyleIconUrl": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "icon url": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "style icon url": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "xsl style icon website": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.771
+			          }
+			        },
+			        {
+			          "style icon website": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "icon website": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "xsl style icon site": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        },
+			        {
+			          "style icon site": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "icon site": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "xsl style icon web address": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "style icon web address": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.604
+			          }
+			        },
+			        {
+			          "icon web address": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.589
+			          }
+			        }
+			      ]
+			    },
+			    "JMS_table.XSL_style_base_view": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "JMS Table",
+			          "ConceptualProperty": "XSLStyleBaseView"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "XSL style base view": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "XSLStyleBaseView": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "view": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "base view": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "style base view": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "xsl style base opinion": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "xsl style base interpretation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "xsl style base assessment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "style base opinion": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "style base interpretation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "style base assessment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "base opinion": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "base interpretation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "base assessment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "xsl style base understanding": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        }
+			      ]
+			    },
+			    "JMS_table.XSL_style_required_field": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "JMS Table",
+			          "ConceptualProperty": "XSLStyleRequiredFields"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "XSL style required field": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "XSLStyleRequiredFields": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "xsl style required arena": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "xsl style required turf": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "xsl style required ground": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "xsl style required pitch": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "xsl style required park": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "xsl style required meadow": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.489
+			          }
+			        },
+			        {
+			          "xsl style required grassland": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.489
+			          }
+			        },
+			        {
+			          "xsl style required lea": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.489
+			          }
+			        },
+			        {
+			          "xsl style required pasture": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.474
+			          }
+			        },
+			        {
+			          "xsl style required countryside": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.474
+			          }
+			        }
+			      ]
+			    },
+			    "JMS_table.business_area_test": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "JMS Table",
+			          "ConceptualProperty": "Business Area Test"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "business area test": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "test": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "area test": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "biz area test": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "industry area test": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "commerce area test": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "corporation area test": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "employer area test": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "enterprise area test": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "establishment area test": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "business region test": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "business locale test": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "business locality test": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        }
+			      ]
+			    },
+			    "JMS_table.sorted_status": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "JMS Table",
+			          "ConceptualProperty": "Sorted Status"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "sorted status": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "sorted category": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "sorted importance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "sorted prestige": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "sorted prominence": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "sorted condition": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "sorted class": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "sorted grade": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "sorted level": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "sorted position": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "sorted rank": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
 			    }
 			  },
 			  "Relationships": {
-			    "JMS_table_has_review_day": {
-			      "Binding": {
-			        "ConceptualEntity": "JMS Table"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "JMS_table": {
-			          "Target": {
-			            "Entity": "JMS_table"
-			          }
-			        },
-			        "JMS_table.review_day": {
-			          "Target": {
-			            "Entity": "JMS_table.review_day"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "JMS_table"
-			            },
-			            "Object": {
-			              "Role": "JMS_table.review_day"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "JMS_tables_have_review_days"
-			        }
-			      ]
-			    },
-			    "JMS_table_has_process_authority": {
-			      "Binding": {
-			        "ConceptualEntity": "JMS Table"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "JMS_table": {
-			          "Target": {
-			            "Entity": "JMS_table"
-			          }
-			        },
-			        "JMS_table.process_authority": {
-			          "Target": {
-			            "Entity": "JMS_table.process_authority"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "JMS_table"
-			            },
-			            "Object": {
-			              "Role": "JMS_table.process_authority"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "JMS_tables_have_process_authorities"
-			        }
-			      ]
-			    },
-			    "JMS_table_has_document_owner": {
-			      "Binding": {
-			        "ConceptualEntity": "JMS Table"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "JMS_table": {
-			          "Target": {
-			            "Entity": "JMS_table"
-			          }
-			        },
-			        "JMS_table.document_owner": {
-			          "Target": {
-			            "Entity": "JMS_table.document_owner"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "JMS_table"
-			            },
-			            "Object": {
-			              "Role": "JMS_table.document_owner"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "JMS_tables_have_document_owners"
-			        }
-			      ]
-			    },
-			    "JMS_table_has_jms_id": {
-			      "Binding": {
-			        "ConceptualEntity": "JMS Table"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "JMS_table": {
-			          "Target": {
-			            "Entity": "JMS_table"
-			          }
-			        },
-			        "JMS_table.jms_id": {
-			          "Target": {
-			            "Entity": "JMS_table.jms_id"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "JMS_table"
-			            },
-			            "Object": {
-			              "Role": "JMS_table.jms_id"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "JMS_tables_have_jms_ids"
-			        }
-			      ]
-			    },
 			    "JMS_table_has_content_type": {
 			      "Binding": {
 			        "ConceptualEntity": "JMS Table"
@@ -12592,6 +14016,51 @@ cultureInfo en-GB
 			        }
 			      ]
 			    },
+			    "JMS_table_in_business_area_test": {
+			      "Binding": {
+			        "ConceptualEntity": "JMS Table"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "JMS_table": {
+			          "Target": {
+			            "Entity": "JMS_table"
+			          }
+			        },
+			        "JMS_table.business_area_test": {
+			          "Target": {
+			            "Entity": "JMS_table.business_area_test"
+			          }
+			        }
+			      },
+			      "SemanticSlots": {
+			        "Where": {
+			          "Role": "JMS_table.business_area_test"
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "JMS_table"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "JMS_table.business_area_test"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "JMS_tables_are_in_business_area_tests"
+			        }
+			      ]
+			    },
 			    "JMS_table_in_business_area_L1": {
 			      "Binding": {
 			        "ConceptualEntity": "JMS Table"
@@ -13026,7 +14495,73 @@ cultureInfo en-GB
 			        }
 			      ]
 			    },
-			    "JMS_table_has_review_priority": {
+			    "JMS_table_document_owner_Own_JMS_table": {
+			      "Binding": {
+			        "ConceptualEntity": "JMS Table"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "JMS_table.document_owner": {
+			          "Target": {
+			            "Entity": "JMS_table.document_owner"
+			          }
+			        },
+			        "JMS_table": {
+			          "Target": {
+			            "Entity": "JMS_table"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Verb": {
+			            "Subject": {
+			              "Role": "JMS_table.document_owner"
+			            },
+			            "Verbs": [
+			              {
+			                "Own": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "JMS_table"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.75,
+			          "ID": "document_owners_Own_JMS_tables"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "JMS_table.document_owner"
+			            },
+			            "Object": {
+			              "Role": "JMS_table"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "document_owners_have_JMS_tables"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "JMS_table"
+			            },
+			            "Object": {
+			              "Role": "JMS_table.document_owner"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "JMS_tables_have_document_owners"
+			        }
+			      ]
+			    },
+			    "JMS_table_has_jms_id": {
 			      "Binding": {
 			        "ConceptualEntity": "JMS Table"
 			      },
@@ -13037,9 +14572,9 @@ cultureInfo en-GB
 			            "Entity": "JMS_table"
 			          }
 			        },
-			        "JMS_table.review_priority": {
+			        "JMS_table.jms_id": {
 			          "Target": {
-			            "Entity": "JMS_table.review_priority"
+			            "Entity": "JMS_table.jms_id"
 			          }
 			        }
 			      },
@@ -13050,12 +14585,111 @@ cultureInfo en-GB
 			              "Role": "JMS_table"
 			            },
 			            "Object": {
-			              "Role": "JMS_table.review_priority"
+			              "Role": "JMS_table.jms_id"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "JMS_tables_have_review_priorities"
+			          "ID": "JMS_tables_have_jms_ids"
+			        }
+			      ]
+			    },
+			    "JMS_table_has_process_authority": {
+			      "Binding": {
+			        "ConceptualEntity": "JMS Table"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "JMS_table": {
+			          "Target": {
+			            "Entity": "JMS_table"
+			          }
+			        },
+			        "JMS_table.process_authority": {
+			          "Target": {
+			            "Entity": "JMS_table.process_authority"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "JMS_table"
+			            },
+			            "Object": {
+			              "Role": "JMS_table.process_authority"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "JMS_tables_have_process_authorities"
+			        }
+			      ]
+			    },
+			    "JMS_table_has_review_day": {
+			      "Binding": {
+			        "ConceptualEntity": "JMS Table"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "JMS_table": {
+			          "Target": {
+			            "Entity": "JMS_table"
+			          }
+			        },
+			        "JMS_table.review_day": {
+			          "Target": {
+			            "Entity": "JMS_table.review_day"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "JMS_table"
+			            },
+			            "Object": {
+			              "Role": "JMS_table.review_day"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "JMS_tables_have_review_days"
+			        }
+			      ]
+			    },
+			    "JMS_table_has_review_status": {
+			      "Binding": {
+			        "ConceptualEntity": "JMS Table"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "JMS_table": {
+			          "Target": {
+			            "Entity": "JMS_table"
+			          }
+			        },
+			        "JMS_table.review_status": {
+			          "Target": {
+			            "Entity": "JMS_table.review_status"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "JMS_table"
+			            },
+			            "Object": {
+			              "Role": "JMS_table.review_status"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "JMS_tables_have_review_statuses"
 			        }
 			      ]
 			    },
@@ -13158,7 +14792,7 @@ cultureInfo en-GB
 			        }
 			      ]
 			    },
-			    "JMS_table_has_priority_1": {
+			    "JMS_table_has_entity_1_measure_JMS_count_all_by_ID": {
 			      "Binding": {
 			        "ConceptualEntity": "JMS Table"
 			      },
@@ -13169,9 +14803,9 @@ cultureInfo en-GB
 			            "Entity": "JMS_table"
 			          }
 			        },
-			        "JMS_table.priority_1": {
+			        "entity_1_measure.JMS_count_all_by_ID": {
 			          "Target": {
-			            "Entity": "JMS_table.priority_1"
+			            "Entity": "entity_1_measure.JMS_count_all_by_ID"
 			          }
 			        }
 			      },
@@ -13182,12 +14816,276 @@ cultureInfo en-GB
 			              "Role": "JMS_table"
 			            },
 			            "Object": {
-			              "Role": "JMS_table.priority_1"
+			              "Role": "entity_1_measure.JMS_count_all_by_ID"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "JMS_tables_have_priority_1"
+			          "ID": "JMS_tables_have_JMS_count_all_by_ID"
+			        }
+			      ]
+			    },
+			    "JMS_table_has_department_affected": {
+			      "Binding": {
+			        "ConceptualEntity": "JMS Table"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "JMS_table": {
+			          "Target": {
+			            "Entity": "JMS_table"
+			          }
+			        },
+			        "JMS_table.department_affected": {
+			          "Target": {
+			            "Entity": "JMS_table.department_affected"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "JMS_table"
+			            },
+			            "Object": {
+			              "Role": "JMS_table.department_affected"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "JMS_tables_have_department_affected"
+			        }
+			      ]
+			    },
+			    "JMS_table_has_focus_view": {
+			      "Binding": {
+			        "ConceptualEntity": "JMS Table"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "JMS_table": {
+			          "Target": {
+			            "Entity": "JMS_table"
+			          }
+			        },
+			        "JMS_table.focus_view": {
+			          "Target": {
+			            "Entity": "JMS_table.focus_view"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "JMS_table"
+			            },
+			            "Object": {
+			              "Role": "JMS_table.focus_view"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "JMS_tables_have_focus_views"
+			        }
+			      ]
+			    },
+			    "JMS_table_has_ops_group": {
+			      "Binding": {
+			        "ConceptualEntity": "JMS Table"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "JMS_table": {
+			          "Target": {
+			            "Entity": "JMS_table"
+			          }
+			        },
+			        "JMS_table.ops_group": {
+			          "Target": {
+			            "Entity": "JMS_table.ops_group"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "JMS_table"
+			            },
+			            "Object": {
+			              "Role": "JMS_table.ops_group"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "JMS_tables_have_ops_groups"
+			        }
+			      ]
+			    },
+			    "JMS_table_has_flowdowntosubcontract": {
+			      "Binding": {
+			        "ConceptualEntity": "JMS Table"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "JMS_table": {
+			          "Target": {
+			            "Entity": "JMS_table"
+			          }
+			        },
+			        "JMS_table.flowdowntosubcontract": {
+			          "Target": {
+			            "Entity": "JMS_table.flowdowntosubcontract"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "JMS_table"
+			            },
+			            "Object": {
+			              "Role": "JMS_table.flowdowntosubcontract"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "JMS_tables_have_flowdowntosubcontracts"
+			        }
+			      ]
+			    },
+			    "JMS_table_has_project_number": {
+			      "Binding": {
+			        "ConceptualEntity": "JMS Table"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "JMS_table": {
+			          "Target": {
+			            "Entity": "JMS_table"
+			          }
+			        },
+			        "JMS_table.project_number": {
+			          "Target": {
+			            "Entity": "JMS_table.project_number"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "JMS_table"
+			            },
+			            "Object": {
+			              "Role": "JMS_table.project_number"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "JMS_tables_have_project_numbers"
+			        }
+			      ]
+			    },
+			    "JMS_table_has_document_status": {
+			      "Binding": {
+			        "ConceptualEntity": "JMS Table"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "JMS_table": {
+			          "Target": {
+			            "Entity": "JMS_table"
+			          }
+			        },
+			        "JMS_table.document_status": {
+			          "Target": {
+			            "Entity": "JMS_table.document_status"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "JMS_table"
+			            },
+			            "Object": {
+			              "Role": "JMS_table.document_status"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "JMS_tables_have_document_statuses"
+			        }
+			      ]
+			    },
+			    "JMS_table_has_business_area_test": {
+			      "Binding": {
+			        "ConceptualEntity": "JMS Table"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "JMS_table": {
+			          "Target": {
+			            "Entity": "JMS_table"
+			          }
+			        },
+			        "JMS_table.business_area_test": {
+			          "Target": {
+			            "Entity": "JMS_table.business_area_test"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "JMS_table"
+			            },
+			            "Object": {
+			              "Role": "JMS_table.business_area_test"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "JMS_tables_have_business_area_tests"
+			        }
+			      ]
+			    },
+			    "JMS_table_has_sorted_status": {
+			      "Binding": {
+			        "ConceptualEntity": "JMS Table"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "JMS_table": {
+			          "Target": {
+			            "Entity": "JMS_table"
+			          }
+			        },
+			        "JMS_table.sorted_status": {
+			          "Target": {
+			            "Entity": "JMS_table.sorted_status"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "JMS_table"
+			            },
+			            "Object": {
+			              "Role": "JMS_table.sorted_status"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "JMS_tables_have_sorted_statuses"
 			        }
 			      ]
 			    }

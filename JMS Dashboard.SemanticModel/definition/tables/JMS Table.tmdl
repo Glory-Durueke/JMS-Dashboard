@@ -187,12 +187,15 @@ table 'JMS Table'
 		annotation SummarizationSetBy = Automatic
 
 	column 'Review Days'
-		dataType: string
+		dataType: int64
+		formatString: 0
 		lineageTag: 7f9facec-67c2-4e42-b737-ee2ba2271686
-		summarizeBy: none
+		summarizeBy: sum
 		sourceColumn: Review Days
 
 		changedProperty = IsHidden
+
+		changedProperty = DataType
 
 		annotation SummarizationSetBy = Automatic
 

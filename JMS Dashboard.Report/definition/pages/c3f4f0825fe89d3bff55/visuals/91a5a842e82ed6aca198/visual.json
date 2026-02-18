@@ -65,20 +65,6 @@
                       "Entity": "JMS Table"
                     }
                   },
-                  "Property": "Review Status"
-                }
-              },
-              "queryRef": "JMS Table (2).Review Priority",
-              "nativeQueryRef": "Review Status"
-            },
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "JMS Table"
-                    }
-                  },
                   "Property": "Review Days"
                 }
               },
@@ -97,7 +83,8 @@
                 }
               },
               "queryRef": "JMS Table (2).ReviewDate",
-              "nativeQueryRef": "ReviewDate"
+              "nativeQueryRef": "Review Date",
+              "displayName": "Review Date"
             },
             {
               "field": {
@@ -140,7 +127,7 @@
                     "Entity": "JMS Table"
                   }
                 },
-                "Property": "Review Status"
+                "Property": "Review Days"
               }
             },
             "direction": "Ascending"
@@ -250,171 +237,158 @@
         },
         {
           "properties": {
-            "icon": {
-              "kind": "Icon",
-              "layout": {
-                "expr": {
-                  "Literal": {
-                    "Value": "'IconOnly'"
-                  }
-                }
-              },
-              "verticalAlignment": {
-                "expr": {
-                  "Literal": {
-                    "Value": "'Top'"
-                  }
-                }
-              },
-              "value": {
-                "expr": {
-                  "Conditional": {
-                    "Cases": [
-                      {
-                        "Condition": {
-                          "Comparison": {
-                            "ComparisonKind": 0,
-                            "Left": {
-                              "Aggregation": {
-                                "Expression": {
-                                  "Column": {
-                                    "Expression": {
-                                      "SourceRef": {
-                                        "Entity": "JMS Table"
-                                      }
-                                    },
-                                    "Property": "Review Status"
-                                  }
-                                },
-                                "Function": 3
+            "backColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Conditional": {
+                      "Cases": [
+                        {
+                          "Condition": {
+                            "Comparison": {
+                              "ComparisonKind": 0,
+                              "Left": {
+                                "Aggregation": {
+                                  "Expression": {
+                                    "Column": {
+                                      "Expression": {
+                                        "SourceRef": {
+                                          "Entity": "JMS Table"
+                                        }
+                                      },
+                                      "Property": "Review Status"
+                                    }
+                                  },
+                                  "Function": 3
+                                }
+                              },
+                              "Right": {
+                                "Literal": {
+                                  "Value": "'61-90 Days'"
+                                }
                               }
                             },
-                            "Right": {
-                              "Literal": {
-                                "Value": "'61-90 Days'"
-                              }
+                            "Annotations": {
+                              "PowerBI.SQExprEvaluationKind": 1,
+                              "PowerBI.SQExprTextOperatorOption": 2
                             }
                           },
-                          "Annotations": {
-                            "PowerBI.SQExprEvaluationKind": 1,
-                            "PowerBI.SQExprTextOperatorOption": 2
+                          "Value": {
+                            "Literal": {
+                              "Value": "'#7FB800'"
+                            }
                           }
                         },
-                        "Value": {
-                          "Literal": {
-                            "Value": "'CircleHigh'"
-                          }
-                        }
-                      },
-                      {
-                        "Condition": {
-                          "Comparison": {
-                            "ComparisonKind": 0,
-                            "Left": {
-                              "Aggregation": {
-                                "Expression": {
-                                  "Column": {
-                                    "Expression": {
-                                      "SourceRef": {
-                                        "Entity": "JMS Table"
-                                      }
-                                    },
-                                    "Property": "Review Status"
-                                  }
-                                },
-                                "Function": 3
+                        {
+                          "Condition": {
+                            "Comparison": {
+                              "ComparisonKind": 0,
+                              "Left": {
+                                "Aggregation": {
+                                  "Expression": {
+                                    "Column": {
+                                      "Expression": {
+                                        "SourceRef": {
+                                          "Entity": "JMS Table"
+                                        }
+                                      },
+                                      "Property": "Review Status"
+                                    }
+                                  },
+                                  "Function": 3
+                                }
+                              },
+                              "Right": {
+                                "Literal": {
+                                  "Value": "'31-60 Days'"
+                                }
                               }
                             },
-                            "Right": {
-                              "Literal": {
-                                "Value": "'31-60 Days'"
-                              }
+                            "Annotations": {
+                              "PowerBI.SQExprEvaluationKind": 1,
+                              "PowerBI.SQExprTextOperatorOption": 2
                             }
                           },
-                          "Annotations": {
-                            "PowerBI.SQExprEvaluationKind": 1,
-                            "PowerBI.SQExprTextOperatorOption": 2
+                          "Value": {
+                            "Literal": {
+                              "Value": "'#b2d466'"
+                            }
                           }
                         },
-                        "Value": {
-                          "Literal": {
-                            "Value": "'KBS Circle - Green'"
-                          }
-                        }
-                      },
-                      {
-                        "Condition": {
-                          "Comparison": {
-                            "ComparisonKind": 0,
-                            "Left": {
-                              "Aggregation": {
-                                "Expression": {
-                                  "Column": {
-                                    "Expression": {
-                                      "SourceRef": {
-                                        "Entity": "JMS Table"
-                                      }
-                                    },
-                                    "Property": "Review Status"
-                                  }
-                                },
-                                "Function": 3
+                        {
+                          "Condition": {
+                            "Comparison": {
+                              "ComparisonKind": 0,
+                              "Left": {
+                                "Aggregation": {
+                                  "Expression": {
+                                    "Column": {
+                                      "Expression": {
+                                        "SourceRef": {
+                                          "Entity": "JMS Table"
+                                        }
+                                      },
+                                      "Property": "Review Status"
+                                    }
+                                  },
+                                  "Function": 3
+                                }
+                              },
+                              "Right": {
+                                "Literal": {
+                                  "Value": "'01-30 Days'"
+                                }
                               }
                             },
-                            "Right": {
-                              "Literal": {
-                                "Value": "'01-30 Days'"
-                              }
+                            "Annotations": {
+                              "PowerBI.SQExprEvaluationKind": 1,
+                              "PowerBI.SQExprTextOperatorOption": 2
                             }
                           },
-                          "Annotations": {
-                            "PowerBI.SQExprEvaluationKind": 1,
-                            "PowerBI.SQExprTextOperatorOption": 2
+                          "Value": {
+                            "Literal": {
+                              "Value": "'#ffd633'"
+                            }
                           }
                         },
-                        "Value": {
-                          "Literal": {
-                            "Value": "'KBS Circle - Gold'"
-                          }
-                        }
-                      },
-                      {
-                        "Condition": {
-                          "Comparison": {
-                            "ComparisonKind": 0,
-                            "Left": {
-                              "Aggregation": {
-                                "Expression": {
-                                  "Column": {
-                                    "Expression": {
-                                      "SourceRef": {
-                                        "Entity": "JMS Table"
-                                      }
-                                    },
-                                    "Property": "Review Status"
-                                  }
-                                },
-                                "Function": 3
+                        {
+                          "Condition": {
+                            "Comparison": {
+                              "ComparisonKind": 0,
+                              "Left": {
+                                "Aggregation": {
+                                  "Expression": {
+                                    "Column": {
+                                      "Expression": {
+                                        "SourceRef": {
+                                          "Entity": "JMS Table"
+                                        }
+                                      },
+                                      "Property": "Review Status"
+                                    }
+                                  },
+                                  "Function": 3
+                                }
+                              },
+                              "Right": {
+                                "Literal": {
+                                  "Value": "'Overdue'"
+                                }
                               }
                             },
-                            "Right": {
-                              "Literal": {
-                                "Value": "'Overdue'"
-                              }
+                            "Annotations": {
+                              "PowerBI.SQExprEvaluationKind": 1,
+                              "PowerBI.SQExprTextOperatorOption": 2
                             }
                           },
-                          "Annotations": {
-                            "PowerBI.SQExprEvaluationKind": 1,
-                            "PowerBI.SQExprTextOperatorOption": 2
-                          }
-                        },
-                        "Value": {
-                          "Literal": {
-                            "Value": "'CircleLow'"
+                          "Value": {
+                            "Literal": {
+                              "Value": "'#E30808'"
+                            }
                           }
                         }
-                      }
-                    ]
+                      ]
+                    }
                   }
                 }
               }
@@ -428,7 +402,7 @@
                 }
               }
             ],
-            "metadata": "JMS Table (2).Review Priority"
+            "metadata": "JMS Table.Review Days"
           }
         },
         {
@@ -438,19 +412,6 @@
               {
                 "dataViewWildcard": {
                   "matchingOption": 0
-                }
-              }
-            ],
-            "metadata": "JMS Table (2).Review Priority"
-          }
-        },
-        {
-          "properties": {},
-          "selector": {
-            "data": [
-              {
-                "dataViewWildcard": {
-                  "matchingOption": 1
                 }
               }
             ],
@@ -523,7 +484,7 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "212.33838382524843D"
+                  "Value": "315.1662397860079D"
                 }
               }
             }
@@ -558,6 +519,48 @@
           },
           "selector": {
             "metadata": "JMS Table (2).Owner Email"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "107.65678842177809D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "JMS Table.Review Days"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "109.57935085683309D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "JMS Table (2).ReviewDate"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "68.25056929595003D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "CountNonNull(JMS Table (2).JMS ID)"
           }
         }
       ]
@@ -724,6 +727,7 @@
             }
           ]
         },
+        "howCreated": "User",
         "objects": {
           "general": [
             {
