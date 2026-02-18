@@ -18,8 +18,7 @@ expression 'Review Status' =
 		    #"Defined Review Status" = Table.AddColumn(#"Days to Review", "Review Priority", each if  [Review Days]<= 0 then "Overdue"
 		  else if [Review Days] >= 1 and [Review Days] < 30 then "01-30 Days"
 		  else if [Review Days] >= 30 and [Review Days] < 60 then "31-60 Days"
-		  else if [Review Days] >= 60 and [Review Days]< 90 then "61-90 Days"
-		  else if [Review Days] < 365 then " = 1Year"
+		  else if [Review Days] >= 60 and [Review Days]< 364 then "61+ Days"
 		  else "> 1Year"),
 		    #"Duplicated Column" = Table.DuplicateColumn(#"Defined Review Status", "Review Priority", "Review Priority - Copy"),
 		    #"Excluded Columns not Needed" = Table.RemoveColumns(#"Duplicated Column",{"FileSystemObjectType", "ServerRedirectedEmbedUri", "ContentTypeId", "ComplianceAssetId", "DocumentOwnerStringId", "MethodStatementServiceDeliveryPlan", "OData__Copyright", "URL", "Additional AuthorisersId", "Additional AuthorisersStringId", "External Ref. Type", "Mgt. Plan Type", "Standard Type", "Strategy Type", "Eng. Auth. Req'd?", "SHE Auth. Req'd?", "SharedWithUsersId", "SharedWithDetails", "IM Auth. Req'd?", "OData__ColorTag", "VControlTableAdded", "Mgt. System", "ReviewPeriod", "Process AuthorityStringId", "OData__ip_UnifiedCompliancePolicyProperties", "Document MS IDId", "ID.1", "EditorId", "OData__CopySource", "CheckoutUserId", "OData__UIVersionString", "GUID", "FirstUniqueAncestorSecurableObject", "RoleAssignments", "AttachmentFiles", "GetDlpPolicyTip", "FieldValuesAsHtml.FileLeafRef.2.1", "FieldValuesAsHtml.FileLeafRef.2.2", "FieldValuesAsHtml.Title", "FieldValuesAsText.ReviewDate", "FieldValuesForEdit", "File", "Folder", "LikedByInformation", "ParentList", "Properties", "Versions", "Additional Authorisers", "TaxCatchAll", "SharedWithUsers", "JMSIDLookup", "ParentIDLookup", "Document MS ID", "Author", "CheckoutUser", "Editor"}),
@@ -29,9 +28,8 @@ expression 'Review Status' =
 		    #"Replaced Overdue with 1" = Table.ReplaceValue(#"Removed Errors","Overdue","1",Replacer.ReplaceText,{"Review Priority - Copy"}),
 		    #"Replaced 01-30 Days with 2" = Table.ReplaceValue(#"Replaced Overdue with 1","01-30 Days","2",Replacer.ReplaceText,{"Review Priority - Copy"}),
 		    #"Replaced 31-60 Days with 3" = Table.ReplaceValue(#"Replaced 01-30 Days with 2","31-60 Days","3",Replacer.ReplaceText,{"Review Priority - Copy"}),
-		    #"Replaced 61-90 Days with 4" = Table.ReplaceValue(#"Replaced 31-60 Days with 3","61-90 Days","4",Replacer.ReplaceText,{"Review Priority - Copy"}),
-		    #"Replaced =1Year with 5" = Table.ReplaceValue(#"Replaced 61-90 Days with 4"," = 1Year","5",Replacer.ReplaceText,{"Review Priority - Copy"}),
-		    #"Replaced >1Year with 6" = Table.ReplaceValue(#"Replaced =1Year with 5","> 1Year","6",Replacer.ReplaceText,{"Review Priority - Copy"}),
+		    #"Replaced 61+ Days with 4" = Table.ReplaceValue(#"Replaced 31-60 Days with 3","61+ Days","4",Replacer.ReplaceText,{"Review Priority - Copy"}),
+		    #"Replaced >1Year with 6" = Table.ReplaceValue(#"Replaced 61+ Days with 4","> 1Year","5",Replacer.ReplaceText,{"Review Priority - Copy"}),
 		    #"Removed Duplicates" = Table.Distinct(#"Replaced >1Year with 6", {"Review Priority - Copy"}),
 		    #"Change the column name" = Table.RenameColumns(#"Removed Duplicates",{{"Review Priority - Copy", "Sort"}})
 		in

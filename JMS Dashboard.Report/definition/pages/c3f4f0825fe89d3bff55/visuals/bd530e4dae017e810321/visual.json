@@ -791,6 +791,90 @@
               }
             ]
           }
+        },
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 5,
+                      "Percent": -0.25
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "JMS Table"
+                          }
+                        },
+                        "Property": "Review Status"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "' 91+'"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 5,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "JMS Table"
+                          }
+                        },
+                        "Property": "Review Status"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'61+ Days'"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
         }
       ],
       "categoryAxis": [
@@ -907,7 +991,7 @@
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "10D"
+                  "Value": "12D"
                 }
               }
             },
@@ -1396,6 +1480,34 @@
             }
           ]
         }
+      },
+      {
+        "name": "1388d6c4c75a30055905",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "1_Measures"
+              }
+            },
+            "Property": "Items"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "aca5f92848b616e4530d",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "JMS Table"
+              }
+            },
+            "Property": "Document Owner"
+          }
+        },
+        "type": "Categorical"
       }
     ]
   }

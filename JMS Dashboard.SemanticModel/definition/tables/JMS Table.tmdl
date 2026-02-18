@@ -386,6 +386,14 @@ table 'JMS Table'
 
 		annotation SummarizationSetBy = Automatic
 
+	column T5FL
+		dataType: string
+		lineageTag: 81e97b14-0130-455e-803e-d2884cd93077
+		summarizeBy: none
+		sourceColumn: T5FL
+
+		annotation SummarizationSetBy = Automatic
+
 	partition 'JMS Table' = m
 		mode: import
 		source =
@@ -401,8 +409,8 @@ table 'JMS Table'
 				    #"Expand to extract Process Authority" = Table.ExpandRecordColumn(#"Renamed Column to Doc. Owner", "Process Authority", {"Title"}, {"Process Authority.Title"}),
 				    #"Renamed to Process Authority" = Table.RenameColumns(#"Expand to extract Process Authority",{{"Process Authority.Title", "Process Authority"}}),
 				    #"Expanded to Extract Review Date" = Table.ExpandRecordColumn(#"Renamed to Process Authority", "FieldValuesAsText", {"ReviewDate"}, {"FieldValuesAsText.ReviewDate"}),
-				    #"Renamed Columns" = Table.RenameColumns(#"Expanded to Extract Review Date",{{"ServerRedirectedEmbedUrl", "Document Link"}}),
-				    #"Changed to DateType" = Table.TransformColumnTypes(#"Renamed Columns",{{"ReviewDate", type date}}),
+				    #"Renamed Column" = Table.RenameColumns(#"Expanded to Extract Review Date",{{"ServerRedirectedEmbedUrl", "Document Link"}}),
+				    #"Changed to DateType" = Table.TransformColumnTypes(#"Renamed Column",{{"ReviewDate", type date}}),
 				    #"Filtered out nulls" = Table.SelectRows(#"Changed to DateType", each ([ReviewDate] <> null)),
 				    #"Split Column by Delimiter" = Table.SplitColumn(#"Filtered out nulls", "FieldValuesAsHtml.FileLeafRef", Splitter.SplitTextByEachDelimiter({"-"}, QuoteStyle.Csv, false), {"FieldValuesAsHtml.FileLeafRef.1", "FieldValuesAsHtml.FileLeafRef.2"}),
 				    #"Renamed Col. to JMS ID" = Table.RenameColumns(#"Split Column by Delimiter",{{"FieldValuesAsHtml.FileLeafRef.1", "JMS ID"}}),
@@ -414,13 +422,13 @@ table 'JMS Table'
 				    #"Defined Review Priority" = Table.AddColumn(#"Days to Review", "Review Priority", each if  [Review Days]<= 0 then "Overdue"
 				  else if [Review Days] >= 1 and [Review Days] < 30 then "01-30 Days"
 				  else if [Review Days] >= 30 and [Review Days] < 60 then "31-60 Days"
-				  else if [Review Days] >= 60 and [Review Days]< 90 then "61-90 Days"
-				  else if [Review Days] < 365 then " = 1Year"
+				  else if [Review Days] >= 60 and [Review Days]< 364 then "61+ Days"
 				  else "> 1Year"),
-				    #"Compliant and Expired Status (Defined)" = Table.AddColumn(#"Defined Review Priority", "Compliant and Expired", each if [Review Priority] = "Overdue" then "Overdue" else "Complaint"),
-				    #"Expired and Compliant - Outcome" = Table.AddColumn(#"Compliant and Expired Status (Defined)", "Expired and Compliant - Values", each if [Compliant and Expired] = "Overdue" then 1 else 2),
-				    #"Replaced 'Null' with No Comment" = Table.ReplaceValue(#"Expired and Compliant - Outcome",null,"",Replacer.ReplaceValue,{"JMSReadyTBCComments"}),
-				    #"Renamed to Quality Team Comments" = Table.RenameColumns(#"Replaced 'Null' with No Comment",{{"JMSReadyTBCComments", "Quality Team Comments"}}),
+				    #"Filtered Rows" = Table.SelectRows(#"Defined Review Priority", each true),
+				    #"Compliant and Expired Status (Defined)" = Table.AddColumn(#"Filtered Rows", "Compliant and Expired", each if [Review Priority] = "Overdue" then "Overdue" else "Complaint"),
+				    #"Expired and Compliant - Outcome 1 or 2" = Table.AddColumn(#"Compliant and Expired Status (Defined)", "Expired and Compliant - Values", each if [Compliant and Expired] = "Overdue" then 1 else 2),
+				    #"Replaced 'Null' with Nothing" = Table.ReplaceValue(#"Expired and Compliant - Outcome 1 or 2",null,"",Replacer.ReplaceValue,{"JMSReadyTBCComments"}),
+				    #"Renamed to Quality Team Comments" = Table.RenameColumns(#"Replaced 'Null' with Nothing",{{"JMSReadyTBCComments", "Quality Team Comments"}}),
 				    #"Added Owner Email Address" = Table.AddColumn(#"Renamed to Quality Team Comments", "Owner Email", each Text.Lower(Text.Replace([Document Owner], " ", ".")) & "@kbsMaritime.com"),
 				    #"Changed Type" = Table.TransformColumnTypes(#"Added Owner Email Address",{{"ContinualImprovementRequired", type text}}),
 				    #"Replaced true with Yes" = Table.ReplaceValue(#"Changed Type","true","Yes",Replacer.ReplaceText,{"ContinualImprovementRequired"}),
@@ -429,8 +437,7 @@ table 'JMS Table'
 				    #"Expanded Priority" = Table.ExpandTableColumn(#"Merged Queries", "Priority", {"Sort"}, {"Sort"}),
 				    #"Removed Suffix (KBS PC)" = Table.ReplaceValue(#"Expanded Priority","(KBS PC)","",Replacer.ReplaceText,{"Process Authority"}),
 				    #"Changed column Name to ""Review Status""" = Table.RenameColumns(#"Removed Suffix (KBS PC)",{{"Review Priority", "Review Status"}}),
-				    #"Removed ""T5FL column""" = Table.RemoveColumns(#"Changed column Name to ""Review Status""",{"T5FL"}),
-				    #"Renamed Soted Status to Sort" = Table.RenameColumns(#"Removed ""T5FL column""",{{"Sort", "Sorted Status"}})
+				    #"Renamed Soted Status to Sort" = Table.RenameColumns(#"Changed column Name to ""Review Status""",{{"Sort", "Sorted Status"}})
 				in
 				    #"Renamed Soted Status to Sort"
 
@@ -438,5 +445,5 @@ table 'JMS Table'
 
 	annotation PBI_NavigationStepName = Navigation
 
-	annotation PBI_ResultType = Table
+	annotation PBI_ResultType = Exception
 

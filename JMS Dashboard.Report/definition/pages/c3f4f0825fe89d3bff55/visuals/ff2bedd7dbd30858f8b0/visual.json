@@ -3,10 +3,10 @@
   "name": "ff2bedd7dbd30858f8b0",
   "position": {
     "x": 0,
-    "y": 372,
+    "y": 368,
     "z": 1000,
     "height": 160,
-    "width": 416,
+    "width": 448,
     "tabOrder": 6000
   },
   "visual": {
@@ -234,6 +234,13 @@
                   "Value": "false"
                 }
               }
+            },
+            "selectAllCheckboxEnabled": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
             }
           }
         }
@@ -389,14 +396,14 @@
                         [
                           {
                             "Literal": {
-                              "Value": "' = 1Year'"
+                              "Value": "'> 1Year'"
                             }
                           }
                         ],
                         [
                           {
                             "Literal": {
-                              "Value": "'> 1Year'"
+                              "Value": "' = 1Year'"
                             }
                           }
                         ]
