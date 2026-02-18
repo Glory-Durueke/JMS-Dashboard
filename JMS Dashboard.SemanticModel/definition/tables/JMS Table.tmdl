@@ -422,9 +422,10 @@ table 'JMS Table'
 				    #"Defined Review Priority" = Table.AddColumn(#"Days to Review", "Review Priority", each if  [Review Days]<= 0 then "Overdue"
 				  else if [Review Days] >= 1 and [Review Days] < 30 then "01-30 Days"
 				  else if [Review Days] >= 30 and [Review Days] < 60 then "31-60 Days"
-				  else if [Review Days] >= 60 and [Review Days]< 364 then "61+ Days"
-				  else "> 1Year"),
-				    #"Filtered Rows" = Table.SelectRows(#"Defined Review Priority", each true),
+				  else if [Review Days] >= 60 and [Review Days]< 1000 then "61+ Days"
+				  else ""),
+				    #"Removed empty Date" = Table.SelectRows(#"Defined Review Priority", each ([Review Priority] <> "")),
+				    #"Filtered Rows" = Table.SelectRows(#"Removed empty Date", each true),
 				    #"Compliant and Expired Status (Defined)" = Table.AddColumn(#"Filtered Rows", "Compliant and Expired", each if [Review Priority] = "Overdue" then "Overdue" else "Complaint"),
 				    #"Expired and Compliant - Outcome 1 or 2" = Table.AddColumn(#"Compliant and Expired Status (Defined)", "Expired and Compliant - Values", each if [Compliant and Expired] = "Overdue" then 1 else 2),
 				    #"Replaced 'Null' with Nothing" = Table.ReplaceValue(#"Expired and Compliant - Outcome 1 or 2",null,"",Replacer.ReplaceValue,{"JMSReadyTBCComments"}),

@@ -45,7 +45,8 @@
                 }
               },
               "index": 0,
-              "length": 1
+              "length": 1,
+              "sortDirection": "Ascending"
             }
           ]
         },
@@ -62,7 +63,7 @@
                   "Property": "Review Status"
                 }
               },
-              "queryRef": "JMS Table (2).Review Priority",
+              "queryRef": "JMS Table.Review Status",
               "nativeQueryRef": "Review Status"
             }
           ]
@@ -96,7 +97,7 @@
                     "Entity": "JMS Table"
                   }
                 },
-                "Property": "Review Status"
+                "Property": "Document Owner"
               }
             },
             "direction": "Ascending"
@@ -1403,86 +1404,7 @@
   "filterConfig": {
     "filters": [
       {
-        "name": "7a526bcf64d0b21b9698",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "JMS Table"
-              }
-            },
-            "Property": "Review Status"
-          }
-        },
-        "type": "Categorical",
-        "filter": {
-          "Version": 2,
-          "From": [
-            {
-              "Name": "j",
-              "Entity": "JMS Table",
-              "Type": 0
-            }
-          ],
-          "Where": [
-            {
-              "Condition": {
-                "Not": {
-                  "Expression": {
-                    "In": {
-                      "Expressions": [
-                        {
-                          "Column": {
-                            "Expression": {
-                              "SourceRef": {
-                                "Source": "j"
-                              }
-                            },
-                            "Property": "Review Status"
-                          }
-                        }
-                      ],
-                      "Values": [
-                        [
-                          {
-                            "Literal": {
-                              "Value": "' = 1Year'"
-                            }
-                          }
-                        ],
-                        [
-                          {
-                            "Literal": {
-                              "Value": "'> 1Year'"
-                            }
-                          }
-                        ]
-                      ]
-                    }
-                  }
-                }
-              }
-            }
-          ]
-        },
-        "objects": {
-          "general": [
-            {
-              "properties": {
-                "isInvertedSelectionMode": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "true"
-                    }
-                  }
-                }
-              }
-            }
-          ]
-        }
-      },
-      {
-        "name": "1388d6c4c75a30055905",
+        "name": "239aa88400ecab547977",
         "field": {
           "Measure": {
             "Expression": {
@@ -1496,7 +1418,7 @@
         "type": "Advanced"
       },
       {
-        "name": "aca5f92848b616e4530d",
+        "name": "52ad65f99846bc905a58",
         "field": {
           "Column": {
             "Expression": {
@@ -1504,7 +1426,7 @@
                 "Entity": "JMS Table"
               }
             },
-            "Property": "Document Owner"
+            "Property": "Review Status"
           }
         },
         "type": "Categorical"
