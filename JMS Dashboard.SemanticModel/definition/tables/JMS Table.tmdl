@@ -337,9 +337,10 @@ table 'JMS Table'
 				    #"Removed Suffix (KBS PC)" = Table.ReplaceValue(#"Expanded Priority","(KBS PC)","",Replacer.ReplaceText,{"Process Authority"}),
 				    #"Changed column Name to ""Review Status""" = Table.RenameColumns(#"Removed Suffix (KBS PC)",{{"Review Priority", "Review Status"}}),
 				    #"Renamed Soted Status to Sort" = Table.RenameColumns(#"Changed column Name to ""Review Status""",{{"Sort", "Sorted Status"}}),
-				    #"Removed Other Columns" = Table.SelectColumns(#"Renamed Soted Status to Sort",{"Id", "Document Link", "DocumentOwnerId", "ReviewDate", "JMSIDLookupId", "ParentIDLookupId", "Quality Team Comments", "Process AuthorityId", "BusinessAreaL1", "ContinualImprovementRequired", "Department Affected", "Focus View", "Ops Group", "Flowdowntosubcontracts", "ProjectNumber", "DocumentStatus", "Created", "AuthorId", "Content Type", "JMS ID", "Document Owner", "Process Authority", "Review Days", "Review Status", "Compliant and Expired", "Expired and Compliant - Values", "Owner Email", "Title.", "Sorted Status"})
+				    #"Removed Other Columns" = Table.SelectColumns(#"Renamed Soted Status to Sort",{"Id", "Document Link", "DocumentOwnerId", "ReviewDate", "JMSIDLookupId", "ParentIDLookupId", "Quality Team Comments", "Process AuthorityId", "BusinessAreaL1", "ContinualImprovementRequired", "Department Affected", "Focus View", "Ops Group", "Flowdowntosubcontracts", "ProjectNumber", "DocumentStatus", "Created", "AuthorId", "Content Type", "JMS ID", "Document Owner", "Process Authority", "Review Days", "Review Status", "Compliant and Expired", "Expired and Compliant - Values", "Owner Email", "Title.", "Sorted Status"}),
+				    #"Replaced Errors" = Table.ReplaceErrorValues(#"Removed Other Columns", {{"JMS ID", 10649}})
 				in
-				    #"Removed Other Columns"
+				    #"Replaced Errors"
 
 	changedProperty = IsHidden
 
