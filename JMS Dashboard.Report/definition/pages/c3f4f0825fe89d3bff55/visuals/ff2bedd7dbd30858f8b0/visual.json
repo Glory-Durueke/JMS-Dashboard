@@ -332,23 +332,5 @@
     },
     "drillFilterOtherVisuals": true
   },
-  "parentGroupName": "f41706bd8c520066f200",
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "b5f66c160efdc78b6031",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "JMS Table"
-              }
-            },
-            "Property": "Review Status"
-          }
-        },
-        "type": "Categorical"
-      }
-    ]
-  }
+  "parentGroupName": "f41706bd8c520066f200"
 }

@@ -37,11 +37,12 @@
                       "Entity": "JMS Table"
                     }
                   },
-                  "Property": "Title"
+                  "Property": "Title."
                 }
               },
-              "queryRef": "JMS Table (2).Title",
-              "nativeQueryRef": "Title"
+              "queryRef": "JMS Table.Title.",
+              "nativeQueryRef": "Title",
+              "displayName": "Title"
             },
             {
               "field": {
@@ -164,13 +165,6 @@
       "values": [
         {
           "properties": {
-            "urlIcon": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
             "fontColorPrimary": {
               "solid": {
                 "color": {
@@ -202,37 +196,6 @@
                 }
               }
             }
-          }
-        },
-        {
-          "properties": {
-            "webURL": {
-              "expr": {
-                "Aggregation": {
-                  "Expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "JMS Table"
-                        }
-                      },
-                      "Property": "Document Link"
-                    }
-                  },
-                  "Function": 3
-                }
-              }
-            }
-          },
-          "selector": {
-            "data": [
-              {
-                "dataViewWildcard": {
-                  "matchingOption": 1
-                }
-              }
-            ],
-            "metadata": "JMS Table (2).Title"
           }
         },
         {
@@ -417,6 +380,68 @@
             ],
             "metadata": "JMS Table.Review Days"
           }
+        },
+        {
+          "properties": {
+            "webURL": {
+              "expr": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "JMS Table"
+                        }
+                      },
+                      "Property": "Document Link"
+                    }
+                  },
+                  "Function": 3
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "dataViewWildcard": {
+                  "matchingOption": 1
+                }
+              }
+            ],
+            "metadata": "JMS Table.Title."
+          }
+        },
+        {
+          "properties": {
+            "webURL": {
+              "expr": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "JMS Table"
+                        }
+                      },
+                      "Property": "Title."
+                    }
+                  },
+                  "Function": 3
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "dataViewWildcard": {
+                  "matchingOption": 1
+                }
+              }
+            ],
+            "metadata": "CountNonNull(JMS Table (2).JMS ID)"
+          }
         }
       ],
       "columnHeaders": [
@@ -447,6 +472,13 @@
                   "Value": "'growToFit'"
                 }
               }
+            },
+            "wordWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
             }
           }
         }
@@ -465,20 +497,6 @@
         }
       ],
       "columnWidth": [
-        {
-          "properties": {
-            "value": {
-              "expr": {
-                "Literal": {
-                  "Value": "217.58109337528032D"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "JMS Table (2).Title"
-          }
-        },
         {
           "properties": {
             "value": {
@@ -561,6 +579,20 @@
           },
           "selector": {
             "metadata": "CountNonNull(JMS Table (2).JMS ID)"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "216.84009405883154D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "JMS Table.Title."
           }
         }
       ]

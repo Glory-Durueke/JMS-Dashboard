@@ -15,18 +15,9 @@ table 'JMS Table'
 	column 'Document Link'
 		dataType: string
 		lineageTag: 6e808836-5ff6-4aba-9cbd-f0a22a0a9da1
+		dataCategory: Uncategorized
 		summarizeBy: none
 		sourceColumn: Document Link
-
-		changedProperty = IsHidden
-
-		annotation SummarizationSetBy = Automatic
-
-	column Title
-		dataType: string
-		lineageTag: 432b9a85-9ba3-42fb-b378-fa1d529d0f7a
-		summarizeBy: none
-		sourceColumn: Title
 
 		changedProperty = IsHidden
 
@@ -130,16 +121,6 @@ table 'JMS Table'
 		lineageTag: c6afb17b-d34c-49f2-81d1-1d98af3ba4c2
 		summarizeBy: none
 		sourceColumn: AuthorId
-
-		changedProperty = IsHidden
-
-		annotation SummarizationSetBy = Automatic
-
-	column Modified
-		dataType: string
-		lineageTag: 879e14e4-70dc-4190-bdb6-ff87db74a0a4
-		summarizeBy: none
-		sourceColumn: Modified
 
 		changedProperty = IsHidden
 
@@ -277,28 +258,6 @@ table 'JMS Table'
 
 		annotation SummarizationSetBy = Automatic
 
-	column T6FL
-		dataType: string
-		isHidden
-		lineageTag: 1c03b0fc-805f-431f-a2bb-03073afccd1a
-		summarizeBy: none
-		sourceColumn: T6FL
-
-		changedProperty = IsHidden
-
-		annotation SummarizationSetBy = Automatic
-
-	column T7FL
-		dataType: string
-		isHidden
-		lineageTag: 2d319f0b-5f01-4457-83d4-431dbfe8d705
-		summarizeBy: none
-		sourceColumn: T7FL
-
-		changedProperty = IsHidden
-
-		annotation SummarizationSetBy = Automatic
-
 	column ProjectNumber
 		dataType: string
 		lineageTag: 986d1d4e-7d74-478c-be35-38f88ef2b3fe
@@ -315,69 +274,6 @@ table 'JMS Table'
 
 		annotation SummarizationSetBy = Automatic
 
-	column XSLStyleCategory
-		dataType: string
-		isHidden
-		lineageTag: 376c6a60-62a3-4864-8103-cc10d01d6936
-		summarizeBy: none
-		sourceColumn: XSLStyleCategory
-
-		changedProperty = IsHidden
-
-		annotation SummarizationSetBy = Automatic
-
-	column XSLStyleWPType
-		dataType: string
-		isHidden
-		lineageTag: 5f9cc6d0-a668-4a00-a2dc-383cc12ca399
-		summarizeBy: none
-		sourceColumn: XSLStyleWPType
-
-		changedProperty = IsHidden
-
-		annotation SummarizationSetBy = Automatic
-
-	column XSLStyleIconUrl
-		dataType: string
-		isHidden
-		lineageTag: 6410330d-8892-451e-9313-f4ff9f0f3bbd
-		summarizeBy: none
-		sourceColumn: XSLStyleIconUrl
-
-		changedProperty = IsHidden
-
-		annotation SummarizationSetBy = Automatic
-
-	column XSLStyleBaseView
-		dataType: string
-		isHidden
-		lineageTag: 9b8f1e81-32a6-464f-afe4-3999246e67d4
-		summarizeBy: none
-		sourceColumn: XSLStyleBaseView
-
-		changedProperty = IsHidden
-
-		annotation SummarizationSetBy = Automatic
-
-	column XSLStyleRequiredFields
-		dataType: string
-		isHidden
-		lineageTag: 4842896b-31aa-47be-9e75-b17f2a7d192b
-		summarizeBy: none
-		sourceColumn: XSLStyleRequiredFields
-
-		changedProperty = IsHidden
-
-		annotation SummarizationSetBy = Automatic
-
-	column 'Business Area Test'
-		dataType: string
-		lineageTag: a2aae2c3-fca3-46b4-a7ce-5d24c04a4df7
-		summarizeBy: none
-		sourceColumn: Business Area Test
-
-		annotation SummarizationSetBy = Automatic
-
 	column 'Sorted Status'
 		dataType: string
 		lineageTag: ebc5a119-2ea1-4941-9f82-07793d2596dd
@@ -386,11 +282,11 @@ table 'JMS Table'
 
 		annotation SummarizationSetBy = Automatic
 
-	column T5FL
+	column 'Title.'
 		dataType: string
-		lineageTag: 81e97b14-0130-455e-803e-d2884cd93077
+		lineageTag: 79b8b480-a0bb-4471-86be-52f2d9f05490
 		summarizeBy: none
-		sourceColumn: T5FL
+		sourceColumn: Title.
 
 		annotation SummarizationSetBy = Automatic
 
@@ -433,18 +329,21 @@ table 'JMS Table'
 				    #"Added Owner Email Address" = Table.AddColumn(#"Renamed to Quality Team Comments", "Owner Email", each Text.Lower(Text.Replace([Document Owner], " ", ".")) & "@kbsMaritime.com"),
 				    #"Changed Type" = Table.TransformColumnTypes(#"Added Owner Email Address",{{"ContinualImprovementRequired", type text}}),
 				    #"Replaced true with Yes" = Table.ReplaceValue(#"Changed Type","true","Yes",Replacer.ReplaceText,{"ContinualImprovementRequired"}),
-				    #"Excluded Columns not Needed" = Table.RemoveColumns(#"Replaced true with Yes",{"FileSystemObjectType", "ServerRedirectedEmbedUri", "ContentTypeId", "ComplianceAssetId", "DocumentOwnerStringId", "MethodStatementServiceDeliveryPlan", "OData__Copyright", "URL", "Additional AuthorisersId", "Additional AuthorisersStringId", "External Ref. Type", "Mgt. Plan Type", "Standard Type", "Strategy Type", "Eng. Auth. Req'd?", "SHE Auth. Req'd?", "SharedWithUsersId", "SharedWithDetails", "IM Auth. Req'd?", "OData__ColorTag", "VControlTableAdded", "Mgt. System", "ReviewPeriod", "Process AuthorityStringId", "OData__ip_UnifiedCompliancePolicyProperties", "Document MS IDId", "ID.1", "EditorId", "OData__CopySource", "CheckoutUserId", "OData__UIVersionString", "GUID", "FirstUniqueAncestorSecurableObject", "RoleAssignments", "AttachmentFiles", "GetDlpPolicyTip", "FieldValuesAsHtml.FileLeafRef.2.1", "FieldValuesAsHtml.FileLeafRef.2.2", "FieldValuesAsHtml.Title", "FieldValuesAsText.ReviewDate", "FieldValuesForEdit", "File", "Folder", "LikedByInformation", "ParentList", "Properties", "Versions", "Additional Authorisers", "TaxCatchAll", "SharedWithUsers", "JMSIDLookup", "ParentIDLookup", "Document MS ID", "Author", "CheckoutUser", "Editor"}),
-				    #"Merged Queries" = Table.NestedJoin(#"Excluded Columns not Needed", {"Review Priority"}, #"Review Status", {"Review Priority"}, "Priority", JoinKind.LeftOuter),
+				    #"Excluded Columns not Needed" = Table.RemoveColumns(#"Replaced true with Yes",{"FileSystemObjectType", "ServerRedirectedEmbedUri", "ContentTypeId", "ComplianceAssetId", "DocumentOwnerStringId", "MethodStatementServiceDeliveryPlan", "OData__Copyright", "URL", "Additional AuthorisersId", "Additional AuthorisersStringId", "External Ref. Type", "Mgt. Plan Type", "Standard Type", "Strategy Type", "Eng. Auth. Req'd?", "SHE Auth. Req'd?", "SharedWithUsersId", "SharedWithDetails", "IM Auth. Req'd?", "OData__ColorTag", "VControlTableAdded", "Mgt. System", "ReviewPeriod", "Process AuthorityStringId", "OData__ip_UnifiedCompliancePolicyProperties", "Document MS IDId", "ID.1", "EditorId", "OData__CopySource", "CheckoutUserId", "OData__UIVersionString", "GUID", "FirstUniqueAncestorSecurableObject", "RoleAssignments", "AttachmentFiles", "GetDlpPolicyTip", "FieldValuesAsHtml.FileLeafRef.2.2", "FieldValuesAsHtml.Title", "FieldValuesAsText.ReviewDate", "FieldValuesForEdit", "File", "Folder", "LikedByInformation", "ParentList", "Properties", "Versions", "Additional Authorisers", "TaxCatchAll", "SharedWithUsers", "JMSIDLookup", "ParentIDLookup", "Document MS ID", "Author", "CheckoutUser", "Editor"}),
+				    #"Duplicated Column" = Table.DuplicateColumn(#"Excluded Columns not Needed", "FieldValuesAsHtml.FileLeafRef.2.1", "FieldValuesAsHtml.FileLeafRef.2.1 - Copy"),
+				    #"Renamed Columns" = Table.RenameColumns(#"Duplicated Column",{{"FieldValuesAsHtml.FileLeafRef.2.1 - Copy", "Title."}}),
+				    #"Merged Queries" = Table.NestedJoin(#"Renamed Columns", {"Review Priority"}, #"Review Status", {"Review Priority"}, "Priority", JoinKind.LeftOuter),
 				    #"Expanded Priority" = Table.ExpandTableColumn(#"Merged Queries", "Priority", {"Sort"}, {"Sort"}),
 				    #"Removed Suffix (KBS PC)" = Table.ReplaceValue(#"Expanded Priority","(KBS PC)","",Replacer.ReplaceText,{"Process Authority"}),
 				    #"Changed column Name to ""Review Status""" = Table.RenameColumns(#"Removed Suffix (KBS PC)",{{"Review Priority", "Review Status"}}),
-				    #"Renamed Soted Status to Sort" = Table.RenameColumns(#"Changed column Name to ""Review Status""",{{"Sort", "Sorted Status"}})
+				    #"Renamed Soted Status to Sort" = Table.RenameColumns(#"Changed column Name to ""Review Status""",{{"Sort", "Sorted Status"}}),
+				    #"Removed Other Columns" = Table.SelectColumns(#"Renamed Soted Status to Sort",{"Id", "Document Link", "DocumentOwnerId", "ReviewDate", "JMSIDLookupId", "ParentIDLookupId", "Quality Team Comments", "Process AuthorityId", "BusinessAreaL1", "ContinualImprovementRequired", "Department Affected", "Focus View", "Ops Group", "Flowdowntosubcontracts", "ProjectNumber", "DocumentStatus", "Created", "AuthorId", "Content Type", "JMS ID", "Document Owner", "Process Authority", "Review Days", "Review Status", "Compliant and Expired", "Expired and Compliant - Values", "Owner Email", "Title.", "Sorted Status"})
 				in
-				    #"Renamed Soted Status to Sort"
+				    #"Removed Other Columns"
 
 	changedProperty = IsHidden
 
 	annotation PBI_NavigationStepName = Navigation
 
-	annotation PBI_ResultType = Exception
+	annotation PBI_ResultType = Table
 

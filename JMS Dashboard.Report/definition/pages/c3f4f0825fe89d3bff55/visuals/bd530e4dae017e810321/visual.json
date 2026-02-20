@@ -1400,37 +1400,5 @@
     },
     "drillFilterOtherVisuals": true
   },
-  "parentGroupName": "00fc9b0f1254e3ee7b03",
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "239aa88400ecab547977",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "1_Measures"
-              }
-            },
-            "Property": "Items"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "52ad65f99846bc905a58",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "JMS Table"
-              }
-            },
-            "Property": "Review Status"
-          }
-        },
-        "type": "Categorical"
-      }
-    ]
-  }
+  "parentGroupName": "00fc9b0f1254e3ee7b03"
 }
