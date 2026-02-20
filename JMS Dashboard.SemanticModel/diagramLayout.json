@@ -66,27 +66,14 @@
         },
         {
           "location": {
-            "x": 97.396508771351776,
+            "x": 8.0626609277035755,
             "y": 98.9942830102216
           },
           "nodeIndex": "JMS Table",
           "nodeLineageTag": "2784e14b-688d-4cd3-bb04-27254fe08744",
           "size": {
-            "height": 610.11607180009287,
-            "width": 234
-          },
-          "zIndex": 0
-        },
-        {
-          "location": {
-            "x": 363.0323076898967,
-            "y": 483.39438515735833
-          },
-          "nodeIndex": "Priority",
-          "nodeLineageTag": "333d6ed9-6697-4137-afd7-4a2bfa87751c",
-          "size": {
-            "height": 248,
-            "width": 234
+            "height": 338.285934790135,
+            "width": 323.33384784364819
           },
           "zIndex": 0
         }
