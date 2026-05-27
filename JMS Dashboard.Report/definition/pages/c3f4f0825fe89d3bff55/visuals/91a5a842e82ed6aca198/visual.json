@@ -1,11 +1,11 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.6.0/schema.json",
   "name": "91a5a842e82ed6aca198",
   "position": {
-    "x": 603,
-    "y": 773,
+    "x": 608,
+    "y": 768,
     "z": 0,
-    "height": 276,
+    "height": 288,
     "width": 1280,
     "tabOrder": 0
   },
@@ -128,7 +128,7 @@
                     "Entity": "JMS Table"
                   }
                 },
-                "Property": "Review Days"
+                "Property": "ReviewDate"
               }
             },
             "direction": "Ascending"
